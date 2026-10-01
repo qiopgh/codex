@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "started_at_utc": "2026-10-01T02:32:53.289697+00:00",
+  "checks": [
+    {
+      "name": "provider-config-tests",
+      "command": [
+        "just",
+        "test",
+        "--release",
+        "--locked",
+        "-p",
+        "codex-model-provider-info",
+        "-p",
+        "codex-config",
+        "--lib",
+        "-E",
+        "package(codex-model-provider-info) | test(model_provider)"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "daybreak-integration-tests",
+      "command": [
+        "just",
+        "test",
+        "--release",
+        "--locked",
+        "-p",
+        "codex-core",
+        "-p",
+        "codex-app-server",
+        "--test",
+        "daybreak_app_compat"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "provider-clippy",
+      "command": [
+        "just",
+        "fix",
+        "-p",
+        "codex-model-provider-info"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "fmt-check",
+      "command": [
+        "just",
+        "fmt-check"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "current_check": "fmt-check",
+  "source_unchanged_by_checks": true,
+  "completed_at_utc": "2026-10-01T02:53:38.097234+00:00"
+}

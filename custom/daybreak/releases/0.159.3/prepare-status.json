@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "stages": [
+    {
+      "name": "config-schema",
+      "command": [
+        "just",
+        "write-config-schema"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "bazel-lock-update",
+      "command": [
+        "just",
+        "bazel-lock-update"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "fmt-linux",
+      "command": [
+        "just",
+        "fmt"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "fmt-windows",
+      "command": [
+        "just",
+        "fmt"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "started_at_utc": "2026-10-01T01:58:23.711572+00:00",
+  "current_stage": "fmt-linux",
+  "schema_generated": true,
+  "internal_metadata_not_configurable": true,
+  "diff_check": true,
+  "completed_at_utc": "2026-10-01T02:05:26.104885+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/qiopgh/codex",
+  "branch": "custom/daybreak-0.159.3-r1",
+  "custom_tag": "custom-v0.159.3-daybreak-r1",
+  "official_tag": "rust-v0.159.3",
+  "official_commit": "01fc69f4026735edfdf6789820549727a4867b11",
+  "custom_source_commit": "7fb246075c0f7b52e99e69f6b5fff748223a04c8",
+  "patch_sha256": "df92c6bef8422da4c7348823b20e5805f71115ce3337ecd1738f47406c979245",
+  "source_difference_matches_validated_patch": true,
+  "sql_in_repository": "LF",
+  "windows_preparation": "独立构建目录中生成 CRLF，并匹配只读数据库迁移记录",
+  "validation_origin": "已完成的 0.159.3 构建验证；本次只归档并核对字节一致性"
+}

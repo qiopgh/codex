@@ -1,0 +1,19 @@
+{
+  "kind": "linux",
+  "status": "passed",
+  "pid": 565535,
+  "source": "${LINUX_USER_HOME}/codex-source-0.159.3-linux",
+  "command": [
+    "cargo",
+    "build",
+    "--release",
+    "--locked",
+    "-p",
+    "codex-cli",
+    "--bin",
+    "codex"
+  ],
+  "started_at_utc": "2026-10-01T02:05:26.251159+00:00",
+  "exit_code": 0,
+  "completed_at_utc": "2026-10-01T02:32:49.802898+00:00"
+}

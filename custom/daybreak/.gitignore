@@ -1,0 +1,13 @@
+# 本机运行状态和完整安装包保存在交付目录。
+__pycache__/
+*.pyc
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+auth.json
+config.toml
+*.zip
+*.tar.gz
+*.exe
+*.dll

@@ -1,0 +1,182 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling codex-utils-absolute-path v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/absolute-path)
+   Compiling codex-utils-rustls-provider v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/rustls-provider)
+   Compiling codex-utils-cache v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/cache)
+   Compiling codex-utils-redacted-string v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/redacted-string)
+   Compiling codex-utils-string v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/string)
+   Compiling codex-async-utils v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/async-utils)
+   Compiling codex-utils-pty v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/pty)
+   Compiling codex-utils-process v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/process)
+   Compiling codex-utils-stream-parser v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/stream-parser)
+   Compiling codex-windows-sandbox v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/windows-sandbox-rs)
+   Compiling codex-http-client v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/http-client)
+   Compiling codex-keyring-store v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/keyring-store)
+   Compiling codex-utils-image v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/image)
+   Compiling codex-build-info v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/build-info)
+   Compiling codex-uds v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/uds)
+   Compiling codex-skills v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/skills)
+   Compiling codex-utils-home-dir v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/home-dir)
+   Compiling codex-utils-path-uri v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/path-uri)
+   Compiling codex-execpolicy v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/execpolicy)
+   Compiling codex-extension-items v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/items)
+   Compiling codex-network-proxy v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/network-proxy)
+   Compiling codex-utils-path v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/path-utils)
+   Compiling codex-install-context v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/install-context)
+   Compiling codex-utils-template v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/template)
+   Compiling codex-client v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/codex-client)
+   Compiling codex-websocket-client v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/websocket-client)
+   Compiling codex-workload-identity v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/workload-identity)
+   Compiling codex-terminal-detection v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/terminal-detection)
+   Compiling codex-file-search v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/file-search)
+   Compiling codex-file-watcher v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/file-watcher)
+   Compiling codex-core-plugin-common v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/core-plugin-common)
+   Compiling codex-websocket-auth v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/websocket-auth)
+   Compiling codex-collaboration-mode-templates v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/collaboration-mode-templates)
+   Compiling codex-aws-auth v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/aws-auth)
+   Compiling codex-code-mode-protocol v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/code-mode-protocol)
+   Compiling codex-diagnostics v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/diagnostics)
+   Compiling codex-experimental-api-macros v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/codex-experimental-api-macros)
+   Compiling codex-app-server-protocol-noop-macros v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/app-server-protocol-noop-macros)
+   Compiling codex-attachment-store v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/attachment-store)
+   Compiling codex-backend-openapi-models v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/codex-backend-openapi-models)
+   Compiling codex-linux-sandbox v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/linux-sandbox)
+   Compiling codex-user-verification v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/user-verification)
+   Compiling codex-utils-json-to-toml v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/json-to-toml)
+   Compiling codex-ansi-escape v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ansi-escape)
+   Compiling codex-mermaid v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/mermaid)
+   Compiling codex-realtime-webrtc v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/realtime-webrtc)
+   Compiling codex-utils-sleep-inhibitor v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/sleep-inhibitor)
+   Compiling codex-utils-elapsed v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/elapsed)
+   Compiling codex-utils-fuzzy-match v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/fuzzy-match)
+   Compiling codex-process-hardening v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/process-hardening)
+   Compiling codex-cli v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/cli)
+   Compiling codex-responses-api-proxy v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/responses-api-proxy)
+   Compiling codex-tcp-tunnel v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/tcp-tunnel)
+   Compiling codex-stdio-to-uds v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/stdio-to-uds)
+   Compiling codex-protocol v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/protocol)
+   Compiling codex-api v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/codex-api)
+   Compiling codex-file-system v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/file-system)
+   Compiling codex-model-provider-info v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/model-provider-info)
+   Compiling codex-features v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/features)
+   Compiling codex-shell-command v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/shell-command)
+   Compiling codex-history v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/history)
+   Compiling codex-agent-identity v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/agent-identity)
+   Compiling codex-context-fragments v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/context-fragments)
+   Compiling codex-utils-output-truncation v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/output-truncation)
+   Compiling codex-git-utils v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/git-utils)
+   Compiling codex-state v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/state)
+   Compiling codex-otel v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/otel)
+   Compiling codex-secrets v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/secrets)
+   Compiling codex-guardian-context v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/guardian-context)
+   Compiling codex-response-debug-context v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/response-debug-context)
+   Compiling codex-rollout v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/rollout)
+   Compiling codex-prompts v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/prompts)
+   Compiling codex-code-mode v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/code-mode)
+   Compiling codex-agent-graph-store v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/agent-graph-store)
+   Compiling codex-config v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/config)
+   Compiling codex-mxc-sandbox v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/mxc-sandbox)
+   Compiling codex-app-server-protocol v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/app-server-protocol)
+   Compiling codex-rollout-trace v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/rollout-trace)
+   Compiling codex-sandboxing v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/sandboxing)
+   Compiling codex-exec-server-protocol v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/exec-server-protocol)
+   Compiling codex-utils-git-discovery v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/git-discovery)
+   Compiling codex-memories-read v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/memories/read)
+   Compiling codex-utils-audio v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/audio)
+   Compiling codex-utils-cli v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/cli)
+   Compiling codex-shell-escalation v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/shell-escalation)
+   Compiling codex-worktree v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/worktree)
+   Compiling codex-login v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/login)
+   Compiling codex-exec-server v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/exec-server)
+   Compiling codex-agent-roles v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/agent-roles)
+   Compiling codex-feedback v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/feedback)
+   Compiling codex-models-manager v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/models-manager)
+   Compiling codex-utils-plugins v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/plugins)
+   Compiling codex-model-provider v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/model-provider)
+   Compiling codex-plugin v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/plugin)
+   Compiling codex-connectors v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/connectors)
+   Compiling codex-rmcp-client v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/rmcp-client)
+   Compiling codex-tools v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/tools)
+   Compiling codex-analytics v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/analytics)
+   Compiling codex-mcp v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/codex-mcp)
+   Compiling codex-hooks v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/hooks)
+   Compiling codex-extension-api v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/extension-api)
+   Compiling codex-core-plugins v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/core-plugins)
+   Compiling codex-apply-patch v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/apply-patch)
+   Compiling codex-agent-message-board-extension v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/agent-message-board)
+   Compiling codex-skills-extension v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/skills)
+   Compiling codex-guardian-reviewer v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/guardian-reviewer)
+   Compiling codex-thread-store v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/thread-store)
+   Compiling codex-backend-client v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/backend-client)
+   Compiling codex-connectors-extension v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/connectors)
+   Compiling codex-arg0 v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/arg0)
+   Compiling codex-core v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/core)
+   Compiling codex-cloud-config v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/cloud-config)
+   Compiling codex-git-attribution v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/git-attribution)
+warning: unused import: `crate::tools::context::ToolCallSource`
+  --> core/src/tools/registry.rs:16:5
+   |
+16 | use crate::tools::context::ToolCallSource;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+   Compiling codex-home v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/codex-home)
+   Compiling codex-utils-sandbox-summary v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/sandbox-summary)
+   Compiling codex-cloud-tasks-client v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/cloud-tasks-client)
+   Compiling codex-message-history v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/message-history)
+   Compiling codex-utils-approval-presets v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/approval-presets)
+   Compiling codex-cloud-tasks-mock-client v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/cloud-tasks-mock-client)
+   Compiling codex-memories-write v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/memories/write)
+   Compiling codex-app-server-transport v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/app-server-transport)
+   Compiling codex-memories-extension v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/memories)
+   Compiling codex-goal-extension v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/goal)
+   Compiling codex-web-search-extension v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/web-search)
+   Compiling codex-agent-extension v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/agent)
+   Compiling codex-chatgpt v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/chatgpt)
+   Compiling codex-queue-extension v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/queue)
+   Compiling codex-guardian-v2 v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/guardian-v2)
+   Compiling codex-mcp-extension v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/mcp)
+   Compiling codex-external-agent-migration v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/external-agent-migration)
+   Compiling codex-history-notes-extension v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/history-notes)
+   Compiling codex-image-generation-extension v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ext/image-generation)
+   Compiling codex-ollama v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/ollama)
+   Compiling codex-app-server v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/app-server)
+   Compiling codex-lmstudio v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/lmstudio)
+   Compiling codex-utils-oss v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/utils/oss)
+   Compiling codex-app-server-daemon v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/app-server-daemon)
+   Compiling codex-app-server-test-client v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/app-server-test-client)
+   Compiling codex-windows-sandbox-service v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/windows-sandbox-service)
+warning: variable does not need to be mutable
+    --> app-server/src/lib.rs:1494:5
+     |
+1494 |     mut loader_overrides: LoaderOverrides,
+     |     ----^^^^^^^^^^^^^^^^
+     |     |
+     |     help: remove this `mut`
+     |
+     = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+   Compiling codex-app-server-client v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/app-server-client)
+   Compiling codex-tui v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/tui)
+   Compiling codex-exec v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/exec)
+   Compiling codex-cloud-tasks v0.159.3 (${LINUX_USER_HOME}/codex-source-0.159.3-windows/codex-rs/cloud-tasks)
+warning: unused import: `codex_http_client::HttpClientFactory`
+  --> cloud-tasks/src/lib.rs:16:5
+   |
+16 | use codex_http_client::HttpClientFactory;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `codex_http_client::OutboundProxyPolicy`
+  --> cloud-tasks/src/lib.rs:17:5
+   |
+17 | use codex_http_client::OutboundProxyPolicy;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `codex-cloud-tasks` (lib) generated 2 warnings (run `cargo fix --lib -p codex-cloud-tasks` to apply 2 suggestions)
+warning: `codex-app-server` (lib) generated 1 warning (run `cargo fix --lib -p codex-app-server` to apply 1 suggestion)
+warning: `codex-core` (lib) generated 1 warning (run `cargo fix --lib -p codex-core` to apply 1 suggestion)
+    Finished `release` profile [optimized] target(s) in 28m 21s

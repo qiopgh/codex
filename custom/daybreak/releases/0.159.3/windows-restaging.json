@@ -1,0 +1,320 @@
+{
+  "started_at": "2026-10-01T11:17:02.9679311+08:00",
+  "version": "0.159.3",
+  "destination": "${CODEX_HOME}\\bin",
+  "backup_directory": "${CODEX_HOME}\\backups\\cli-before-0.159.3-20261001-111539",
+  "previous_cli_path": "${CODEX_HOME}\\bin\\codex.exe",
+  "previous_version": "codex-cli 0.159.2",
+  "catalog_sha256_before": "100b3ecf20da8c164ffdcc26257af903dc12d26739f2154037adbaee939bc9f6",
+  "daybreak_compat_enabled": false,
+  "daybreak_compat_explicit": false,
+  "config_sha256_before": "3d98f9a770c9b6fce0964f2e1ae4c07ed071fef2892994ea24c8005293128ec3",
+  "files": [
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-code-mode-host.exe",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-code-mode-host.new.exe",
+      "sha256": "8fbb20eb9e2a7be20d87dbf72f698d2eb6fd8434230629b7f5df442e9c453144",
+      "pending_rename": true
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex.exe",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex.new.exe",
+      "sha256": "69a6f98ffa8de1bed92e6f6ac67bf0c989a268237ed7d4da34e7d2e550e9fc27",
+      "pending_rename": true
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-path\\rg.exe",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-path\\rg.exe",
+      "sha256": "14231169855ec5205cf5a1b6f1db358ff4aed4247c86b69ce8aae647c77f6680",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\codex-command-runner.exe",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\codex-command-runner.exe",
+      "sha256": "1d6b5b886915f6a3e6aa16ec56c7af2ff0f45613940a4b2dddf2c5a5ed6db2a2",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\codex-windows-sandbox-service.exe",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\codex-windows-sandbox-service.exe",
+      "sha256": "76abfb363f785859b1e20923c6eff8ac03a4a7ab55849adc4aeb60cc851a73eb",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\codex-windows-sandbox-setup.exe",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\codex-windows-sandbox-setup.exe",
+      "sha256": "0cbfcbd3682e1dae9134313568e664639373451108a465e0ba2a79c3ad30e5e7",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\NOTICE.md",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\NOTICE.md",
+      "sha256": "473fcf8ccb68ce726111d016d133f0555adba730d057591512f3f71fb46aeb6e",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\codex-voice-host.exe",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\codex-voice-host.exe",
+      "sha256": "9c2089345717c61e89a91c06890a79af0e433cb75108dfe33d76fc8f19e5897d",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gio-2.0-0.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gio-2.0-0.dll",
+      "sha256": "4ebb2d7a339d69f9c38f247ff84fba18df8433aa6d9f5231dca138758952f594",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\glib-2.0-0.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\glib-2.0-0.dll",
+      "sha256": "5e198910fe75d3ef45efa1d9745993477e62f5fa2a5b6692ca49279395f6e8ee",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gmodule-2.0-0.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gmodule-2.0-0.dll",
+      "sha256": "dc5ae4ff14dc15be4e0740db7bbbfb015e8af9420a9a9b460cf15badedbff3b9",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gobject-2.0-0.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gobject-2.0-0.dll",
+      "sha256": "8d731398f463d7d5071549ebbd59cd87b75c2da08b868972b93bc923d70e1bf0",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstapp-1.0-0.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstapp-1.0-0.dll",
+      "sha256": "01cc58278c5a6423412ba46e8b2daa420032da512e0a17a9702fe1f51269183f",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstapp.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstapp.dll",
+      "sha256": "c11c860ae14d1825e4f02f2ae55a047954df387a2562b4998a78a8b19270d156",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstaudio-1.0-0.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstaudio-1.0-0.dll",
+      "sha256": "6d54c4facf1bf9fb5e9d448feab6e3de04ed87add8e1432014dcf280a8174984",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstaudioconvert.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstaudioconvert.dll",
+      "sha256": "ab75d149043a0959fe15304f55030d02db15351bc692d90827f1bb453b5b7ec9",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstaudioresample.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstaudioresample.dll",
+      "sha256": "20f1be6d76f50f2c733f31a9dfae7dd4825f5a651c2d574b96db5b3135dd862a",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstbase-1.0-0.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstbase-1.0-0.dll",
+      "sha256": "df48cdd9bf0939c87b466b2ebf4a1adf6353899918ef7247f816ec37a899c65f",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstcoreelements.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstcoreelements.dll",
+      "sha256": "e2ae0895bf25ccc241607cbe2feef51bcbbf97f46db2b394040b988820454468",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstnet-1.0-0.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstnet-1.0-0.dll",
+      "sha256": "b850bab9814019c3a91b1e34eaa1e28a60d8b8719cac2d172015f7c77e162c7d",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstopus.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstopus.dll",
+      "sha256": "7bb749439b07c182a0687c606d4be5460928f4b35db2292ec9f7dc2383be2efd",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstpbutils-1.0-0.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstpbutils-1.0-0.dll",
+      "sha256": "390025cd6f6859eab1a2a05972aa82040ddb650b2a3b61dc79a46e203c4e0f48",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstreamer-1.0-0.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstreamer-1.0-0.dll",
+      "sha256": "46df58ee981acdd16ef04e1be3d7f4166d9c1777d01823e026ddaa61c29774f1",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstrtp-1.0-0.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstrtp-1.0-0.dll",
+      "sha256": "2bbb3b57e8ef5d3ea40479cdd49d16ad7dc466cd4fa037b022fe3ecd6e3b3f7e",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstrtp.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstrtp.dll",
+      "sha256": "7ec4927639cd97cbbd197d9faeadaee6c9dd41fe1f560d1769d1462d26cb43d1",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstrtpmanager.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstrtpmanager.dll",
+      "sha256": "2329190003229567789e9cbec666bed53df97a4f5c9967d3661010636e9f4b08",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gsttag-1.0-0.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gsttag-1.0-0.dll",
+      "sha256": "591dca65cd1de02bbfd8e22f639ebe1866d35c9b4f5fa483eeff2d28e711ff10",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstvideo-1.0-0.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\gstvideo-1.0-0.dll",
+      "sha256": "3ce8321f1ba94cf2fcfc956b5606ef56acf49e2d240bdc89149ffbeb3d335976",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\intl-8.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\intl-8.dll",
+      "sha256": "f2212b9b6b7da899b1632aa9b8bd0f7791033f923c513d9f57206012e7add091",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\libffi-8.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\libffi-8.dll",
+      "sha256": "453e347478b27445402d6fb59527f8641347291984bbf755fabe3149dd70619d",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\opus.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\opus.dll",
+      "sha256": "d94d59fd4c4cbd6e0981155403734c97b25c851ff747ea6c8c185e1592199b65",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\pcre2-8.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\pcre2-8.dll",
+      "sha256": "a821dba1dbe8be2145d8e1613138a2cfa5a3081eca324f889fb1baf6619330d5",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\vcruntime140.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\vcruntime140.dll",
+      "sha256": "184146852727a9db4eea06178716bec3cdbb1015c911f6b0f915b184ad7775b2",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\z.dll",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\bin\\z.dll",
+      "sha256": "e7669079f990e68dc294cb8d5122a8b3b587cddd470bc23635031f222a9dfc2e",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\LGPL-2.1.txt",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\LGPL-2.1.txt",
+      "sha256": "c7ce1276717604c29c5469179a2f368eac42846557be671bb52f4e16e884b2ad",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\Opus.txt",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\Opus.txt",
+      "sha256": "cbd8bd07329a234413710c02b19d22c0cf78fc451882593e817130779b5455e3",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\PCRE2.md",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\PCRE2.md",
+      "sha256": "4195c519dcfe4a4ffedc4b8ccc5d49e4dd02efd5ece6b69a4fba5d20080902a9",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\libffi.txt",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\libffi.txt",
+      "sha256": "e2a9b884b1c5d718efd6121457a1fbe7ece431352ca75c901260cef2e7d040e5",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\proxy-libintl.txt",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\proxy-libintl.txt",
+      "sha256": "aa092600e3f475f0a55821fb9c529583d8e23e41bf0461254f02fcf94d3a32c2",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\sljit.txt",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\sljit.txt",
+      "sha256": "37c7a090fc61388430d63fc97bf8a22ffce92d3ca2249aac572cfaf411d3070f",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\zlib.txt",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\licenses\\zlib.txt",
+      "sha256": "439c75ab12b340c5362b9d4b08ff05ec3a4d0eb7667a6fff49a9b16d8795c78e",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\manifest.json",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\manifest.json",
+      "sha256": "267093046db6f7303ded67ed5ccd202c86a625e857dbc78dafbf132ec30e6a03",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\runtime.json",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\runtime.json",
+      "sha256": "df7dbd330ae156c39d9cbd937cb8624a189cf33b9266ecf2afb19c6fd3e7e134",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\sources.json",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\sources.json",
+      "sha256": "e2f6b124f6277e7c3c4f5c7cc8830c66190f671ad65e972bb2cc9507dbfcb937",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-resources\\voice\\windows-crt.json",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-resources\\voice\\windows-crt.json",
+      "sha256": "d16939bc85da395ded5411724fed84ffd36810b78d47c756cf094b0956bc3892",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-command-runner.exe",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-command-runner.exe",
+      "sha256": "1d6b5b886915f6a3e6aa16ec56c7af2ff0f45613940a4b2dddf2c5a5ed6db2a2",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-windows-sandbox-setup.exe",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-windows-sandbox-setup.exe",
+      "sha256": "0cbfcbd3682e1dae9134313568e664639373451108a465e0ba2a79c3ad30e5e7",
+      "pending_rename": false
+    },
+    {
+      "target": "${CODEX_HOME}\\bin\\codex-windows-sandbox-service.exe",
+      "deployed_file": "${CODEX_HOME}\\bin\\codex-windows-sandbox-service.exe",
+      "sha256": "76abfb363f785859b1e20923c6eff8ac03a4a7ab55849adc4aeb60cc851a73eb",
+      "pending_rename": false
+    }
+  ],
+  "pending_renames": [
+    {
+      "from": "${CODEX_HOME}\\bin\\codex-code-mode-host.new.exe",
+      "to": "${CODEX_HOME}\\bin\\codex-code-mode-host.exe"
+    },
+    {
+      "from": "${CODEX_HOME}\\bin\\codex.new.exe",
+      "to": "${CODEX_HOME}\\bin\\codex.exe"
+    }
+  ],
+  "status": "awaiting_manual_renames",
+  "version_output": "codex-cli 0.159.3",
+  "cli_path": "${CODEX_HOME}\\bin\\codex.exe",
+  "config_sha256_after": "3d98f9a770c9b6fce0964f2e1ae4c07ed071fef2892994ea24c8005293128ec3",
+  "catalog_sha256_after": "100b3ecf20da8c164ffdcc26257af903dc12d26739f2154037adbaee939bc9f6",
+  "catalog_unchanged": true,
+  "package_layout_sha256": "e4387bb5b4571ecbf163ca3bbd5cc7323c4cbf5728da22acfaba679ca187e384",
+  "completed_at": "2026-10-01T11:17:49.0727870+08:00"
+}

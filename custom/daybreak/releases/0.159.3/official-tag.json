@@ -1,0 +1,24 @@
+{
+  "node_id": "TA_kwDOOYsS4doAKDhlNDY3NzRhOTRhNzQ1ZmZkZjY3NmJkN2E4YWEzNjQ2NmJiZDRmOTk",
+  "sha": "8e46774a94a745ffdf676bd7a8aa36466bbd4f99",
+  "url": "https://api.github.com/repos/openai/codex/git/tags/8e46774a94a745ffdf676bd7a8aa36466bbd4f99",
+  "tagger": {
+    "name": "andrewgu-oai",
+    "email": "andrewgu@openai.com",
+    "date": "2026-09-30T21:46:22Z"
+  },
+  "object": {
+    "sha": "01fc69f4026735edfdf6789820549727a4867b11",
+    "type": "commit",
+    "url": "https://api.github.com/repos/openai/codex/git/commits/01fc69f4026735edfdf6789820549727a4867b11"
+  },
+  "tag": "rust-v0.159.3",
+  "message": "Release 0.159.3",
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "status": "deployed",
+  "version": "codex-cli 0.159.3",
+  "command": "${LINUX_USER_HOME}/.local/bin/codex",
+  "installed_directory": "${LINUX_USER_HOME}/.codex/overrides/daybreak-compat-0.159.3-linux-x86_64-r1",
+  "previous_target": "${LINUX_USER_HOME}/.codex/overrides/daybreak-compat-0.159.2-linux-x86_64-r1/bin/codex",
+  "previous_binary_sha256": "4326e7d727f10db3ed49d240a324284d2911ebcbca398ef3c8564dd2fe079df5",
+  "binary_sha256": "166e6ade345b6c836bd9f073bf73321a32ebbb101be99816bac36f486caa4dbe",
+  "backup_directory": "${LINUX_USER_HOME}/.codex/backups/cli-before-0.159.3-20261001-105520-778962",
+  "database_backups": [
+    {
+      "database": "goals_1.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "logs_2.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "memories_1.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "queue_1.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "state_5.sqlite",
+      "migrations": 58,
+      "integrity": "ok"
+    },
+    {
+      "database": "thread_history_1.sqlite",
+      "migrations": 7,
+      "integrity": "ok"
+    }
+  ],
+  "package_files_verified": 44,
+  "helper_commands": {
+    "bin/codex-code-mode-host": "Usage: codex-code-mode-host [OPTIONS]",
+    "codex-path/rg": "ripgrep 15.2.0 (rev e89fff89ac)",
+    "codex-resources/bwrap": "bubblewrap built for Codex"
+  },
+  "config_unchanged": true,
+  "config_sha256": "3465aac07dfe67a399266b7fba9b42027d150437984cb5f8f2d96948f2b283a3",
+  "catalog_unchanged": true,
+  "catalog_sha256": "100b3ecf20da8c164ffdcc26257af903dc12d26739f2154037adbaee939bc9f6",
+  "daybreak_compat_enabled": true,
+  "provider": "openai",
+  "isolated_validation": "${LINUX_USER_HOME}/.codex/backups/cli-before-0.159.3-20261001-105520-778962/installed-binary-validation.json",
+  "isolated_checks": [
+    "initialize_and_custom_openai_config",
+    "paginated_model_list_single_marker",
+    "seven_models_blue_standard_and_custom_transport",
+    "invalid_marker_blue_and_red_rejected_before_network",
+    "real_code_mode_host_execution_without_fallback",
+    "code_mode_exec_command",
+    "compat_disabled_removes_marker",
+    "persisted_thread_resume",
+    "catalog_unchanged",
+    "real_red_catalog_suppresses_synthetic_marker",
+    "compat_omitted_defaults_off",
+    "requires_openai_auth_gate",
+    "chatgpt_identity_gate",
+    "lowercase_openai_gate",
+    "real_blue_capability_gate"
+  ],
+  "mock_http_requests": 18,
+  "running_processes_before_activation": [
+    {
+      "pid": 543994,
+      "executable": "${LINUX_USER_HOME}/.codex/overrides/daybreak-compat-0.159.2-linux-x86_64-r1/bin/codex"
+    },
+    {
+      "pid": 556796,
+      "executable": "${LINUX_USER_HOME}/.codex/overrides/daybreak-compat-0.159.2-linux-x86_64-r1/bin/codex-code-mode-host"
+    },
+    {
+      "pid": 560367,
+      "executable": "${LINUX_USER_HOME}/.codex/overrides/daybreak-compat-0.159.2-linux-x86_64-r1/bin/codex"
+    }
+  ],
+  "daemon_restarted": false,
+  "completed_at": "2026-10-01T10:55:50.270239+08:00",
+  "resolved_command": "${LINUX_USER_HOME}/.codex/overrides/daybreak-compat-0.159.3-linux-x86_64-r1/bin/codex"
+}
