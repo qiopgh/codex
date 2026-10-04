@@ -1,0 +1,207 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling h2 v0.4.19
+   Compiling codex-utils-absolute-path v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/absolute-path)
+   Compiling codex-utils-rustls-provider v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/rustls-provider)
+   Compiling codex-utils-cache v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/cache)
+   Compiling codex-utils-redacted-string v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/redacted-string)
+   Compiling codex-utils-string v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/string)
+   Compiling codex-async-utils v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/async-utils)
+   Compiling codex-utils-pty v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/pty)
+   Compiling codex-utils-process v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/process)
+   Compiling codex-utils-stream-parser v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/stream-parser)
+   Compiling codex-utils-image v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/image)
+   Compiling codex-keyring-store v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/keyring-store)
+   Compiling codex-windows-sandbox v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/windows-sandbox-rs)
+   Compiling codex-uds v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/uds)
+   Compiling codex-build-info v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/build-info)
+   Compiling codex-utils-home-dir v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/home-dir)
+   Compiling codex-utils-path-uri v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/path-uri)
+   Compiling codex-execpolicy v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/execpolicy)
+   Compiling codex-extension-items v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/items)
+   Compiling codex-utils-path v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/path-utils)
+   Compiling codex-install-context v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/install-context)
+   Compiling codex-skills v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/skills)
+   Compiling codex-utils-template v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/template)
+   Compiling codex-terminal-detection v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/terminal-detection)
+   Compiling codex-file-search v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/file-search)
+   Compiling codex-file-watcher v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/file-watcher)
+   Compiling codex-core-plugin-common v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/core-plugin-common)
+   Compiling codex-websocket-auth v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/websocket-auth)
+   Compiling codex-collaboration-mode-templates v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/collaboration-mode-templates)
+   Compiling codex-code-mode-protocol v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/code-mode-protocol)
+   Compiling codex-diagnostics v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/diagnostics)
+   Compiling hyper v1.8.1
+   Compiling rama-http-backend v0.3.0-alpha.4
+   Compiling codex-experimental-api-macros v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/codex-experimental-api-macros)
+   Compiling codex-app-server-protocol-noop-macros v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/app-server-protocol-noop-macros)
+   Compiling codex-network-proxy v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/network-proxy)
+   Compiling codex-attachment-store v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/attachment-store)
+   Compiling hyper-util v0.1.20
+   Compiling codex-backend-openapi-models v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/codex-backend-openapi-models)
+   Compiling codex-process-hardening v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/process-hardening)
+   Compiling codex-linux-sandbox v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/linux-sandbox)
+   Compiling codex-user-verification v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/user-verification)
+   Compiling codex-utils-json-to-toml v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/json-to-toml)
+   Compiling codex-ansi-escape v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ansi-escape)
+   Compiling hyper-rustls v0.27.7
+   Compiling hyper-tls v0.6.0
+   Compiling reqwest v0.12.28
+   Compiling hyper-timeout v0.5.2
+   Compiling aws-smithy-http-client v1.1.12
+   Compiling tonic v0.14.3
+   Compiling axum v0.8.8
+   Compiling reqwest v0.13.4
+   Compiling wiremock v0.6.5
+   Compiling codex-mermaid v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/mermaid)
+   Compiling codex-realtime-webrtc v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/realtime-webrtc)
+   Compiling codex-utils-sleep-inhibitor v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/sleep-inhibitor)
+   Compiling codex-http-client v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/http-client)
+   Compiling codex-client v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/codex-client)
+   Compiling tonic-prost v0.14.3
+   Compiling codex-websocket-client v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/websocket-client)
+   Compiling opentelemetry-proto v0.31.0
+   Compiling codex-protocol v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/protocol)
+   Compiling opentelemetry-http v0.31.0
+   Compiling opentelemetry-otlp v0.31.0
+   Compiling aws-smithy-runtime v1.9.5
+   Compiling codex-workload-identity v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/workload-identity)
+   Compiling oauth2 v5.0.0
+   Compiling codex-utils-elapsed v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/elapsed)
+   Compiling codex-utils-fuzzy-match v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/fuzzy-match)
+   Compiling codex-cli v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/cli)
+   Compiling codex-tcp-tunnel v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/tcp-tunnel)
+   Compiling codex-responses-api-proxy v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/responses-api-proxy)
+   Compiling rmcp v3.2.0
+   Compiling aws-runtime v1.5.17
+   Compiling aws-sdk-ssooidc v1.93.0
+   Compiling aws-sdk-signin v1.2.0
+   Compiling aws-sdk-sso v1.91.0
+   Compiling aws-sdk-sts v1.95.0
+   Compiling codex-stdio-to-uds v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/stdio-to-uds)
+   Compiling aws-config v1.8.12
+   Compiling codex-aws-auth v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/aws-auth)
+   Compiling codex-file-system v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/file-system)
+   Compiling codex-api v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/codex-api)
+   Compiling codex-git-utils v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/git-utils)
+   Compiling codex-model-provider-info v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/model-provider-info)
+   Compiling codex-features v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/features)
+   Compiling codex-otel v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/otel)
+   Compiling codex-config v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/config)
+   Compiling codex-shell-command v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/shell-command)
+   Compiling codex-history v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/history)
+   Compiling codex-secrets v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/secrets)
+   Compiling codex-mxc-sandbox v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/mxc-sandbox)
+   Compiling codex-sandboxing v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/sandboxing)
+   Compiling codex-state v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/state)
+   Compiling codex-agent-identity v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/agent-identity)
+   Compiling codex-login v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/login)
+   Compiling codex-exec-server-protocol v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/exec-server-protocol)
+   Compiling codex-rollout v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/rollout)
+   Compiling codex-exec-server v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/exec-server)
+   Compiling codex-context-fragments v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/context-fragments)
+   Compiling codex-utils-output-truncation v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/output-truncation)
+   Compiling codex-response-debug-context v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/response-debug-context)
+   Compiling codex-guardian-context v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/guardian-context)
+   Compiling codex-prompts v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/prompts)
+   Compiling codex-shell-escalation v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/shell-escalation)
+   Compiling codex-feedback v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/feedback)
+   Compiling codex-models-manager v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/models-manager)
+   Compiling codex-code-mode v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/code-mode)
+   Compiling codex-utils-plugins v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/plugins)
+   Compiling codex-model-provider v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/model-provider)
+   Compiling codex-plugin v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/plugin)
+   Compiling codex-rmcp-client v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/rmcp-client)
+   Compiling codex-connectors v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/connectors)
+   Compiling codex-tools v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/tools)
+   Compiling codex-mcp v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/codex-mcp)
+   Compiling codex-app-server-protocol v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/app-server-protocol)
+   Compiling codex-hooks v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/hooks)
+   Compiling codex-apply-patch v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/apply-patch)
+   Compiling codex-extension-api v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/extension-api)
+   Compiling codex-agent-message-board-extension v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/agent-message-board)
+   Compiling codex-rollout-trace v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/rollout-trace)
+   Compiling codex-agent-graph-store v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/agent-graph-store)
+   Compiling codex-agent-roles v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/agent-roles)
+   Compiling codex-memories-read v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/memories/read)
+   Compiling codex-utils-git-discovery v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/git-discovery)
+   Compiling codex-utils-audio v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/audio)
+   Compiling codex-backend-client v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/backend-client)
+   Compiling codex-analytics v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/analytics)
+   Compiling codex-core-plugins v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/core-plugins)
+   Compiling codex-guardian-reviewer v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/guardian-reviewer)
+   Compiling codex-skills-extension v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/skills)
+   Compiling codex-thread-store v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/thread-store)
+   Compiling codex-core v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/core)
+warning: unused import: `crate::tools::context::ToolCallSource`
+  --> core/src/tools/registry.rs:16:5
+   |
+16 | use crate::tools::context::ToolCallSource;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+   Compiling codex-utils-cli v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/cli)
+   Compiling codex-connectors-extension v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/connectors)
+   Compiling codex-arg0 v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/arg0)
+   Compiling codex-git-attribution v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/git-attribution)
+   Compiling codex-cloud-config v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/cloud-config)
+   Compiling codex-home v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/codex-home)
+   Compiling codex-worktree v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/worktree)
+   Compiling codex-utils-sandbox-summary v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/sandbox-summary)
+   Compiling codex-cloud-tasks-client v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/cloud-tasks-client)
+   Compiling codex-message-history v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/message-history)
+   Compiling codex-utils-approval-presets v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/approval-presets)
+   Compiling codex-cloud-tasks-mock-client v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/cloud-tasks-mock-client)
+   Compiling codex-memories-write v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/memories/write)
+   Compiling codex-app-server-transport v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/app-server-transport)
+   Compiling codex-agent-extension v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/agent)
+   Compiling codex-image-generation-extension v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/image-generation)
+   Compiling codex-chatgpt v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/chatgpt)
+   Compiling codex-mcp-extension v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/mcp)
+   Compiling codex-goal-extension v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/goal)
+   Compiling codex-web-search-extension v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/web-search)
+   Compiling codex-memories-extension v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/memories)
+   Compiling codex-queue-extension v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/queue)
+   Compiling codex-external-agent-migration v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/external-agent-migration)
+   Compiling codex-guardian-v2 v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/guardian-v2)
+   Compiling codex-history-notes-extension v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/history-notes)
+   Compiling codex-ollama v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ollama)
+   Compiling codex-lmstudio v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/lmstudio)
+   Compiling codex-utils-oss v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/oss)
+   Compiling codex-app-server-daemon v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/app-server-daemon)
+   Compiling codex-app-server-test-client v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/app-server-test-client)
+   Compiling codex-app-server v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/app-server)
+warning: variable does not need to be mutable
+    --> app-server/src/lib.rs:1502:5
+     |
+1502 |     mut loader_overrides: LoaderOverrides,
+     |     ----^^^^^^^^^^^^^^^^
+     |     |
+     |     help: remove this `mut`
+     |
+     = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+   Compiling codex-app-server-client v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/app-server-client)
+   Compiling codex-tui v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/tui)
+   Compiling codex-exec v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/exec)
+   Compiling codex-cloud-tasks v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/cloud-tasks)
+warning: unused import: `codex_http_client::HttpClientFactory`
+  --> cloud-tasks/src/lib.rs:16:5
+   |
+16 | use codex_http_client::HttpClientFactory;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `codex_http_client::OutboundProxyPolicy`
+  --> cloud-tasks/src/lib.rs:17:5
+   |
+17 | use codex_http_client::OutboundProxyPolicy;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `codex-core` (lib) generated 1 warning (run `cargo fix --lib -p codex-core` to apply 1 suggestion)
+warning: `codex-cloud-tasks` (lib) generated 2 warnings (run `cargo fix --lib -p codex-cloud-tasks` to apply 2 suggestions)
+warning: `codex-app-server` (lib) generated 1 warning (run `cargo fix --lib -p codex-app-server` to apply 1 suggestion)
+    Finished `release` profile [optimized] target(s) in 25m 49s

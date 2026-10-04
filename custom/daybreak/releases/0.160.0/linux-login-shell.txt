@@ -1,0 +1,3 @@
+${LINUX_USER_HOME}/.local/bin/codex
+codex-cli 0.160.0
+${LINUX_USER_HOME}/.codex/overrides/daybreak-compat-0.160.0-linux-x86_64-r1/bin/codex

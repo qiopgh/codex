@@ -1,0 +1,31 @@
+{
+  "kind": "windows",
+  "status": "passed",
+  "pid": 650866,
+  "source": "${LINUX_USER_HOME}/codex-source-0.160.0-windows",
+  "command": [
+    "cargo",
+    "build",
+    "--release",
+    "--locked",
+    "--target",
+    "x86_64-pc-windows-gnu",
+    "-p",
+    "codex-cli",
+    "--bin",
+    "codex",
+    "-p",
+    "codex-windows-sandbox",
+    "--bin",
+    "codex-command-runner",
+    "--bin",
+    "codex-windows-sandbox-setup",
+    "-p",
+    "codex-windows-sandbox-service",
+    "--bin",
+    "codex-windows-sandbox-service"
+  ],
+  "started_at_utc": "2026-10-04T13:43:28.387637+00:00",
+  "exit_code": 0,
+  "completed_at_utc": "2026-10-04T14:10:40.629172+00:00"
+}

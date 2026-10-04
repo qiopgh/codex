@@ -1,0 +1,121 @@
+RUST_MIN_STACK=8388608 NEXTEST_PROFILE=local cargo nextest run --no-fail-fast "$@"
+   Compiling scopeguard v1.2.0
+   Compiling futures-util v0.3.34
+   Compiling zerovec v0.11.6
+   Compiling serde_json v1.0.149
+   Compiling sorted_vector_map v0.2.1
+   Compiling rustyline v14.0.0
+   Compiling lock_api v0.4.14
+   Compiling event-listener v5.4.1
+   Compiling either v1.15.0
+   Compiling parking_lot v0.12.5
+   Compiling spin v0.9.8
+   Compiling dashmap v6.1.0
+   Compiling tokio v1.52.3
+   Compiling prodash v31.0.0
+   Compiling moka v0.12.13
+   Compiling flume v0.12.0
+   Compiling tinystr v0.8.3
+   Compiling heapless v0.7.17
+   Compiling lock_free_hashtable v0.1.4
+   Compiling gix-features v0.46.2
+   Compiling static_interner v0.1.2
+   Compiling schemafy_core v0.5.2
+   Compiling icu_locale_core v2.2.0
+   Compiling potential_utf v0.1.4
+   Compiling gix-hash v0.23.0
+   Compiling gix-fs v0.19.2
+   Compiling postcard v1.1.3
+   Compiling icu_collections v2.2.0
+   Compiling gix-hashtable v0.13.0
+   Compiling pagable v0.4.1
+   Compiling gix-tempfile v21.0.2
+   Compiling gix-object v0.58.0
+   Compiling schemafy_lib v0.5.2
+   Compiling gix-commitgraph v0.35.0
+   Compiling icu_provider v2.2.0
+   Compiling gix-lock v21.0.2
+   Compiling futures-executor v0.3.34
+   Compiling futures v0.3.34
+   Compiling schemafy v0.5.2
+   Compiling icu_normalizer v2.2.0
+   Compiling icu_properties v2.2.0
+   Compiling gix-glob v0.24.0
+   Compiling gix-revwalk v0.29.0
+   Compiling gix-ref v0.61.0
+   Compiling starlark_map v0.14.2
+   Compiling debugserver-types v0.5.0
+   Compiling gix-revision v0.43.0
+   Compiling idna_adapter v1.2.1
+   Compiling gix-pack v0.68.0
+   Compiling idna v1.1.0
+   Compiling gix-shallow v0.10.0
+   Compiling starlark_syntax v0.14.2
+   Compiling tokio-util v0.7.18
+   Compiling tokio-graceful v0.2.2
+   Compiling rama-utils v0.3.0-alpha.4
+   Compiling h2 v0.4.19
+   Compiling tokio-stream v0.1.18
+   Compiling hickory-proto v0.25.2
+   Compiling rama-core v0.3.0-alpha.4
+   Compiling tokio-rustls v0.26.4
+   Compiling tokio-test v0.4.5
+   Compiling tokio-native-tls v0.3.1
+   Compiling tower v0.5.3
+   Compiling tower-http v0.6.8
+   Compiling starlark v0.14.2
+   Compiling codex-utils-cache v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/cache)
+   Compiling codex-utils-image v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/image)
+   Compiling codex-async-utils v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/async-utils)
+   Compiling url v2.5.8
+   Compiling gix-transport v0.55.1
+   Compiling rama-http-types v0.3.0-alpha.4
+   Compiling hickory-resolver v0.25.2
+   Compiling futures-intrusive v0.5.0
+   Compiling sqlx-core v0.9.0
+   Compiling hyper v1.8.1
+   Compiling rama-net v0.3.0-alpha.4
+   Compiling hyper-util v0.1.20
+   Compiling gix-protocol v0.59.0
+   Compiling hyper-rustls v0.27.7
+   Compiling hyper-tls v0.6.0
+   Compiling reqwest v0.12.28
+   Compiling gix-odb v0.78.0
+   Compiling gix-config v0.54.0
+   Compiling gix-discover v0.49.0
+   Compiling gix-refspec v0.39.0
+   Compiling gix-traverse v0.55.0
+   Compiling rama-dns v0.3.0-alpha.4
+   Compiling rama-http-headers v0.3.0-alpha.4
+   Compiling rama-unix v0.3.0-alpha.4
+   Compiling rama-udp v0.3.0-alpha.4
+   Compiling rama-tls-rustls v0.3.0-alpha.4
+   Compiling codex-http-client v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/http-client)
+   Compiling gix-diff v0.61.0
+   Compiling rama-http v0.3.0-alpha.4
+   Compiling rama-tcp v0.3.0-alpha.4
+   Compiling gix v0.81.0
+   Compiling rama-socks5 v0.3.0-alpha.4
+   Compiling sqlx-sqlite v0.9.0
+   Compiling sqlx-macros-core v0.9.0
+   Compiling codex-execpolicy v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/execpolicy)
+   Compiling codex-utils-pty v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/pty)
+   Compiling rama-http-core v0.3.0-alpha.4
+   Compiling sqlx-macros v0.9.0
+   Compiling sqlx v0.9.0
+   Compiling rama-http-backend v0.3.0-alpha.4
+   Compiling codex-network-proxy v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/network-proxy)
+   Compiling codex-protocol v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/protocol)
+   Compiling codex-file-system v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/file-system)
+   Compiling codex-history v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/history)
+   Compiling codex-git-utils v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/git-utils)
+   Compiling codex-state v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/state)
+    Finished `release` profile [optimized] target(s) in 2m 43s
+────────────
+ Nextest run ID c1047bdb-8596-4536-939a-371b0bd728eb with nextest profile: local
+    Starting 3 tests across 1 binary (204 tests skipped)
+        PASS [   0.036s] (1/3) codex-state sqlite::tests::open_read_write_pool_preserves_existing_settings_under_write_lock
+        PASS [   0.037s] (2/3) codex-state sqlite::tests::open_read_write_pool_preserves_wal_conversion_lock_error
+        PASS [   0.096s] (3/3) codex-state migrations::tests::writable_pool_reads_do_not_wait_for_an_existing_writer
+────────────
+     Summary [   0.120s] 3 tests run: 3 passed, 204 skipped

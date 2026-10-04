@@ -1,0 +1,38 @@
+[
+  {
+    "database": "goals_1.sqlite",
+    "migrations": 2,
+    "integrity": "ok",
+    "size_bytes": 32768
+  },
+  {
+    "database": "logs_2.sqlite",
+    "migrations": 2,
+    "integrity": "ok",
+    "size_bytes": 110510080
+  },
+  {
+    "database": "memories_1.sqlite",
+    "migrations": 2,
+    "integrity": "ok",
+    "size_bytes": 471040
+  },
+  {
+    "database": "queue_1.sqlite",
+    "migrations": 2,
+    "integrity": "ok",
+    "size_bytes": 40960
+  },
+  {
+    "database": "state_5.sqlite",
+    "migrations": 58,
+    "integrity": "ok",
+    "size_bytes": 1249280
+  },
+  {
+    "database": "thread_history_1.sqlite",
+    "migrations": 7,
+    "integrity": "ok",
+    "size_bytes": 957382656
+  }
+]

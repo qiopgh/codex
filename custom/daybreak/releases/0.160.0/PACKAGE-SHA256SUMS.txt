@@ -1,0 +1,2 @@
+7ad80f6cf882b6ef24b5df480855f7b4ccdf004e985921136d664fad0a002691  codex-0.160.0-openai-daybreak-r1-windows-x86_64.zip
+2ac306328e8a6e0e3e2c161793362852f63815077a82ad53326aff37bd23e522  codex-0.160.0-openai-daybreak-r1-linux-x86_64.tar.gz

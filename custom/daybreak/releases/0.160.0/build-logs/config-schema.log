@@ -1,0 +1,40 @@
+cargo run -p codex-config-schema --bin codex-write-config-schema
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded h2 v0.4.19
+   Compiling h2 v0.4.19
+   Compiling codex-utils-absolute-path v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/absolute-path)
+   Compiling codex-utils-rustls-provider v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/rustls-provider)
+   Compiling codex-utils-cache v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/cache)
+   Compiling codex-utils-string v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/string)
+   Compiling codex-utils-redacted-string v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/redacted-string)
+   Compiling codex-async-utils v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/async-utils)
+   Compiling codex-utils-pty v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/pty)
+   Compiling codex-utils-process v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/process)
+   Compiling codex-utils-image v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/image)
+   Compiling codex-utils-path-uri v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/path-uri)
+   Compiling codex-utils-home-dir v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/home-dir)
+   Compiling codex-extension-items v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/ext/items)
+   Compiling codex-execpolicy v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/execpolicy)
+   Compiling codex-utils-path v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/utils/path-utils)
+   Compiling hyper v1.8.1
+   Compiling rama-http-backend v0.3.0-alpha.4
+   Compiling hyper-util v0.1.20
+   Compiling codex-network-proxy v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/network-proxy)
+   Compiling hyper-tls v0.6.0
+   Compiling hyper-rustls v0.27.7
+   Compiling hyper-timeout v0.5.2
+   Compiling tonic v0.14.3
+   Compiling reqwest v0.12.28
+   Compiling tonic-prost v0.14.3
+   Compiling codex-http-client v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/http-client)
+   Compiling codex-client v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/codex-client)
+   Compiling codex-protocol v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/protocol)
+   Compiling codex-file-system v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/file-system)
+   Compiling codex-features v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/features)
+   Compiling codex-model-provider-info v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/model-provider-info)
+   Compiling codex-git-utils v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/git-utils)
+   Compiling codex-config v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/config)
+   Compiling codex-config-schema v0.160.0 (${LINUX_USER_HOME}/codex-source-0.160.0-linux/codex-rs/config-schema)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2m 07s
+     Running `${LINUX_USER_HOME}/codex-source-0.156.1/codex-rs/target/debug/codex-write-config-schema`
