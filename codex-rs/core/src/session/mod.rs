@@ -717,6 +717,17 @@ impl Session {
         let model_info = models_manager
             .get_model_info(model.as_str(), &config.to_models_manager_config())
             .await;
+        config
+            .model_provider
+            .validate_daybreak_app_compat(&model_info, /*program*/ None)?;
+        if config.model_provider.experimental_daybreak_app_compat
+            && config.model.as_deref() == Some("gpt-daybreak-red-latest")
+            && model != "gpt-daybreak-red-latest"
+        {
+            return Err(CodexErr::InvalidRequest(
+                "Daybreak UI 兼容标记不能作为模型回退；请选择真实模型。".to_owned(),
+            ));
+        }
         let auth = auth_manager.auth_cached();
         // Forked subagents keep their parent's activation with the copied history.
         // Fresh children restore configured preferences before applying startup defaults.

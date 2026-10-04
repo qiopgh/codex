@@ -70,6 +70,7 @@ async fn retries_on_early_close() {
         requires_openai_auth: false,
         supports_websockets: false,
         supports_standalone_web_search: false,
+        experimental_daybreak_app_compat: false,
         include_internal_metadata: false,
     };
 

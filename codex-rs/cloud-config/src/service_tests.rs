@@ -568,7 +568,7 @@ async fn invalid_cloud_provider_does_not_replace_cached_bundle() {
         .expect("cache valid bundle");
 
     for contents in [
-        "[model_providers.openai]\nname = 'Reserved'",
+        "[model_providers.ollama]\nname = 'Reserved'",
         "[model_providers.gateway]\nname = '   '",
         "[model_providers.gateway]\nbase_url = 'https://gateway.example/v1'",
         "[model_providers.amazon-bedrock]\nname = 'Managed Bedrock'",
