@@ -1,0 +1,362 @@
+{
+  "version": "0.162.1",
+  "tag": "rust-v0.162.1",
+  "source_commit": "092d3acd6bec3e3a14bdc7e7a2810ab628ab759d",
+  "architecture": "x86_64/amd64 64-bit",
+  "patch_revision": "openai-daybreak-r1",
+  "completed_at": "2026-10-13T11:49:18.384805+08:00",
+  "artifacts": [
+    {
+      "platform": "windows",
+      "file": "codex-0.162.1-openai-daybreak-r1-windows-x86_64.zip",
+      "size_bytes": 349976286,
+      "sha256": "37b0f534bc449430f7185f30328c94ac8f9b464cb19885187b9798603a43d0e0"
+    },
+    {
+      "platform": "linux",
+      "file": "codex-0.162.1-openai-daybreak-r1-linux-x86_64.tar.gz",
+      "size_bytes": 192142106,
+      "sha256": "6033f2999d1f548040343bdeb6a7b304452ad7cf2604d82fdfc9fe3477cdecc7"
+    }
+  ],
+  "binary_validation": {
+    "windows": {
+      "http": {
+        "binary_sha256": "a2043bf31f0865bbd4627905b17c49cb525ebd42f98501a62c8990773aad8c2c",
+        "checks": [
+          "custom_provider_capability_overrides",
+          "initialize_and_custom_openai_config",
+          "paginated_model_list_single_marker",
+          "seven_models_blue_standard_and_custom_transport",
+          "invalid_marker_blue_and_red_rejected_before_network",
+          "real_code_mode_host_execution_without_fallback",
+          "code_mode_exec_command",
+          "compat_disabled_removes_marker",
+          "persisted_thread_resume",
+          "catalog_unchanged",
+          "real_red_catalog_suppresses_synthetic_marker",
+          "compat_omitted_defaults_off",
+          "requires_openai_auth_gate",
+          "chatgpt_identity_gate",
+          "upstream_api_key_program_gate_preserved",
+          "lowercase_openai_gate",
+          "real_blue_capability_gate"
+        ],
+        "inference_requests": 18,
+        "database_copies": [
+          {
+            "database": "goals_1.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "logs_2.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "memories_1.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "queue_1.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "state_5.sqlite",
+            "old_migrations": 58,
+            "new_migrations": 59
+          },
+          {
+            "database": "thread_history_1.sqlite",
+            "old_migrations": 7,
+            "new_migrations": 8
+          }
+        ],
+        "code_mode_host": {
+          "path": "${WORKSPACE}\\outputs\\codex-0.162.1\\codex-0.162.1-openai-daybreak-r1-windows-x86_64\\bin\\codex-code-mode-host.exe",
+          "sha256": "9f865a748c984492ca9b69aac75680e4954f31311c43ec33ddbdae0ed77bd4bd",
+          "observed_pids": [
+            4492
+          ],
+          "fallback_disabled": true
+        }
+      },
+      "websocket": {
+        "binary_sha256": "a2043bf31f0865bbd4627905b17c49cb525ebd42f98501a62c8990773aad8c2c",
+        "checks": [
+          "custom_provider_capability_overrides",
+          "initialize_and_custom_openai_config",
+          "paginated_model_list_single_marker",
+          "seven_models_blue_standard_and_custom_transport",
+          "invalid_marker_blue_and_red_rejected_before_network",
+          "real_code_mode_host_execution_without_fallback",
+          "code_mode_exec_command",
+          "compat_disabled_removes_marker",
+          "persisted_thread_resume",
+          "catalog_unchanged",
+          "real_red_catalog_suppresses_synthetic_marker",
+          "compat_omitted_defaults_off",
+          "requires_openai_auth_gate",
+          "chatgpt_identity_gate",
+          "upstream_api_key_program_gate_preserved",
+          "lowercase_openai_gate",
+          "real_blue_capability_gate"
+        ],
+        "inference_requests": 18,
+        "database_copies": [
+          {
+            "database": "goals_1.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "logs_2.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "memories_1.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "queue_1.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "state_5.sqlite",
+            "old_migrations": 58,
+            "new_migrations": 59
+          },
+          {
+            "database": "thread_history_1.sqlite",
+            "old_migrations": 7,
+            "new_migrations": 8
+          }
+        ],
+        "code_mode_host": {
+          "path": "${WORKSPACE}\\outputs\\codex-0.162.1\\codex-0.162.1-openai-daybreak-r1-windows-x86_64\\bin\\codex-code-mode-host.exe",
+          "sha256": "9f865a748c984492ca9b69aac75680e4954f31311c43ec33ddbdae0ed77bd4bd",
+          "observed_pids": [
+            18728
+          ],
+          "fallback_disabled": true
+        }
+      }
+    },
+    "linux": {
+      "http": {
+        "binary_sha256": "116826e775272509e771c560130eae45bd85c4869f6640c06e8995ceb7da992e",
+        "checks": [
+          "custom_provider_capability_overrides",
+          "initialize_and_custom_openai_config",
+          "paginated_model_list_single_marker",
+          "seven_models_blue_standard_and_custom_transport",
+          "invalid_marker_blue_and_red_rejected_before_network",
+          "real_code_mode_host_execution_without_fallback",
+          "code_mode_exec_command",
+          "compat_disabled_removes_marker",
+          "persisted_thread_resume",
+          "catalog_unchanged",
+          "real_red_catalog_suppresses_synthetic_marker",
+          "compat_omitted_defaults_off",
+          "requires_openai_auth_gate",
+          "chatgpt_identity_gate",
+          "upstream_api_key_program_gate_preserved",
+          "lowercase_openai_gate",
+          "real_blue_capability_gate"
+        ],
+        "inference_requests": 18,
+        "database_copies": [
+          {
+            "database": "goals_1.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "logs_2.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "memories_1.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "queue_1.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "state_5.sqlite",
+            "old_migrations": 58,
+            "new_migrations": 59
+          },
+          {
+            "database": "thread_history_1.sqlite",
+            "old_migrations": 7,
+            "new_migrations": 8
+          }
+        ],
+        "code_mode_host": {
+          "path": "${LINUX_USER_HOME}/codex-build-0.162.1/dist/codex-0.162.1-openai-daybreak-r1-linux-x86_64/bin/codex-code-mode-host",
+          "sha256": "ec71830690a7c0024916ee0c99fbdc635bc6e747ff665ea4f03a8389bbcb6b30",
+          "observed_pids": [
+            36258
+          ],
+          "fallback_disabled": true
+        }
+      },
+      "websocket": {
+        "binary_sha256": "116826e775272509e771c560130eae45bd85c4869f6640c06e8995ceb7da992e",
+        "checks": [
+          "custom_provider_capability_overrides",
+          "initialize_and_custom_openai_config",
+          "paginated_model_list_single_marker",
+          "seven_models_blue_standard_and_custom_transport",
+          "invalid_marker_blue_and_red_rejected_before_network",
+          "real_code_mode_host_execution_without_fallback",
+          "code_mode_exec_command",
+          "compat_disabled_removes_marker",
+          "persisted_thread_resume",
+          "catalog_unchanged",
+          "real_red_catalog_suppresses_synthetic_marker",
+          "compat_omitted_defaults_off",
+          "requires_openai_auth_gate",
+          "chatgpt_identity_gate",
+          "upstream_api_key_program_gate_preserved",
+          "lowercase_openai_gate",
+          "real_blue_capability_gate"
+        ],
+        "inference_requests": 18,
+        "database_copies": [
+          {
+            "database": "goals_1.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "logs_2.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "memories_1.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "queue_1.sqlite",
+            "old_migrations": 2,
+            "new_migrations": 2
+          },
+          {
+            "database": "state_5.sqlite",
+            "old_migrations": 58,
+            "new_migrations": 59
+          },
+          {
+            "database": "thread_history_1.sqlite",
+            "old_migrations": 7,
+            "new_migrations": 8
+          }
+        ],
+        "code_mode_host": {
+          "path": "${LINUX_USER_HOME}/codex-build-0.162.1/dist/codex-0.162.1-openai-daybreak-r1-linux-x86_64/bin/codex-code-mode-host",
+          "sha256": "ec71830690a7c0024916ee0c99fbdc635bc6e747ff665ea4f03a8389bbcb6b30",
+          "observed_pids": [
+            36213
+          ],
+          "fallback_disabled": true
+        }
+      }
+    }
+  },
+  "rust_tests": {
+    "provider-config-tests": 45,
+    "provider-catalog-tests": 2,
+    "daybreak-integration-tests": 3,
+    "database-concurrency-tests": 11,
+    "total_selected_passed": 61,
+    "full_workspace_suite_run": false
+  },
+  "source_validation": {
+    "source_commit": "092d3acd6bec3e3a14bdc7e7a2810ab628ab759d",
+    "diff_check": true,
+    "patch_applies_to_clean_release": true,
+    "source_parity_files": 28,
+    "windows_sql_checksums_verified": 75,
+    "linux_sql_lf_verified": true,
+    "config_schema_generated": true,
+    "internal_metadata_not_configurable": true,
+    "upstream_account_and_api_key_policy_unchanged": true,
+    "provider_clippy": true,
+    "repository_format": true,
+    "bazel_lock_update": true,
+    "patch_sha256": "51bbf849ecf22d8fbfb7da260dc0b533f6025be70718ce5f20f771180b9c5766",
+    "selected_checks_source_unchanged": true,
+    "files": [
+      "codex-rs/Cargo.lock",
+      "codex-rs/app-server/src/config_manager_service_tests.rs",
+      "codex-rs/app-server/src/request_processors/catalog_processor.rs",
+      "codex-rs/app-server/src/request_processors/thread_processor_tests.rs",
+      "codex-rs/app-server/src/request_processors/turn_processor.rs",
+      "codex-rs/app-server/tests/daybreak_app_compat.rs",
+      "codex-rs/cloud-config/src/service_tests.rs",
+      "codex-rs/config/src/config_toml.rs",
+      "codex-rs/config/src/model_provider_requirements_tests.rs",
+      "codex-rs/config/src/thread_config.rs",
+      "codex-rs/config/src/thread_config/remote.rs",
+      "codex-rs/core/config.schema.json",
+      "codex-rs/core/src/client.rs",
+      "codex-rs/core/src/client_tests.rs",
+      "codex-rs/core/src/session/mod.rs",
+      "codex-rs/core/tests/daybreak_app_compat.rs",
+      "codex-rs/core/tests/responses_headers.rs",
+      "codex-rs/core/tests/suite/client.rs",
+      "codex-rs/core/tests/suite/client_websockets.rs",
+      "codex-rs/core/tests/suite/stream_error_allows_next_turn.rs",
+      "codex-rs/core/tests/suite/stream_no_completed.rs",
+      "codex-rs/login/src/auth_env_telemetry.rs",
+      "codex-rs/model-provider-info/src/daybreak_app_compat.rs",
+      "codex-rs/model-provider-info/src/daybreak_app_compat_tests.rs",
+      "codex-rs/model-provider-info/src/lib.rs",
+      "codex-rs/model-provider-info/src/model_provider_info_tests.rs",
+      "codex-rs/model-provider/src/provider.rs",
+      "justfile"
+    ]
+  },
+  "installed_this_turn": true,
+  "windows_status": "awaiting_manual_renames",
+  "windows_pending_renames": [
+    {
+      "from": "${CODEX_HOME}\\bin\\codex-code-mode-host.new.exe",
+      "to": "${CODEX_HOME}\\bin\\codex-code-mode-host.exe"
+    },
+    {
+      "from": "${CODEX_HOME}\\bin\\codex.new.exe",
+      "to": "${CODEX_HOME}\\bin\\codex.exe"
+    }
+  ],
+  "windows_entry_versions": {
+    "formal_version": "codex-cli 0.160.0",
+    "staged_version": "codex-cli 0.162.1",
+    "deployed_files_verified": 48
+  },
+  "linux_status": "deployed",
+  "fresh_linux_login_shell_verified": true,
+  "live_app_ui_tested": false,
+  "real_upstream_inference_sent": false,
+  "existing_app_or_ssh_server_stopped": false,
+  "notes": [
+    "两平台最终包分别完成 HTTP、WebSocket 本机模拟验证，不能据此证明真实上游权限。",
+    "保留新版 provider capabilities、原生 Daybreak 默认设置、API-key 程序门槛和请求协议变化；增加能力覆盖及 SQLite 完整性检查回归。",
+    "Windows 使用 CRLF，Linux 使用 LF；数据库一致性副本由只读连接和 SQLite backup 制作。",
+    "配置及模型目录保持原样；未关闭 App 或终止已有远端 App Server。"
+  ]
+}

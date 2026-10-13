@@ -1,0 +1,16 @@
+[
+  {
+    "platform": "windows",
+    "name": "codex-package-x86_64-pc-windows-msvc.tar.gz",
+    "url": "https://github.com/openai/codex/releases/download/rust-v0.162.1/codex-package-x86_64-pc-windows-msvc.tar.gz",
+    "sha256": "3e993a82ff393f4530558dcaadb36bb4f0fd1ea7243e621348e40b469f900f6a",
+    "size": 159746536
+  },
+  {
+    "platform": "linux",
+    "name": "codex-package-x86_64-unknown-linux-musl.tar.gz",
+    "url": "https://github.com/openai/codex/releases/download/rust-v0.162.1/codex-package-x86_64-unknown-linux-musl.tar.gz",
+    "sha256": "a676f5722aae0d86cbe3764332f08eab1fdd89dc0a300b3ad4ffbf48611fa3e3",
+    "size": 162905879
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "official_repository": "https://github.com/openai/codex",
+  "official_tag": "rust-v0.162.1",
+  "official_source_commit": "092d3acd6bec3e3a14bdc7e7a2810ab628ab759d",
+  "custom_repository": "https://github.com/qiopgh/codex",
+  "custom_source_commit": "36250b5778b7904848a4ad86379752813418d178",
+  "custom_source_tree": "98b16e3dc793e86dfdf12fab65d8268697d81ae5",
+  "custom_branch": "custom/daybreak-0.162.1-r1",
+  "custom_tag": "custom-v0.162.1-daybreak-r1",
+  "patch_sha256": "51bbf849ecf22d8fbfb7da260dc0b533f6025be70718ce5f20f771180b9c5766",
+  "patch_matches_custom_source_commit": true,
+  "windows_migration_input": "CRLF，独立 Windows 源码准备，不写入此分支",
+  "linux_migration_input": "LF",
+  "selected_rust_tests_passed": 61,
+  "artifacts": [
+    {
+      "platform": "windows",
+      "file": "codex-0.162.1-openai-daybreak-r1-windows-x86_64.zip",
+      "size_bytes": 349976286,
+      "sha256": "37b0f534bc449430f7185f30328c94ac8f9b464cb19885187b9798603a43d0e0"
+    },
+    {
+      "platform": "linux",
+      "file": "codex-0.162.1-openai-daybreak-r1-linux-x86_64.tar.gz",
+      "size_bytes": 192142106,
+      "sha256": "6033f2999d1f548040343bdeb6a7b304452ad7cf2604d82fdfc9fe3477cdecc7"
+    }
+  ],
+  "archive_note": "归档提交以此源码提交为父提交；归档提交与标签对象由发布记录单独记录。"
+}

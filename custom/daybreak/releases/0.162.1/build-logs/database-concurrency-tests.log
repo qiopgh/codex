@@ -1,0 +1,32 @@
+RUST_MIN_STACK=8388608 NEXTEST_PROFILE=local cargo nextest run --no-fail-fast "$@"
+   Compiling codex-utils-rustls-provider v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/utils/rustls-provider)
+   Compiling codex-utils-cache v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/utils/cache)
+   Compiling codex-utils-path-uri v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/utils/path-uri)
+   Compiling codex-execpolicy v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/execpolicy)
+   Compiling codex-async-utils v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/async-utils)
+   Compiling codex-utils-pty v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/utils/pty)
+   Compiling codex-utils-image v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/utils/image)
+   Compiling codex-http-client v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/http-client)
+   Compiling codex-network-proxy v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/network-proxy)
+   Compiling codex-protocol v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/protocol)
+   Compiling codex-file-system v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/file-system)
+   Compiling codex-history v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/history)
+   Compiling codex-git-utils v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/git-utils)
+   Compiling codex-state v0.162.1 (${LINUX_USER_HOME}/codex-source-0.162.1-linux/codex-rs/state)
+    Finished `release` profile [optimized] target(s) in 1m 54s
+────────────
+ Nextest run ID 7390637a-6b2b-46d6-94cc-1b3b4495d27a with nextest profile: local
+    Starting 11 tests across 1 binary (213 tests skipped)
+        PASS [   0.032s] ( 1/11) codex-state sqlite::validation::tests::concurrent_first_checks_share_an_in_flight_attempt
+        PASS [   0.037s] ( 2/11) codex-state sqlite::validation::tests::cancelled_check_counts_as_an_attempt
+        PASS [   0.037s] ( 3/11) codex-state sqlite::tests::open_read_write_pool_preserves_wal_conversion_lock_error
+        PASS [   0.041s] ( 4/11) codex-state sqlite::validation::tests::corruption_attempts_are_cached_per_owner
+        PASS [   0.043s] ( 5/11) codex-state sqlite::tests::open_read_write_pool_preserves_existing_settings_under_write_lock
+        PASS [   0.051s] ( 6/11) codex-state sqlite::validation::tests::interrupted_check_leaves_connection_usable
+        PASS [   0.086s] ( 7/11) codex-state sqlite::validation::tests::locked_database_does_not_count_as_corruption
+        PASS [   0.106s] ( 8/11) codex-state migrations::tests::writable_pool_reads_do_not_wait_for_an_existing_writer
+        PASS [   0.135s] ( 9/11) codex-state sqlite::validation::tests::repeated_pool_opens_share_completed_and_incomplete_attempts
+        PASS [   0.320s] (10/11) codex-state sqlite::validation::tests::quick_check_failure_is_recovered_before_runtime_init_returns
+        PASS [   1.471s] (11/11) codex-state sqlite::validation::tests::runtime_opens_recover_or_report_corruption_by_database_policy
+────────────
+     Summary [   1.479s] 11 tests run: 11 passed, 213 skipped

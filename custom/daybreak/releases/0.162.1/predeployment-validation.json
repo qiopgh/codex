@@ -1,0 +1,37 @@
+{
+  "ready_to_deploy": true,
+  "version": "0.162.1",
+  "source_commit": "092d3acd6bec3e3a14bdc7e7a2810ab628ab759d",
+  "patch_sha256": "51bbf849ecf22d8fbfb7da260dc0b533f6025be70718ce5f20f771180b9c5766",
+  "binary_reports": [
+    {
+      "platform": "windows",
+      "transport": "http",
+      "binary_sha256": "a2043bf31f0865bbd4627905b17c49cb525ebd42f98501a62c8990773aad8c2c",
+      "checks": 17,
+      "migrations_after": 75
+    },
+    {
+      "platform": "windows",
+      "transport": "websocket",
+      "binary_sha256": "a2043bf31f0865bbd4627905b17c49cb525ebd42f98501a62c8990773aad8c2c",
+      "checks": 17,
+      "migrations_after": 75
+    },
+    {
+      "platform": "linux",
+      "transport": "http",
+      "binary_sha256": "116826e775272509e771c560130eae45bd85c4869f6640c06e8995ceb7da992e",
+      "checks": 17,
+      "migrations_after": 75
+    },
+    {
+      "platform": "linux",
+      "transport": "websocket",
+      "binary_sha256": "116826e775272509e771c560130eae45bd85c4869f6640c06e8995ceb7da992e",
+      "checks": 17,
+      "migrations_after": 75
+    }
+  ],
+  "official_latest_rechecked": true
+}

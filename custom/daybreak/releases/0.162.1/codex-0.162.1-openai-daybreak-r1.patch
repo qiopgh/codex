@@ -1,0 +1,2706 @@
+diff --git a/codex-rs/Cargo.lock b/codex-rs/Cargo.lock
+index 1cee1174c..b30500b71 100644
+--- a/codex-rs/Cargo.lock
++++ b/codex-rs/Cargo.lock
+@@ -276,7 +276,7 @@ checksum = "2a4385e2e34eb35d6b3efe798b9eb88096925d87726c0798709bf56d9ed84af3"
+ 
+ [[package]]
+ name = "app_test_support"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -1895,7 +1895,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-agent-extension"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-core",
+@@ -1907,7 +1907,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-agent-graph-store"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-protocol",
+  "codex-state",
+@@ -1922,7 +1922,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-agent-identity"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -1942,7 +1942,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-agent-message-board-client"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -1965,7 +1965,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-agent-message-board-extension"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "base64 0.22.1",
+  "caseless",
+@@ -1988,7 +1988,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-agent-roles"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-config",
+  "codex-file-system",
+@@ -2001,7 +2001,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-analytics"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-app-server-protocol",
+  "codex-git-utils",
+@@ -2024,7 +2024,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-ansi-escape"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "ansi-to-tui",
+  "pretty_assertions",
+@@ -2035,7 +2035,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-api"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "assert_matches",
+@@ -2073,7 +2073,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-app-server"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "app_test_support",
+@@ -2187,7 +2187,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-app-server-client"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-app-server",
+  "codex-app-server-protocol",
+@@ -2214,7 +2214,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-app-server-daemon"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "blake3",
+@@ -2240,7 +2240,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-app-server-protocol"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-app-server-protocol-noop-macros",
+@@ -2274,11 +2274,11 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-app-server-protocol-noop-macros"
+-version = "0.0.0"
++version = "0.162.1"
+ 
+ [[package]]
+ name = "codex-app-server-test-client"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "clap",
+@@ -2300,7 +2300,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-app-server-transport"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "axum",
+  "base64 0.22.1",
+@@ -2342,7 +2342,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-apply-patch"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "assert_cmd",
+@@ -2362,7 +2362,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-arg0"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-apply-patch",
+@@ -2386,7 +2386,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-async-utils"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "pretty_assertions",
+  "rand 0.9.3",
+@@ -2396,7 +2396,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-attachment-store"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "pretty_assertions",
+  "serde",
+@@ -2406,7 +2406,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-aws-auth"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "aws-config",
+  "aws-credential-types",
+@@ -2432,7 +2432,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-backend-client"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-api",
+@@ -2452,7 +2452,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-backend-openapi-models"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "serde",
+  "serde_json",
+@@ -2461,7 +2461,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-build-info"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-install-context",
+  "pretty_assertions",
+@@ -2474,7 +2474,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-bwrap"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "cc",
+  "libc",
+@@ -2483,7 +2483,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-chatgpt"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "clap",
+@@ -2505,7 +2505,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-cli"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "app_test_support",
+@@ -2607,7 +2607,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-client"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-http-client",
+  "eventsource-stream",
+@@ -2621,7 +2621,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-cloud-client"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "async-stream",
+@@ -2645,7 +2645,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-cloud-config"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "base64 0.22.1",
+  "chrono",
+@@ -2671,7 +2671,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-cloud-tasks"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -2704,7 +2704,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-cloud-tasks-client"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -2719,7 +2719,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-cloud-tasks-mock-client"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "chrono",
+  "codex-cloud-tasks-client",
+@@ -2728,7 +2728,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-code-mode"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-code-mode-protocol",
+  "codex-http-client",
+@@ -2751,7 +2751,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-code-mode-host"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "axum",
+@@ -2780,7 +2780,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-code-mode-protocol"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-protocol",
+  "glob",
+@@ -2798,7 +2798,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-code-mode-runtime"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-code-mode-protocol",
+@@ -2816,11 +2816,11 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-collaboration-mode-templates"
+-version = "0.0.0"
++version = "0.162.1"
+ 
+ [[package]]
+ name = "codex-config"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -2870,7 +2870,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-config-schema"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "clap",
+@@ -2879,7 +2879,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-connectors"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "arc-swap",
+@@ -2901,7 +2901,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-connectors-extension"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-connectors",
+  "codex-core-plugins",
+@@ -2915,7 +2915,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-context-fragments"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-protocol",
+  "codex-utils-string",
+@@ -2925,7 +2925,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-core"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "arc-swap",
+@@ -3067,7 +3067,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-core-api"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-analytics",
+  "codex-app-server-protocol",
+@@ -3090,7 +3090,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-core-plugin-common"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-utils-absolute-path",
+  "semver",
+@@ -3101,7 +3101,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-core-plugins"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -3158,7 +3158,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-diagnostics"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "libc",
+  "pretty_assertions",
+@@ -3166,7 +3166,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-exec"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "assert_cmd",
+@@ -3218,7 +3218,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-exec-server"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "arc-swap",
+@@ -3287,7 +3287,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-exec-server-protocol"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-file-system",
+@@ -3304,7 +3304,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-exec-server-test-support"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-exec-server",
+@@ -3319,7 +3319,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-execpolicy"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "clap",
+@@ -3337,7 +3337,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-experimental-api-macros"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "proc-macro2",
+  "quote",
+@@ -3346,7 +3346,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-extension-api"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-api",
+  "codex-config",
+@@ -3368,7 +3368,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-extension-items"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-utils-absolute-path",
+  "pretty_assertions",
+@@ -3380,7 +3380,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-external-agent-migration"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "chrono",
+  "codex-analytics",
+@@ -3410,7 +3410,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-features"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-network-proxy",
+  "codex-protocol",
+@@ -3424,7 +3424,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-feedback"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "bytes",
+@@ -3451,7 +3451,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-file-search"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "clap",
+@@ -3467,7 +3467,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-file-system"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "bytes",
+  "codex-protocol",
+@@ -3479,7 +3479,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-file-watcher"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "notify",
+  "pretty_assertions",
+@@ -3490,7 +3490,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-git-attribution"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-backend-client",
+  "codex-extension-api",
+@@ -3503,7 +3503,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-git-utils"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -3531,7 +3531,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-goal-extension"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -3556,7 +3556,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-guardian-context"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-context-fragments",
+  "codex-history",
+@@ -3568,7 +3568,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-guardian-reviewer"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-analytics",
+@@ -3593,7 +3593,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-guardian-v2"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-analytics",
+@@ -3630,7 +3630,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-history"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-protocol",
+@@ -3642,7 +3642,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-history-notes-extension"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-analytics",
+  "codex-client",
+@@ -3667,7 +3667,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-home"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-extension-api",
+  "codex-utils-absolute-path",
+@@ -3679,7 +3679,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-hooks"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "async-channel",
+@@ -3707,7 +3707,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-http-client"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "bytes",
+  "codex-utils-cargo-bin",
+@@ -3743,7 +3743,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-image-generation-extension"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-api",
+@@ -3771,7 +3771,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-install-context"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-utils-absolute-path",
+  "codex-utils-home-dir",
+@@ -3784,7 +3784,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-keyring-store"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "keyring",
+  "pretty_assertions",
+@@ -3795,7 +3795,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-linux-sandbox"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "clap",
+  "codex-core",
+@@ -3824,7 +3824,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-lmstudio"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-core",
+  "codex-http-client",
+@@ -3838,7 +3838,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-login"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -3884,7 +3884,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-mcp"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "arc-swap",
+@@ -3924,7 +3924,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-mcp-extension"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "axum",
+@@ -3957,7 +3957,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-memories-extension"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-core",
+  "codex-extension-api",
+@@ -3979,7 +3979,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-memories-read"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-protocol",
+  "codex-shell-command",
+@@ -3989,7 +3989,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-memories-write"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -4026,7 +4026,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-mermaid"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "insta",
+  "pretty_assertions",
+@@ -4035,7 +4035,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-message-history"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-config",
+  "memchr",
+@@ -4049,7 +4049,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-model-provider"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "base64 0.22.1",
+  "chrono",
+@@ -4083,7 +4083,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-model-provider-info"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-client",
+  "codex-protocol",
+@@ -4101,7 +4101,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-models-manager"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "chrono",
+  "codex-http-client",
+@@ -4120,7 +4120,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-mxc-sandbox"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "appcontainer_common",
+@@ -4142,7 +4142,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-network-proxy"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -4191,7 +4191,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-ollama"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "assert_matches",
+  "async-stream",
+@@ -4211,7 +4211,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-otel"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "bytes",
+  "chrono",
+@@ -4248,7 +4248,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-otel-trace-websocket"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "axum",
+@@ -4259,7 +4259,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-plugin"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-config",
+  "codex-core-plugin-common",
+@@ -4274,7 +4274,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-process-hardening"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "libc",
+  "pretty_assertions",
+@@ -4282,7 +4282,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-prompts"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-collaboration-mode-templates",
+@@ -4299,7 +4299,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-protocol"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "chardetng",
+@@ -4344,7 +4344,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-queue-extension"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-core",
+@@ -4365,7 +4365,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-realtime-webrtc"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-build-info",
+@@ -4384,7 +4384,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-response-debug-context"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-api",
+@@ -4395,7 +4395,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-responses-api-proxy"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "clap",
+@@ -4412,7 +4412,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-rmcp-client"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "axum",
+@@ -4463,7 +4463,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-rollout"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -4494,7 +4494,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-rollout-trace"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-code-mode",
+@@ -4510,7 +4510,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-sandboxing"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-mxc-sandbox",
+@@ -4538,7 +4538,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-secrets"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "age",
+  "anyhow",
+@@ -4559,7 +4559,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-shell-command"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -4582,7 +4582,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-shell-escalation"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "clap",
+@@ -4602,7 +4602,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-skills"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-protocol",
+  "codex-shell-command",
+@@ -4619,7 +4619,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-skills-extension"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "assert_matches",
+  "blake3",
+@@ -4657,7 +4657,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-state"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -4684,7 +4684,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-stdio-to-uds"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-uds",
+@@ -4696,7 +4696,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-tcp-tunnel"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "bytes",
+@@ -4717,7 +4717,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-terminal-detection"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "pretty_assertions",
+  "tracing",
+@@ -4725,7 +4725,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-test-binary-support"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-arg0",
+  "tempfile",
+@@ -4733,7 +4733,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-thread-manager-sample"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "clap",
+@@ -4744,7 +4744,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-thread-store"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "chrono",
+  "codex-app-server-protocol",
+@@ -4775,7 +4775,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-tools"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "bitflags 2.13.1",
+  "codex-code-mode",
+@@ -4801,7 +4801,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-tui"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "app_test_support",
+@@ -4927,7 +4927,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-uds"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "async-io",
+  "libc",
+@@ -4941,7 +4941,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-user-verification"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "base64 0.22.1",
+  "core-foundation 0.10.1",
+@@ -4961,7 +4961,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-absolute-path"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "dirs",
+  "dunce",
+@@ -4975,14 +4975,14 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-approval-presets"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-protocol",
+ ]
+ 
+ [[package]]
+ name = "codex-utils-audio"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-protocol",
+@@ -4996,7 +4996,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-cache"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "lru",
+  "sha1 0.10.6",
+@@ -5005,7 +5005,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-cargo-bin"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "assert_cmd",
+  "runfiles",
+@@ -5014,7 +5014,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-cli"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "clap",
+  "codex-protocol",
+@@ -5026,15 +5026,15 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-elapsed"
+-version = "0.0.0"
++version = "0.162.1"
+ 
+ [[package]]
+ name = "codex-utils-fuzzy-match"
+-version = "0.0.0"
++version = "0.162.1"
+ 
+ [[package]]
+ name = "codex-utils-git-discovery"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-git-utils",
+  "codex-utils-absolute-path",
+@@ -5047,7 +5047,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-home-dir"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-utils-absolute-path",
+  "dirs",
+@@ -5057,7 +5057,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-image"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-utils-cache",
+@@ -5071,7 +5071,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-json-to-toml"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "pretty_assertions",
+  "serde_json",
+@@ -5080,7 +5080,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-oss"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-core",
+  "codex-lmstudio",
+@@ -5090,7 +5090,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-output-truncation"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-protocol",
+  "codex-utils-string",
+@@ -5100,7 +5100,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-path"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-utils-absolute-path",
+  "dunce",
+@@ -5111,7 +5111,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-path-uri"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-utils-absolute-path",
+@@ -5127,7 +5127,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-plugins"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-exec-server",
+  "codex-exec-server-protocol",
+@@ -5141,7 +5141,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-process"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "pretty_assertions",
+  "tokio",
+@@ -5149,7 +5149,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-pty"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-utils-cargo-bin",
+@@ -5168,7 +5168,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-readiness"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "assert_matches",
+  "thiserror 2.0.18",
+@@ -5178,7 +5178,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-redacted-string"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "schemars 0.8.22",
+  "serde",
+@@ -5186,14 +5186,14 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-rustls-provider"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "rustls",
+ ]
+ 
+ [[package]]
+ name = "codex-utils-sandbox-summary"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-protocol",
+  "codex-utils-absolute-path",
+@@ -5203,7 +5203,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-sleep-inhibitor"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "core-foundation 0.9.4",
+  "libc",
+@@ -5213,14 +5213,14 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-stream-parser"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "pretty_assertions",
+ ]
+ 
+ [[package]]
+ name = "codex-utils-string"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "pretty_assertions",
+  "regex-lite",
+@@ -5230,14 +5230,14 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-template"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "pretty_assertions",
+ ]
+ 
+ [[package]]
+ name = "codex-v8-poc"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "pretty_assertions",
+  "v8",
+@@ -5245,7 +5245,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-voice-host"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-install-context",
+@@ -5272,7 +5272,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-web-search-extension"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-api",
+  "codex-core",
+@@ -5294,7 +5294,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-websocket-auth"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -5313,7 +5313,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-websocket-client"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-http-client",
+  "codex-utils-rustls-provider",
+@@ -5329,7 +5329,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-windows-sandbox"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -5359,7 +5359,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-windows-sandbox-service"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-cloud-config",
+@@ -5376,14 +5376,14 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-windows-sandbox-test-support"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "dirs",
+ ]
+ 
+ [[package]]
+ name = "codex-workload-identity"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "codex-http-client",
+  "pretty_assertions",
+@@ -5398,7 +5398,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-worktree"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "codex-git-utils",
+@@ -5639,7 +5639,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "core_test_support"
+-version = "0.0.0"
++version = "0.162.1"
+ dependencies = [
+  "anyhow",
+  "assert_cmd",
+diff --git a/codex-rs/app-server/src/config_manager_service_tests.rs b/codex-rs/app-server/src/config_manager_service_tests.rs
+index af60acb65..12139e959 100644
+--- a/codex-rs/app-server/src/config_manager_service_tests.rs
++++ b/codex-rs/app-server/src/config_manager_service_tests.rs
+@@ -1548,12 +1548,12 @@ async fn invalid_user_value_rejected_even_if_overridden_by_managed() {
+ }
+ 
+ #[tokio::test]
+-async fn reserved_builtin_provider_override_rejected() {
++async fn openai_provider_override_is_writable() {
+     let tmp = tempdir().expect("tempdir");
+     std::fs::write(tmp.path().join(CONFIG_TOML_FILE), "model = \"user\"\n").unwrap();
+ 
+     let service = ConfigManager::without_managed_config_for_tests(tmp.path().to_path_buf());
+-    let error = service
++    service
+         .write_value(ConfigValueWriteParams {
+             file_path: Some(tmp.path().join(CONFIG_TOML_FILE).display().to_string()),
+             key_path: "model_providers.openai.name".to_string(),
+@@ -1562,17 +1562,11 @@ async fn reserved_builtin_provider_override_rejected() {
+             expected_version: None,
+         })
+         .await
+-        .expect_err("should reject reserved provider override");
+-
+-    assert_eq!(
+-        error.write_error_code(),
+-        Some(ConfigWriteErrorCode::ConfigValidationError)
+-    );
+-    assert!(error.to_string().contains("reserved built-in provider IDs"));
+-    assert!(error.to_string().contains("`openai`"));
++        .expect("小写 openai 应可写入自定义定义");
+ 
+     let contents = std::fs::read_to_string(tmp.path().join(CONFIG_TOML_FILE)).expect("read config");
+-    assert_eq!(contents, "model = \"user\"\n");
++    assert!(contents.contains("[model_providers.openai]"));
++    assert!(contents.contains("name = \"OpenAI Override\""));
+ }
+ 
+ #[tokio::test]
+diff --git a/codex-rs/app-server/src/request_processors/catalog_processor.rs b/codex-rs/app-server/src/request_processors/catalog_processor.rs
+index e8ea00fd4..16c4a46f8 100644
+--- a/codex-rs/app-server/src/request_processors/catalog_processor.rs
++++ b/codex-rs/app-server/src/request_processors/catalog_processor.rs
+@@ -291,6 +291,17 @@ impl CatalogRequestProcessor {
+             .list_models(codex_models_manager::manager::RefreshStrategy::OnlineIfUncached)
+             .await
+             .map_err(|err| config_load_error(&err))?;
++        let mut presets = presets;
++        if let Some(marker) = self.config.model_provider.daybreak_app_compat_marker(
++            &self.config.model_provider_id,
++            &presets,
++            self.thread_manager
++                .auth_manager()
++                .auth_cached()
++                .is_some_and(|auth| auth.is_chatgpt_auth()),
++        ) {
++            presets.push(marker);
++        }
+         let models = supported_models(presets, include_hidden.unwrap_or(false));
+         let total = models.len();
+ 
+diff --git a/codex-rs/app-server/src/request_processors/thread_processor_tests.rs b/codex-rs/app-server/src/request_processors/thread_processor_tests.rs
+index f1bd1bfe9..f4d7c2ca1 100644
+--- a/codex-rs/app-server/src/request_processors/thread_processor_tests.rs
++++ b/codex-rs/app-server/src/request_processors/thread_processor_tests.rs
+@@ -614,6 +614,7 @@ mod thread_processor_behavior_tests {
+             supports_websockets: true,
+             supports_standalone_web_search: false,
+             capabilities: None,
++            experimental_daybreak_app_compat: false,
+             include_internal_metadata: false,
+         };
+         let config_manager = ConfigManager::new(
+diff --git a/codex-rs/app-server/src/request_processors/turn_processor.rs b/codex-rs/app-server/src/request_processors/turn_processor.rs
+index 67946c8eb..25a7e77da 100644
+--- a/codex-rs/app-server/src/request_processors/turn_processor.rs
++++ b/codex-rs/app-server/src/request_processors/turn_processor.rs
+@@ -649,6 +649,28 @@ impl TurnRequestProcessor {
+             )
+             .await?;
+ 
++        let config = thread.config().await;
++        if config.model_provider.experimental_daybreak_app_compat {
++            let snapshot = thread.config_snapshot().await;
++            let model = thread_settings
++                .collaboration_mode
++                .as_ref()
++                .map(|mode| mode.settings.model.as_str())
++                .or(thread_settings.model.as_deref())
++                .unwrap_or(&snapshot.model);
++            let model_info = self
++                .thread_manager
++                .get_models_manager()
++                .get_model_info(model, &config.to_models_manager_config())
++                .await;
++            config
++                .model_provider
++                .validate_daybreak_app_compat(
++                    &model_info,
++                    params.cyber_access_program.map(Into::into),
++                )
++                .map_err(|err| invalid_request(err.to_string()))?;
++        }
+         let submission = thread
+             .start_or_steer_turn(
+                 TurnInputRequest::new(input)
+diff --git a/codex-rs/app-server/tests/daybreak_app_compat.rs b/codex-rs/app-server/tests/daybreak_app_compat.rs
+new file mode 100644
+index 000000000..b064dad99
+--- /dev/null
++++ b/codex-rs/app-server/tests/daybreak_app_compat.rs
+@@ -0,0 +1,288 @@
++use anyhow::Result;
++use app_test_support::ChatGptAuthFixture;
++use app_test_support::TestAppServer;
++use app_test_support::write_chatgpt_auth;
++use codex_app_server_protocol::ClientRequest;
++use codex_app_server_protocol::CyberAccessProgram;
++use codex_app_server_protocol::ModelListParams;
++use codex_app_server_protocol::ModelListResponse;
++use codex_app_server_protocol::RequestId;
++use codex_app_server_protocol::ThreadResumeParams;
++use codex_app_server_protocol::ThreadResumeResponse;
++use codex_app_server_protocol::ThreadStartParams;
++use codex_app_server_protocol::TurnStartParams;
++use codex_app_server_protocol::TurnStatus;
++use codex_app_server_protocol::UserInput;
++use codex_login::AuthCredentialsStoreMode;
++use codex_protocol::openai_models::ModelAccessPrograms;
++use codex_protocol::openai_models::ModelVisibility;
++use codex_protocol::openai_models::ModelsResponse;
++use codex_protocol::turn_input::CyberAccessProgram as CoreProgram;
++use core_test_support::responses;
++use pretty_assertions::assert_eq;
++use serde_json::json;
++use std::path::Path;
++use tempfile::TempDir;
++use wiremock::MockServer;
++
++const MARKER: &str = "gpt-daybreak-red-latest";
++const MODELS: [&str; 7] = [
++    "gpt-6.1-sol",
++    "gpt-6-sol",
++    "gpt-6-luna",
++    "gpt-5.6-sol",
++    "gpt-5.6-terra",
++    "gpt-5.6-luna",
++    "gpt-5.5",
++];
++
++async fn start_app(home: &Path, server: &MockServer) -> Result<TestAppServer> {
++    let template = codex_models_manager::bundled_models_response()?
++        .models
++        .into_iter()
++        .find(|model| model.slug == "gpt-5.5")
++        .expect("测试模型模板");
++    let models = MODELS
++        .into_iter()
++        .chain(["gpt-6-astra"])
++        .map(|name| {
++            let mut model = template.clone();
++            model.slug = name.to_owned();
++            model.visibility = ModelVisibility::List;
++            model.available_access_programs = Some(ModelAccessPrograms {
++                cyber: if name == "gpt-6-astra" {
++                    vec![CoreProgram::Standard]
++                } else {
++                    vec![CoreProgram::Standard, CoreProgram::DaybreakBlue]
++                },
++            });
++            model
++        })
++        .collect();
++    let catalog = home.join("models.json");
++    std::fs::write(&catalog, serde_json::to_vec(&ModelsResponse { models })?)?;
++    let endpoint = server.uri();
++    std::fs::write(
++        home.join("config.toml"),
++        format!(
++            r#"
++model = "gpt-6-sol"
++model_provider = "openai"
++model_catalog_json = {catalog:?}
++approval_policy = "never"
++cli_auth_credentials_store = "file"
++[model_providers.openai]
++name = "OpenAI"
++base_url = "{endpoint}/v1"
++requires_openai_auth = true
++supports_websockets = false
++experimental_daybreak_app_compat = true
++"#
++        ),
++    )?;
++    write_chatgpt_auth(
++        home,
++        ChatGptAuthFixture::new("daybreak-compat-test").plan_type("pro"),
++        AuthCredentialsStoreMode::File,
++    )?;
++    TestAppServer::builder()
++        .with_plugin_startup_tasks()
++        .with_codex_home(home)
++        .without_managed_config()
++        .with_env_overrides(&[("OPENAI_API_KEY", None), ("CODEX_API_KEY", None)])
++        .build_initialized()
++        .await
++}
++
++#[tokio::test]
++async fn daybreak_app_compat_lists_one_marker_and_preserves_models_across_turns_and_resume()
++-> Result<()> {
++    let server = responses::start_mock_server().await;
++    let requests = responses::mount_sse_sequence(
++        &server,
++        (0..15)
++            .map(|n| responses::sse(vec![responses::ev_completed(&format!("compat-{n}"))]))
++            .collect(),
++    )
++    .await;
++    let home = TempDir::new()?;
++    let mut app = start_app(home.path(), &server).await?;
++    let mut items = Vec::new();
++    let mut cursor = None;
++    loop {
++        let page: ModelListResponse = app
++            .request(|request_id| ClientRequest::ModelList {
++                request_id,
++                params: ModelListParams {
++                    limit: Some(2),
++                    cursor,
++                    include_hidden: Some(true),
++                },
++            })
++            .await?;
++        items.extend(page.data);
++        cursor = page.next_cursor;
++        if cursor.is_none() {
++            break;
++        }
++    }
++    assert_eq!(items.len(), 9);
++    let marker = items
++        .iter()
++        .find(|model| model.model == MARKER)
++        .expect("协议标记");
++    assert_eq!((marker.hidden, marker.is_default), (false, false));
++    assert_eq!(
++        serde_json::to_value(&marker.available_access_programs)?,
++        json!({"cyber":["daybreakBlue"]})
++    );
++    let catalog = std::fs::read_to_string(home.path().join("models.json"))?;
++    assert!(!catalog.contains(MARKER));
++    let thread = app
++        .start_thread(ThreadStartParams {
++            daybreak_enabled: Some(true),
++            ..Default::default()
++        })
++        .await?
++        .thread;
++    let mut expected = Vec::new();
++    for (index, model) in MODELS.into_iter().enumerate() {
++        for program in [
++            CyberAccessProgram::DaybreakBlue,
++            CyberAccessProgram::Standard,
++        ] {
++            let mut params = TurnStartParams {
++                thread_id: thread.id.clone(),
++                model: Some(model.to_owned()),
++                cyber_access_program: Some(program),
++                input: vec![UserInput::Text {
++                    text: "兼容性测试".to_owned(),
++                    text_elements: vec![],
++                }],
++                ..Default::default()
++            };
++            if index % 2 == 0 {
++                params.model = Some("gpt-6-astra".to_owned());
++                params.collaboration_mode = Some(serde_json::from_value(json!({
++                    "mode":"default", "settings":{"model":model,"reasoning_effort":"medium","developer_instructions":null}
++                }))?);
++            }
++            let completed = app.start_turn_and_wait_for_completion(params).await?;
++            assert_eq!(completed.turn.status, TurnStatus::Completed);
++            expected.push((
++                model.to_owned(),
++                if program == CyberAccessProgram::DaybreakBlue {
++                    "daybreak_blue"
++                } else {
++                    "standard"
++                },
++            ));
++        }
++    }
++    app.shutdown_gracefully().await?;
++    let mut app = start_app(home.path(), &server).await?;
++    let resumed: ThreadResumeResponse = app
++        .request(|request_id| ClientRequest::ThreadResume {
++            request_id,
++            params: ThreadResumeParams {
++                thread_id: thread.id.clone(),
++                ..Default::default()
++            },
++        })
++        .await?;
++    assert_eq!(resumed.thread.daybreak_enabled, Some(true));
++    let completed = app
++        .start_turn_and_wait_for_completion(TurnStartParams {
++            thread_id: thread.id,
++            cyber_access_program: Some(CyberAccessProgram::DaybreakBlue),
++            input: vec![UserInput::Text {
++                text: "恢复后的测试".to_owned(),
++                text_elements: vec![],
++            }],
++            ..Default::default()
++        })
++        .await?;
++    assert_eq!(completed.turn.status, TurnStatus::Completed);
++    expected.push(("gpt-5.5".to_owned(), "daybreak_blue"));
++    let actual = requests
++        .requests()
++        .into_iter()
++        .map(|request| {
++            let body = request.body_json();
++            (
++                body["model"].as_str().unwrap().to_owned(),
++                body["access_programs"]["cyber"]
++                    .as_str()
++                    .unwrap()
++                    .to_owned(),
++            )
++        })
++        .collect::<Vec<_>>();
++    assert_eq!(
++        actual,
++        expected
++            .into_iter()
++            .map(|(m, p)| (m, p.to_owned()))
++            .collect::<Vec<_>>()
++    );
++    app.shutdown_gracefully().await?;
++    Ok(())
++}
++
++#[tokio::test]
++async fn daybreak_app_compat_rejects_marker_and_unsupported_program_before_inference() -> Result<()>
++{
++    let server = responses::start_mock_server().await;
++    let home = TempDir::new()?;
++    let mut app = start_app(home.path(), &server).await?;
++    let id = app
++        .send_thread_start_request_with_auto_env(ThreadStartParams {
++            model: Some(MARKER.to_owned()),
++            ..Default::default()
++        })
++        .await?;
++    let error = app
++        .read_stream_until_error_message(RequestId::Integer(id))
++        .await?;
++    assert!(error.error.message.contains("兼容标记"));
++    let thread = app.start_thread(ThreadStartParams::default()).await?.thread;
++    for (model, program, collaboration) in [
++        ("gpt-6-astra", CyberAccessProgram::DaybreakBlue, false),
++        ("gpt-6-sol", CyberAccessProgram::DaybreakRed, false),
++        (MARKER, CyberAccessProgram::Standard, false),
++        (MARKER, CyberAccessProgram::DaybreakBlue, true),
++    ] {
++        let mut params = TurnStartParams {
++            thread_id: thread.id.clone(),
++            model: Some(model.to_owned()),
++            cyber_access_program: Some(program),
++            input: vec![UserInput::Text {
++                text: "应被拒绝".to_owned(),
++                text_elements: vec![],
++            }],
++            ..Default::default()
++        };
++        if collaboration {
++            params.model = Some("gpt-6-sol".to_owned());
++            params.collaboration_mode = Some(serde_json::from_value(json!({
++                "mode":"default", "settings":{"model":model,"reasoning_effort":"medium","developer_instructions":null}
++            }))?);
++        }
++        let id = app.send_turn_start_request(params).await?;
++        let error = app
++            .read_stream_until_error_message(RequestId::Integer(id))
++            .await?;
++        assert_eq!(error.error.code, -32600);
++        assert!(error.error.message.contains("兼容标记") || error.error.message.contains("未声明"));
++    }
++    assert!(
++        server
++            .received_requests()
++            .await
++            .unwrap()
++            .iter()
++            .all(|request| request.url.path() != "/v1/responses")
++    );
++    app.shutdown_gracefully().await?;
++    Ok(())
++}
+diff --git a/codex-rs/cloud-config/src/service_tests.rs b/codex-rs/cloud-config/src/service_tests.rs
+index eb3396543..d98890031 100644
+--- a/codex-rs/cloud-config/src/service_tests.rs
++++ b/codex-rs/cloud-config/src/service_tests.rs
+@@ -693,7 +693,7 @@ async fn invalid_cloud_provider_does_not_replace_cached_bundle() {
+     write_test_cache(&cache, previous.clone()).await;
+ 
+     for contents in [
+-        "[model_providers.openai]\nname = 'Reserved'",
++        "[model_providers.ollama]\nname = 'Reserved'",
+         "[model_providers.gateway]\nname = '   '",
+         "[model_providers.gateway]\nbase_url = 'https://gateway.example/v1'",
+         "[model_providers.amazon-bedrock]\nname = 'Managed Bedrock'",
+diff --git a/codex-rs/config/src/config_toml.rs b/codex-rs/config/src/config_toml.rs
+index 3e5cc07e6..2109ee8f1 100644
+--- a/codex-rs/config/src/config_toml.rs
++++ b/codex-rs/config/src/config_toml.rs
+@@ -40,7 +40,6 @@ use codex_model_provider_info::LMSTUDIO_OSS_PROVIDER_ID;
+ use codex_model_provider_info::ModelProviderInfo;
+ use codex_model_provider_info::OLLAMA_CHAT_PROVIDER_REMOVED_ERROR;
+ use codex_model_provider_info::OLLAMA_OSS_PROVIDER_ID;
+-use codex_model_provider_info::OPENAI_PROVIDER_ID;
+ use codex_protocol::config_types::AutoCompactTokenLimitScope;
+ use codex_protocol::config_types::ForcedLoginMethod;
+ use codex_protocol::config_types::Personality;
+@@ -64,10 +63,9 @@ use serde::Serialize;
+ use serde::de::Error as SerdeError;
+ use serde_json::Value as JsonValue;
+ 
+-const RESERVED_MODEL_PROVIDER_IDS: [&str; 5] = [
++const RESERVED_MODEL_PROVIDER_IDS: [&str; 4] = [
+     AMAZON_BEDROCK_PROVIDER_ID,
+     AMAZON_BEDROCK_RUNTIME_PROVIDER_ID,
+-    OPENAI_PROVIDER_ID,
+     OLLAMA_OSS_PROVIDER_ID,
+     LMSTUDIO_OSS_PROVIDER_ID,
+ ];
+diff --git a/codex-rs/config/src/model_provider_requirements_tests.rs b/codex-rs/config/src/model_provider_requirements_tests.rs
+index 0862dcfde..0a454dba4 100644
+--- a/codex-rs/config/src/model_provider_requirements_tests.rs
++++ b/codex-rs/config/src/model_provider_requirements_tests.rs
+@@ -85,7 +85,7 @@ name = "Other provider"
+ fn required_provider_definitions_are_validated_without_local_defaults() -> anyhow::Result<()> {
+     for invalid in [
+         "[model_providers.gateway]\nbase_url = 'https://example.test'",
+-        "[model_providers.openai]\nname = 'Reserved'",
++        "[model_providers.ollama]\nname = 'Reserved'",
+         "[model_providers.gateway]\nname = 'Gateway'\n[model_providers.gateway.aws]\nregion = 'us-east-1'",
+     ] {
+         let requirements = toml::from_str(invalid)?;
+@@ -97,3 +97,16 @@ fn required_provider_definitions_are_validated_without_local_defaults() -> anyho
+     }
+     Ok(())
+ }
++
++#[test]
++fn required_openai_provider_definition_is_valid() -> anyhow::Result<()> {
++    let requirements = toml::from_str(
++        "[model_providers.openai]\nname = 'OpenAI'\nbase_url = 'https://proxy.example.test/v1'\nrequires_openai_auth = true\nsupports_websockets = false",
++    )?;
++    let local = ConfigLayerEntry::new(
++        ConfigLayerSource::SessionFlags,
++        toml::from_str("model_provider = 'openai'")?,
++    );
++    ConfigLayerStack::new(vec![local], ConfigRequirements::default(), requirements)?;
++    Ok(())
++}
+diff --git a/codex-rs/config/src/thread_config.rs b/codex-rs/config/src/thread_config.rs
+index 0518ea887..2f56858d3 100644
+--- a/codex-rs/config/src/thread_config.rs
++++ b/codex-rs/config/src/thread_config.rs
+@@ -317,6 +317,7 @@ mod tests {
+             supports_websockets: true,
+             supports_standalone_web_search: true,
+             capabilities: None,
++            experimental_daybreak_app_compat: false,
+             include_internal_metadata: false,
+         }
+     }
+diff --git a/codex-rs/config/src/thread_config/remote.rs b/codex-rs/config/src/thread_config/remote.rs
+index da0af3bca..cece4a5cc 100644
+--- a/codex-rs/config/src/thread_config/remote.rs
++++ b/codex-rs/config/src/thread_config/remote.rs
+@@ -195,6 +195,7 @@ fn model_provider_from_proto(
+         supports_websockets: provider.supports_websockets,
+         supports_standalone_web_search: provider.supports_standalone_web_search,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     };
+     Ok((id, info))
+@@ -226,6 +227,7 @@ fn model_provider_to_proto(
+         requires_openai_auth,
+         supports_websockets,
+         supports_standalone_web_search,
++        experimental_daybreak_app_compat: _,
+         include_internal_metadata: _,
+         capabilities: _,
+     } = provider;
+@@ -584,6 +586,7 @@ mod tests {
+             gateway_oauth: None,
+             aws: None,
+             capabilities: None,
++            experimental_daybreak_app_compat: false,
+             include_internal_metadata: false,
+         }
+     }
+diff --git a/codex-rs/core/config.schema.json b/codex-rs/core/config.schema.json
+index 5864a5df7..181aac9e4 100644
+--- a/codex-rs/core/config.schema.json
++++ b/codex-rs/core/config.schema.json
+@@ -2798,6 +2798,10 @@
+           "description": "Value to use with `Authorization: Bearer <token>` header. Use of this config is discouraged in favor of `env_key` for security reasons, but this may be necessary when using this programmatically.",
+           "type": "string"
+         },
++        "experimental_daybreak_app_compat": {
++          "description": "为旧版 App 的 SSH 模型列表启用统一 Daybreak 开关兼容，并校验真实模型能力。",
++          "type": "boolean"
++        },
+         "gateway_oauth": {
+           "allOf": [
+             {
+diff --git a/codex-rs/core/src/client.rs b/codex-rs/core/src/client.rs
+index 24f2964ff..7f2d038fb 100644
+--- a/codex-rs/core/src/client.rs
++++ b/codex-rs/core/src/client.rs
+@@ -898,6 +898,10 @@ impl ModelClient {
+         responses_metadata: &CodexResponsesMetadata,
+         include_internal: bool,
+     ) -> Result<ResponsesApiRequest> {
++        self.state
++            .provider
++            .info()
++            .validate_daybreak_app_compat(model_info, prompt.cyber_access_program)?;
+         let mut input = prompt.get_formatted_input_for_request(model_info);
+         if !self.reasoning_effort_override_enabled(model_info) {
+             // Unsupported models and disabled overrides must also accept saved history.
+diff --git a/codex-rs/core/src/client_tests.rs b/codex-rs/core/src/client_tests.rs
+index 779a40ca2..64d6a37f7 100644
+--- a/codex-rs/core/src/client_tests.rs
++++ b/codex-rs/core/src/client_tests.rs
+@@ -820,6 +820,7 @@ fn responses_request_preserves_result_metadata_above_previous_aggregate_budget()
+ #[test]
+ fn websocket_incremental_reuse_tracks_raw_result_metadata() -> anyhow::Result<()> {
+     let provider = ModelProviderInfo {
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+         ..ModelProviderInfo::create_openai_provider(Some("https://api.openai.com/v1".to_string()))
+     };
+diff --git a/codex-rs/core/src/session/mod.rs b/codex-rs/core/src/session/mod.rs
+index bc086f866..73d84ae3f 100644
+--- a/codex-rs/core/src/session/mod.rs
++++ b/codex-rs/core/src/session/mod.rs
+@@ -751,6 +751,17 @@ impl Session {
+         let model_info = models_manager
+             .get_model_info(model.as_str(), &config.to_models_manager_config())
+             .await;
++        config
++            .model_provider
++            .validate_daybreak_app_compat(&model_info, /*program*/ None)?;
++        if config.model_provider.experimental_daybreak_app_compat
++            && config.model.as_deref() == Some("gpt-daybreak-red-latest")
++            && model != "gpt-daybreak-red-latest"
++        {
++            return Err(CodexErr::InvalidRequest(
++                "Daybreak UI 兼容标记不能作为模型回退；请选择真实模型。".to_owned(),
++            ));
++        }
+         let auth = auth_manager.auth_cached();
+         // Forked subagents keep their parent's activation with the copied history.
+         // Fresh children restore configured preferences before applying startup defaults.
+diff --git a/codex-rs/core/tests/daybreak_app_compat.rs b/codex-rs/core/tests/daybreak_app_compat.rs
+new file mode 100644
+index 000000000..8cc5a102f
+--- /dev/null
++++ b/codex-rs/core/tests/daybreak_app_compat.rs
+@@ -0,0 +1,105 @@
++use anyhow::Result;
++use codex_core::TurnInputRequest;
++use codex_core::TurnStartOptions;
++use codex_login::CodexAuth;
++use codex_protocol::openai_models::ModelAccessPrograms;
++use codex_protocol::protocol::EventMsg;
++use codex_protocol::protocol::ThreadSettingsOverrides;
++use codex_protocol::turn_input::CyberAccessProgram;
++use codex_protocol::user_input::UserInput;
++use core_test_support::responses;
++use core_test_support::test_codex::test_codex;
++use core_test_support::wait_for_event;
++use pretty_assertions::assert_eq;
++use serde_json::json;
++
++#[tokio::test(flavor = "multi_thread", worker_threads = 2)]
++async fn daybreak_app_compat_websocket_preserves_model_and_blocks_invalid_final_requests()
++-> Result<()> {
++    let server = responses::start_websocket_server(vec![
++        (0..4)
++            .map(|n| vec![responses::ev_completed(&format!("compat-ws-{n}"))])
++            .collect(),
++    ])
++    .await;
++    let test = test_codex()
++        .with_auth(CodexAuth::create_dummy_chatgpt_auth_for_testing())
++        .with_model("gpt-5.5")
++        .with_model_info_override("gpt-5.5", |model| {
++            model.available_access_programs = Some(ModelAccessPrograms {
++                cyber: vec![
++                    CyberAccessProgram::Standard,
++                    CyberAccessProgram::DaybreakBlue,
++                ],
++            });
++        })
++        .with_config(|config| {
++            config.model_provider.experimental_daybreak_app_compat = true;
++            config
++                .model_catalog
++                .as_mut()
++                .expect("测试模型目录")
++                .models
++                .retain(|model| model.slug == "gpt-5.5");
++        })
++        .build_with_websocket_server(&server)
++        .await?;
++    for (program, model, success) in [
++        (Some(CyberAccessProgram::DaybreakBlue), None, true),
++        (Some(CyberAccessProgram::Standard), None, true),
++        (None, None, true),
++        (Some(CyberAccessProgram::DaybreakRed), None, false),
++        (None, Some("gpt-daybreak-red-latest"), false),
++    ] {
++        test.codex
++            .start_or_steer_turn(
++                TurnInputRequest::user_input(vec![UserInput::Text {
++                    text: "传输与最终请求校验".to_owned(),
++                    text_elements: vec![],
++                }])
++                .with_thread_settings(ThreadSettingsOverrides {
++                    model: model.map(str::to_owned),
++                    ..Default::default()
++                })
++                .on_start(TurnStartOptions {
++                    cyber_access_program: program,
++                    ..Default::default()
++                }),
++            )
++            .await?;
++        let event = wait_for_event(&test.codex, |event| {
++            matches!(event, EventMsg::TurnComplete(_) | EventMsg::Error(_))
++        })
++        .await;
++        assert_eq!(
++            matches!(event, EventMsg::TurnComplete(_)),
++            success,
++            "{event:?}"
++        );
++        if !success {
++            wait_for_event(&test.codex, |event| {
++                matches!(event, EventMsg::TurnComplete(_))
++            })
++            .await;
++        }
++    }
++    let requests = server.single_connection();
++    assert_eq!(
++        requests
++            .iter()
++            .map(|request| {
++                let body = request.body_json();
++                (body["model"].clone(), body.get("access_programs").cloned())
++            })
++            .collect::<Vec<_>>(),
++        vec![
++            (json!("gpt-5.5"), None),
++            (json!("gpt-5.5"), Some(json!({"cyber":"daybreak_blue"}))),
++            (json!("gpt-5.5"), Some(json!({"cyber":"standard"}))),
++            (json!("gpt-5.5"), None),
++        ]
++    );
++    test.codex.shutdown_and_wait().await?;
++    server.shutdown().await;
++    Ok(())
++}
+diff --git a/codex-rs/core/tests/responses_headers.rs b/codex-rs/core/tests/responses_headers.rs
+index 84bf461e7..620bbbab3 100644
+--- a/codex-rs/core/tests/responses_headers.rs
++++ b/codex-rs/core/tests/responses_headers.rs
+@@ -93,6 +93,7 @@ async fn responses_stream_includes_subagent_header_on_review() {
+         supports_websockets: false,
+         supports_standalone_web_search: false,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     };
+ 
+@@ -237,6 +238,7 @@ async fn responses_stream_includes_subagent_header_on_other() {
+         supports_websockets: false,
+         supports_standalone_web_search: false,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     };
+ 
+@@ -362,6 +364,7 @@ async fn responses_respects_model_info_overrides_from_config() {
+         supports_websockets: false,
+         supports_standalone_web_search: false,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     };
+ 
+diff --git a/codex-rs/core/tests/suite/client.rs b/codex-rs/core/tests/suite/client.rs
+index 23e2f115f..92b8e22fc 100644
+--- a/codex-rs/core/tests/suite/client.rs
++++ b/codex-rs/core/tests/suite/client.rs
+@@ -1700,6 +1700,7 @@ async fn send_provider_auth_request(server: &MockServer, auth: ModelProviderAuth
+         supports_websockets: false,
+         supports_standalone_web_search: false,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     };
+ 
+@@ -3203,6 +3204,7 @@ async fn azure_responses_request_does_not_store_and_preserves_prefixed_item_ids(
+         supports_websockets: false,
+         supports_standalone_web_search: false,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     };
+ 
+@@ -3839,6 +3841,7 @@ async fn azure_overrides_assign_properties_used_for_responses_url() {
+         supports_websockets: false,
+         supports_standalone_web_search: false,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     };
+ 
+@@ -3927,6 +3930,7 @@ async fn env_var_overrides_loaded_auth() {
+         supports_websockets: false,
+         supports_standalone_web_search: false,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     };
+ 
+diff --git a/codex-rs/core/tests/suite/client_websockets.rs b/codex-rs/core/tests/suite/client_websockets.rs
+index 6659bba1f..c70df5d94 100755
+--- a/codex-rs/core/tests/suite/client_websockets.rs
++++ b/codex-rs/core/tests/suite/client_websockets.rs
+@@ -2665,6 +2665,7 @@ fn websocket_provider_with_connect_timeout(
+         supports_websockets: true,
+         supports_standalone_web_search: false,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     }
+ }
+diff --git a/codex-rs/core/tests/suite/stream_error_allows_next_turn.rs b/codex-rs/core/tests/suite/stream_error_allows_next_turn.rs
+index c381b78cd..98aa06a9f 100644
+--- a/codex-rs/core/tests/suite/stream_error_allows_next_turn.rs
++++ b/codex-rs/core/tests/suite/stream_error_allows_next_turn.rs
+@@ -85,6 +85,7 @@ async fn continue_after_stream_error() {
+         supports_websockets: false,
+         supports_standalone_web_search: false,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     };
+ 
+diff --git a/codex-rs/core/tests/suite/stream_no_completed.rs b/codex-rs/core/tests/suite/stream_no_completed.rs
+index 1823275ea..c651763ef 100644
+--- a/codex-rs/core/tests/suite/stream_no_completed.rs
++++ b/codex-rs/core/tests/suite/stream_no_completed.rs
+@@ -71,6 +71,7 @@ async fn retries_on_early_close() {
+         supports_websockets: false,
+         supports_standalone_web_search: false,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     };
+ 
+diff --git a/codex-rs/login/src/auth_env_telemetry.rs b/codex-rs/login/src/auth_env_telemetry.rs
+index 6ee0c4392..1ee276455 100644
+--- a/codex-rs/login/src/auth_env_telemetry.rs
++++ b/codex-rs/login/src/auth_env_telemetry.rs
+@@ -80,6 +80,7 @@ mod tests {
+             supports_websockets: false,
+             supports_standalone_web_search: false,
+             capabilities: None,
++            experimental_daybreak_app_compat: false,
+             include_internal_metadata: false,
+         };
+ 
+diff --git a/codex-rs/model-provider-info/src/daybreak_app_compat.rs b/codex-rs/model-provider-info/src/daybreak_app_compat.rs
+new file mode 100644
+index 000000000..5f15b35a0
+--- /dev/null
++++ b/codex-rs/model-provider-info/src/daybreak_app_compat.rs
+@@ -0,0 +1,98 @@
++//! 仅修复旧版 App 的能力识别，不提供或替代上游账号授权。
++
++use crate::ModelProviderInfo;
++use crate::OPENAI_PROVIDER_ID;
++use codex_protocol::error::CodexErr;
++use codex_protocol::error::Result;
++use codex_protocol::openai_models::ModelAccessPrograms;
++use codex_protocol::openai_models::ModelInfo;
++use codex_protocol::openai_models::ModelPreset;
++use codex_protocol::turn_input::CyberAccessProgram;
++
++const MARKER: &str = "gpt-daybreak-red-latest";
++
++impl ModelProviderInfo {
++    /// 从真实目录生成一个仅用于 App 协议的标记，调用者不得将其写回模型目录。
++    pub fn daybreak_app_compat_marker(
++        &self,
++        provider_id: &str,
++        presets: &[ModelPreset],
++        is_chatgpt_auth: bool,
++    ) -> Option<ModelPreset> {
++        if !self.experimental_daybreak_app_compat
++            || provider_id != OPENAI_PROVIDER_ID
++            || !self.requires_openai_auth
++            || !is_chatgpt_auth
++            || presets.iter().any(|model| {
++                model.model == MARKER
++                    || model
++                        .available_access_programs
++                        .as_ref()
++                        .is_some_and(|programs| {
++                            programs.cyber.contains(&CyberAccessProgram::DaybreakRed)
++                        })
++            })
++        {
++            return None;
++        }
++        let mut marker = presets
++            .iter()
++            .find(|model| {
++                model
++                    .available_access_programs
++                    .as_ref()
++                    .is_some_and(|programs| {
++                        programs.cyber.contains(&CyberAccessProgram::DaybreakBlue)
++                    })
++            })?
++            .clone();
++        marker.id = MARKER.to_owned();
++        marker.model = MARKER.to_owned();
++        marker.display_name = "Daybreak UI 兼容标记（不可用于推理）".to_owned();
++        marker.description = "仅供旧版 App 识别已有的 Blue 能力，请选择普通模型。".to_owned();
++        marker.show_in_picker = true;
++        marker.is_default = false;
++        marker.upgrade = None;
++        marker.availability_nux = None;
++        marker.available_access_programs = Some(ModelAccessPrograms {
++            cyber: vec![CyberAccessProgram::DaybreakBlue],
++        });
++        Some(marker)
++    }
++
++    /// 根据真实模型元数据校验选择；HTTP、WebSocket 和会话初始化共用此逻辑。
++    pub fn validate_daybreak_app_compat(
++        &self,
++        model: &ModelInfo,
++        program: Option<CyberAccessProgram>,
++    ) -> Result<()> {
++        if !self.experimental_daybreak_app_compat {
++            return Ok(());
++        }
++        let supports = |program| {
++            model
++                .available_access_programs
++                .as_ref()
++                .is_some_and(|programs| programs.cyber.contains(&program))
++        };
++        if model.slug == MARKER && !supports(CyberAccessProgram::DaybreakRed) {
++            return Err(CodexErr::InvalidRequest(
++                "Daybreak UI 兼容标记不能用于推理；请选择真实模型并使用 Daybreak 开关。".to_owned(),
++            ));
++        }
++        if let Some(program @ (CyberAccessProgram::DaybreakBlue | CyberAccessProgram::DaybreakRed)) =
++            program
++            && !supports(program)
++        {
++            return Err(CodexErr::InvalidRequest(format!(
++                "真实模型目录未声明模型 `{}` 支持 {program:?}；请关闭 Daybreak 或选择支持的模型。",
++                model.slug,
++            )));
++        }
++        Ok(())
++    }
++}
++
++#[cfg(test)]
++#[path = "daybreak_app_compat_tests.rs"]
++mod tests;
+diff --git a/codex-rs/model-provider-info/src/daybreak_app_compat_tests.rs b/codex-rs/model-provider-info/src/daybreak_app_compat_tests.rs
+new file mode 100644
+index 000000000..04e341579
+--- /dev/null
++++ b/codex-rs/model-provider-info/src/daybreak_app_compat_tests.rs
+@@ -0,0 +1,146 @@
++use super::*;
++use pretty_assertions::assert_eq;
++
++fn model(programs: Vec<CyberAccessProgram>) -> ModelInfo {
++    let mut model: ModelInfo = toml::from_str(
++        r#"
++slug = "ordinary-model"
++display_name = "普通模型"
++supported_reasoning_levels = []
++shell_type = "disabled"
++visibility = "list"
++supported_in_api = true
++priority = 0
++support_verbosity = false
++experimental_supported_tools = []
++truncation_policy = { mode = "tokens", limit = 1000 }
++"#,
++    )
++    .unwrap();
++    model.available_access_programs = Some(ModelAccessPrograms { cyber: programs });
++    model
++}
++
++#[test]
++fn marker_requires_explicit_opt_in_chatgpt_openai_and_real_blue() {
++    let mut provider = ModelProviderInfo {
++        requires_openai_auth: true,
++        experimental_daybreak_app_compat: true,
++        ..Default::default()
++    };
++    let preset = ModelPreset::from(model(vec![CyberAccessProgram::DaybreakBlue]));
++    let catalog = vec![preset.clone()];
++    let marker = provider
++        .daybreak_app_compat_marker("openai", &catalog, /*is_chatgpt_auth*/ true)
++        .unwrap();
++    assert_eq!(
++        (
++            marker.model.as_str(),
++            marker.is_default,
++            marker.show_in_picker
++        ),
++        (MARKER, false, true)
++    );
++    assert_eq!(
++        marker.available_access_programs,
++        preset.available_access_programs
++    );
++    assert_eq!(catalog, vec![preset]);
++    assert!(
++        provider
++            .daybreak_app_compat_marker("OpenAI", &catalog, /*is_chatgpt_auth*/ true)
++            .is_none()
++    );
++    assert!(
++        provider
++            .daybreak_app_compat_marker("openai", &catalog, /*is_chatgpt_auth*/ false)
++            .is_none()
++    );
++    for programs in [
++        vec![],
++        vec![CyberAccessProgram::Standard],
++        vec![
++            CyberAccessProgram::DaybreakBlue,
++            CyberAccessProgram::DaybreakRed,
++        ],
++    ] {
++        assert!(
++            provider
++                .daybreak_app_compat_marker(
++                    "openai",
++                    &[model(programs).into()],
++                    /*is_chatgpt_auth*/ true
++                )
++                .is_none()
++        );
++    }
++    let mut red = model(vec![CyberAccessProgram::DaybreakBlue]);
++    red.slug = MARKER.to_owned();
++    assert!(
++        provider
++            .daybreak_app_compat_marker("openai", &[red.into()], /*is_chatgpt_auth*/ true)
++            .is_none()
++    );
++    provider.experimental_daybreak_app_compat = false;
++    assert!(
++        provider
++            .daybreak_app_compat_marker("openai", &catalog, /*is_chatgpt_auth*/ true)
++            .is_none()
++    );
++}
++
++#[test]
++fn requests_reject_marker_and_unsupported_programs_without_rewriting_models() {
++    let mut provider = ModelProviderInfo {
++        experimental_daybreak_app_compat: true,
++        ..Default::default()
++    };
++    let blue = model(vec![
++        CyberAccessProgram::Standard,
++        CyberAccessProgram::DaybreakBlue,
++    ]);
++    let original = blue.clone();
++    for program in [
++        None,
++        Some(CyberAccessProgram::Standard),
++        Some(CyberAccessProgram::DaybreakBlue),
++    ] {
++        provider
++            .validate_daybreak_app_compat(&blue, program)
++            .unwrap();
++    }
++    assert_eq!(blue, original);
++    assert!(
++        provider
++            .validate_daybreak_app_compat(&blue, Some(CyberAccessProgram::DaybreakRed))
++            .is_err()
++    );
++    assert!(
++        provider
++            .validate_daybreak_app_compat(&model(vec![]), Some(CyberAccessProgram::DaybreakBlue))
++            .is_err()
++    );
++    let mut marker = blue;
++    marker.slug = MARKER.to_owned();
++    for program in [
++        None,
++        Some(CyberAccessProgram::Standard),
++        Some(CyberAccessProgram::DaybreakBlue),
++    ] {
++        assert!(
++            provider
++                .validate_daybreak_app_compat(&marker, program)
++                .is_err()
++        );
++    }
++    marker.available_access_programs = Some(ModelAccessPrograms {
++        cyber: vec![CyberAccessProgram::DaybreakRed],
++    });
++    provider
++        .validate_daybreak_app_compat(&marker, Some(CyberAccessProgram::DaybreakRed))
++        .unwrap();
++    provider.experimental_daybreak_app_compat = false;
++    provider
++        .validate_daybreak_app_compat(&model(vec![]), Some(CyberAccessProgram::DaybreakBlue))
++        .unwrap();
++}
+diff --git a/codex-rs/model-provider-info/src/lib.rs b/codex-rs/model-provider-info/src/lib.rs
+index f020d34c2..2ae1b1677 100644
+--- a/codex-rs/model-provider-info/src/lib.rs
++++ b/codex-rs/model-provider-info/src/lib.rs
+@@ -32,6 +32,7 @@ use std::sync::RwLock;
+ use std::time::Duration;
+ 
+ mod capabilities;
++mod daybreak_app_compat;
+ mod gateway_oauth;
+ pub use capabilities::ModelProviderCapabilities;
+ pub use capabilities::RemoteCompactionSupport;
+@@ -200,6 +201,9 @@ pub struct ModelProviderInfo {
+     /// Whether this provider supports the standalone web-search endpoint.
+     #[serde(default)]
+     pub supports_standalone_web_search: bool,
++    /// 为旧版 App 的 SSH 模型列表启用统一 Daybreak 开关兼容，并校验真实模型能力。
++    #[serde(default, skip_serializing_if = "std::ops::Not::not")]
++    pub experimental_daybreak_app_compat: bool,
+     /// Runtime-only opt-in for internal metadata, independent of the destination check.
+     /// This cannot be loaded from or written to serialized provider configuration.
+     #[serde(skip)]
+@@ -561,6 +565,7 @@ other non-default provider fields are not supported"
+             supports_websockets: true,
+             supports_standalone_web_search: true,
+             capabilities: None,
++            experimental_daybreak_app_compat: false,
+             include_internal_metadata: true,
+         }
+     }
+@@ -601,6 +606,7 @@ other non-default provider fields are not supported"
+             supports_websockets: false,
+             supports_standalone_web_search: false,
+             capabilities: None,
++            experimental_daybreak_app_compat: false,
+             include_internal_metadata: false,
+         }
+     }
+@@ -691,11 +697,10 @@ pub fn built_in_model_providers(
+     .collect()
+ }
+ 
+-/// Merge configured providers into the built-in provider catalog.
++/// 将用户配置的 provider 合并到内置目录。
+ ///
+-/// Configured providers extend the built-in set. Built-in providers are not
+-/// generally overridable, but built-in Amazon Bedrock providers allow the user
+-/// to customize their endpoint, authentication, headers, and AWS settings.
++/// 小写 `openai` 使用完整的自定义定义替换内置定义；Amazon Bedrock 保留字段级覆盖规则。
++/// 其他内置 provider 不接受覆盖。
+ pub fn merge_configured_model_providers(
+     mut model_providers: HashMap<String, ModelProviderInfo>,
+     configured_model_providers: HashMap<String, ModelProviderInfo>,
+@@ -725,6 +730,8 @@ pub fn merge_configured_model_providers(
+                         .extend(http_headers_override);
+                 }
+             }
++        } else if key == OPENAI_PROVIDER_ID {
++            model_providers.insert(key, provider);
+         } else {
+             model_providers.entry(key).or_insert(provider);
+         }
+@@ -775,6 +782,7 @@ pub fn create_oss_provider_with_base_url(base_url: &str, wire_api: WireApi) -> M
+         supports_websockets: false,
+         supports_standalone_web_search: false,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     }
+ }
+diff --git a/codex-rs/model-provider-info/src/model_provider_info_tests.rs b/codex-rs/model-provider-info/src/model_provider_info_tests.rs
+index 9c15c54b7..cb43e3583 100644
+--- a/codex-rs/model-provider-info/src/model_provider_info_tests.rs
++++ b/codex-rs/model-provider-info/src/model_provider_info_tests.rs
+@@ -8,6 +8,7 @@ use tempfile::tempdir;
+ #[test]
+ fn runtime_internal_metadata_opt_in_is_not_serialized_or_configurable() {
+     let trusted = ModelProviderInfo {
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: true,
+         ..Default::default()
+     };
+@@ -97,6 +98,7 @@ base_url = "http://localhost:11434/v1"
+         supports_websockets: false,
+         supports_standalone_web_search: false,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     };
+ 
+@@ -136,6 +138,7 @@ query_params = { api-version = "2025-04-01-preview" }
+         supports_websockets: false,
+         supports_standalone_web_search: false,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     };
+ 
+@@ -179,6 +182,7 @@ supports_standalone_web_search = true
+         supports_websockets: false,
+         supports_standalone_web_search: true,
+         capabilities: None,
++        experimental_daybreak_app_compat: false,
+         include_internal_metadata: false,
+     };
+ 
+@@ -369,6 +373,7 @@ fn test_create_amazon_bedrock_provider() {
+             supports_websockets: false,
+             supports_standalone_web_search: false,
+             capabilities: None,
++            experimental_daybreak_app_compat: false,
+             include_internal_metadata: false,
+         }
+     );
+@@ -513,6 +518,34 @@ fn test_merge_configured_model_providers_adds_custom_provider() {
+     );
+ }
+ 
++#[test]
++fn test_merge_configured_model_providers_replaces_openai_definition() {
++    let custom_openai = ModelProviderInfo {
++        name: "OpenAI".to_string(),
++        base_url: Some("https://proxy.example.com/v1".to_string()),
++        env_http_headers: Some(maplit::hashmap! {
++            "X-Api-Key".to_string() => "CLIPROXY_API_KEY".to_string(),
++        }),
++        requires_openai_auth: true,
++        supports_websockets: false,
++        capabilities: Some(crate::ModelProviderCapabilities {
++            external_web_access: Some(false),
++            remote_compaction: Some(crate::RemoteCompactionSupport::Unsupported),
++        }),
++        ..ModelProviderInfo::default()
++    };
++    let mut expected = built_in_model_providers(/*openai_base_url*/ None);
++    expected.insert(OPENAI_PROVIDER_ID.to_string(), custom_openai.clone());
++
++    assert_eq!(
++        merge_configured_model_providers(
++            built_in_model_providers(/*openai_base_url*/ None),
++            std::collections::HashMap::from([(OPENAI_PROVIDER_ID.to_string(), custom_openai)]),
++        ),
++        Ok(expected)
++    );
++}
++
+ #[test]
+ fn test_merge_configured_model_providers_applies_amazon_bedrock_aws_override() {
+     let credential_export = AwsCredentialExportConfig {
+diff --git a/codex-rs/model-provider/src/provider.rs b/codex-rs/model-provider/src/provider.rs
+index f8f0790dd..d6421c691 100644
+--- a/codex-rs/model-provider/src/provider.rs
++++ b/codex-rs/model-provider/src/provider.rs
+@@ -655,6 +655,7 @@ mod tests {
+             supports_websockets: false,
+             supports_standalone_web_search: false,
+             capabilities: None,
++            experimental_daybreak_app_compat: false,
+             include_internal_metadata: false,
+         }
+     }
+diff --git a/justfile b/justfile
+index 3614939c7..39fb5c419 100644
+--- a/justfile
++++ b/justfile
+@@ -1,11 +1,13 @@
+ set working-directory := "codex-rs"
+-set positional-arguments
++set positional-arguments := true
++
+ export CODEX_REPO_ROOT := justfile_directory()
+ export JUST_SHELL := justfile_directory() / "scripts/just-shell.py"
++
+ set shell := ["python3", "-c", 'import os, runpy; runpy.run_path(os.environ["JUST_SHELL"], run_name="__main__")']
+ set windows-shell := ["python", "-c", 'import os, runpy; runpy.run_path(os.environ["JUST_SHELL"], run_name="__main__")']
+ 
+-rust_min_stack := "8388608" # 8 MiB
++rust_min_stack := "8388608"
+ python := if os_family() == "windows" { "python" } else { "python3" }
+ 
+ # Display help
+@@ -13,7 +15,9 @@ help:
+     just -l
+ 
+ # `codex`
++
+ alias c := codex
++
+ codex *args:
+     cargo run --bin codex -- {args}
+ 
+@@ -82,6 +86,7 @@ install:
+ #
+ # Run `cargo install --locked cargo-nextest` if you don't have it installed.
+ # Prefer this for routine local runs. Workspace crate features are banned, so
++
+ # there should be no need to add `--all-features`.
+ [unix]
+ test *args:
+@@ -92,6 +97,7 @@ test *args:
+     $env:RUST_MIN_STACK = "{{ rust_min_stack }}"; $env:NEXTEST_PROFILE = "local"; cargo nextest run --no-fail-fast @($args | Select-Object -Skip 1)
+ 
+ # Run from the repository root so scripts that resolve paths from `cwd` see
++
+ # the same layout they use in GitHub Actions.
+ [no-cd]
+ test-github-scripts:
+@@ -111,6 +117,7 @@ bench-e2e:
+     bazel test --compilation_mode=opt --cache_test_results=no --test_output=streamed //codex-rs:e2e-benchmarks
+ 
+ # Run Bazel-backed end-to-end macrobenchmarks once per case with release-like
++
+ # Rust cfg paths but fastbuild codegen.
+ bench-e2e-smoke:
+     # Avoid optimizer cost because smoke runs only check that benchmarks work.
+@@ -120,6 +127,7 @@ bench-e2e-smoke:
+ 
+ # Build and run Codex from source using Bazel.
+ # On Unix, use `[no-cd]` and `--run_under="cd $PWD &&"` to ensure Bazel runs
++
+ # the command in the current working directory.
+ [no-cd]
+ [unix]

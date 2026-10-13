@@ -1,0 +1,14 @@
+{
+  "verified_at_utc": "2026-10-13T02:34:12.354331+00:00",
+  "version": "0.162.1",
+  "tag": "rust-v0.162.1",
+  "source_commit": "092d3acd6bec3e3a14bdc7e7a2810ab628ab759d",
+  "published_at": "2026-10-09T19:44:51Z",
+  "draft": false,
+  "prerelease": false,
+  "release_url": "https://github.com/openai/codex/releases/tag/rust-v0.162.1",
+  "official_source_changelog": "https://github.com/openai/codex/blob/rust-v0.162.1/CHANGELOG.md",
+  "documentation_changelog_url": "https://learn.chatgpt.com/docs/changelog?type=codex-cli",
+  "documentation_changelog_result": "文档站已迁移到 ChatGPT Learn，CLI 分类当前未列出本版；官方源码 CHANGELOG.md 明确将发布记录指向 GitHub Releases。",
+  "selected_release_source": "GitHub 官方 latest 稳定 Release、对应标签及源码提交"
+}

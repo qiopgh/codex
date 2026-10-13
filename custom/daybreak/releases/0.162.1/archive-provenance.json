@@ -1,0 +1,495 @@
+{
+  "base_commit": "092d3acd6bec3e3a14bdc7e7a2810ab628ab759d",
+  "files": [
+    {
+      "source_file": "outputs/codex-0.162.1/README.zh-CN.md",
+      "published_file": "README.zh-CN.md",
+      "source_sha256": "ad01ea6a62352a591f57dcc900d607cefbc9702a01ade7ed67c5d6d2fa68f931",
+      "published_sha256": "60db42e6bd730fd21f9f8bca56b806b493e0908ed8cb36b7c7f882c45c100a08",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/BUILD.zh-CN.md",
+      "published_file": "BUILD.zh-CN.md",
+      "source_sha256": "2d03528aec714eb86d1b2ac294c3d2b16d1fffc01021691efbaa122967e48730",
+      "published_sha256": "2ea12e65febf13eb02ce776ce0555adc4b116bba5e4e35b22b1da511819ba7ab",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/WINDOWS-DEPLOYMENT.zh-CN.md",
+      "published_file": "WINDOWS-DEPLOYMENT.zh-CN.md",
+      "source_sha256": "381e5dd744a94eac3ad09a4f8514ed005e84a237cf738637300efa03965c71bc",
+      "published_sha256": "dff4d9a414fb0a4a3a653c20bba9e26282bf90b24ad56739b3ca592ff9784dc6",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/LINUX-DEPLOYMENT.zh-CN.md",
+      "published_file": "LINUX-DEPLOYMENT.zh-CN.md",
+      "source_sha256": "912463171f642a081f6b36dcaf1ad004a99e78a880a467cc055f522c8ca9990f",
+      "published_sha256": "53597f398e6cbb491495f94e2f8d630d6278ce69671496f4af93c455a47d394e",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/source-validation.json",
+      "published_file": "source-validation.json",
+      "source_sha256": "d1b794c2a00bad1a53b8d876bdeed192f36c7888b762f81f541068702d66d4ca",
+      "published_sha256": "d1b794c2a00bad1a53b8d876bdeed192f36c7888b762f81f541068702d66d4ca",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/validation-summary.json",
+      "published_file": "validation-summary.json",
+      "source_sha256": "6270bf826767654f07b8f6fe960217d0fd1b8191d2bb479dc47a2600ce2a460c",
+      "published_sha256": "4eb3554d8ca36311fc0146d7d06d793e4a2cc707a0efa86bd287e2428c32b342",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/official-release.json",
+      "published_file": "official-release.json",
+      "source_sha256": "45bbe69de5ff0dedae6085fc45f59c9a4bb9865478c5ef8fc5e77fc38f9ae06b",
+      "published_sha256": "45bbe69de5ff0dedae6085fc45f59c9a4bb9865478c5ef8fc5e77fc38f9ae06b",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/official-tag.json",
+      "published_file": "official-tag.json",
+      "source_sha256": "c0ce53024624e9a357ed3d142f7dc8cbdcf09696ef00c6e8bd014a830023ac0c",
+      "published_sha256": "c0ce53024624e9a357ed3d142f7dc8cbdcf09696ef00c6e8bd014a830023ac0c",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/official-tag-object.json",
+      "published_file": "official-tag-object.json",
+      "source_sha256": "92e987dcb3b265d5a23842a1ecd543d4afc14ffaf050a4c1f63ebf62837ec260",
+      "published_sha256": "92e987dcb3b265d5a23842a1ecd543d4afc14ffaf050a4c1f63ebf62837ec260",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/official-packages.json",
+      "published_file": "official-packages.json",
+      "source_sha256": "39d27835fa31c4420bff5993ba7f01d168165840e7569231df4e2d075f071801",
+      "published_sha256": "39d27835fa31c4420bff5993ba7f01d168165840e7569231df4e2d075f071801",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/official-version-verification.json",
+      "published_file": "official-version-verification.json",
+      "source_sha256": "2fe24c48d432421c6f2800f3b4f0a28231349e023357fc0626725bc5a64f9069",
+      "published_sha256": "2fe24c48d432421c6f2800f3b4f0a28231349e023357fc0626725bc5a64f9069",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/official-changelog-extracted.txt",
+      "published_file": "official-changelog-extracted.txt",
+      "source_sha256": "1ba6f8e89dea28e5f85c3ccfa4a48c7a2f977569d4c8d8e0af75099dad6af0be",
+      "published_sha256": "1ba6f8e89dea28e5f85c3ccfa4a48c7a2f977569d4c8d8e0af75099dad6af0be",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/validation-requirements.txt",
+      "published_file": "validation-requirements.txt",
+      "source_sha256": "30e99f522a1e66e9224ad0efe99ea6f07a0594fa9f7ec201701cc159bf5eb5b9",
+      "published_sha256": "30e99f522a1e66e9224ad0efe99ea6f07a0594fa9f7ec201701cc159bf5eb5b9",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/predeployment-validation.json",
+      "published_file": "predeployment-validation.json",
+      "source_sha256": "6ad5e8f437e4d36452e00d54b39ee61e90b62460336bcc66ec20c9335d5b96d7",
+      "published_sha256": "6ad5e8f437e4d36452e00d54b39ee61e90b62460336bcc66ec20c9335d5b96d7",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/official-latest-recheck.json",
+      "published_file": "official-latest-recheck.json",
+      "source_sha256": "f0a4a560cb3d6e629d811c43f457ff5388ad94de78df08e64bddde5acf515e31",
+      "published_sha256": "f0a4a560cb3d6e629d811c43f457ff5388ad94de78df08e64bddde5acf515e31",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/selected-checks-status.json",
+      "published_file": "selected-checks-status.json",
+      "source_sha256": "35ddc1759b629557993e094d7051fede54310a7ab875a157d78fc93568467ad5",
+      "published_sha256": "35ddc1759b629557993e094d7051fede54310a7ab875a157d78fc93568467ad5",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/windows-migrations-sha384.json",
+      "published_file": "windows-migrations-sha384.json",
+      "source_sha256": "ad31e28d631825aceb779a5909c431275d90a79de6149cf5a9825dfd77c07f61",
+      "published_sha256": "ad31e28d631825aceb779a5909c431275d90a79de6149cf5a9825dfd77c07f61",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/windows-db-migrations.json",
+      "published_file": "windows-db-migrations.json",
+      "source_sha256": "74b149b391880b56b79de0c526ad9aef24ffc075b04bdd4a10ac1c9090cdbfba",
+      "published_sha256": "74b149b391880b56b79de0c526ad9aef24ffc075b04bdd4a10ac1c9090cdbfba",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/linux-db-migrations.json",
+      "published_file": "linux-db-migrations.json",
+      "source_sha256": "ebd9f33c6ca680ebc2fff59eb01fe515a045266b4ebb44043cb45847a50e9e31",
+      "published_sha256": "ebd9f33c6ca680ebc2fff59eb01fe515a045266b4ebb44043cb45847a50e9e31",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/windows-migration-match.json",
+      "published_file": "windows-migration-match.json",
+      "source_sha256": "764fe74f9add6ba118b4b684028492f67e9a5c0753c25864b54104833d69c593",
+      "published_sha256": "764fe74f9add6ba118b4b684028492f67e9a5c0753c25864b54104833d69c593",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/linux-migration-match.json",
+      "published_file": "linux-migration-match.json",
+      "source_sha256": "3f70b3d7663fbb23b321e0af5cd8e070f3feb67058db3a0d3d0170ae249cf097",
+      "published_sha256": "3f70b3d7663fbb23b321e0af5cd8e070f3feb67058db3a0d3d0170ae249cf097",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/port-audit-linux.json",
+      "published_file": "port-audit-linux.json",
+      "source_sha256": "5196225726672dcb387790a036734500fed17a0634f3210f1face87e307c7c1b",
+      "published_sha256": "5196225726672dcb387790a036734500fed17a0634f3210f1face87e307c7c1b",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/port-audit-windows.json",
+      "published_file": "port-audit-windows.json",
+      "source_sha256": "66b1d6658c53c5592318df332e110facf44d79d9a693c7f34f64c03e91b4892f",
+      "published_sha256": "66b1d6658c53c5592318df332e110facf44d79d9a693c7f34f64c03e91b4892f",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/linux-build-status.json",
+      "published_file": "linux-build-status.json",
+      "source_sha256": "0c48ed68edae8200d2c8a0a4366bef364654669fccb099a12d89d1c1c6fd42da",
+      "published_sha256": "51d74bc78aa233bbe87b99e720faccd5405d72a916628c4b7640175a9bf98ac9",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/windows-build-status.json",
+      "published_file": "windows-build-status.json",
+      "source_sha256": "f7941688c4f4f7dc1c8d7055e7f30b7de895f3149810b8ceeea1ae7594d54dc9",
+      "published_sha256": "1600b235ec0110c88444b606bce065214e27b07ba2a9e5357dcd7b64f1a95d1d",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/prepare-status.json",
+      "published_file": "prepare-status.json",
+      "source_sha256": "5d631e1c2623779122906ef518055147e2eccbcbcbc28ef3f879f09936353dc0",
+      "published_sha256": "5d631e1c2623779122906ef518055147e2eccbcbcbc28ef3f879f09936353dc0",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/binary-inspection.txt",
+      "published_file": "binary-inspection.txt",
+      "source_sha256": "44ff8f2814bfc6fcbb875d9a271f654e5b8a17b1c4598040613b84c7d11a9698",
+      "published_sha256": "8f63718f32f96e67ee77b555f2869e3b7ba2a54fde495ad0195a1d3722d8f5c0",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/windows-package.json",
+      "published_file": "windows-package.json",
+      "source_sha256": "396c7f3afde74ab63716125ed2c329ac1af1901a57224952534577270186bdc2",
+      "published_sha256": "edeb3e69fedade10e359ec03e98d68561a8ec5ab618f82e3b6fefb5fb259f186",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/linux-package.json",
+      "published_file": "linux-package.json",
+      "source_sha256": "676f1ecab38df37672057eb7281384885961ee7981a7f273737baa253fe73324",
+      "published_sha256": "3faf0d1e14db3f66d9135af4c6c8a778c3dcaec95355d373d6d528fc3909c6c4",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/linux-login-shell.txt",
+      "published_file": "linux-login-shell.txt",
+      "source_sha256": "6ac11c55ae01bca089eaea25f362bb74cf71d6d80f9caa6946e7f831d6ad3c20",
+      "published_sha256": "9b002337697541c945cd6ced1ec578f59bb77fcaff00df48de5eff4371feeb0f",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/windows-deployment.json",
+      "published_file": "windows-deployment.json",
+      "source_sha256": "2b82ea2ac01c8e5792de83e6faafbef3f2efb132652126fbddf02a9c02af8676",
+      "published_sha256": "17e464a5f8be5042674c37620794cc5ea7c6f1b97e62daf4b544d9d5096d10dc",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/windows-entry-versions.json",
+      "published_file": "windows-entry-versions.json",
+      "source_sha256": "586a1e84ca5bb55df9a0339bd8bfe2df3e0ab9bbdfb857c66ed6e3d3146080c2",
+      "published_sha256": "586a1e84ca5bb55df9a0339bd8bfe2df3e0ab9bbdfb857c66ed6e3d3146080c2",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/linux-deployment.json",
+      "published_file": "linux-deployment.json",
+      "source_sha256": "504710d6e5fc1a1f7543b76cd098dc0c777f683d882a7abf3fce58bf73f82443",
+      "published_sha256": "a118c256554f9f6af2c22d967d836ea28019545841ebf1d3e36b80cb6c361e21",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/windows-database-backups.json",
+      "published_file": "windows-database-backups.json",
+      "source_sha256": "6181bfd6bd922d779683f2bcd32a0f9452fb7504aa1c58f643d782078b7f5e07",
+      "published_sha256": "6181bfd6bd922d779683f2bcd32a0f9452fb7504aa1c58f643d782078b7f5e07",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/linux-database-backups.json",
+      "published_file": "linux-database-backups.json",
+      "source_sha256": "70f1e7768ad68f4e2fcc8f0d8a648eb6e3860008ae39f34c68dd9418263e058d",
+      "published_sha256": "70f1e7768ad68f4e2fcc8f0d8a648eb6e3860008ae39f34c68dd9418263e058d",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/windows-validation.json",
+      "published_file": "windows-validation.json",
+      "source_sha256": "fb6f1114019213713822660307b879a078d4d55a321564a99c3e62d400efea32",
+      "published_sha256": "80761c295d768dbb4f955584acb900984456891c0a768b44dfb1d7a6748dd0a7",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/windows-websocket-validation.json",
+      "published_file": "windows-websocket-validation.json",
+      "source_sha256": "bd7b3e4abcd3fc517a00471ea863dbdffacb7c3328f7887ec6f261f7dd4eabd8",
+      "published_sha256": "711e59cbc2446d056b774cfdcbbd94de351f502fd5d93b9d1233ae02e886af74",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/linux-validation.json",
+      "published_file": "linux-validation.json",
+      "source_sha256": "4113296e3b657c55e167cddff6c9c6b1bba5de24251175f5dc3aa7fb04493965",
+      "published_sha256": "3b72f92394c830366e6638db8e1423fd32d17f3135457da0745993f06ff0821e",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/linux-websocket-validation.json",
+      "published_file": "linux-websocket-validation.json",
+      "source_sha256": "7f4bd3dab10731312817eab26659ea8937b36e3a1a7ac91e4f37e54bea7b8aed",
+      "published_sha256": "55af0042caecb1ed5185edfc326e050030b5e8e74ad1813d19a9df87fde8fc02",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/linux-installed-validation.json",
+      "published_file": "linux-installed-validation.json",
+      "source_sha256": "1e4c25187de83a44403466e932c313f2fbecd80e525cf0458edfbd3bf39298aa",
+      "published_sha256": "5878d2e2a3d900b16d70369815b37bbfdb107668858312350ed95411453f1c4b",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/codex-0.162.1-openai-daybreak-r1.patch",
+      "published_file": "codex-0.162.1-openai-daybreak-r1.patch",
+      "source_sha256": "51bbf849ecf22d8fbfb7da260dc0b533f6025be70718ce5f20f771180b9c5766",
+      "published_sha256": "51bbf849ecf22d8fbfb7da260dc0b533f6025be70718ce5f20f771180b9c5766",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/port_patch.py",
+      "published_file": "scripts/port_patch.py",
+      "source_sha256": "cbc41231a6b551789b73826d1e6e6c12d3508e78437772d1fd02ef2f8cc2e59c",
+      "published_sha256": "cbc41231a6b551789b73826d1e6e6c12d3508e78437772d1fd02ef2f8cc2e59c",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/package_release.py",
+      "published_file": "scripts/package_release.py",
+      "source_sha256": "5d606def24e9b74222ba4b5afa1cf64c8e5c17cef2f4e576a115282bce50b5b3",
+      "published_sha256": "5d606def24e9b74222ba4b5afa1cf64c8e5c17cef2f4e576a115282bce50b5b3",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/prepare_windows_migrations.py",
+      "published_file": "scripts/prepare_windows_migrations.py",
+      "source_sha256": "48b9dc82218a7594e853b021e9f97c669d927ea42602c2e2bad6326283d9c2d1",
+      "published_sha256": "48b9dc82218a7594e853b021e9f97c669d927ea42602c2e2bad6326283d9c2d1",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/validate_release.py",
+      "published_file": "scripts/validate_release.py",
+      "source_sha256": "db359ea42eba694ab96f04f8d3cffbb77bf072ed215c3de8f9bbeb8d3e553786",
+      "published_sha256": "db359ea42eba694ab96f04f8d3cffbb77bf072ed215c3de8f9bbeb8d3e553786",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/deploy_windows_bin.ps1",
+      "published_file": "scripts/deploy_windows_bin.ps1",
+      "source_sha256": "8083414f3fde1985519a64217fd2698b1bd9ec15d2f83c1ebadaafd7979b763a",
+      "published_sha256": "8083414f3fde1985519a64217fd2698b1bd9ec15d2f83c1ebadaafd7979b763a",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/deploy_linux.py",
+      "published_file": "scripts/deploy_linux.py",
+      "source_sha256": "45bf48cc3727e67a1cd0b5f4e5507dcbf64c7193c019d20b6e72c29506bf1135",
+      "published_sha256": "45bf48cc3727e67a1cd0b5f4e5507dcbf64c7193c019d20b6e72c29506bf1135",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/backup_windows_cli_databases.py",
+      "published_file": "scripts/backup_windows_cli_databases.py",
+      "source_sha256": "01b871a72df53c4aa2f6413664ae039ff2c942d86cf9c9428842d04331e4cedf",
+      "published_sha256": "01b871a72df53c4aa2f6413664ae039ff2c942d86cf9c9428842d04331e4cedf",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/complete-windows-replacement.ps1",
+      "published_file": "scripts/complete-windows-replacement.ps1",
+      "source_sha256": "f6e7e6f8567781003565940064d95852e55250663db3aa1b5ec736420cb51a66",
+      "published_sha256": "f6e7e6f8567781003565940064d95852e55250663db3aa1b5ec736420cb51a66",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "work/update-0.162.1/build_jobs.py",
+      "published_file": "scripts/build_jobs.py",
+      "source_sha256": "5a6cfc68ff3c5af6782b104196433cd907f827384bbdd3e5bace0da16a74a070",
+      "published_sha256": "5a6cfc68ff3c5af6782b104196433cd907f827384bbdd3e5bace0da16a74a070",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "work/update-0.162.1/run_selected_checks.py",
+      "published_file": "scripts/run_selected_checks.py",
+      "source_sha256": "d5aeeaeab4db6a782b69ee14c3b48c7752b9c0fb580f55185466fcbefb91b962",
+      "published_sha256": "d5aeeaeab4db6a782b69ee14c3b48c7752b9c0fb580f55185466fcbefb91b962",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "work/update-0.162.1/check_linux_migrations.py",
+      "published_file": "scripts/check_linux_migrations.py",
+      "source_sha256": "f3a0f7c343daa0bbd4af8f6ee944cb9644b38a1b48a263f6d3244cf208d4d6cd",
+      "published_sha256": "f3a0f7c343daa0bbd4af8f6ee944cb9644b38a1b48a263f6d3244cf208d4d6cd",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "work/update-0.162.1/read_db_migrations.py",
+      "published_file": "scripts/read_db_migrations.py",
+      "source_sha256": "2c59df0a0ad6c46d2d50ff105494a8736fe5597371dc6745b9cf5761d73fbaed",
+      "published_sha256": "2c59df0a0ad6c46d2d50ff105494a8736fe5597371dc6745b9cf5761d73fbaed",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "work/update-0.162.1/download_official.py",
+      "published_file": "scripts/download_official.py",
+      "source_sha256": "9c0de051fbde5fd7d2114dafb6e1a963f05397afd8d71e2600cd0b2e8c600ef1",
+      "published_sha256": "9c0de051fbde5fd7d2114dafb6e1a963f05397afd8d71e2600cd0b2e8c600ef1",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "work/update-0.162.1/inspect_binaries.py",
+      "published_file": "scripts/inspect_binaries.py",
+      "source_sha256": "d8d9bfff323ce041c3aa64e8a99e2522e5f90858edddaeeaf6448b015f9eb30c",
+      "published_sha256": "d8d9bfff323ce041c3aa64e8a99e2522e5f90858edddaeeaf6448b015f9eb30c",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "work/update-0.162.1/resolve_port.py",
+      "published_file": "scripts/resolve_port.py",
+      "source_sha256": "89a6fe365c0c471cd638d0a7aaa799120b6f834b588be80b3fd1568d0b2ec3dd",
+      "published_sha256": "89a6fe365c0c471cd638d0a7aaa799120b6f834b588be80b3fd1568d0b2ec3dd",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "work/update-0.162.1/finalize_source_preparation.py",
+      "published_file": "scripts/finalize_source_preparation.py",
+      "source_sha256": "521ec1785db8935b8bdbed29b836b7783236b0d3b201966ca95aca9b3e9ccbbb",
+      "published_sha256": "521ec1785db8935b8bdbed29b836b7783236b0d3b201966ca95aca9b3e9ccbbb",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/build-logs/bazel-lock-update.log",
+      "published_file": "build-logs/bazel-lock-update.log",
+      "source_sha256": "c4a84e47684bbd6fdb6eb4828bca3d2bb516ecbe926060faae7a9537e733953e",
+      "published_sha256": "6f17b6be50095fb689a2ae17c4e07bcc3d0d8c2474d74aa3b86df550facd7acc",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/build-logs/config-schema.log",
+      "published_file": "build-logs/config-schema.log",
+      "source_sha256": "201c13d34dac333af9d498e05c5e52b4a407d739e8ef5804e7c5cabb500f6359",
+      "published_sha256": "0e7c836530270dd1de00bf3ef5fbf3bd51dd528106526d6ade3dc3223f6320e9",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/build-logs/database-concurrency-tests.log",
+      "published_file": "build-logs/database-concurrency-tests.log",
+      "source_sha256": "1ac5d97f62ba1f09cfecb42f8173e7828eca9f735060571024ef330f95e31341",
+      "published_sha256": "98252d52851ffcf54e2cb00fa84fbd47ecf0537d2c5aa3dbf4e2f86e043ca5cf",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/build-logs/daybreak-integration-tests.log",
+      "published_file": "build-logs/daybreak-integration-tests.log",
+      "source_sha256": "4925b1bf058e9d3fe519ba10fac81029a98266495c243dfed140b408352f63d2",
+      "published_sha256": "2f450f38c0c5515c9c4d4cf7162e9f9f42c7add3a28db3edba6e77bea717c2b1",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/build-logs/fmt-check.log",
+      "published_file": "build-logs/fmt-check.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/build-logs/fmt-linux.log",
+      "published_file": "build-logs/fmt-linux.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/build-logs/fmt-windows.log",
+      "published_file": "build-logs/fmt-windows.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_paths_replaced": false
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/build-logs/linux-build.log",
+      "published_file": "build-logs/linux-build.log",
+      "source_sha256": "ab583d55d22aa0fba8e0ba08bbc6e63418b8d46330b4f085bbac75bc1ba44e26",
+      "published_sha256": "c7e98c518e4898973db64a4c88106c5b3a3d4a3f0548be986e490e23eeb3aab2",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/build-logs/provider-catalog-tests.log",
+      "published_file": "build-logs/provider-catalog-tests.log",
+      "source_sha256": "b4aead63368b6a0ffd2d2c61c51b35966d1e3afc31af24a08b8c7fbf71d3d104",
+      "published_sha256": "675cab208979478f7548e794489ca57a03ecc0b5ad56e78ed8e067bbb3d671a3",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/build-logs/provider-clippy.log",
+      "published_file": "build-logs/provider-clippy.log",
+      "source_sha256": "d190bb859f95f5157f44a8a4c9590dfe70f8c6e8953ac7537ee8df351c21f27e",
+      "published_sha256": "9e4196fb552cf6ad142e6018ff1950e0399208d5d5641d8f372dc3472ccf8177",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/build-logs/provider-config-tests.log",
+      "published_file": "build-logs/provider-config-tests.log",
+      "source_sha256": "b0f4a74138c04586e1efbe3b5b315b79464e3a62a271bc16ab0480297002253e",
+      "published_sha256": "94c87264ed777235b9dc897a8d3c6d6a6f05c580ecdd5b0fc55bb5da7e3fc0b8",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/build-logs/windows-build.log",
+      "published_file": "build-logs/windows-build.log",
+      "source_sha256": "0e082e20eac66e6c809c2cb9a515859b28f49bdb6a8a374e48f8727fe4af91e0",
+      "published_sha256": "cd644cf0271e62bab22deec4e2aa74d8ae0a8cd786d25d1b9325165e46cf186c",
+      "local_paths_replaced": true
+    },
+    {
+      "source_file": "outputs/codex-0.162.1/codex-0.162.1-openai-daybreak-r1-windows-x86_64/custom-build.json",
+      "published_file": "windows-custom-build.json",
+      "source_sha256": "14de8c2a4b16ddfe14841c4fb4318800f2b38b4f2ef207d471335f70ce300d3a",
+      "published_sha256": "14de8c2a4b16ddfe14841c4fb4318800f2b38b4f2ef207d471335f70ce300d3a",
+      "local_paths_replaced": false
+    }
+  ]
+}
