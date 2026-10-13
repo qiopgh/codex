@@ -85,7 +85,7 @@ name = "Other provider"
 fn required_provider_definitions_are_validated_without_local_defaults() -> anyhow::Result<()> {
     for invalid in [
         "[model_providers.gateway]\nbase_url = 'https://example.test'",
-        "[model_providers.openai]\nname = 'Reserved'",
+        "[model_providers.ollama]\nname = 'Reserved'",
         "[model_providers.gateway]\nname = 'Gateway'\n[model_providers.gateway.aws]\nregion = 'us-east-1'",
     ] {
         let requirements = toml::from_str(invalid)?;
@@ -95,5 +95,18 @@ fn required_provider_definitions_are_validated_without_local_defaults() -> anyho
             .expect_err("local config cannot repair an invalid required provider");
         assert_eq!(error.kind(), std::io::ErrorKind::InvalidData);
     }
+    Ok(())
+}
+
+#[test]
+fn required_openai_provider_definition_is_valid() -> anyhow::Result<()> {
+    let requirements = toml::from_str(
+        "[model_providers.openai]\nname = 'OpenAI'\nbase_url = 'https://proxy.example.test/v1'\nrequires_openai_auth = true\nsupports_websockets = false",
+    )?;
+    let local = ConfigLayerEntry::new(
+        ConfigLayerSource::SessionFlags,
+        toml::from_str("model_provider = 'openai'")?,
+    );
+    ConfigLayerStack::new(vec![local], ConfigRequirements::default(), requirements)?;
     Ok(())
 }

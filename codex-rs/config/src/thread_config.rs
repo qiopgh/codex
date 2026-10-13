@@ -317,6 +317,7 @@ mod tests {
             supports_websockets: true,
             supports_standalone_web_search: true,
             capabilities: None,
+            experimental_daybreak_app_compat: false,
             include_internal_metadata: false,
         }
     }

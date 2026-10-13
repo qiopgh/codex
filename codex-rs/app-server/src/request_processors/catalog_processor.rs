@@ -291,6 +291,17 @@ impl CatalogRequestProcessor {
             .list_models(codex_models_manager::manager::RefreshStrategy::OnlineIfUncached)
             .await
             .map_err(|err| config_load_error(&err))?;
+        let mut presets = presets;
+        if let Some(marker) = self.config.model_provider.daybreak_app_compat_marker(
+            &self.config.model_provider_id,
+            &presets,
+            self.thread_manager
+                .auth_manager()
+                .auth_cached()
+                .is_some_and(|auth| auth.is_chatgpt_auth()),
+        ) {
+            presets.push(marker);
+        }
         let models = supported_models(presets, include_hidden.unwrap_or(false));
         let total = models.len();
 

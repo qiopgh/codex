@@ -32,6 +32,7 @@ use std::sync::RwLock;
 use std::time::Duration;
 
 mod capabilities;
+mod daybreak_app_compat;
 mod gateway_oauth;
 pub use capabilities::ModelProviderCapabilities;
 pub use capabilities::RemoteCompactionSupport;
@@ -200,6 +201,9 @@ pub struct ModelProviderInfo {
     /// Whether this provider supports the standalone web-search endpoint.
     #[serde(default)]
     pub supports_standalone_web_search: bool,
+    /// 为旧版 App 的 SSH 模型列表启用统一 Daybreak 开关兼容，并校验真实模型能力。
+    #[serde(default, skip_serializing_if = "std::ops::Not::not")]
+    pub experimental_daybreak_app_compat: bool,
     /// Runtime-only opt-in for internal metadata, independent of the destination check.
     /// This cannot be loaded from or written to serialized provider configuration.
     #[serde(skip)]
@@ -561,6 +565,7 @@ other non-default provider fields are not supported"
             supports_websockets: true,
             supports_standalone_web_search: true,
             capabilities: None,
+            experimental_daybreak_app_compat: false,
             include_internal_metadata: true,
         }
     }
@@ -601,6 +606,7 @@ other non-default provider fields are not supported"
             supports_websockets: false,
             supports_standalone_web_search: false,
             capabilities: None,
+            experimental_daybreak_app_compat: false,
             include_internal_metadata: false,
         }
     }
@@ -691,11 +697,10 @@ pub fn built_in_model_providers(
     .collect()
 }
 
-/// Merge configured providers into the built-in provider catalog.
+/// 将用户配置的 provider 合并到内置目录。
 ///
-/// Configured providers extend the built-in set. Built-in providers are not
-/// generally overridable, but built-in Amazon Bedrock providers allow the user
-/// to customize their endpoint, authentication, headers, and AWS settings.
+/// 小写 `openai` 使用完整的自定义定义替换内置定义；Amazon Bedrock 保留字段级覆盖规则。
+/// 其他内置 provider 不接受覆盖。
 pub fn merge_configured_model_providers(
     mut model_providers: HashMap<String, ModelProviderInfo>,
     configured_model_providers: HashMap<String, ModelProviderInfo>,
@@ -725,6 +730,8 @@ pub fn merge_configured_model_providers(
                         .extend(http_headers_override);
                 }
             }
+        } else if key == OPENAI_PROVIDER_ID {
+            model_providers.insert(key, provider);
         } else {
             model_providers.entry(key).or_insert(provider);
         }
@@ -775,6 +782,7 @@ pub fn create_oss_provider_with_base_url(base_url: &str, wire_api: WireApi) -> M
         supports_websockets: false,
         supports_standalone_web_search: false,
         capabilities: None,
+        experimental_daybreak_app_compat: false,
         include_internal_metadata: false,
     }
 }
