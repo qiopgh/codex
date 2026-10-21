@@ -963,6 +963,10 @@ impl ModelClient {
         responses_metadata: &CodexResponsesMetadata,
         include_internal: bool,
     ) -> Result<ResponsesApiRequest> {
+        self.state
+            .provider
+            .info()
+            .validate_daybreak_app_compat(model_info, prompt.cyber_access_program)?;
         let mut input = prompt.get_formatted_input_for_request(model_info);
         if !self.reasoning_effort_override_enabled(model_info) {
             // Unsupported models and disabled overrides must also accept saved history.

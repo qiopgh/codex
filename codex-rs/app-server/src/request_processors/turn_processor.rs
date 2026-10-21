@@ -658,6 +658,28 @@ impl TurnRequestProcessor {
             )
             .await?;
 
+        let config = thread.config().await;
+        if config.model_provider.experimental_daybreak_app_compat {
+            let snapshot = thread.config_snapshot().await;
+            let model = thread_settings
+                .collaboration_mode
+                .as_ref()
+                .map(|mode| mode.settings.model.as_str())
+                .or(thread_settings.model.as_deref())
+                .unwrap_or(&snapshot.model);
+            let model_info = self
+                .thread_manager
+                .get_models_manager()
+                .get_model_info(model, &config.to_models_manager_config())
+                .await;
+            config
+                .model_provider
+                .validate_daybreak_app_compat(
+                    &model_info,
+                    params.cyber_access_program.map(Into::into),
+                )
+                .map_err(|err| invalid_request(err.to_string()))?;
+        }
         let submission = thread
             .start_or_steer_turn(
                 TurnInputRequest::new(input)

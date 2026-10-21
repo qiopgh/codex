@@ -8,6 +8,7 @@ use tempfile::tempdir;
 #[test]
 fn runtime_internal_metadata_opt_in_is_not_serialized_or_configurable() {
     let trusted = ModelProviderInfo {
+        experimental_daybreak_app_compat: false,
         include_internal_metadata: true,
         ..Default::default()
     };
@@ -97,6 +98,7 @@ base_url = "http://localhost:11434/v1"
         supports_websockets: false,
         supports_standalone_web_search: false,
         capabilities: None,
+        experimental_daybreak_app_compat: false,
         include_internal_metadata: false,
     };
 
@@ -136,6 +138,7 @@ query_params = { api-version = "2025-04-01-preview" }
         supports_websockets: false,
         supports_standalone_web_search: false,
         capabilities: None,
+        experimental_daybreak_app_compat: false,
         include_internal_metadata: false,
     };
 
@@ -179,6 +182,7 @@ supports_standalone_web_search = true
         supports_websockets: false,
         supports_standalone_web_search: true,
         capabilities: None,
+        experimental_daybreak_app_compat: false,
         include_internal_metadata: false,
     };
 
@@ -369,6 +373,7 @@ fn test_create_amazon_bedrock_provider() {
             supports_websockets: false,
             supports_standalone_web_search: false,
             capabilities: None,
+            experimental_daybreak_app_compat: false,
             include_internal_metadata: false,
         }
     );
@@ -508,6 +513,34 @@ fn test_merge_configured_model_providers_adds_custom_provider() {
         merge_configured_model_providers(
             built_in_model_providers(/*openai_base_url*/ None),
             configured_model_providers,
+        ),
+        Ok(expected)
+    );
+}
+
+#[test]
+fn test_merge_configured_model_providers_replaces_openai_definition() {
+    let custom_openai = ModelProviderInfo {
+        name: "OpenAI".to_string(),
+        base_url: Some("https://proxy.example.com/v1".to_string()),
+        env_http_headers: Some(maplit::hashmap! {
+            "X-Api-Key".to_string() => "CLIPROXY_API_KEY".to_string(),
+        }),
+        requires_openai_auth: true,
+        supports_websockets: false,
+        capabilities: Some(crate::ModelProviderCapabilities {
+            external_web_access: Some(false),
+            remote_compaction: Some(crate::RemoteCompactionSupport::Unsupported),
+        }),
+        ..ModelProviderInfo::default()
+    };
+    let mut expected = built_in_model_providers(/*openai_base_url*/ None);
+    expected.insert(OPENAI_PROVIDER_ID.to_string(), custom_openai.clone());
+
+    assert_eq!(
+        merge_configured_model_providers(
+            built_in_model_providers(/*openai_base_url*/ None),
+            std::collections::HashMap::from([(OPENAI_PROVIDER_ID.to_string(), custom_openai)]),
         ),
         Ok(expected)
     );

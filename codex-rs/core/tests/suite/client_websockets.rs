@@ -2733,6 +2733,7 @@ fn websocket_provider_with_connect_timeout(
         supports_websockets: true,
         supports_standalone_web_search: false,
         capabilities: None,
+        experimental_daybreak_app_compat: false,
         include_internal_metadata: false,
     }
 }
