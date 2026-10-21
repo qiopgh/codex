@@ -1,0 +1,8 @@
+{
+  "formal_version": "codex-cli 0.162.1",
+  "staged_version": "codex-cli 0.163.0",
+  "deployed_files_verified": 48,
+  "formal_path": "${CODEX_HOME}\\bin\\codex.exe",
+  "staged_path": "${CODEX_HOME}\\bin\\codex.new.exe",
+  "staged_sha256": "7fe721d894f96f42439c2ca0ca25b352a5e180cb8eb405a3b533a97bdae4c587"
+}

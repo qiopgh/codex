@@ -1,0 +1,149 @@
+{
+  "base": "rust-v0.163.0",
+  "previous": "rust-v0.162.1",
+  "applied": [
+    {
+      "path": "codex-rs/app-server/src/config_manager_service_tests.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/app-server/src/request_processors/catalog_processor.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/app-server/src/request_processors/thread_processor_tests.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/app-server/src/request_processors/turn_processor.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/app-server/tests/daybreak_app_compat.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/cloud-config/src/service_tests.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/config/src/config_toml.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/config/src/model_provider_requirements_tests.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/config/src/thread_config.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/config/src/thread_config/remote.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/core/src/client.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/core/src/client_tests.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/core/src/session/mod.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/core/tests/daybreak_app_compat.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/core/tests/responses_headers.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/core/tests/suite/client.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/core/tests/suite/client_websockets.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/core/tests/suite/stream_error_allows_next_turn.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/core/tests/suite/stream_no_completed.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/login/src/auth_env_telemetry.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/daybreak_app_compat.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/daybreak_app_compat_tests.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/lib.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/model_provider_info_tests.rs",
+      "three_way": false,
+      "exit_code": 0
+    },
+    {
+      "path": "codex-rs/model-provider/src/provider.rs",
+      "three_way": false,
+      "exit_code": 0
+    }
+  ],
+  "regenerate": [
+    "codex-rs/Cargo.lock",
+    "codex-rs/core/config.schema.json",
+    "justfile"
+  ],
+  "upstream_review": [
+    "保留新版 provider capabilities 和 include_internal_metadata 的运行时限制",
+    "保留原生 Daybreak 及 API-key 程序默认策略，不通过补丁改变授权",
+    "保留 ModelClient 新增 output_token_replay_enabled 参数及 HTTP executor 分离",
+    "保留响应内容保留注解、会话恢复权限和新增运行时状态结构",
+    "兼容能力校验继续位于会话初始化、turn/start 和 HTTP/WebSocket 共用请求构造"
+  ],
+  "conflicts": [],
+  "platform": "windows",
+  "synchronized_from": "linux",
+  "source_files_synchronized": 25,
+  "migration_line_endings": "CRLF",
+  "note": "先同步同一组定制改动，再按 Windows 真实迁移校验值准备 SQL。"
+}

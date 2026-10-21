@@ -1,0 +1,50 @@
+RUST_MIN_STACK=8388608 NEXTEST_PROFILE=local cargo nextest run --no-fail-fast "$@"
+   Compiling hyper v1.11.1
+   Compiling codex-utils-rustls-provider v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/rustls-provider)
+   Compiling codex-utils-path-uri v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/path-uri)
+   Compiling codex-utils-cache v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/cache)
+   Compiling codex-execpolicy v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/execpolicy)
+   Compiling codex-async-utils v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/async-utils)
+   Compiling codex-utils-pty v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/pty)
+   Compiling codex-keyring-store v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/keyring-store)
+   Compiling codex-utils-image v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/image)
+   Compiling codex-network-proxy v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/network-proxy)
+   Compiling hyper-util v0.1.20
+   Compiling hyper-tls v0.6.0
+   Compiling hyper-rustls v0.27.7
+   Compiling reqwest v0.12.28
+   Compiling hyper-timeout v0.5.2
+   Compiling tonic v0.14.3
+   Compiling tonic-prost v0.14.3
+   Compiling opentelemetry-proto v0.31.0
+   Compiling codex-http-client v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/http-client)
+   Compiling opentelemetry-http v0.31.0
+   Compiling codex-client v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/codex-client)
+   Compiling codex-websocket-client v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/websocket-client)
+   Compiling codex-workload-identity v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/workload-identity)
+   Compiling opentelemetry-otlp v0.31.0
+   Compiling codex-protocol v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/protocol)
+   Compiling codex-file-system v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/file-system)
+   Compiling codex-model-provider-info v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/model-provider-info)
+   Compiling codex-history v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/history)
+   Compiling codex-context-fragments v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/context-fragments)
+   Compiling codex-features v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/features)
+   Compiling codex-api v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/codex-api)
+   Compiling codex-agent-identity v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/agent-identity)
+   Compiling codex-utils-output-truncation v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/output-truncation)
+   Compiling codex-git-utils v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/git-utils)
+   Compiling codex-secrets v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/secrets)
+   Compiling codex-otel v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/otel)
+   Compiling codex-config v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/config)
+   Compiling codex-guardian-context v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/guardian-context)
+   Compiling codex-prompts v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/prompts)
+   Compiling codex-login v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/login)
+   Compiling codex-models-manager v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/models-manager)
+    Finished `release` profile [optimized] target(s) in 2m 56s
+────────────
+ Nextest run ID 997e47bc-bde6-41d1-bd29-b8d0b9eae2f5 with nextest profile: local
+    Starting 2 tests across 1 binary (52 tests skipped)
+        PASS [   0.034s] (1/2) codex-models-manager manager::tests::authoritative_catalog_preserves_hidden_models_and_matches_exact_ids
+        PASS [   0.036s] (2/2) codex-models-manager manager::tests::authoritative_catalog_failure_invalidates_cache_until_refresh_succeeds
+────────────
+     Summary [   0.039s] 2 tests run: 2 passed, 52 skipped

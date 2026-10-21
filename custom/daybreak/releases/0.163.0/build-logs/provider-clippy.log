@@ -1,0 +1,23 @@
+cargo clippy --fix --tests --allow-dirty {args}
+    Checking hyper v1.11.1
+    Checking codex-utils-absolute-path v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/absolute-path)
+    Checking codex-utils-rustls-provider v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/rustls-provider)
+    Checking codex-utils-cache v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/cache)
+    Checking codex-utils-string v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/string)
+    Checking codex-utils-redacted-string v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/redacted-string)
+    Checking codex-async-utils v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/async-utils)
+    Checking codex-utils-image v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/image)
+    Checking codex-utils-home-dir v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/home-dir)
+    Checking codex-utils-path-uri v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/path-uri)
+    Checking codex-execpolicy v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/execpolicy)
+    Checking codex-extension-items v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/ext/items)
+    Checking codex-network-proxy v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/network-proxy)
+    Checking hyper-util v0.1.20
+    Checking hyper-rustls v0.27.7
+    Checking hyper-tls v0.6.0
+    Checking reqwest v0.12.28
+    Checking codex-http-client v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/http-client)
+    Checking codex-client v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/codex-client)
+    Checking codex-protocol v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/protocol)
+    Checking codex-model-provider-info v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/model-provider-info)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 42.00s

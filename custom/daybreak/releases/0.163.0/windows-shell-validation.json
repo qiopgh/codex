@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "shells": [
+    {
+      "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "shell_version": "5.1.26100.9711",
+      "entry": "${WINDOWS_USER_HOME}\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.exe",
+      "version": "codex-cli 0.163.0",
+      "sha256": "7fe721d894f96f42439c2ca0ca25b352a5e180cb8eb405a3b533a97bdae4c587"
+    },
+    {
+      "shell": "${WINDOWS_USER_HOME}\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+      "shell_version": "7.6.5",
+      "entry": "${WINDOWS_USER_HOME}\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.exe",
+      "version": "codex-cli 0.163.0",
+      "sha256": "7fe721d894f96f42439c2ca0ca25b352a5e180cb8eb405a3b533a97bdae4c587"
+    }
+  ],
+  "path_modified": false
+}

@@ -1,0 +1,115 @@
+RUST_MIN_STACK=8388608 NEXTEST_PROFILE=local cargo nextest run --no-fail-fast "$@"
+   Compiling hyper v1.11.1
+   Compiling codex-utils-absolute-path v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/absolute-path)
+   Compiling codex-utils-cache v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/cache)
+   Compiling codex-utils-string v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/string)
+   Compiling codex-utils-redacted-string v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/redacted-string)
+   Compiling codex-async-utils v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/async-utils)
+   Compiling codex-utils-pty v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/pty)
+   Compiling codex-keyring-store v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/keyring-store)
+   Compiling codex-file-search v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/file-search)
+   Compiling codex-utils-cargo-bin v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/cargo-bin)
+   Compiling codex-utils-home-dir v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/home-dir)
+   Compiling codex-utils-path-uri v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/path-uri)
+   Compiling codex-extension-items v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/ext/items)
+   Compiling codex-execpolicy v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/execpolicy)
+   Compiling codex-utils-image v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/image)
+   Compiling codex-network-proxy v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/network-proxy)
+   Compiling codex-utils-path v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/path-utils)
+   Compiling hyper-util v0.1.20
+   Compiling hyper-rustls v0.27.7
+   Compiling hyper-tls v0.6.0
+   Compiling reqwest v0.12.28
+   Compiling hyper-timeout v0.5.2
+   Compiling tonic v0.14.3
+   Compiling aws-smithy-http-client v1.1.12
+   Compiling wiremock v0.6.5
+   Compiling codex-http-client v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/http-client)
+   Compiling opentelemetry-http v0.31.0
+   Compiling aws-smithy-runtime v1.9.5
+   Compiling tonic-prost v0.14.3
+   Compiling opentelemetry-proto v0.31.0
+   Compiling codex-client v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/codex-client)
+   Compiling codex-websocket-client v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/websocket-client)
+   Compiling aws-runtime v1.5.17
+   Compiling codex-protocol v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/protocol)
+   Compiling opentelemetry-otlp v0.31.0
+   Compiling codex-workload-identity v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/workload-identity)
+   Compiling aws-sdk-sso v1.91.0
+   Compiling aws-sdk-ssooidc v1.93.0
+   Compiling aws-sdk-sts v1.95.0
+   Compiling aws-sdk-signin v1.2.0
+   Compiling aws-config v1.8.12
+   Compiling codex-aws-auth v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/aws-auth)
+   Compiling codex-file-system v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/file-system)
+   Compiling codex-git-utils v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/git-utils)
+   Compiling codex-history v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/history)
+   Compiling codex-api v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/codex-api)
+   Compiling codex-model-provider-info v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/model-provider-info)
+   Compiling codex-features v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/features)
+   Compiling codex-secrets v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/secrets)
+   Compiling codex-config v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/config)
+   Compiling codex-otel v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/otel)
+   Compiling codex-utils-output-truncation v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/utils/output-truncation)
+   Compiling codex-agent-identity v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/agent-identity)
+   Compiling codex-context-fragments v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/context-fragments)
+   Compiling codex-guardian-context v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/guardian-context)
+   Compiling codex-state v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/state)
+   Compiling codex-prompts v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/prompts)
+   Compiling codex-response-debug-context v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/response-debug-context)
+   Compiling codex-rollout v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/rollout)
+   Compiling codex-login v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/login)
+   Compiling codex-feedback v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/feedback)
+   Compiling codex-models-manager v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/models-manager)
+   Compiling codex-model-provider v0.163.0 (${LINUX_USER_HOME}/codex-source-0.163.0-linux/codex-rs/model-provider)
+    Finished `release` profile [optimized] target(s) in 4m 39s
+────────────
+ Nextest run ID 529e1284-cd8b-470c-8ea0-c0a912137f68 with nextest profile: local
+    Starting 45 tests across 3 binaries (456 tests skipped)
+        PASS [   0.019s] ( 1/45) codex-model-provider-info tests::test_create_amazon_bedrock_provider
+        PASS [   0.024s] ( 2/45) codex-config thread_config::remote::tests::model_provider_proto_defaults_standalone_web_search_to_false
+        PASS [   0.030s] ( 3/45) codex-model-provider provider::tests::create_model_provider_builds_command_auth_manager_without_base_manager
+        PASS [   0.036s] ( 4/45) codex-config model_provider_requirements::tests::required_provider_definitions_are_validated_without_local_defaults
+        PASS [   0.044s] ( 5/45) codex-model-provider-info tests::test_merge_configured_model_providers_applies_amazon_bedrock_aws_override
+        PASS [   0.045s] ( 6/45) codex-config model_provider_requirements::tests::required_openai_provider_definition_is_valid
+        PASS [   0.045s] ( 7/45) codex-config thread_config::remote::tests::model_provider_proto_roundtrips_through_domain_type
+        PASS [   0.050s] ( 8/45) codex-model-provider provider::tests::create_model_provider_does_not_use_openai_auth_manager_for_amazon_bedrock_provider
+        PASS [   0.028s] ( 9/45) codex-model-provider-info tests::test_merge_configured_model_providers_replaces_openai_definition
+        PASS [   0.057s] (10/45) codex-model-provider-info tests::test_create_amazon_bedrock_runtime_provider_with_aws_configuration
+        PASS [   0.057s] (11/45) codex-model-provider-info tests::test_deserialize_provider_auth_config_defaults
+        PASS [   0.059s] (12/45) codex-model-provider-info tests::test_deserialize_azure_model_provider_toml
+        PASS [   0.059s] (13/45) codex-model-provider-info tests::test_deserialize_chat_wire_api_shows_helpful_error
+        PASS [   0.063s] (14/45) codex-model-provider-info daybreak_app_compat::tests::marker_requires_explicit_opt_in_chatgpt_openai_and_real_blue
+        PASS [   0.018s] (15/45) codex-model-provider-info tests::test_validate_provider_aws_credential_export_command
+        PASS [   0.063s] (16/45) codex-model-provider-info tests::test_deserialize_websocket_connect_timeout
+        PASS [   0.069s] (17/45) codex-model-provider-info tests::runtime_internal_metadata_opt_in_is_not_serialized_or_configurable
+        PASS [   0.069s] (18/45) codex-model-provider-info tests::test_create_amazon_bedrock_runtime_provider
+        PASS [   0.012s] (19/45) codex-model-provider-info tests::test_validate_provider_aws_rejects_websockets
+        PASS [   0.048s] (20/45) codex-model-provider-info tests::test_merge_configured_model_providers_rejects_amazon_bedrock_non_default_fields
+        PASS [   0.074s] (21/45) codex-model-provider-info tests::test_built_in_model_providers_include_amazon_bedrock_endpoints
+        PASS [   0.074s] (22/45) codex-model-provider-info tests::test_deserialize_example_model_provider_toml
+        PASS [   0.056s] (23/45) codex-model-provider-info tests::test_merge_configured_model_providers_applies_runtime_overrides_independently
+        PASS [   0.030s] (24/45) codex-model-provider-info tests::test_validate_provider_aws_auth_refresh_command
+        PASS [   0.033s] (25/45) codex-model-provider-info tests::test_uses_openai_actor_authorization
+        PASS [   0.077s] (26/45) codex-model-provider-info gateway_oauth::tests::parses_header_and_cookie_delivery
+        PASS [   0.029s] (27/45) codex-model-provider-info tests::test_validate_provider_aws_rejects_conflicting_auth
+        PASS [   0.049s] (28/45) codex-model-provider-info tests::test_personal_access_token_uses_chatgpt_codex_base_url
+        PASS [   0.087s] (29/45) codex-model-provider-info tests::test_header_auth_uses_chatgpt_codex_base_url
+        PASS [   0.088s] (30/45) codex-model-provider-info tests::test_merge_configured_model_providers_applies_amazon_bedrock_transport_overrides
+        PASS [   0.018s] (31/45) codex-model-provider-info tests::test_api_provider_applies_current_managed_residency
+        PASS [   0.059s] (32/45) codex-model-provider-info tests::test_deserialize_provider_aws_config
+        PASS [   0.019s] (33/45) codex-model-provider-info tests::model_catalog_url_deserializes_without_changing_inference_routing
+        PASS [   0.061s] (34/45) codex-model-provider-info tests::test_merge_configured_model_providers_adds_custom_provider
+        PASS [   0.022s] (35/45) codex-model-provider-info daybreak_app_compat::tests::requests_reject_marker_and_unsupported_programs_without_rewriting_models
+        PASS [   0.063s] (36/45) codex-model-provider-info tests::codex_backend_routes_require_codex_base_url
+        PASS [   0.065s] (37/45) codex-model-provider-info gateway_oauth::tests::rejects_unsafe_endpoints_and_delivery_collisions
+        PASS [   0.109s] (38/45) codex-model-provider-info tests::test_built_in_model_providers_include_amazon_bedrock_runtime
+        PASS [   0.028s] (39/45) codex-model-provider-info tests::test_amazon_bedrock_providers_add_mantle_client_agent_header
+        PASS [   0.070s] (40/45) codex-model-provider-info tests::test_deserialize_provider_auth_config_allows_zero_refresh_interval
+        PASS [   0.071s] (41/45) codex-model-provider-info tests::test_merge_configured_model_providers_allows_amazon_bedrock_default_fields
+        PASS [   0.116s] (42/45) codex-model-provider provider::tests::create_model_provider_uses_managed_auth_for_amazon_bedrock_provider
+        PASS [   0.119s] (43/45) codex-config model_provider_requirements::tests::higher_requirements_merge_provider_fields_and_nested_tables
+        PASS [   0.083s] (44/45) codex-model-provider-info tests::test_deserialize_ollama_model_provider_toml
+        PASS [   0.091s] (45/45) codex-model-provider capabilities::tests::capability_overrides_preserve_unspecified_provider_defaults
+────────────
+     Summary [   0.150s] 45 tests run: 45 passed, 456 skipped

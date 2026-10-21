@@ -1,0 +1,38 @@
+{
+  "ready_to_deploy": true,
+  "version": "0.163.0",
+  "source_commit": "83086188ae0614bd882818ff1aa23f3194962012",
+  "old_app_database_coexistence_verified": true,
+  "patch_sha256": "325cf9f3577a2ceed65bf7491ba46f880ce316f056036235540f08556b0459ef",
+  "binary_reports": [
+    {
+      "platform": "windows",
+      "transport": "http",
+      "binary_sha256": "7fe721d894f96f42439c2ca0ca25b352a5e180cb8eb405a3b533a97bdae4c587",
+      "checks": 18,
+      "migrations_after": 77
+    },
+    {
+      "platform": "windows",
+      "transport": "websocket",
+      "binary_sha256": "7fe721d894f96f42439c2ca0ca25b352a5e180cb8eb405a3b533a97bdae4c587",
+      "checks": 18,
+      "migrations_after": 77
+    },
+    {
+      "platform": "linux",
+      "transport": "http",
+      "binary_sha256": "5575e45f29fc627e692f05b0679cddcf11f901d596e78a1d1b395c172bbebc3a",
+      "checks": 18,
+      "migrations_after": 77
+    },
+    {
+      "platform": "linux",
+      "transport": "websocket",
+      "binary_sha256": "5575e45f29fc627e692f05b0679cddcf11f901d596e78a1d1b395c172bbebc3a",
+      "checks": 18,
+      "migrations_after": 77
+    }
+  ],
+  "official_latest_rechecked": true
+}
