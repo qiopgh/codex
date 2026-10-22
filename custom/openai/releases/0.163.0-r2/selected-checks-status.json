@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "command": [
+    "just",
+    "test",
+    "--release",
+    "--locked",
+    "-p",
+    "codex-model-provider-info",
+    "-p",
+    "codex-config",
+    "-p",
+    "codex-model-provider",
+    "-p",
+    "codex-app-server",
+    "--lib",
+    "-E",
+    "package(codex-model-provider-info) | (package(codex-config) & test(model_provider)) | test(capability_overrides_preserve_unspecified_provider_defaults) | test(openai_provider_override_is_writable)"
+  ],
+  "started_at_utc": "2026-10-22T01:49:06.410007+00:00",
+  "exit_code": 0,
+  "source_unchanged": true,
+  "completed_at_utc": "2026-10-22T02:06:23.893390+00:00"
+}

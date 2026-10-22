@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "base_commit": "83086188ae0614bd882818ff1aa23f3194962012",
+  "revision": "openai-r2",
+  "changed_files": [
+    "codex-rs/Cargo.lock",
+    "codex-rs/app-server/src/config_manager_service_tests.rs",
+    "codex-rs/config/src/config_toml.rs",
+    "codex-rs/config/src/model_provider_requirements_tests.rs",
+    "codex-rs/model-provider-info/src/lib.rs",
+    "codex-rs/model-provider-info/src/model_provider_info_tests.rs",
+    "justfile"
+  ],
+  "official_native_paths_byte_identical": {
+    "codex-rs/app-server/src/request_processors/catalog_processor.rs": true,
+    "codex-rs/app-server/src/request_processors/turn_processor.rs": true,
+    "codex-rs/core/src/client.rs": true,
+    "codex-rs/core/src/session/mod.rs": true,
+    "codex-rs/config/src/thread_config.rs": true,
+    "codex-rs/config/src/thread_config/remote.rs": true
+  },
+  "compat_config_and_code_absent": true,
+  "internal_metadata_not_configurable": true,
+  "patch_applies_to_clean_index": true,
+  "patch_sha256": "7038ea94ba8f1b26ab6cd81fb916fdda3367ffe9fff1083e53604a3b5201dfde",
+  "source_hashes": {
+    "codex-rs/Cargo.lock": "cae541406f7ec43a418e126be2bcd5de00b243e7bbf6382570028727d99c1069",
+    "codex-rs/app-server/src/config_manager_service_tests.rs": "2b98f86ab9d81a7ac1f01b264cff600e207a5c49ce4806da7da7ca56b1de59e7",
+    "codex-rs/config/src/config_toml.rs": "bfe6f7fbf225af9ebfd3103459db486967e981e9869290a8ad7cc8549532b75f",
+    "codex-rs/config/src/model_provider_requirements_tests.rs": "407c4ba823352d50ab067a819e532cca48645ae864d2dc4c661cf691eda32bb5",
+    "codex-rs/model-provider-info/src/lib.rs": "0227569306732fecdb658c4456e7814c328712bc85493a08381a4a3d5928cdba",
+    "codex-rs/model-provider-info/src/model_provider_info_tests.rs": "c015938aa5ebb521d117a5c990e406e0a875c8bff6f1807d20a840c59faab5eb",
+    "justfile": "356f6e5ba71882030a1d6b322db4efce9c603b36ab9b3f2978d233713cd27015"
+  }
+}

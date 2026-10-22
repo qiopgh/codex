@@ -1,0 +1,19 @@
+{
+  "kind": "linux",
+  "status": "passed",
+  "pid": 233188,
+  "source": "/home/debian/codex-source-0.163.0-linux-r2",
+  "command": [
+    "cargo",
+    "build",
+    "--release",
+    "--locked",
+    "-p",
+    "codex-cli",
+    "--bin",
+    "codex"
+  ],
+  "started_at_utc": "2026-10-22T01:17:46.631991+00:00",
+  "exit_code": 0,
+  "completed_at_utc": "2026-10-22T01:44:34.541013+00:00"
+}

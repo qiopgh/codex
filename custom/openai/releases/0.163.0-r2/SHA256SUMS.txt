@@ -1,0 +1,2 @@
+95fd9ac3ba8db9a1863ec29338d63d3be3fdbb23b2063f251693a9f09259072b  codex-0.163.0-openai-r2-windows-x86_64.zip
+30dbf032aa10209affa09395321fb0dfb7929bda23392b9682212ba4ffcccf36  codex-0.163.0-openai-r2-linux-x86_64.tar.gz

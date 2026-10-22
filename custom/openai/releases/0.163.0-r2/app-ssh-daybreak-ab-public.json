@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "date": "2026-10-22",
+  "timezone": "Asia/Shanghai",
+  "app_version": "26.1016.6573.0",
+  "cli_version_during_test": "0.163.0",
+  "connection": "实际 Codex App 的 SSH 连接",
+  "model": "gpt-6-sol",
+  "synthetic_marker_present": false,
+  "enabled_request": {
+    "access_programs": {
+      "cyber": "daybreak_blue"
+    },
+    "http_status": 200
+  },
+  "disabled_request": {
+    "access_programs": {
+      "cyber": "standard"
+    },
+    "http_status": 200
+  },
+  "scope": "用户手动操作 App 开关并发送消息，捕获实际 HTTP 请求；不据此推断上游最终执行档位或额外授权范围"
+}

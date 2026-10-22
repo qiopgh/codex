@@ -1,0 +1,31 @@
+{
+  "kind": "windows",
+  "status": "passed",
+  "pid": 233187,
+  "source": "/home/debian/codex-source-0.163.0-windows-r2",
+  "command": [
+    "cargo",
+    "build",
+    "--release",
+    "--locked",
+    "--target",
+    "x86_64-pc-windows-gnu",
+    "-p",
+    "codex-cli",
+    "--bin",
+    "codex",
+    "-p",
+    "codex-windows-sandbox",
+    "--bin",
+    "codex-command-runner",
+    "--bin",
+    "codex-windows-sandbox-setup",
+    "-p",
+    "codex-windows-sandbox-service",
+    "--bin",
+    "codex-windows-sandbox-service"
+  ],
+  "started_at_utc": "2026-10-22T01:17:46.635905+00:00",
+  "exit_code": 0,
+  "completed_at_utc": "2026-10-22T01:46:28.802490+00:00"
+}

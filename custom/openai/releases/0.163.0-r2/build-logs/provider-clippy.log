@@ -1,0 +1,18 @@
+cargo clippy --fix --tests --allow-dirty {args}
+    Checking codex-utils-absolute-path v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/absolute-path)
+    Checking codex-utils-rustls-provider v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/rustls-provider)
+    Checking codex-utils-cache v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/cache)
+    Checking codex-utils-string v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/string)
+    Checking codex-utils-redacted-string v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/redacted-string)
+    Checking codex-async-utils v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/async-utils)
+    Checking codex-http-client v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/http-client)
+    Checking codex-utils-path-uri v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/path-uri)
+    Checking codex-utils-home-dir v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/home-dir)
+    Checking codex-extension-items v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/items)
+    Checking codex-execpolicy v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/execpolicy)
+    Checking codex-utils-image v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/image)
+    Checking codex-network-proxy v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/network-proxy)
+    Checking codex-client v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/codex-client)
+    Checking codex-protocol v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/protocol)
+    Checking codex-model-provider-info v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/model-provider-info)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 39.22s

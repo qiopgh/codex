@@ -1,0 +1,202 @@
+RUST_MIN_STACK=8388608 NEXTEST_PROFILE=local cargo nextest run --no-fail-fast "$@"
+   Compiling hyper-util v0.1.20
+   Compiling tokio-stream v0.1.18
+   Compiling codex-utils-absolute-path v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/absolute-path)
+   Compiling codex-utils-cache v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/cache)
+   Compiling starlark v0.14.2
+   Compiling codex-utils-redacted-string v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/redacted-string)
+   Compiling codex-utils-string v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/string)
+   Compiling codex-async-utils v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/async-utils)
+   Compiling codex-utils-pty v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/pty)
+   Compiling codex-keyring-store v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/keyring-store)
+   Compiling codex-uds v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/uds)
+   Compiling codex-utils-home-dir v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/home-dir)
+   Compiling codex-utils-path-uri v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/path-uri)
+   Compiling tokio-test v0.4.5
+   Compiling codex-extension-items v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/items)
+   Compiling codex-utils-image v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/image)
+   Compiling rama-http-core v0.3.0-alpha.4
+   Compiling opentelemetry_sdk v0.31.0
+   Compiling codex-utils-path v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/path-utils)
+   Compiling codex-install-context v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/install-context)
+   Compiling hyper-rustls v0.27.7
+   Compiling hyper-tls v0.6.0
+   Compiling reqwest v0.12.28
+   Compiling axum v0.8.8
+   Compiling hyper-timeout v0.5.2
+   Compiling aws-smithy-http-client v1.1.12
+   Compiling sqlx-core v0.9.0
+   Compiling codex-file-watcher v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/file-watcher)
+   Compiling codex-http-client v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/http-client)
+   Compiling rama-http-backend v0.3.0-alpha.4
+   Compiling tonic v0.14.3
+   Compiling codex-network-proxy v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/network-proxy)
+   Compiling codex-client v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/codex-client)
+   Compiling codex-websocket-client v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/websocket-client)
+   Compiling tonic-prost v0.14.3
+   Compiling opentelemetry-proto v0.31.0
+   Compiling opentelemetry-http v0.31.0
+   Compiling sqlx-sqlite v0.9.0
+   Compiling opentelemetry-otlp v0.31.0
+   Compiling aws-smithy-runtime v1.9.5
+   Compiling codex-execpolicy v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/execpolicy)
+   Compiling codex-protocol v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/protocol)
+   Compiling aws-runtime v1.5.17
+   Compiling sqlx v0.9.0
+   Compiling codex-workload-identity v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/workload-identity)
+   Compiling codex-build-info v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/build-info)
+   Compiling codex-websocket-auth v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/websocket-auth)
+   Compiling codex-core-plugin-common v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/core-plugin-common)
+   Compiling codex-file-search v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/file-search)
+   Compiling aws-sdk-sts v1.95.0
+   Compiling aws-sdk-sso v1.91.0
+   Compiling aws-sdk-signin v1.2.0
+   Compiling aws-sdk-ssooidc v1.93.0
+   Compiling oauth2 v5.0.0
+   Compiling reqwest v0.13.4
+   Compiling aws-config v1.8.12
+   Compiling rmcp v3.5.1 (https://github.com/modelcontextprotocol/rust-sdk?rev=4048ac40e958fb1a7d614617a2ae8d26666ee2fa#4048ac40)
+   Compiling codex-aws-auth v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/aws-auth)
+   Compiling codex-file-system v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/file-system)
+   Compiling codex-api v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/codex-api)
+   Compiling codex-git-utils v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/git-utils)
+   Compiling codex-features v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/features)
+   Compiling codex-model-provider-info v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/model-provider-info)
+   Compiling codex-otel v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/otel)
+   Compiling codex-config v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/config)
+   Compiling codex-shell-command v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/shell-command)
+   Compiling codex-history v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/history)
+   Compiling codex-windows-sandbox v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/windows-sandbox-rs)
+   Compiling codex-secrets v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/secrets)
+   Compiling codex-mxc-sandbox v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/mxc-sandbox)
+   Compiling codex-utils-output-truncation v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/output-truncation)
+   Compiling codex-sandboxing v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/sandboxing)
+   Compiling codex-state v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/state)
+   Compiling codex-linux-sandbox v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/linux-sandbox)
+   Compiling codex-skills v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/skills)
+   Compiling codex-exec-server-protocol v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/exec-server-protocol)
+   Compiling codex-agent-identity v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/agent-identity)
+   Compiling codex-exec-server v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/exec-server)
+   Compiling codex-login v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/login)
+   Compiling codex-rollout v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/rollout)
+   Compiling codex-context-fragments v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/context-fragments)
+   Compiling codex-guardian-context v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/guardian-context)
+   Compiling codex-prompts v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/prompts)
+   Compiling codex-utils-plugins v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/plugins)
+   Compiling codex-models-manager v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/models-manager)
+   Compiling codex-feedback v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/feedback)
+   Compiling codex-response-debug-context v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/response-debug-context)
+   Compiling codex-plugin v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/plugin)
+   Compiling codex-model-provider v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/model-provider)
+   Compiling codex-code-mode-protocol v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/code-mode-protocol)
+   Compiling codex-connectors v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/connectors)
+   Compiling codex-code-mode v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/code-mode)
+   Compiling codex-rmcp-client v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/rmcp-client)
+   Compiling codex-tools v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/tools)
+   Compiling codex-app-server-protocol v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/app-server-protocol)
+   Compiling codex-mcp v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/codex-mcp)
+   Compiling codex-hooks v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/hooks)
+   Compiling codex-extension-api v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/extension-api)
+   Compiling codex-agent-message-board-extension v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/agent-message-board)
+   Compiling codex-apply-patch v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/apply-patch)
+   Compiling codex-utils-audio v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/audio)
+   Compiling codex-agent-message-board-client v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/agent-message-board-client)
+   Compiling codex-analytics v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/analytics)
+   Compiling codex-thread-store v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/thread-store)
+   Compiling codex-core-plugins v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/core-plugins)
+   Compiling codex-skills-extension v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/skills)
+   Compiling codex-guardian-reviewer v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/guardian-reviewer)
+   Compiling codex-rollout-trace v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/rollout-trace)
+   Compiling codex-agent-graph-store v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/agent-graph-store)
+   Compiling codex-agent-roles v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/agent-roles)
+   Compiling codex-memories-read v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/memories/read)
+   Compiling codex-utils-git-discovery v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/git-discovery)
+   Compiling codex-core v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/core)
+   Compiling codex-backend-openapi-models v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/codex-backend-openapi-models)
+   Compiling codex-utils-cargo-bin v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/cargo-bin)
+   Compiling codex-backend-client v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/backend-client)
+   Compiling wiremock v0.6.5
+   Compiling petgraph v0.8.3
+   Compiling codex-arg0 v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/arg0)
+   Compiling codex-home v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/codex-home)
+   Compiling prost-build v0.14.3
+   Compiling codex-connectors-extension v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/connectors)
+   Compiling codex-utils-cli v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/cli)
+   Compiling tonic-prost-build v0.14.3
+   Compiling codex-git-attribution v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/git-attribution)
+   Compiling codex-cloud-config v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/cloud-config)
+   Compiling codex-utils-json-to-toml v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/utils/json-to-toml)
+   Compiling codex-guardian-v2 v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/guardian-v2)
+   Compiling codex-memories-write v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/memories/write)
+   Compiling codex-chatgpt v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/chatgpt)
+   Compiling codex-web-search-extension v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/web-search)
+   Compiling codex-image-generation-extension v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/image-generation)
+   Compiling core_test_support v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/core/tests/common)
+   Compiling codex-external-agent-migration v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/external-agent-migration)
+   Compiling codex-agent-extension v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/agent)
+   Compiling codex-queue-extension v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/queue)
+   Compiling app_test_support v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/app-server/tests/common)
+   Compiling codex-memories-extension v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/memories)
+   Compiling codex-history-notes-extension v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/history-notes)
+   Compiling codex-app-server-transport v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/app-server-transport)
+   Compiling codex-goal-extension v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/goal)
+   Compiling codex-mcp-extension v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/ext/mcp)
+   Compiling codex-app-server v0.163.0 (/home/debian/codex-source-0.163.0-linux-r2/codex-rs/app-server)
+warning: variable does not need to be mutable
+    --> app-server/src/lib.rs:1519:5
+     |
+1519 |     mut loader_overrides: LoaderOverrides,
+     |     ----^^^^^^^^^^^^^^^^
+     |     |
+     |     help: remove this `mut`
+     |
+     = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: `codex-app-server` (lib test) generated 1 warning (run `cargo fix --lib -p codex-app-server --tests` to apply 1 suggestion)
+    Finished `release` profile [optimized] target(s) in 17m 13s
+────────────
+ Nextest run ID d74f5a14-6920-4078-93eb-4eae00a49386 with nextest profile: local
+    Starting 41 tests across 4 binaries (844 tests skipped)
+        PASS [   0.025s] ( 1/41) codex-model-provider-info tests::test_create_amazon_bedrock_runtime_provider_with_aws_configuration
+        PASS [   0.025s] ( 2/41) codex-model-provider-info tests::test_api_provider_applies_current_managed_residency
+        PASS [   0.024s] ( 3/41) codex-model-provider-info tests::test_deserialize_provider_auth_config_allows_zero_refresh_interval
+        PASS [   0.028s] ( 4/41) codex-model-provider-info tests::test_merge_configured_model_providers_replaces_openai_definition
+        PASS [   0.027s] ( 5/41) codex-model-provider-info tests::model_catalog_url_deserializes_without_changing_inference_routing
+        PASS [   0.028s] ( 6/41) codex-model-provider-info gateway_oauth::tests::rejects_unsafe_endpoints_and_delivery_collisions
+        PASS [   0.030s] ( 7/41) codex-config thread_config::remote::tests::model_provider_proto_roundtrips_through_domain_type
+        PASS [   0.031s] ( 8/41) codex-config model_provider_requirements::tests::required_provider_definitions_are_validated_without_local_defaults
+        PASS [   0.034s] ( 9/41) codex-model-provider-info tests::codex_backend_routes_require_codex_base_url
+        PASS [   0.035s] (10/41) codex-config thread_config::remote::tests::model_provider_proto_defaults_standalone_web_search_to_false
+        PASS [   0.026s] (11/41) codex-model-provider-info tests::test_uses_openai_actor_authorization
+        PASS [   0.029s] (12/41) codex-model-provider-info tests::test_validate_provider_aws_rejects_conflicting_auth
+        PASS [   0.056s] (13/41) codex-model-provider-info tests::test_merge_configured_model_providers_applies_amazon_bedrock_transport_overrides
+        PASS [   0.056s] (14/41) codex-model-provider-info tests::test_header_auth_uses_chatgpt_codex_base_url
+        PASS [   0.033s] (15/41) codex-model-provider-info tests::test_validate_provider_aws_auth_refresh_command
+        PASS [   0.059s] (16/41) codex-model-provider-info tests::test_merge_configured_model_providers_allows_amazon_bedrock_default_fields
+        PASS [   0.034s] (17/41) codex-model-provider-info tests::test_validate_provider_aws_rejects_websockets
+        PASS [   0.063s] (18/41) codex-config model_provider_requirements::tests::higher_requirements_merge_provider_fields_and_nested_tables
+        PASS [   0.063s] (19/41) codex-model-provider-info tests::test_create_amazon_bedrock_provider
+        PASS [   0.064s] (20/41) codex-model-provider-info tests::test_amazon_bedrock_providers_add_mantle_client_agent_header
+        PASS [   0.038s] (21/41) codex-model-provider-info tests::test_validate_provider_aws_credential_export_command
+        PASS [   0.063s] (22/41) codex-model-provider-info tests::test_merge_configured_model_providers_applies_runtime_overrides_independently
+        PASS [   0.067s] (23/41) codex-app-server config_manager_service::tests::openai_provider_override_is_writable
+        PASS [   0.065s] (24/41) codex-model-provider-info tests::test_merge_configured_model_providers_rejects_amazon_bedrock_non_default_fields
+        PASS [   0.064s] (25/41) codex-model-provider-info tests::test_deserialize_chat_wire_api_shows_helpful_error
+        PASS [   0.065s] (26/41) codex-model-provider-info tests::test_deserialize_websocket_connect_timeout
+        PASS [   0.037s] (27/41) codex-model-provider-info tests::test_deserialize_provider_aws_config
+        PASS [   0.072s] (28/41) codex-model-provider-info tests::runtime_internal_metadata_opt_in_is_not_serialized_or_configurable
+        PASS [   0.040s] (29/41) codex-model-provider-info tests::test_deserialize_ollama_model_provider_toml
+        PASS [   0.072s] (30/41) codex-config model_provider_requirements::tests::required_openai_provider_definition_is_valid
+        PASS [   0.073s] (31/41) codex-model-provider-info tests::test_built_in_model_providers_include_amazon_bedrock_endpoints
+        PASS [   0.078s] (32/41) codex-model-provider capabilities::tests::capability_overrides_preserve_unspecified_provider_defaults
+        PASS [   0.079s] (33/41) codex-model-provider-info tests::test_merge_configured_model_providers_applies_amazon_bedrock_aws_override
+        PASS [   0.066s] (34/41) codex-model-provider-info tests::test_merge_configured_model_providers_adds_custom_provider
+        PASS [   0.066s] (35/41) codex-model-provider-info tests::test_deserialize_provider_auth_config_defaults
+        PASS [   0.066s] (36/41) codex-model-provider-info gateway_oauth::tests::parses_header_and_cookie_delivery
+        PASS [   0.023s] (37/41) codex-model-provider-info tests::test_built_in_model_providers_include_amazon_bedrock_runtime
+        PASS [   0.067s] (38/41) codex-model-provider-info tests::test_deserialize_azure_model_provider_toml
+        PASS [   0.069s] (39/41) codex-model-provider-info tests::test_deserialize_example_model_provider_toml
+        PASS [   0.073s] (40/41) codex-model-provider-info tests::test_personal_access_token_uses_chatgpt_codex_base_url
+        PASS [   0.074s] (41/41) codex-model-provider-info tests::test_create_amazon_bedrock_runtime_provider
+────────────
+     Summary [   0.139s] 41 tests run: 41 passed, 844 skipped
