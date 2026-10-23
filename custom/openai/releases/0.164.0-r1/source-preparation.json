@@ -1,0 +1,45 @@
+{
+  "version": "0.164.0",
+  "revision": "openai-r1",
+  "previous_custom_commit": "867108b73f73931d426ab00bfccac76f2e253203",
+  "previous_official_commit": "83086188ae0614bd882818ff1aa23f3194962012",
+  "base_commit": "6aaac694803004a63c6f393d153c96d22521a6b9",
+  "sources": [
+    "${LINUX_USER_HOME}/codex-source-0.164.0-linux",
+    "${LINUX_USER_HOME}/codex-source-0.164.0-windows"
+  ],
+  "files": [
+    {
+      "path": "codex-rs/config/src/config_toml.rs",
+      "upstream_changed": true,
+      "three_way_merge": "clean",
+      "sha256": "a36979a8a53949562fa6c43a97e81a0b15b59c602798ef8c31bf908fc33bcf80"
+    },
+    {
+      "path": "codex-rs/config/src/model_provider_requirements_tests.rs",
+      "upstream_changed": false,
+      "three_way_merge": "clean",
+      "sha256": "407c4ba823352d50ab067a819e532cca48645ae864d2dc4c661cf691eda32bb5"
+    },
+    {
+      "path": "codex-rs/app-server/src/config_manager_service_tests.rs",
+      "upstream_changed": true,
+      "three_way_merge": "clean",
+      "sha256": "7757b26eb836b78b9a5587aeb866f7810b04e02f5a32e74a75acae7cf6ca3c56"
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/lib.rs",
+      "upstream_changed": true,
+      "three_way_merge": "clean",
+      "sha256": "b5fce06068b3f5437a8d3bdd2a6c4f75ebd6653e041095b8ad6b8e20de5ebc36"
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/model_provider_info_tests.rs",
+      "upstream_changed": false,
+      "three_way_merge": "clean",
+      "sha256": "c015938aa5ebb521d117a5c990e406e0a875c8bff6f1807d20a840c59faab5eb"
+    }
+  ],
+  "daybreak_compat_removed_in_previous_revision": true,
+  "only_provider_customization_ported": true
+}

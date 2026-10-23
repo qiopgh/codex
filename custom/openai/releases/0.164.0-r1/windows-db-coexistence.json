@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "new_version": "0.164.0",
+  "old_version": "0.163.0",
+  "checks": [
+    "new_engine_migrated_consistent_copies",
+    "old_engine_starts_and_creates_thread_after_new_migrations",
+    "old_engine_reads_thread_index_after_new_migrations"
+  ],
+  "databases": [
+    {
+      "database": "goals_1.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "logs_2.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "memories_1.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "queue_1.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "state_5.sqlite",
+      "migrations": 61,
+      "integrity": "ok"
+    },
+    {
+      "database": "thread_history_1.sqlite",
+      "migrations": 8,
+      "integrity": "ok"
+    }
+  ],
+  "actual_database_modified": false,
+  "real_inference_requests": 0
+}

@@ -1,0 +1,407 @@
+{
+  "checked_at": "2026-10-23T18:27:20.880489+08:00",
+  "standalone": {
+    "completed_at": "2026-10-23T18:17:50.3787166+08:00",
+    "status": "deployed",
+    "version": "codex-cli 0.164.0",
+    "path_entry": "${WINDOWS_USER_HOME}\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.exe",
+    "resolved_package": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc",
+    "backup_directory": "${CODEX_HOME}\\backups\\standalone-cli-before-0.164.0-20261023-181430",
+    "user_path": "${WINDOWS_USER_HOME}\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin;${WINDOWS_USER_HOME}\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Program Files\\Microsoft VS Code\\bin",
+    "app_CODEX_CLI_PATH": "${CODEX_HOME}\\bin\\codex.exe",
+    "app_binaries_unchanged": true,
+    "standalone_junctions_unchanged": true,
+    "auto_update_version_unchanged": true,
+    "files": [
+      {
+        "relative_path": "bin/codex-code-mode-host.exe",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\bin\\codex-code-mode-host.exe",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\bin\\codex-code-mode-host.exe",
+        "sha256": "be52517ca0f9a8eb626ec065ed3a357b5ee150fe1934a254d0126e6d40f29b57",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "bin/codex.exe",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\bin\\codex.exe",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\bin\\codex.exe",
+        "sha256": "18632fad281cd0bbcfcf61da4cca97496b0bb818471312db1cdc5fd145cc7d89",
+        "disposition": "replaced"
+      },
+      {
+        "relative_path": "codex-package.json",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-package.json",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-package.json",
+        "sha256": "8a25a072b24cd4894bf2679ab11f7d940f1faa6b6b65b58e80aa3162b7d95a43",
+        "disposition": "replaced",
+        "original_package_sha256": "a364ee5e937abca7195aac0b0ad9625d7dae706f3d0a833e82f91676c198c832",
+        "installation_adaptation": "按原生 Windows 管理器识别安装槽位，实际编译目标记录为 GNU。"
+      },
+      {
+        "relative_path": "codex-path/rg.exe",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-path\\rg.exe",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-path\\rg.exe",
+        "sha256": "14231169855ec5205cf5a1b6f1db358ff4aed4247c86b69ce8aae647c77f6680",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/codex-command-runner.exe",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\codex-command-runner.exe",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\codex-command-runner.exe",
+        "sha256": "304558b88c7442c66a58a9c337b60717b9cd2835ca26f59a5b44b539a8b06e33",
+        "disposition": "replaced"
+      },
+      {
+        "relative_path": "codex-resources/codex-windows-sandbox-service.exe",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\codex-windows-sandbox-service.exe",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\codex-windows-sandbox-service.exe",
+        "sha256": "0f2b3d1b0c1bf7f0326e46c54f64421546828a6757211b9f226b2241c09b0dc9",
+        "disposition": "replaced"
+      },
+      {
+        "relative_path": "codex-resources/codex-windows-sandbox-setup.exe",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\codex-windows-sandbox-setup.exe",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\codex-windows-sandbox-setup.exe",
+        "sha256": "27399a1195ef5f32b7df9946ff9f3cc426a9571c74a9f045b8de33e2a81249d5",
+        "disposition": "replaced"
+      },
+      {
+        "relative_path": "codex-resources/voice/NOTICE.md",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\NOTICE.md",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\NOTICE.md",
+        "sha256": "473fcf8ccb68ce726111d016d133f0555adba730d057591512f3f71fb46aeb6e",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/codex-voice-host.exe",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\codex-voice-host.exe",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\codex-voice-host.exe",
+        "sha256": "3b22607ee50aba07006c5f2b8ff63ae6d0747ce5ba4de208f46c504d4d220b40",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gio-2.0-0.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gio-2.0-0.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gio-2.0-0.dll",
+        "sha256": "fc1863c93f390931ff56d77c22cb0e08286475159ae05ef8ac0834e1182ec624",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/glib-2.0-0.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\glib-2.0-0.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\glib-2.0-0.dll",
+        "sha256": "5e2d5d776437d7cf9b46f497fd9ccf818024eb438cf679f0ba61219dbb789d6c",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gmodule-2.0-0.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gmodule-2.0-0.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gmodule-2.0-0.dll",
+        "sha256": "1b95e92d541d3c75e55e31f5ffd2a97b6ee7a5810466f7c70fbf38dfd74e592a",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gobject-2.0-0.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gobject-2.0-0.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gobject-2.0-0.dll",
+        "sha256": "0afafc600fe094fc8bcd2443842d790a158eeabba902ba6090d57cb56fdaa87e",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstapp-1.0-0.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstapp-1.0-0.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstapp-1.0-0.dll",
+        "sha256": "200135d7f44e60358613af2c52cda0fce89a788a0c791df9a0a15e8e7fe920ca",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstapp.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstapp.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstapp.dll",
+        "sha256": "2238f387158df1442e01e943955d5d2afde5ab76f6649f4e3741b45bde9444b7",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstaudio-1.0-0.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstaudio-1.0-0.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstaudio-1.0-0.dll",
+        "sha256": "d808980d749f0bd3f3ddc82f2578be259ac69d6fd10ed8a142fc85e653037eb4",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstaudioconvert.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstaudioconvert.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstaudioconvert.dll",
+        "sha256": "1c134866ff78b04c5839be4217a6b3808f11f538a1b4f99527ed88fe356e3fd6",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstaudioresample.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstaudioresample.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstaudioresample.dll",
+        "sha256": "642e1584909a9181603d119fca2f0757af030e8b24b5c9a3851c93ca8e7c3620",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstbase-1.0-0.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstbase-1.0-0.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstbase-1.0-0.dll",
+        "sha256": "1a9ee1457491d8867e3c1d31146aab18cea0f69de72d4b9dd8456036b0d195e8",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstcoreelements.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstcoreelements.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstcoreelements.dll",
+        "sha256": "dc06b51fc0a1705e7347cb327fdc71b60949c41635b373348dd682f8d3748fc1",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstnet-1.0-0.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstnet-1.0-0.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstnet-1.0-0.dll",
+        "sha256": "ab16258359a445e566464cddf3dc8f3921c1e7399567501be0c2d63aef45de81",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstopus.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstopus.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstopus.dll",
+        "sha256": "4c0e7a47dcbfe4a523978f37d10ab4a8f8a1097750dabeb70b47f35733090c71",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstpbutils-1.0-0.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstpbutils-1.0-0.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstpbutils-1.0-0.dll",
+        "sha256": "b7703acfe7cd785340dd492b800f05c16b253e39cf61e2957270bde9d888459d",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstreamer-1.0-0.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstreamer-1.0-0.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstreamer-1.0-0.dll",
+        "sha256": "128cea13843f192a6bfcf1856ee534b9405ac51267b22eaafa092835ca68de12",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstrtp-1.0-0.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstrtp-1.0-0.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstrtp-1.0-0.dll",
+        "sha256": "fd8f75e8854e9a9ef898d2f0cf37bc04061ecf7df7e00eef9e307da9ab059c43",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstrtp.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstrtp.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstrtp.dll",
+        "sha256": "5d35ddc792fe1f5128161c19098724c8a90b73a6189299e01afd2999be54c8c3",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstrtpmanager.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstrtpmanager.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstrtpmanager.dll",
+        "sha256": "d6126b6f3989c0c7e07b1b45813f267b62791083d2467a5bb98c1b4f503f8420",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gsttag-1.0-0.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gsttag-1.0-0.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gsttag-1.0-0.dll",
+        "sha256": "cd7a36943553cca1ea6ba83bf5a23bf5194fefe97ac2f554091b18a9699e6eeb",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/gstvideo-1.0-0.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstvideo-1.0-0.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\gstvideo-1.0-0.dll",
+        "sha256": "7529265a18c77962089d5c8d148481363c549117e83fc0273cba65443f5d1ba1",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/intl-8.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\intl-8.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\intl-8.dll",
+        "sha256": "744dd6ea6d0fa8098866dae561ccb63f96ce1bc4b596908238223a24d0f84ed9",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/libffi-8.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\libffi-8.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\libffi-8.dll",
+        "sha256": "18eaeca552c30b654aa63d7406d2d5ef6be79428cadc134e15e2e61580952797",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/opus.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\opus.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\opus.dll",
+        "sha256": "00b43b4c72f20b7118cfb44bfa74ca61258b23ab07b8fbfbcce752b682ec6729",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/pcre2-8.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\pcre2-8.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\pcre2-8.dll",
+        "sha256": "9dbc1a938515b1f9ea2a1fd07e938249f380a32ec78b73f5703929404edaafd3",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/vcruntime140.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\vcruntime140.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\vcruntime140.dll",
+        "sha256": "184146852727a9db4eea06178716bec3cdbb1015c911f6b0f915b184ad7775b2",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/bin/z.dll",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\z.dll",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\bin\\z.dll",
+        "sha256": "7aa3d19c0938c0c51b4167d2112f45cb0b4d3257d92f2a21e70c03e541e3ad35",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/licenses/LGPL-2.1.txt",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\LGPL-2.1.txt",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\LGPL-2.1.txt",
+        "sha256": "c7ce1276717604c29c5469179a2f368eac42846557be671bb52f4e16e884b2ad",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/licenses/Opus.txt",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\Opus.txt",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\Opus.txt",
+        "sha256": "cbd8bd07329a234413710c02b19d22c0cf78fc451882593e817130779b5455e3",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/licenses/PCRE2.md",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\PCRE2.md",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\PCRE2.md",
+        "sha256": "4195c519dcfe4a4ffedc4b8ccc5d49e4dd02efd5ece6b69a4fba5d20080902a9",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/licenses/libffi.txt",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\libffi.txt",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\libffi.txt",
+        "sha256": "e2a9b884b1c5d718efd6121457a1fbe7ece431352ca75c901260cef2e7d040e5",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/licenses/proxy-libintl.txt",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\proxy-libintl.txt",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\proxy-libintl.txt",
+        "sha256": "aa092600e3f475f0a55821fb9c529583d8e23e41bf0461254f02fcf94d3a32c2",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/licenses/sljit.txt",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\sljit.txt",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\sljit.txt",
+        "sha256": "37c7a090fc61388430d63fc97bf8a22ffce92d3ca2249aac572cfaf411d3070f",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/licenses/zlib.txt",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\zlib.txt",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\licenses\\zlib.txt",
+        "sha256": "439c75ab12b340c5362b9d4b08ff05ec3a4d0eb7667a6fff49a9b16d8795c78e",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/manifest.json",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\manifest.json",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\manifest.json",
+        "sha256": "0c7177aa181d484e77a11842cff985be8febd8e6d43beb50c85aa559f46d52d7",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/runtime.json",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\runtime.json",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\runtime.json",
+        "sha256": "9b14faa7f55b97b34041efbcef70f97ecdc43b308f893bddd86378cdd77232e2",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/sources.json",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\sources.json",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\sources.json",
+        "sha256": "e2f6b124f6277e7c3c4f5c7cc8830c66190f671ad65e972bb2cc9507dbfcb937",
+        "disposition": "already_matches"
+      },
+      {
+        "relative_path": "codex-resources/voice/windows-crt.json",
+        "target": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\windows-crt.json",
+        "deployed_file": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc\\codex-resources\\voice\\windows-crt.json",
+        "sha256": "d16939bc85da395ded5411724fed84ffd36810b78d47c756cf094b0956bc3892",
+        "disposition": "already_matches"
+      }
+    ],
+    "pending_renames": [],
+    "files_currently_verified_at": "2026-10-23T18:27:20.871494+08:00",
+    "daemon_synchronized": true,
+    "default_tui_verified": true
+  },
+  "daemon": {
+    "status": "running",
+    "backend": "pid",
+    "managedCodexPath": "${CODEX_HOME}\\packages/app-server-daemon\\current\\bin\\codex.exe",
+    "managedCodexVersion": "0.164.0",
+    "socketPath": "${CODEX_HOME}\\app-server-control\\app-server-control.sock",
+    "cliVersion": "0.164.0",
+    "appServerVersion": "0.164.0",
+    "binary_sha256": "18632fad281cd0bbcfcf61da4cca97496b0bb818471312db1cdc5fd145cc7d89",
+    "sync": {
+      "source_package": "${CODEX_HOME}\\packages\\standalone\\releases\\0.164.0-x86_64-pc-windows-msvc",
+      "version": "0.164.0",
+      "actual_compiler_target": "x86_64-pc-windows-gnu",
+      "managed_install_target": "x86_64-pc-windows-msvc",
+      "standalone_metadata_sha256": "8a25a072b24cd4894bf2679ab11f7d940f1faa6b6b65b58e80aa3162b7d95a43",
+      "cli_sha256": "18632fad281cd0bbcfcf61da4cca97496b0bb818471312db1cdc5fd145cc7d89",
+      "backup_directory": "${CODEX_HOME}\\backups\\runtimes-before-0.164.0-20261023-165759",
+      "updated_at": "2026-10-23T18:20:39.2576421+08:00"
+    },
+    "source_pinned_to_custom_cli": true
+  },
+  "default_tui": {
+    "started": true,
+    "status_has_session": true,
+    "version": "0.164.0",
+    "server": "Local background server",
+    "provider": "openai",
+    "model": "GPT-6.1-Sol",
+    "reasoning_effort": "max",
+    "exit_code": 0,
+    "real_inference_requests": 0,
+    "account_read_bootstrap_error": false,
+    "no_active_thread_notice": false,
+    "raw_log_private": true,
+    "command": "codex --dangerously-bypass-approvals-and-sandbox",
+    "terminal": "TERM=dumb（仅本次测试进程）",
+    "only_status_command_submitted": true,
+    "existing_app_not_closed": true
+  },
+  "app": {
+    "entrypoint": "${CODEX_HOME}\\bin\\codex.exe",
+    "pending_renames": [
+      {
+        "from": "${CODEX_HOME}\\bin\\codex-code-mode-host.new.exe",
+        "to": "${CODEX_HOME}\\bin\\codex-code-mode-host.exe"
+      },
+      {
+        "from": "${CODEX_HOME}\\bin\\codex.new.exe",
+        "to": "${CODEX_HOME}\\bin\\codex.exe"
+      }
+    ],
+    "files_verified": 48,
+    "processes_terminated": false
+  },
+  "user_path_unchanged": true,
+  "CODEX_CLI_PATH_unchanged": true,
+  "provider_config_unchanged": true,
+  "catalog_unchanged": true,
+  "config_changed_keys_during_interactive_period": [],
+  "config_note": "部署没有写入用户配置。交互期间可能更新界面偏好计数，保留当前值，不回退用户设置。",
+  "backup_directory": "${CODEX_HOME}\\backups\\runtimes-before-0.164.0-20261023-165759"
+}

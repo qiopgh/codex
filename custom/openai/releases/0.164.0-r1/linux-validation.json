@@ -1,0 +1,265 @@
+{
+  "platform": "posix",
+  "version": "codex-cli 0.164.0",
+  "sha256": "574a82ac97a540be98cce5004d63c50f64683cdea238289e5d3b337e7be3a5e6",
+  "transport": "http",
+  "checks": [
+    "custom_provider_capability_overrides",
+    "initialize_and_custom_openai_config",
+    "paginated_real_model_list_without_synthetic_marker",
+    "runtime_internal_fields_and_legacy_compat_absent",
+    "custom_openai_definition_is_writable",
+    "seven_models_blue_standard_and_custom_transport",
+    "real_code_mode_host_execution_without_fallback",
+    "code_mode_exec_command",
+    "restarted_model_list_has_no_synthetic_marker",
+    "persisted_thread_resume",
+    "catalog_unchanged",
+    "real_red_catalog_metadata_preserved",
+    "upstream_api_key_program_gate_preserved",
+    "api_key_default_program_forwarding"
+  ],
+  "captured": [
+    {
+      "model": "gpt-6.1-sol",
+      "access_programs": {
+        "cyber": "daybreak_blue"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-6-sol",
+      "access_programs": {
+        "cyber": "daybreak_blue"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-6-sol",
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-6-luna",
+      "access_programs": {
+        "cyber": "daybreak_blue"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-6-luna",
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "access_programs": {
+        "cyber": "daybreak_blue"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "access_programs": {
+        "cyber": "daybreak_blue"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "access_programs": {
+        "cyber": "daybreak_blue"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-5.5",
+      "access_programs": {
+        "cyber": "daybreak_blue"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-5.5",
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "access_programs": {
+        "cyber": "daybreak_blue"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "path": "/v1/responses?release_probe=1",
+      "transport": "http",
+      "custom_header": "custom-openai",
+      "custom_auth": true
+    }
+  ],
+  "code_mode_host": {
+    "path": "${LINUX_USER_HOME}/codex-build-0.164.0/dist/codex-0.164.0-openai-r1-linux-x86_64/bin/codex-code-mode-host",
+    "sha256": "8ee4f472e92ac226a189e98998633b2d07f989f208515750764db660369f2926",
+    "observed_pids": [
+      365148
+    ],
+    "fallback_disabled": true
+  },
+  "database_copies": [
+    {
+      "database": "goals_1.sqlite",
+      "old_migrations": 2,
+      "new_migrations": 2
+    },
+    {
+      "database": "logs_2.sqlite",
+      "old_migrations": 2,
+      "new_migrations": 2
+    },
+    {
+      "database": "memories_1.sqlite",
+      "old_migrations": 2,
+      "new_migrations": 2
+    },
+    {
+      "database": "queue_1.sqlite",
+      "old_migrations": 2,
+      "new_migrations": 2
+    },
+    {
+      "database": "state_5.sqlite",
+      "old_migrations": 61,
+      "new_migrations": 61
+    },
+    {
+      "database": "thread_history_1.sqlite",
+      "old_migrations": 8,
+      "new_migrations": 8
+    }
+  ],
+  "passed": true
+}

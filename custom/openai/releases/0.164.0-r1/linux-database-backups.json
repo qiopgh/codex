@@ -1,0 +1,32 @@
+[
+  {
+    "database": "goals_1.sqlite",
+    "migrations": 2,
+    "integrity": "ok"
+  },
+  {
+    "database": "logs_2.sqlite",
+    "migrations": 2,
+    "integrity": "ok"
+  },
+  {
+    "database": "memories_1.sqlite",
+    "migrations": 2,
+    "integrity": "ok"
+  },
+  {
+    "database": "queue_1.sqlite",
+    "migrations": 2,
+    "integrity": "ok"
+  },
+  {
+    "database": "state_5.sqlite",
+    "migrations": 61,
+    "integrity": "ok"
+  },
+  {
+    "database": "thread_history_1.sqlite",
+    "migrations": 8,
+    "integrity": "ok"
+  }
+]

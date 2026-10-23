@@ -1,0 +1,95 @@
+{
+  "status": "deployed",
+  "version": "codex-cli 0.164.0",
+  "revision": "openai-r1",
+  "command": "${LINUX_USER_HOME}/.local/bin/codex",
+  "installed_directory": "${LINUX_USER_HOME}/.codex/overrides/openai-custom-0.164.0-linux-x86_64-r1",
+  "previous_target": "${LINUX_USER_HOME}/.codex/overrides/openai-custom-0.163.0-linux-x86_64-r2/bin/codex",
+  "previous_binary_sha256": "6e4115a777623a0295314e912a54ee4adcebf71e9468ef030e6f3e8e9e2482be",
+  "binary_sha256": "574a82ac97a540be98cce5004d63c50f64683cdea238289e5d3b337e7be3a5e6",
+  "backup_directory": "${LINUX_USER_HOME}/.codex/backups/cli-before-0.164.0-20261023-180812-150049",
+  "database_backups": [
+    {
+      "database": "goals_1.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "logs_2.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "memories_1.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "queue_1.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "state_5.sqlite",
+      "migrations": 61,
+      "integrity": "ok"
+    },
+    {
+      "database": "thread_history_1.sqlite",
+      "migrations": 8,
+      "integrity": "ok"
+    }
+  ],
+  "package_files_verified": 43,
+  "helper_commands": {
+    "bin/codex-code-mode-host": "Usage: codex-code-mode-host [OPTIONS]",
+    "codex-path/rg": "ripgrep 15.2.0 (rev e89fff89ac)",
+    "codex-resources/bwrap": "bubblewrap built for Codex"
+  },
+  "config_unchanged": true,
+  "config_sha256": "adc404f4bd2af897663b6c618e938def39e3c2d635642c2ebf9591889de487bd",
+  "catalog_unchanged": true,
+  "catalog_sha256": "100b3ecf20da8c164ffdcc26257af903dc12d26739f2154037adbaee939bc9f6",
+  "legacy_daybreak_compat_setting_absent": true,
+  "provider": "openai",
+  "verified_package_validation": "${LINUX_USER_HOME}/codex-build-0.164.0/linux-validation.json",
+  "validation_matches_installed_sha256": true,
+  "isolated_checks": [
+    "custom_provider_capability_overrides",
+    "initialize_and_custom_openai_config",
+    "paginated_real_model_list_without_synthetic_marker",
+    "runtime_internal_fields_and_legacy_compat_absent",
+    "custom_openai_definition_is_writable",
+    "seven_models_blue_standard_and_custom_transport",
+    "real_code_mode_host_execution_without_fallback",
+    "code_mode_exec_command",
+    "restarted_model_list_has_no_synthetic_marker",
+    "persisted_thread_resume",
+    "catalog_unchanged",
+    "real_red_catalog_metadata_preserved",
+    "upstream_api_key_program_gate_preserved",
+    "api_key_default_program_forwarding"
+  ],
+  "mock_http_requests": 20,
+  "running_processes_before_activation": [
+    {
+      "pid": 254530,
+      "executable": "${LINUX_USER_HOME}/.codex/overrides/openai-custom-0.163.0-linux-x86_64-r2/bin/codex"
+    },
+    {
+      "pid": 276590,
+      "executable": "${LINUX_USER_HOME}/.codex/overrides/openai-custom-0.163.0-linux-x86_64-r2/bin/codex"
+    },
+    {
+      "pid": 276887,
+      "executable": "${LINUX_USER_HOME}/.codex/overrides/openai-custom-0.163.0-linux-x86_64-r2/bin/codex"
+    },
+    {
+      "pid": 277085,
+      "executable": "${LINUX_USER_HOME}/.codex/overrides/openai-custom-0.163.0-linux-x86_64-r2/bin/codex-code-mode-host"
+    }
+  ],
+  "daemon_restarted": false,
+  "completed_at": "2026-10-23T18:08:25.995753+08:00",
+  "resolved_command": "${LINUX_USER_HOME}/.codex/overrides/openai-custom-0.164.0-linux-x86_64-r1/bin/codex"
+}
