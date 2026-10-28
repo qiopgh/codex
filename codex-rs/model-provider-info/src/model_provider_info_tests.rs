@@ -514,6 +514,34 @@ fn test_merge_configured_model_providers_adds_custom_provider() {
 }
 
 #[test]
+fn test_merge_configured_model_providers_replaces_openai_definition() {
+    let custom_openai = ModelProviderInfo {
+        name: "OpenAI".to_string(),
+        base_url: Some("https://proxy.example.com/v1".to_string()),
+        env_http_headers: Some(maplit::hashmap! {
+            "X-Api-Key".to_string() => "CLIPROXY_API_KEY".to_string(),
+        }),
+        requires_openai_auth: true,
+        supports_websockets: false,
+        capabilities: Some(crate::ModelProviderCapabilities {
+            external_web_access: Some(false),
+            remote_compaction: Some(crate::RemoteCompactionSupport::Unsupported),
+        }),
+        ..ModelProviderInfo::default()
+    };
+    let mut expected = built_in_model_providers(/*openai_base_url*/ None);
+    expected.insert(OPENAI_PROVIDER_ID.to_string(), custom_openai.clone());
+
+    assert_eq!(
+        merge_configured_model_providers(
+            built_in_model_providers(/*openai_base_url*/ None),
+            std::collections::HashMap::from([(OPENAI_PROVIDER_ID.to_string(), custom_openai)]),
+        ),
+        Ok(expected)
+    );
+}
+
+#[test]
 fn test_merge_configured_model_providers_applies_amazon_bedrock_aws_override() {
     let credential_export = AwsCredentialExportConfig {
         command: "aws-vault".to_string(),

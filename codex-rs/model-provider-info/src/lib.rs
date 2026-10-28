@@ -728,11 +728,10 @@ pub fn built_in_model_providers(
     .collect()
 }
 
-/// Merge configured providers into the built-in provider catalog.
+/// 将用户配置的 provider 合并到内置目录。
 ///
-/// Configured providers extend the built-in set. Built-in providers are not
-/// generally overridable, but the cloud-hosted OpenAI providers allow a limited
-/// set of endpoint, authentication, header, and cloud-specific overrides.
+/// 小写 `openai` 使用完整的自定义定义；Amazon Bedrock 与 GCP 保留官方字段级覆盖规则。
+/// 其他内置 provider 不接受覆盖。
 pub fn merge_configured_model_providers(
     mut model_providers: HashMap<String, ModelProviderInfo>,
     configured_model_providers: HashMap<String, ModelProviderInfo>,
@@ -762,6 +761,8 @@ pub fn merge_configured_model_providers(
                         .extend(http_headers_override);
                 }
             }
+        } else if key == OPENAI_PROVIDER_ID {
+            model_providers.insert(key, provider);
         } else if key == GCP_PROVIDER_ID {
             let base_url_override = provider.base_url.take();
             let auth_override = provider.auth.take();
