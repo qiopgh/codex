@@ -1,0 +1,54 @@
+cargo run -p codex-config-schema --bin codex-write-config-schema
+    Updating crates.io index
+   Compiling num-integer v0.1.46
+   Compiling http v0.2.12
+   Compiling outref v0.5.2
+   Compiling vsimd v0.8.0
+   Compiling codex-utils-absolute-path v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/absolute-path)
+   Compiling bytes-utils v0.1.4
+   Compiling pin-utils v0.1.0
+   Compiling aws-smithy-async v1.2.14
+   Compiling aws-smithy-runtime-api-macros v1.0.0
+   Compiling codex-utils-rustls-provider v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/rustls-provider)
+   Compiling hmac v0.12.1
+   Compiling codex-utils-cache v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/cache)
+   Compiling codex-http-client v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/http-client)
+   Compiling codex-utils-string v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/string)
+   Compiling num-bigint v0.4.6
+   Compiling codex-utils-path-uri v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/path-uri)
+   Compiling codex-utils-home-dir v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/home-dir)
+   Compiling codex-utils-image v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/image)
+   Compiling codex-extension-items v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/ext/items)
+   Compiling base64-simd v0.8.0
+   Compiling codex-utils-redacted-string v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/redacted-string)
+   Compiling codex-async-utils v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/async-utils)
+   Compiling codex-utils-pty v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/pty)
+   Compiling codex-utils-process v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/process)
+   Compiling codex-utils-path v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/path-utils)
+   Compiling http-body v0.4.6
+   Compiling aws-smithy-types v1.4.7
+   Compiling allocative v0.3.6
+   Compiling der-parser v10.0.0
+   Compiling aws-smithy-runtime-api v1.12.0
+   Compiling pagable v0.4.1
+   Compiling codex-client v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/codex-client)
+   Compiling x509-parser v0.18.1
+   Compiling aws-smithy-http v0.62.6
+   Compiling aws-credential-types v1.2.11
+   Compiling starlark_map v0.14.2
+   Compiling rcgen v0.14.9
+   Compiling aws-sigv4 v1.3.7
+   Compiling starlark_syntax v0.14.2
+   Compiling rama-tls-rustls v0.3.0-alpha.4
+   Compiling codex-network-proxy v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/network-proxy)
+   Compiling starlark v0.14.2
+   Compiling codex-execpolicy v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/execpolicy)
+   Compiling codex-protocol v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/protocol)
+   Compiling codex-file-system v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/file-system)
+   Compiling codex-model-provider-info v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/model-provider-info)
+   Compiling codex-features v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/features)
+   Compiling codex-git-utils v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/git-utils)
+   Compiling codex-config v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/config)
+   Compiling codex-config-schema v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/config-schema)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2m 23s
+     Running `${LINUX_USER_HOME}/codex-source-0.156.1/codex-rs/target/debug/codex-write-config-schema`

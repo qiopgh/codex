@@ -1,0 +1,43 @@
+cargo clippy --fix --tests --allow-dirty {args}
+    Checking num-integer v0.1.46
+    Checking http v0.2.12
+    Checking outref v0.5.2
+    Checking vsimd v0.8.0
+    Checking bytes-utils v0.1.4
+    Checking pin-utils v0.1.0
+    Checking codex-utils-absolute-path v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/absolute-path)
+    Checking aws-smithy-async v1.2.14
+    Checking codex-utils-rustls-provider v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/rustls-provider)
+    Checking hmac v0.12.1
+    Checking codex-utils-cache v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/cache)
+    Checking codex-utils-string v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/string)
+    Checking codex-http-client v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/http-client)
+    Checking codex-utils-redacted-string v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/redacted-string)
+    Checking codex-utils-image v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/image)
+    Checking codex-utils-home-dir v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/home-dir)
+    Checking codex-utils-path-uri v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/utils/path-uri)
+    Checking codex-extension-items v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/ext/items)
+    Checking codex-async-utils v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/async-utils)
+    Checking num-bigint v0.4.6
+    Checking base64-simd v0.8.0
+    Checking http-body v0.4.6
+    Checking aws-smithy-types v1.4.7
+    Checking allocative v0.3.6
+    Checking der-parser v10.0.0
+    Checking aws-smithy-runtime-api v1.12.0
+    Checking codex-client v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/codex-client)
+    Checking pagable v0.4.1
+    Checking x509-parser v0.18.1
+    Checking aws-smithy-http v0.62.6
+    Checking aws-credential-types v1.2.11
+    Checking aws-sigv4 v1.3.7
+    Checking starlark_map v0.14.2
+    Checking rcgen v0.14.9
+    Checking rama-tls-rustls v0.3.0-alpha.4
+    Checking starlark_syntax v0.14.2
+    Checking codex-network-proxy v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/network-proxy)
+    Checking starlark v0.14.2
+    Checking codex-execpolicy v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/execpolicy)
+    Checking codex-protocol v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/protocol)
+    Checking codex-model-provider-info v0.165.0 (${LINUX_USER_HOME}/codex-source-0.165.0-linux/codex-rs/model-provider-info)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1m 03s

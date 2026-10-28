@@ -1,0 +1,283 @@
+{
+  "official_package": {
+    "platform": "linux",
+    "name": "codex-package-x86_64-unknown-linux-musl.tar.gz",
+    "url": "https://github.com/openai/codex/releases/download/rust-v0.165.0/codex-package-x86_64-unknown-linux-musl.tar.gz",
+    "sha256": "e97c4463d7f146692a955d7b0e1c8cf48f97cd4d616cd45c5dcab2e8d9743316",
+    "size": 163200349
+  },
+  "version": "0.165.0",
+  "patch": "openai-r1",
+  "source_commit": "360319d8dee62d87e2d59fc0c21805d79519cfed",
+  "official_source_commit": "360319d8dee62d87e2d59fc0c21805d79519cfed",
+  "source_patch_sha256": "af6e013cfa8cc2d73057a30edc347c82339120fb03af4fe7605667e264cbb299",
+  "customizations": [
+    "小写 openai 接受完整自定义 provider 定义"
+  ],
+  "daybreak_uses_official_implementation": true,
+  "main_target": "x86_64-unknown-linux-gnu",
+  "official_helpers_target": "x86_64-unknown-linux-musl",
+  "rust": "1.99.1",
+  "runtime_dlls": [],
+  "notes": "主程序及列出的沙箱程序为定制构建，其余资源保持同版官方原始字节。",
+  "files": [
+    {
+      "path": "bin/codex",
+      "size": 483170160,
+      "sha256": "a53d83a0f57d56dec1bf23805e745b5e416b4ce854c510b3a22ff302cc31c993",
+      "origin": "本机编译"
+    },
+    {
+      "path": "bin/codex-code-mode-host",
+      "size": 77002000,
+      "sha256": "522935d4392ec9674fab60b239b5495992c6a93e4deb65113a216b6f5451ccd4",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-package.json",
+      "size": 204,
+      "sha256": "2f8be7c92937fc78042989f82d0b2626f56840aa041b5a32b39db54dd4a3453a",
+      "origin": "按定制主程序架构更新的包布局元数据"
+    },
+    {
+      "path": "codex-path/rg",
+      "size": 5408904,
+      "sha256": "e62198eb19b136b88c330af83647b5a962cb99b6b1f066758568f12de1974849",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/bwrap",
+      "size": 513520,
+      "sha256": "755c8d6a9b893905a4aabab058bd6c02c453e5e8653adb84fc08e570607f3f36",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/NOTICE.md",
+      "size": 2403,
+      "sha256": "40097a1799441051aa0b6645cdc819cceb19be73cdd265eb602aa2b15e0b1f48",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/codex-voice-host",
+      "size": 40908328,
+      "sha256": "0305a14b2dd0731663d0e82469466b02cf121622c02dee2f4a88a246233db9c6",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/gstreamer-1.0/libgstapp.so",
+      "size": 6488,
+      "sha256": "e6c32f19d1e8e06a9767a2f6c91a601375c5a6efc519bb56b7102f5f7c383977",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/gstreamer-1.0/libgstaudioconvert.so",
+      "size": 41040,
+      "sha256": "fb89a8f45bc732097c1d3d9443a63cc732d821eae0c7e7877e552ce657addbcb",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/gstreamer-1.0/libgstaudioresample.so",
+      "size": 35264,
+      "sha256": "7b2a73ad4e5c98fc2c9d3b31f9f56de7c1fdd90cd1696b9e0d485bde082e15b9",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/gstreamer-1.0/libgstcoreelements.so",
+      "size": 479848,
+      "sha256": "ccc76f19fffa06140c8b5ee523a84e0ef7c07289c852997ed1e43c8f8455dc78",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/gstreamer-1.0/libgstopus.so",
+      "size": 73464,
+      "sha256": "0f0ff64686d77036224de9b70b874e576266523a67c3f040d4163eaf5faebff5",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/gstreamer-1.0/libgstrtp.so",
+      "size": 757800,
+      "sha256": "7bf839b65871050776681de94a2798321449c9567010189f92798d0735b9e229",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/gstreamer-1.0/libgstrtpmanager.so",
+      "size": 564072,
+      "sha256": "23ad729c8d629a8c6734248d6737c8f38f22e47b9579a98478a035537249f446",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libffi.so.8",
+      "size": 63096,
+      "sha256": "bdec19c4e46b8fbf1c3e0b39f7b3fad933b77b43e2c37631157c97950fd2b174",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libgio-2.0.so.0",
+      "size": 2338512,
+      "sha256": "e67ab46a96ede0b8104e471d334f847ba581dd9a7c4e24f4190fcf1f2112cbb1",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libglib-2.0.so.0",
+      "size": 1521616,
+      "sha256": "2177b7338114a509730e8f92185b972a3491815ae463c76f6fcb75fd7590ba05",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libgmodule-2.0.so.0",
+      "size": 15720,
+      "sha256": "1158809de3e776981b850a78ad110baadbefa2dab1bd7c44cf6709073e7c5408",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libgobject-2.0.so.0",
+      "size": 454720,
+      "sha256": "a6976679abfecc3dd0553035424d7d4eddb53174ce916fda408a436204ab81d7",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libgstallocators-1.0.so.0",
+      "size": 30416,
+      "sha256": "9b85e20611e0986f5a9143b76d6acc59e6b63705ec137040ee8b466eab2975e4",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libgstapp-1.0.so.0",
+      "size": 106144,
+      "sha256": "30f94ed01741ba050326355d7cd791edad4c72d3aada91cc6083f22981acaac2",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libgstaudio-1.0.so.0",
+      "size": 636544,
+      "sha256": "9159265f12feb43ad5f52d548c525a15fdff81bc4d6ed1ec2eda5c4e9ae15e9b",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libgstbase-1.0.so.0",
+      "size": 573072,
+      "sha256": "efa118dfc05298ccc5d7de9f0d6b40ae85a98c1cb1989c847014d9e458498227",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libgstnet-1.0.so.0",
+      "size": 74192,
+      "sha256": "fbb8a6840cddab66da3d306ecd4274d3ee57e2db207bdef8632be1941ecfef87",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libgstpbutils-1.0.so.0",
+      "size": 321880,
+      "sha256": "d964814517a83d6852a9169e84399edfee509d6fd6620ffa4beb9c50c68db67d",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libgstreamer-1.0.so.0",
+      "size": 1582088,
+      "sha256": "9115c7aebbd1d70cf67d97e996d18b103188d05207bad7d6bd2c5c22c22f861e",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libgstrtp-1.0.so.0",
+      "size": 211744,
+      "sha256": "36d5ccf35d0b6ffc346511ff6795bec15e452e9f26892264aeca662b5126c11a",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libgsttag-1.0.so.0",
+      "size": 273976,
+      "sha256": "459140a25b33bf7583b3bb287d60ce2cf006871b3e36166a7d38184a18d49e95",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libgstvideo-1.0.so.0",
+      "size": 1004720,
+      "sha256": "86f89267e25f04248d31bffd1334132730972f6573a9f86dd22d9cdc40fac91b",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libintl.so.8",
+      "size": 6304,
+      "sha256": "3745518bbcd678e70f7560496596c8adc8b9215d23839c5eb2d0dea0bce3975a",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libopus.so.0",
+      "size": 565744,
+      "sha256": "f06da69ca0542b923a32f441da62a4fae8a603be7c4ee922c69282508b2960e0",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libpcre2-8.so.0",
+      "size": 442424,
+      "sha256": "e39519b242f40686734ed8d0218f68cac24f0e956ec64c8c1b49b9da5cc9788b",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/lib/libz.so.1",
+      "size": 109296,
+      "sha256": "6c5d765f42d9368cc4bdbd11f725c1bcf6b14b78322033d3c94f787fc6261f5e",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/LGPL-2.1.txt",
+      "size": 26431,
+      "sha256": "ad2eec519ebd4b5df86ea84dff24ae3bfa2edea846a703b58902dd221ae375db",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/Opus.txt",
+      "size": 1945,
+      "sha256": "01e1167d54a096d123cf6dfbbeb19587278845c6481d2d66d545669846079551",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/PCRE2.md",
+      "size": 4011,
+      "sha256": "197d8a73ffee0d6b09adba2f9c677b5f5aede24edf89258a68e48248d010d811",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/libffi.txt",
+      "size": 1132,
+      "sha256": "17b64dc60f3b6897a60f971e288b973f655c2edcdf08b25f3c3dd5549857881c",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/proxy-libintl.txt",
+      "size": 25292,
+      "sha256": "d245807f90032872d1438d741ed21e2490e1175dc8aa3afa5ddb6c8e529b58e5",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/sljit.txt",
+      "size": 1444,
+      "sha256": "5f216505c0f6ea3273caec89e766eef93cdeb7bbb0c429f9360116d7c938feeb",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/zlib.txt",
+      "size": 1002,
+      "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/manifest.json",
+      "size": 4768,
+      "sha256": "6e0de3d03737a6fe9415b11b440f793fcb1591b5eccd1ae94eaecd3a4412e306",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/runtime.json",
+      "size": 13941,
+      "sha256": "acadd09e0e49507a822a65432056cde661e5d0b9237c92f6a03a26d4f79f0ae6",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/sources.json",
+      "size": 4911,
+      "sha256": "e2f6b124f6277e7c3c4f5c7cc8830c66190f671ad65e972bb2cc9507dbfcb937",
+      "origin": "同版官方配套包"
+    }
+  ]
+}

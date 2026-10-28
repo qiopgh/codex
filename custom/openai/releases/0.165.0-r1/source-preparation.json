@@ -1,0 +1,46 @@
+{
+  "version": "0.165.0",
+  "revision": "openai-r1",
+  "previous_custom_commit": "3a036e3aaae36f067ae449e306f24b342276b73e",
+  "previous_official_commit": "6aaac694803004a63c6f393d153c96d22521a6b9",
+  "base_commit": "360319d8dee62d87e2d59fc0c21805d79519cfed",
+  "sources": [
+    "${LINUX_USER_HOME}/codex-source-0.165.0-linux",
+    "${LINUX_USER_HOME}/codex-source-0.165.0-windows"
+  ],
+  "files": [
+    {
+      "path": "codex-rs/config/src/config_toml.rs",
+      "upstream_changed": true,
+      "three_way_merge": "manual_resolution_preserves_gcp_and_bedrock",
+      "sha256": "1683f2b96510f97e6b61ca28d0533cb14166f2ec86d46a6d32adea5c547f88ad"
+    },
+    {
+      "path": "codex-rs/config/src/model_provider_requirements_tests.rs",
+      "upstream_changed": false,
+      "three_way_merge": "clean",
+      "sha256": "407c4ba823352d50ab067a819e532cca48645ae864d2dc4c661cf691eda32bb5"
+    },
+    {
+      "path": "codex-rs/app-server/src/config_manager_service_tests.rs",
+      "upstream_changed": false,
+      "three_way_merge": "clean",
+      "sha256": "7757b26eb836b78b9a5587aeb866f7810b04e02f5a32e74a75acae7cf6ca3c56"
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/lib.rs",
+      "upstream_changed": true,
+      "three_way_merge": "manual_resolution_preserves_gcp_and_bedrock",
+      "sha256": "b8a75d06432a31e9dafa94ee0d56ab6ae79c006ef20967a7d93059295bad1f5c"
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/model_provider_info_tests.rs",
+      "upstream_changed": true,
+      "three_way_merge": "clean",
+      "sha256": "ee212d32f555b8bde05efcddcdc619e30dc9e4bccb4909797578f357df2ca45e"
+    }
+  ],
+  "daybreak_compat_removed_in_previous_revision": true,
+  "only_provider_customization_ported": true,
+  "manual_conflicts_resolved": 2
+}

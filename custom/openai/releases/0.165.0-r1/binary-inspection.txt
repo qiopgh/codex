@@ -1,0 +1,214 @@
+两个平台的实际二进制检查：
+${LINUX_USER_HOME}/codex-build-0.165.0/codex-linux-x86_64:                                 ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=fd63a0319a16f6f4784ef84c2ddab982e7011584, with debug_info, not stripped
+${LINUX_USER_HOME}/codex-build-0.165.0/windows-compiled/codex-command-runner.exe:          PE32+ executable for MS Windows 5.02 (GUI), x86-64, 21 sections
+${LINUX_USER_HOME}/codex-build-0.165.0/windows-compiled/codex-windows-sandbox-service.exe: PE32+ executable for MS Windows 5.02 (console), x86-64, 21 sections
+${LINUX_USER_HOME}/codex-build-0.165.0/windows-compiled/codex-windows-sandbox-setup.exe:   PE32+ executable for MS Windows 5.02 (console), x86-64, 21 sections
+${LINUX_USER_HOME}/codex-build-0.165.0/windows-compiled/codex.exe:                         PE32+ executable for MS Windows 5.02 (console), x86-64, 21 sections
+
+Linux 最高 glibc 符号版本要求：GLIBC_2.39
+	linux-vdso.so.1 (0x00007f2198f3d000)
+	libssl.so.3 => /lib/x86_64-linux-gnu/libssl.so.3 (0x00007f21846f0000)
+	libcrypto.so.3 => /lib/x86_64-linux-gnu/libcrypto.so.3 (0x00007f2184000000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f2198f00000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f2183f10000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f2183d1c000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f2198f3f000)
+	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007f2198ede000)
+	libzstd.so.1 => /lib/x86_64-linux-gnu/libzstd.so.1 (0x00007f2183c52000)
+
+${LINUX_USER_HOME}/codex-build-0.165.0/windows-compiled/codex-command-runner.exe
+	DLL Name: iphlpapi.dll
+	DLL Name: user32.dll
+	DLL Name: userenv.dll
+	DLL Name: ws2_32.dll
+	DLL Name: api-ms-win-core-synch-l1-2-0.dll
+	DLL Name: kernel32.dll
+	DLL Name: kernel32.dll
+	DLL Name: advapi32.dll
+	DLL Name: kernel32.dll
+	DLL Name: ktmw32.dll
+	DLL Name: api-ms-win-core-winrt-error-l1-1-0.dll
+	DLL Name: kernel32.dll
+	DLL Name: oleaut32.dll
+	DLL Name: oleaut32.dll
+	DLL Name: advapi32.dll
+	DLL Name: api-ms-win-core-synch-l1-2-0.dll
+	DLL Name: bcrypt.dll
+	DLL Name: bcryptprimitives.dll
+	DLL Name: combase.dll
+	DLL Name: crypt32.dll
+	DLL Name: fwpuclnt.dll
+	DLL Name: gdi32.dll
+	DLL Name: iphlpapi.dll
+	DLL Name: kernel32.dll
+	DLL Name: ncrypt.dll
+	DLL Name: netapi32.dll
+	DLL Name: ntdll.dll
+	DLL Name: ole32.dll
+	DLL Name: secur32.dll
+	DLL Name: shell32.dll
+	DLL Name: shlwapi.dll
+	DLL Name: user32.dll
+	DLL Name: userenv.dll
+	DLL Name: winhttp.dll
+	DLL Name: ws2_32.dll
+	DLL Name: wtsapi32.dll
+	DLL Name: ADVAPI32.dll
+	DLL Name: KERNEL32.dll
+	DLL Name: msvcrt.dll
+	DLL Name: ntdll.dll
+${LINUX_USER_HOME}/codex-build-0.165.0/windows-compiled/codex-windows-sandbox-service.exe
+	DLL Name: api-ms-win-core-winrt-l1-1-0.dll
+	DLL Name: iphlpapi.dll
+	DLL Name: ws2_32.dll
+	DLL Name: api-ms-win-core-synch-l1-2-0.dll
+	DLL Name: kernel32.dll
+	DLL Name: kernel32.dll
+	DLL Name: advapi32.dll
+	DLL Name: api-ms-win-core-apiquery-l2-1-0.dll
+	DLL Name: api-ms-win-core-synch-l1-2-0.dll
+	DLL Name: api-ms-win-security-base-l1-2-2.dll
+	DLL Name: bcryptprimitives.dll
+	DLL Name: combase.dll
+	DLL Name: crypt32.dll
+	DLL Name: kernel32.dll
+	DLL Name: ntdll.dll
+	DLL Name: ole32.dll
+	DLL Name: oleaut32.dll
+	DLL Name: propsys.dll
+	DLL Name: shell32.dll
+	DLL Name: tdh.dll
+	DLL Name: userenv.dll
+	DLL Name: wintrust.dll
+	DLL Name: ws2_32.dll
+	DLL Name: api-ms-win-core-winrt-l1-1-0.dll
+	DLL Name: combase.dll
+	DLL Name: kernel32.dll
+	DLL Name: rpcrt4.dll
+	DLL Name: advapi32.dll
+	DLL Name: kernel32.dll
+	DLL Name: ktmw32.dll
+	DLL Name: api-ms-win-core-winrt-error-l1-1-0.dll
+	DLL Name: kernel32.dll
+	DLL Name: oleaut32.dll
+	DLL Name: oleaut32.dll
+	DLL Name: advapi32.dll
+	DLL Name: bcrypt.dll
+	DLL Name: crypt32.dll
+	DLL Name: fwpuclnt.dll
+	DLL Name: gdi32.dll
+	DLL Name: iphlpapi.dll
+	DLL Name: kernel32.dll
+	DLL Name: ncrypt.dll
+	DLL Name: netapi32.dll
+	DLL Name: ntdll.dll
+	DLL Name: ole32.dll
+	DLL Name: secur32.dll
+	DLL Name: shell32.dll
+	DLL Name: shlwapi.dll
+	DLL Name: user32.dll
+	DLL Name: userenv.dll
+	DLL Name: winhttp.dll
+	DLL Name: ws2_32.dll
+	DLL Name: wtsapi32.dll
+	DLL Name: ADVAPI32.dll
+	DLL Name: KERNEL32.dll
+	DLL Name: msvcrt.dll
+	DLL Name: ntdll.dll
+	DLL Name: USER32.dll
+${LINUX_USER_HOME}/codex-build-0.165.0/windows-compiled/codex-windows-sandbox-setup.exe
+	DLL Name: iphlpapi.dll
+	DLL Name: user32.dll
+	DLL Name: userenv.dll
+	DLL Name: ws2_32.dll
+	DLL Name: api-ms-win-core-synch-l1-2-0.dll
+	DLL Name: kernel32.dll
+	DLL Name: kernel32.dll
+	DLL Name: advapi32.dll
+	DLL Name: kernel32.dll
+	DLL Name: ktmw32.dll
+	DLL Name: api-ms-win-core-winrt-error-l1-1-0.dll
+	DLL Name: kernel32.dll
+	DLL Name: oleaut32.dll
+	DLL Name: oleaut32.dll
+	DLL Name: advapi32.dll
+	DLL Name: api-ms-win-core-synch-l1-2-0.dll
+	DLL Name: bcrypt.dll
+	DLL Name: bcryptprimitives.dll
+	DLL Name: combase.dll
+	DLL Name: crypt32.dll
+	DLL Name: fwpuclnt.dll
+	DLL Name: gdi32.dll
+	DLL Name: iphlpapi.dll
+	DLL Name: kernel32.dll
+	DLL Name: ncrypt.dll
+	DLL Name: netapi32.dll
+	DLL Name: ntdll.dll
+	DLL Name: ole32.dll
+	DLL Name: secur32.dll
+	DLL Name: shell32.dll
+	DLL Name: shlwapi.dll
+	DLL Name: user32.dll
+	DLL Name: userenv.dll
+	DLL Name: winhttp.dll
+	DLL Name: ws2_32.dll
+	DLL Name: wtsapi32.dll
+	DLL Name: ADVAPI32.dll
+	DLL Name: KERNEL32.dll
+	DLL Name: msvcrt.dll
+	DLL Name: ntdll.dll
+${LINUX_USER_HOME}/codex-build-0.165.0/windows-compiled/codex.exe
+	DLL Name: iphlpapi.dll
+	DLL Name: user32.dll
+	DLL Name: userenv.dll
+	DLL Name: ws2_32.dll
+	DLL Name: api-ms-win-core-synch-l1-2-0.dll
+	DLL Name: kernel32.dll
+	DLL Name: kernel32.dll
+	DLL Name: kernel32.dll
+	DLL Name: kernel32.dll
+	DLL Name: advapi32.dll
+	DLL Name: api-ms-win-core-apiquery-l2-1-0.dll
+	DLL Name: api-ms-win-core-path-l1-1-0.dll
+	DLL Name: api-ms-win-core-synch-l1-2-0.dll
+	DLL Name: api-ms-win-security-base-l1-2-2.dll
+	DLL Name: bcryptprimitives.dll
+	DLL Name: combase.dll
+	DLL Name: crypt32.dll
+	DLL Name: kernel32.dll
+	DLL Name: ntdll.dll
+	DLL Name: ole32.dll
+	DLL Name: oleaut32.dll
+	DLL Name: propsys.dll
+	DLL Name: shell32.dll
+	DLL Name: shlwapi.dll
+	DLL Name: tdh.dll
+	DLL Name: userenv.dll
+	DLL Name: wintrust.dll
+	DLL Name: ws2_32.dll
+	DLL Name: api-ms-win-core-winrt-l1-1-0.dll
+	DLL Name: combase.dll
+	DLL Name: rpcrt4.dll
+	DLL Name: advapi32.dll
+	DLL Name: ktmw32.dll
+	DLL Name: api-ms-win-core-winrt-error-l1-1-0.dll
+	DLL Name: advapi32.dll
+	DLL Name: bcrypt.dll
+	DLL Name: crypt32.dll
+	DLL Name: fwpuclnt.dll
+	DLL Name: gdi32.dll
+	DLL Name: iphlpapi.dll
+	DLL Name: kernel32.dll
+	DLL Name: ncrypt.dll
+	DLL Name: netapi32.dll
+	DLL Name: ntdll.dll
+	DLL Name: secur32.dll
+	DLL Name: shell32.dll
+	DLL Name: user32.dll
+	DLL Name: winhttp.dll
+	DLL Name: ws2_32.dll
+	DLL Name: wtsapi32.dll
+	DLL Name: ADVAPI32.dll
+	DLL Name: KERNEL32.dll
+	DLL Name: msvcrt.dll
+	DLL Name: ntdll.dll

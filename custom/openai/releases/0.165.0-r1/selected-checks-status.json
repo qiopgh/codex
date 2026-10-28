@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "command": [
+    "just",
+    "test",
+    "--release",
+    "--locked",
+    "-p",
+    "codex-model-provider-info",
+    "-p",
+    "codex-config",
+    "-p",
+    "codex-model-provider",
+    "-p",
+    "codex-app-server",
+    "-p",
+    "codex-state",
+    "--lib",
+    "-E",
+    "package(codex-model-provider-info) | (package(codex-config) & test(model_provider)) | test(gcp_provider_accepts_partial_endpoint_and_auth_overrides) | test(capability_overrides_preserve_unspecified_provider_defaults) | test(openai_provider_override_is_writable) | (package(codex-state) & (test(sqlite) | test(attached_thread_discovery)))"
+  ],
+  "started_at_utc": "2026-10-28T04:09:16.581709+00:00",
+  "exit_code": 0,
+  "source_unchanged": true,
+  "completed_at_utc": "2026-10-28T04:25:43.490305+00:00",
+  "test_summary": {
+    "run": 75,
+    "passed": 75,
+    "skipped": 1090
+  }
+}
