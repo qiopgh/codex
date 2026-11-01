@@ -528,6 +528,34 @@ fn test_merge_configured_model_providers_adds_custom_provider() {
 }
 
 #[test]
+fn test_merge_configured_model_providers_replaces_openai_definition() {
+    let custom_openai = ModelProviderInfo {
+        name: "OpenAI".to_string(),
+        base_url: Some("https://proxy.example.com/v1".to_string()),
+        env_http_headers: Some(maplit::hashmap! {
+            "X-Api-Key".to_string() => "CLIPROXY_API_KEY".to_string(),
+        }),
+        requires_openai_auth: true,
+        supports_websockets: false,
+        capabilities: Some(crate::ModelProviderCapabilities {
+            external_web_access: Some(false),
+            remote_compaction: Some(crate::RemoteCompactionSupport::Unsupported),
+        }),
+        ..ModelProviderInfo::default()
+    };
+    let mut expected = built_in_model_providers(/*openai_base_url*/ None);
+    expected.insert(OPENAI_PROVIDER_ID.to_string(), custom_openai.clone());
+
+    assert_eq!(
+        merge_configured_model_providers(
+            built_in_model_providers(/*openai_base_url*/ None),
+            std::collections::HashMap::from([(OPENAI_PROVIDER_ID.to_string(), custom_openai)]),
+        ),
+        Ok(expected)
+    );
+}
+
+#[test]
 fn test_merge_configured_model_providers_applies_amazon_bedrock_aws_override() {
     let credential_export = AwsCredentialExportConfig {
         command: "aws-vault".to_string(),
@@ -995,20 +1023,20 @@ model_catalog_url = "https://gateway.example/codex/catalog?token=catalog-secret"
 }
 
 #[test]
-fn builtin_openai_catalog_override_preserves_inference_and_identity() {
+fn custom_openai_catalog_override_preserves_full_definition() {
     for inference_url in [None, Some("https://us.api.openai.com/v1")] {
         for catalog_url in [None, Some("https://chatgpt.com/backend-api/codex/models")] {
             let configured: ModelProviderInfo = toml::from_str(&format!(
-                "name = \"Ignored name\"\nbase_url = \"https://ignored.example/v1\"\nrequires_openai_auth = false\n{}",
+                "name = \"自定义 OpenAI\"\nbase_url = \"https://proxy.example/v1\"\nrequires_openai_auth = false\n{}",
                 catalog_url.map(|url| format!("model_catalog_url = {url:?}")).unwrap_or_default()
             )).unwrap();
             let builtins = built_in_model_providers(inference_url.map(str::to_owned));
             let mut expected = builtins.clone();
-            expected.get_mut("openai").unwrap().model_catalog_url = catalog_url.map(Into::into);
+            expected.insert(OPENAI_PROVIDER_ID.to_string(), configured.clone());
             assert_eq!(
                 merge_configured_model_providers(
                     builtins,
-                    HashMap::from([("openai".to_string(), configured)]),
+                    HashMap::from([(OPENAI_PROVIDER_ID.to_string(), configured)]),
                 )
                 .unwrap(),
                 expected,
@@ -1018,7 +1046,8 @@ fn builtin_openai_catalog_override_preserves_inference_and_identity() {
 }
 
 #[test]
-fn builtin_openai_catalog_rejects_untrusted_destinations() {
+fn custom_openai_catalog_uses_custom_provider_merge_semantics() {
+    // 合并层保留原始配置；端点的实际连接与认证继续由原生请求路径处理。
     for url in [
         "http://chatgpt.com/backend-api/codex/models",
         "https://chatgpt.com.evil.example/models",
@@ -1030,32 +1059,27 @@ fn builtin_openai_catalog_rejects_untrusted_destinations() {
         "not a URL",
     ] {
         let provider = ModelProviderInfo {
+            name: "自定义目录".into(),
             model_catalog_url: Some(url.into()),
             ..Default::default()
         };
-        assert_eq!(
-            merge_configured_model_providers(
-                built_in_model_providers(/*openai_base_url*/ None),
-                HashMap::from([("openai".to_string(), provider.clone())]),
-            )
-            .unwrap_err(),
-            "model_providers.openai.model_catalog_url must use an allowed ChatGPT host. If you need to use a 3rd party host, configure a custom model_provider",
-        );
-        let mut expected = built_in_model_providers(/*openai_base_url*/ None);
-        expected.insert("custom".into(), provider.clone());
-        assert_eq!(
-            merge_configured_model_providers(
-                built_in_model_providers(/*openai_base_url*/ None),
-                HashMap::from([("custom".into(), provider)]),
-            )
-            .unwrap(),
-            expected,
-        );
+        for key in [OPENAI_PROVIDER_ID, "custom"] {
+            let mut expected = built_in_model_providers(/*openai_base_url*/ None);
+            expected.insert(key.into(), provider.clone());
+            assert_eq!(
+                merge_configured_model_providers(
+                    built_in_model_providers(/*openai_base_url*/ None),
+                    HashMap::from([(key.into(), provider.clone())]),
+                )
+                .unwrap(),
+                expected,
+            );
+        }
     }
 }
 
 #[test]
-fn builtin_openai_catalog_accepts_existing_chatgpt_hosts() {
+fn custom_openai_catalog_keeps_definition_on_chatgpt_hosts() {
     for host in [
         "chatgpt.com",
         "gov.chatgpt.com",
@@ -1064,20 +1088,21 @@ fn builtin_openai_catalog_accepts_existing_chatgpt_hosts() {
         "api.chatgpt-staging.com",
         "CHATGPT.COM",
     ] {
-        let url = format!("https://{host}/backend-api/codex/models");
         let provider = ModelProviderInfo {
-            model_catalog_url: Some(url.clone().into()),
+            name: "自定义目录".into(),
+            base_url: Some("https://proxy.example/v1".into()),
+            model_catalog_url: Some(format!("https://{host}/backend-api/codex/models").into()),
             ..Default::default()
         };
         let mut expected = built_in_model_providers(/*openai_base_url*/ None);
-        expected.get_mut("openai").unwrap().model_catalog_url = Some(url.into());
+        expected.insert(OPENAI_PROVIDER_ID.to_string(), provider.clone());
         assert_eq!(
             merge_configured_model_providers(
                 built_in_model_providers(/*openai_base_url*/ None),
-                HashMap::from([("openai".into(), provider)]),
+                HashMap::from([(OPENAI_PROVIDER_ID.to_string(), provider)]),
             )
             .unwrap(),
-            expected
+            expected,
         );
     }
 }
