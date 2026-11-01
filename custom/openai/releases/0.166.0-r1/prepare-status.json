@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "started_at_utc": "2026-11-01T00:50:18.225180+00:00",
+  "checks": [
+    {
+      "name": "linux-database-manifest",
+      "command": [
+        "python3",
+        "${LINUX_USER_HOME}/codex-build-0.166.0/read_db_migrations.py",
+        "${LINUX_USER_HOME}/.codex",
+        "${LINUX_USER_HOME}/codex-build-0.166.0/linux-db-migrations.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "windows-migrations",
+      "command": [
+        "python3",
+        "${LINUX_USER_HOME}/codex-build-0.166.0/prepare_windows_migrations.py",
+        "${LINUX_USER_HOME}/codex-source-0.166.0-windows/codex-rs/state",
+        "${LINUX_USER_HOME}/codex-build-0.166.0/windows-migrations-sha384.json",
+        "--database-migrations",
+        "${LINUX_USER_HOME}/codex-build-0.166.0/windows-db-migrations.json",
+        "--report",
+        "${LINUX_USER_HOME}/codex-build-0.166.0/windows-migration-match.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "linux-migrations",
+      "command": [
+        "python3",
+        "${LINUX_USER_HOME}/codex-build-0.166.0/check_linux_migrations.py",
+        "${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/state",
+        "${LINUX_USER_HOME}/codex-build-0.166.0/linux-db-migrations.json",
+        "${LINUX_USER_HOME}/codex-build-0.166.0/linux-migration-match.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "toolchain",
+      "command": [
+        "rustc",
+        "--version",
+        "--verbose"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "config-schema",
+      "command": [
+        "just",
+        "write-config-schema"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "bazel-lock-update",
+      "command": [
+        "just",
+        "bazel-lock-update"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "fmt-linux",
+      "command": [
+        "just",
+        "fmt"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "provider-clippy",
+      "command": [
+        "just",
+        "fix",
+        "-p",
+        "codex-model-provider-info"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "fmt-final",
+      "command": [
+        "just",
+        "fmt"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "fmt-check",
+      "command": [
+        "just",
+        "fmt-check"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "current_check": "fmt-check",
+  "daybreak_compat_absent": true,
+  "internal_metadata_not_configurable": true,
+  "patch_sha256": "f480a57081196393940be6b8b4c88d86f9757d741ca345fc63fe1699395b54bc",
+  "completed_at_utc": "2026-11-01T01:13:55.297593+00:00"
+}

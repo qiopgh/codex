@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "base_commit": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856",
+  "revision": "openai-r1",
+  "changed_files": [
+    "codex-rs/Cargo.lock",
+    "codex-rs/app-server/src/config_manager_service_tests.rs",
+    "codex-rs/config/src/config_toml.rs",
+    "codex-rs/config/src/model_provider_requirements_tests.rs",
+    "codex-rs/core/config.schema.json",
+    "codex-rs/model-provider-info/src/lib.rs",
+    "codex-rs/model-provider-info/src/model_provider_info_tests.rs",
+    "justfile"
+  ],
+  "official_native_paths_byte_identical": {
+    "codex-rs/app-server/src/request_processors/catalog_processor.rs": true,
+    "codex-rs/app-server/src/request_processors/turn_processor.rs": true,
+    "codex-rs/core/src/client.rs": true,
+    "codex-rs/core/src/session/mod.rs": true,
+    "codex-rs/config/src/thread_config.rs": true,
+    "codex-rs/config/src/thread_config/remote.rs": true,
+    "codex-rs/core/src/cyber_access_program.rs": true,
+    "codex-rs/state/src/migrations.rs": true,
+    "codex-rs/install-context/src/lib.rs": true
+  },
+  "compat_config_and_code_absent": true,
+  "internal_metadata_not_configurable": true,
+  "patch_applies_to_clean_index": true,
+  "patch_sha256": "f480a57081196393940be6b8b4c88d86f9757d741ca345fc63fe1699395b54bc",
+  "source_hashes": {
+    "codex-rs/Cargo.lock": "360ea1e0ec391255ffc153a73548be524aa5d50c3476f247631cec184c21d4cb",
+    "codex-rs/app-server/src/config_manager_service_tests.rs": "b79a8ed4074b01caa6fb6e314b062ea70b977e408524a12fa29ceb5e20a34a40",
+    "codex-rs/config/src/config_toml.rs": "7c8eb936866285cff33712875c528c9497edd009e0d6d37ddf9f9bf86f6458a1",
+    "codex-rs/config/src/model_provider_requirements_tests.rs": "407c4ba823352d50ab067a819e532cca48645ae864d2dc4c661cf691eda32bb5",
+    "codex-rs/core/config.schema.json": "bde4a04906765b40a6b30bce8d1d3db0f33107ab6a14e1aca2bca44cd047cc21",
+    "codex-rs/model-provider-info/src/lib.rs": "86073ccb87b48351634f30c4ae4555ee1b412ffd1a150f7179d84d9dda2c0e36",
+    "codex-rs/model-provider-info/src/model_provider_info_tests.rs": "f1d4c8ec568f484524662c8d4fa3b0dd11d567d42800b7616bfd3dcd40823f33",
+    "justfile": "356f6e5ba71882030a1d6b322db4efce9c603b36ab9b3f2978d233713cd27015"
+  }
+}

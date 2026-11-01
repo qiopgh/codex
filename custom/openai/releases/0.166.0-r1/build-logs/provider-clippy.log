@@ -1,0 +1,76 @@
+cargo clippy --fix --tests --allow-dirty {args}
+    Checking num-traits v0.2.19
+    Checking fastrand v2.5.0
+    Checking rustls-webpki v0.103.16
+   Compiling rustls v0.23.46
+    Checking http v0.2.12
+    Checking vsimd v0.8.0
+    Checking outref v0.5.2
+    Checking webpki-roots v1.0.10
+    Checking bytes-utils v0.1.4
+    Checking codex-utils-absolute-path v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/utils/absolute-path)
+    Checking aws-smithy-async v1.2.14
+    Checking gix-error v0.5.0
+    Checking memoffset v0.9.1
+    Checking flume v0.12.0
+    Checking unicode-normalization v0.1.25
+    Checking hmac v0.12.1
+    Checking base64-simd v0.8.0
+    Checking gix-trace v0.3.0
+    Checking codex-utils-home-dir v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/utils/home-dir)
+    Checking rama-net v0.3.0-alpha.4
+    Checking codex-utils-path-uri v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/utils/path-uri)
+    Checking codex-utils-cache v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/utils/cache)
+    Checking tempfile v3.27.0
+    Checking gix-utils v0.5.0
+    Checking num-integer v0.1.46
+    Checking asn1-rs v0.7.1
+    Checking chrono v0.4.43
+    Checking pxfm v0.1.27
+    Checking gix-validate v0.13.0
+    Checking http-body v0.4.6
+    Checking codex-utils-string v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/utils/string)
+    Checking num-bigint v0.4.6
+    Checking gix-path v0.14.0
+    Checking codex-extension-items v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/ext/items)
+    Checking codex-utils-redacted-string v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/utils/redacted-string)
+    Checking aws-smithy-types v1.4.7
+    Checking codex-async-utils v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/async-utils)
+    Checking gix-url v0.40.0
+    Checking aws-smithy-runtime-api v1.12.0
+    Checking oid-registry v0.8.1
+    Checking allocative v0.3.6
+    Checking der-parser v10.0.0
+    Checking aws-credential-types v1.2.11
+    Checking aws-smithy-http v0.62.6
+    Checking pagable v0.4.1
+    Checking moxcms v0.7.11
+    Checking x509-parser v0.18.1
+    Checking aws-sigv4 v1.3.7
+    Checking rcgen v0.14.9
+    Checking starlark_map v0.14.2
+    Checking tokio-rustls v0.26.4
+    Checking codex-utils-rustls-provider v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/utils/rustls-provider)
+    Checking hyper-rustls v0.27.7
+    Checking reqwest v0.12.28
+    Checking starlark_syntax v0.14.2
+    Checking rama-http-headers v0.3.0-alpha.4
+    Checking rama-dns v0.3.0-alpha.4
+    Checking rama-unix v0.3.0-alpha.4
+    Checking rama-udp v0.3.0-alpha.4
+    Checking rama-tls-rustls v0.3.0-alpha.4
+    Checking image v0.25.9
+    Checking codex-http-client v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/http-client)
+    Checking codex-client v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/codex-client)
+    Checking rama-http v0.3.0-alpha.4
+    Checking starlark v0.14.2
+    Checking codex-utils-image v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/utils/image)
+    Checking rama-tcp v0.3.0-alpha.4
+    Checking rama-socks5 v0.3.0-alpha.4
+    Checking rama-http-core v0.3.0-alpha.4
+    Checking rama-http-backend v0.3.0-alpha.4
+    Checking codex-network-proxy v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/network-proxy)
+    Checking codex-execpolicy v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/execpolicy)
+    Checking codex-protocol v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/protocol)
+    Checking codex-model-provider-info v0.166.0 (${LINUX_USER_HOME}/codex-source-0.166.0-linux/codex-rs/model-provider-info)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1m 33s

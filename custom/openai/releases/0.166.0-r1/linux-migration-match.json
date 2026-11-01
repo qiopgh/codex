@@ -1,0 +1,427 @@
+{
+  "sql_files": 78,
+  "line_endings": "LF",
+  "databases": [
+    {
+      "database": "goals_1.sqlite",
+      "matched": [
+        {
+          "version": 1,
+          "path": "goals_migrations/0001_thread_goals.sql",
+          "sha384": "8ce6280244a0b4b39c7c37c7f67aff1670ec963d2401cdf2abcfea9904102db6cd99b7bedf366267791a45eb12f17713"
+        },
+        {
+          "version": 2,
+          "path": "goals_migrations/0002_thread_goal_continuation_deferrals.sql",
+          "sha384": "f3ff7de2fd89914820bef371081e885fd17df18a6fbdc432399a83255a8a01aa32fb7eea5e4de21a17bda3da16c49584"
+        }
+      ]
+    },
+    {
+      "database": "logs_2.sqlite",
+      "matched": [
+        {
+          "version": 1,
+          "path": "logs_migrations/0001_logs.sql",
+          "sha384": "009639eafe599be97d49d1d712e51671bf1be1c6b8cb7bf1a4136da88fb0e19308ff3cbcfbfbf589065e0eafef2ca164"
+        },
+        {
+          "version": 2,
+          "path": "logs_migrations/0002_logs_feedback_log_body.sql",
+          "sha384": "cf6c93af074a90224564010f49bc9cf905f10ba4c3c4b8b25c12e014ee1522f0b561a1c3d8188f6d2f4be764f141daf8"
+        }
+      ]
+    },
+    {
+      "database": "memories_1.sqlite",
+      "matched": [
+        {
+          "version": 1,
+          "path": "memory_migrations/0001_memories.sql",
+          "sha384": "a1af50da50775a70f98da680006b7df4501956753ae98511ab727aa295915d9ae6f4190b4eaa5abc4fd7891642f7d21d"
+        },
+        {
+          "version": 2,
+          "path": "memory_migrations/0002_consolidation_progress.sql",
+          "sha384": "18f0a8dd7fe9a847b30d719029066d7a78e0bc64310dc66e4f7708bad6f1a0a594c0dbd14fec1ccb410cd7ae75dd7b10"
+        }
+      ]
+    },
+    {
+      "database": "queue_1.sqlite",
+      "matched": [
+        {
+          "version": 1,
+          "path": "queue_migrations/0001_queued_items.sql",
+          "sha384": "cea113c9a74fe4ed12cf41951b57c66ca375a14a722ac28d41bc06a096ed3e1d777ac0710c5377e8cd75f645c99ca03c"
+        },
+        {
+          "version": 2,
+          "path": "queue_migrations/0002_queued_thread_revisions.sql",
+          "sha384": "983a2b17b454feb00d7c221d7f556e900e7f9ade4aef395e854ed9093fa21237fd3fd93f99c66758b489c0f376f56570"
+        }
+      ]
+    },
+    {
+      "database": "state_5.sqlite",
+      "matched": [
+        {
+          "version": 1,
+          "path": "migrations/0001_threads.sql",
+          "sha384": "627ef19164c9bb298a0cd99945981c9b7bda3d9e6cf12eb35145e3b1d3bf7cf8740f0dbaa0b475185fc2993397078049"
+        },
+        {
+          "version": 2,
+          "path": "migrations/0002_logs.sql",
+          "sha384": "521b72cbc04c7d03b1e4aef8dc0fdee672f1f7f5881385a55a0e937e4ebe87a3f67bca4d3f6b59afbc9a7ca723c82856"
+        },
+        {
+          "version": 3,
+          "path": "migrations/0003_logs_thread_id.sql",
+          "sha384": "e58a2862bdb66d3274e60144a26dc9d68bbefff834cd29b82b740f38fcf95862934f412665d985715167839e8f0eb377"
+        },
+        {
+          "version": 4,
+          "path": "migrations/0004_thread_dynamic_tools.sql",
+          "sha384": "8adc251366e4c7e5ea78b620ac71f4c4bdfb8f048bf9f2fd7204226cfba54c8e83fc9d83fc1ec334bc683bb7f6d0d8a8"
+        },
+        {
+          "version": 5,
+          "path": "migrations/0005_threads_cli_version.sql",
+          "sha384": "1ac64f85e083e5b49b974bf498fc39c630f0032057fb4bf4cb31708619fac5a80189f261cf3e38dafd92dc406e73c220"
+        },
+        {
+          "version": 6,
+          "path": "migrations/0006_memories.sql",
+          "sha384": "a203fc4b597e1420bffdc4e00e214798b21cf7fc921d8bd6f089c75248fb6a4b4942c97a1f8e0271eca8cf3b3e5e7a80"
+        },
+        {
+          "version": 7,
+          "path": "migrations/0007_threads_first_user_message.sql",
+          "sha384": "7e35a464df6d4c82694de50865ba3fe9104f9e1385a33be7d633ab4b8d6cf60b7f369fe083d31251fd77b75fa2d61f82"
+        },
+        {
+          "version": 8,
+          "path": "migrations/0008_backfill_state.sql",
+          "sha384": "aa3f287f7a448554e7af01f259f0871ce90ace1a7d4b8ebbd74c87ae57c3e21119f7eec8b9c2e9f4a9e76e63a0f0b60a"
+        },
+        {
+          "version": 9,
+          "path": "migrations/0009_stage1_outputs_rollout_slug.sql",
+          "sha384": "8b469360777e6dd6c21d3f0eb93481251846b0a50e0a44eb0dbee4a0a32b7206768a5d83a5fcec30c6fd2e43d755ff1b"
+        },
+        {
+          "version": 10,
+          "path": "migrations/0010_logs_process_id.sql",
+          "sha384": "8adaf1365f8e5deeba68bdeee9fd83b094a87bdab364d95ab5c714f7b8bd95dc3b38576871470312154c9d41e8f10f93"
+        },
+        {
+          "version": 11,
+          "path": "migrations/0011_logs_partition_prune_indexes.sql",
+          "sha384": "31ececbd07f04452d0dc5127d824ed183056b9900a31aa739387a4aef232016d975110829814841fb6bf3fd23634b799"
+        },
+        {
+          "version": 12,
+          "path": "migrations/0012_logs_estimated_bytes.sql",
+          "sha384": "0012a213ed25f2cf806c2530c487ebb00b4f102f5960d1a852154a0f77d25c9e9f7df29550faeb30ebaff15a26c7d604"
+        },
+        {
+          "version": 13,
+          "path": "migrations/0013_threads_agent_nickname.sql",
+          "sha384": "05526a0900a8430523a9a05932ea61302fce20782b245498565c1b9a2dfd10cf5c49932089b496ae23af44f6c5f76af4"
+        },
+        {
+          "version": 14,
+          "path": "migrations/0014_agent_jobs.sql",
+          "sha384": "4d2fbb2442c5c5c7c47b4254b5b8dc2c52129f65c4a952a79f1ec5c40fb07483326429ce5acdbd372bc9262352cb6277"
+        },
+        {
+          "version": 15,
+          "path": "migrations/0015_agent_jobs_max_runtime_seconds.sql",
+          "sha384": "0eece6db59c948faa6608526af440a9f53f5a982d27f3e866cd9f1401c2e59bc61f8381b5a1c9744acb232f50db493e5"
+        },
+        {
+          "version": 16,
+          "path": "migrations/0016_memory_usage.sql",
+          "sha384": "4768f743e981293735c6e07b0282ec8ace98af720059d68555b17979d28c94b0c893a97a950d5e32758bc6d92d8fe6ff"
+        },
+        {
+          "version": 17,
+          "path": "migrations/0017_phase2_selection_flag.sql",
+          "sha384": "4cbdb2edfebf6040858ffc193cffa36e6b3fbf508f8418ad073081bbfcf59d53d423b6eb4c0ded206ab4d4c1a0efed94"
+        },
+        {
+          "version": 18,
+          "path": "migrations/0018_phase2_selection_snapshot.sql",
+          "sha384": "a4363003bc44f0a4ae1eed53b536b7175f97863ea6881a059dc6642e70e2921576204697cec2345f560e65ff7fbf4455"
+        },
+        {
+          "version": 19,
+          "path": "migrations/0019_thread_dynamic_tools_defer_loading.sql",
+          "sha384": "3884c02f080f0184e92b620f870dfbb840a8ec5dfce2fe6455dd8197fcd27d7dd86e63ad6ec7c4091a1161d9ed199f8d"
+        },
+        {
+          "version": 20,
+          "path": "migrations/0020_threads_model_reasoning_effort.sql",
+          "sha384": "07673f4859f740134569ab9606760d8173ed6df92da47c86fbd0ceeb333e18ab7ac91d525ab8c11503c42164fd4167ae"
+        },
+        {
+          "version": 21,
+          "path": "migrations/0021_thread_spawn_edges.sql",
+          "sha384": "ea1aebe4f5a1d56c8effcc15f705c272275dd8adfeb01bc97d3f7b283474a3b8c2b0c8c69de55786e8bda17cae6f4de7"
+        },
+        {
+          "version": 22,
+          "path": "migrations/0022_threads_agent_path.sql",
+          "sha384": "160fe01b757dd06f9573b9030952d021f2b148732bea5fc5f5ae09e9227f3f83ca676695edaf8502669fcb546119dc94"
+        },
+        {
+          "version": 23,
+          "path": "migrations/0023_drop_logs.sql",
+          "sha384": "e6c748a9a18286e4c773ffe0dad659f16fb7e5b7b032235815991c405f2d32c068f3edde920d0fcf589b687bffcfee2e"
+        },
+        {
+          "version": 24,
+          "path": "migrations/0024_remote_control_enrollments.sql",
+          "sha384": "e92aa526b1f36e26f6221c04a671f07b27de2e7a5112d93a8c3af816a87846e7804d5fbad689e61cf4ec91fd79d3bd8a"
+        },
+        {
+          "version": 25,
+          "path": "migrations/0025_thread_timestamps_millis.sql",
+          "sha384": "d6fb51d79941b93c3278fe2a8a0c6fa882407b7b716e32d72329f0b7b60c181a42f49e56cd552315efb0402a111ede12"
+        },
+        {
+          "version": 26,
+          "path": "migrations/0026_thread_dynamic_tools_namespace.sql",
+          "sha384": "6c62a325d3b9ca8e424eacb9e3890d8d9de57c3725e2d1fa30c3743ae779fca2969387174359dfb26e4920791ae7e831"
+        },
+        {
+          "version": 27,
+          "path": "migrations/0027_threads_cwd_sort_indexes.sql",
+          "sha384": "d84dca6a039e004c0c7d06c5a16c2ccc363137537f3dd9898f50bb013ce9067140761b87d58ca742d769d35976863fc3"
+        },
+        {
+          "version": 28,
+          "path": "migrations/0028_device_key_bindings.sql",
+          "sha384": "ef44adaa291e40dfe6b74e3cd259711adae13f01c5594b177d08e2d2041a67ed3813feecf049662aaed0f636bd3f4ac3"
+        },
+        {
+          "version": 29,
+          "path": "migrations/0029_thread_goals.sql",
+          "sha384": "e9ec76f97dbf41ce4949de324a2a26538c2025c0ac4f272b77a852970fb14b7ec970d6978a765f91ae171dce9c0e4149"
+        },
+        {
+          "version": 30,
+          "path": "migrations/0030_threads_thread_source.sql",
+          "sha384": "80c1cdacd4520b42b18b960164912685591a7ee041645f35609a2ee2792eb474b7b0b758366556982d8cde2acb583672"
+        },
+        {
+          "version": 31,
+          "path": "migrations/0031_drop_device_key_bindings.sql",
+          "sha384": "943675a9b3dc92d0b2731ae7d2fe324ff1a40b6366b9d5d8b4cb47ca885c08beb6ebb1d776a5a47c878b4094dde70ea0"
+        },
+        {
+          "version": 32,
+          "path": "migrations/0032_threads_preview.sql",
+          "sha384": "3c01d615c5e3aba0fd858b7168e73881598d7d33a0ecc41527bdf6595a199d1aec2ff9f3b3000a57241c500d81b34259"
+        },
+        {
+          "version": 33,
+          "path": "migrations/0033_thread_goal_stopped_statuses.sql",
+          "sha384": "4904aae354e3d8ce32ac21d2ae579fd708446ae1dfb2649fc9dd22dc9279b91a2bbb02e6f01b3e0abd1088177bf2f030"
+        },
+        {
+          "version": 34,
+          "path": "migrations/0034_drop_thread_goals.sql",
+          "sha384": "d6fea739c76ebdef35a23f06e54efb5904d7987fb6b663db1ebc98eb9b192305f454932bfbaa2231aedca6209903a5f3"
+        },
+        {
+          "version": 35,
+          "path": "migrations/0035_drop_memory_tables.sql",
+          "sha384": "d7b56acb07c96858bdc7ca4c53db51eb71c6a19ef2c524ff68c2660a6fe0d23211a6d39cb905f01c42ffb7c8ee913bbc"
+        },
+        {
+          "version": 36,
+          "path": "migrations/0036_threads_visible_sort_indexes.sql",
+          "sha384": "6381f7bb4c36be41c6106b8523ea6c68f5a00273a5522155b7b84bad26d152436f3375df7097ce3abf2421aec32641ed"
+        },
+        {
+          "version": 37,
+          "path": "migrations/0037_remote_control_enrollments_enabled.sql",
+          "sha384": "f6a5ab0db36bb9e45ab5285b56090fb453df0a4d4d8d62eace234f0b557f4203c6c455fc67bd7d6e72623c3979ec9405"
+        },
+        {
+          "version": 38,
+          "path": "migrations/0038_external_agent_config_imports.sql",
+          "sha384": "e7778522cbe529f5e2ba179b502aee8e5c21272ad820e672ab0a565f7edc9bd0f29171ccf9815c0acc0f89eae0a2b1fc"
+        },
+        {
+          "version": 39,
+          "path": "migrations/0039_threads_recency_at.sql",
+          "sha384": "c217b3d14c08c23603f485af11452ee2b68f65fa8dbaf215f33f53b608c092be8738de3f63d6a38f120edea5af247c17"
+        },
+        {
+          "version": 40,
+          "path": "migrations/0040_threads_history_mode.sql",
+          "sha384": "a7a99674f90a43184e43d66595c4f1da50ae8715a5bfcb1579a2b7b10668335d7f7ab6b6f2d7a7a379272773d803a914"
+        },
+        {
+          "version": 41,
+          "path": "migrations/0041_threads_name.sql",
+          "sha384": "0dc734dbe4cbcc5ad5a8bbc2fdc1cf770ddea3cb53eb36c55a4da6fa2e8be4cc8e68672f43ac953e727e415e45c50a78"
+        },
+        {
+          "version": 42,
+          "path": "migrations/0042_drop_agent_jobs.sql",
+          "sha384": "cfdc4fd47328d1b67c0c7555125de4fb4add5b3b57fd31ac1987e4d8b0c99b1f5418db9ee7ec2158aed8a2e3dfcfd636"
+        },
+        {
+          "version": 43,
+          "path": "migrations/0043_threads_is_pinned.sql",
+          "sha384": "605128e722bd2521c7e979e9961c16706435e442b3e3a8efa36f6b16c42e3833090906d9a62fde097a109b78e29da830"
+        },
+        {
+          "version": 44,
+          "path": "migrations/0044_external_agent_config_imports_provider_id.sql",
+          "sha384": "5d29223bd1cafe456a4af992a545e8ec420b71331eb12a7427e26512b8a44117d9445b83562f095b3a5a0f11c4f091d2"
+        },
+        {
+          "version": 45,
+          "path": "migrations/0045_threads_section.sql",
+          "sha384": "a7fadc8caea8b6abeb108f588a91b8e5d1c9e2645ce990f2251b9f0234e6e53d78fc854f1c88c7217cc143016539d691"
+        },
+        {
+          "version": 46,
+          "path": "migrations/0046_threads_section_order.sql",
+          "sha384": "63addf6115c3fb1a22a886108ce6ebff5cd8408f219606dc2f8396836418e56d5be2a6de7b0df877119a28096ee67d22"
+        },
+        {
+          "version": 47,
+          "path": "migrations/0047_rollout_migration_state.sql",
+          "sha384": "1ae117e4ab40813de2b6cfed521585a5396a8dcb7277923d539ed111f5e76424787131ef1de353be5dd78e8228f204cc"
+        },
+        {
+          "version": 48,
+          "path": "migrations/0048_thread_section_appearance.sql",
+          "sha384": "9d298333f7523010502044685009ffe1ed18c3fed7f01fb200d62252f90ab0d897ccf05e478f90150b941ea6c0bd459c"
+        },
+        {
+          "version": 49,
+          "path": "migrations/0049_projects.sql",
+          "sha384": "faf45c392bb8572062bbd52f9702966cf62e3d195a1633f54cfe1b7dcb5865a3f951dc75c975179dc9a0ee639f7426a7"
+        },
+        {
+          "version": 50,
+          "path": "migrations/0050_threads_section_empty_preview_indexes.sql",
+          "sha384": "d2802e96f5fc1900fc6d3d595f040ebca8d25310ae9d1499a12b91f1635617adf5d2b4a93d0807203a22f4a6d4edb77e"
+        },
+        {
+          "version": 51,
+          "path": "migrations/0051_thread_artifacts.sql",
+          "sha384": "23360a03a7fc307c3fd5bb8b432b66034dd8f8695cdba698b45278c20dd712c1af476b884e192237d80baa08a5f29505"
+        },
+        {
+          "version": 52,
+          "path": "migrations/0052_projects_recency.sql",
+          "sha384": "071e96313d402e4c3d156f620f3f62b4a468da00ce30a47574d2594623e5e954f3ec2f1e54f043a8e4b602643e868b7d"
+        },
+        {
+          "version": 53,
+          "path": "migrations/0053_threads_originator.sql",
+          "sha384": "e86ef7ccbcc891b1af27f6aedb26bfe36d79c9d405e48f302eb053cb57ff9b24dbeb0479b48b18e2076efb6bfc4a9287"
+        },
+        {
+          "version": 54,
+          "path": "migrations/0054_threads_daybreak_enabled.sql",
+          "sha384": "e62a9977d99c7eabf36b67b183d86443d062b0aa8d018c42d1299821de4bf59182e16494ab874fd2d4081ef510e759f1"
+        },
+        {
+          "version": 55,
+          "path": "migrations/0055_thread_attachments.sql",
+          "sha384": "6daadc5527b3f57fa360c5d93199282ba54a42b7598558a9765bd6dcf11f555150fe678ed8163abb2e1861cb51d196c3"
+        },
+        {
+          "version": 56,
+          "path": "migrations/0056_threads_creator_identity.sql",
+          "sha384": "5de44fac5505249be66fcd640e9ac3d36550854c0db1272eb52cbb6c3d18b207db4cb782686d81089e77ebb57f6819b1"
+        },
+        {
+          "version": 57,
+          "path": "migrations/0057_cleanup_guardian_thread_metadata.sql",
+          "sha384": "729562c57bfa8b43d5ae3476c99cef6e81a54709a74283057ce8d2d6f55cf8eae2594fdb7cff4238ebe1e481e7c049e6"
+        },
+        {
+          "version": 58,
+          "path": "migrations/0058_threads_archive_sort_indexes.sql",
+          "sha384": "68467af3ce1ff09777c3f7167d522e11d88586fbb80a1588c631cf643a7d4985b221a6c8e8623997b37d44605b7e1091"
+        },
+        {
+          "version": 59,
+          "path": "migrations/0059_thread_attachment_reverse_lookup.sql",
+          "sha384": "4297dffb4fb308f0c665e4d126b7d2a96db7be48eb2e13c7e1245a5d95c4df4e66d64e79ad00fec26b0910436703090c"
+        },
+        {
+          "version": 60,
+          "path": "migrations/0060_guardian_review_feedback.sql",
+          "sha384": "d7f0cf0a69fa71999affcd48cc74b2d0a2637b8bbda73bd5819547ccdb15543a75d239311fa07fcf699be9bcbc1874a8"
+        },
+        {
+          "version": 61,
+          "path": "migrations/0061_thread_read_state.sql",
+          "sha384": "4a8337048bb958a21fd5272c1bd670605c84d4063534270d3e41cdc5c5a2e865f0fe6ae3c336ded873877ee2ea10f2e0"
+        },
+        {
+          "version": 62,
+          "path": "migrations/0062_threads_attached_parent.sql",
+          "sha384": "dab8b7c8390f9c764d5d64733da39fa0b79ad4f67931fa15263c1129143c1717bc252930b1a5668ad119c50844950304"
+        }
+      ]
+    },
+    {
+      "database": "thread_history_1.sqlite",
+      "matched": [
+        {
+          "version": 1,
+          "path": "thread_history_migrations/0001_thread_history.sql",
+          "sha384": "2ad9a4ab17df511fb73f03337133de94a172dc0a1f5729b5ef61fe106db03d1a43bdb5978b0cb7d7bc74071d3ca34a92"
+        },
+        {
+          "version": 2,
+          "path": "thread_history_migrations/0002_thread_items_item_type.sql",
+          "sha384": "ae61dbc1a6422530aa93914dbcac363a0238b86ae1a9d77eb041c75330e1283a0fcf93a043deeefcd6fd2c4037694bc4"
+        },
+        {
+          "version": 3,
+          "path": "thread_history_migrations/0003_turn_rollout_positions.sql",
+          "sha384": "a51da2a11df7760d8f8cab221e82b36ce8c0a30f16d44f3602e7f0fbc622ca72f1c3e3ecf22a194e12c2222bdcb51afe"
+        },
+        {
+          "version": 4,
+          "path": "thread_history_migrations/0004_thread_items_updated_at_ordinal.sql",
+          "sha384": "65f33b171bd3aafe9d24728b2ca6a5c720a3ab54aed472998f8acf7489f0d35b2dfd12258a2d17be993bf17098b5e50c"
+        },
+        {
+          "version": 5,
+          "path": "thread_history_migrations/0005_thread_realtime_items.sql",
+          "sha384": "2fdad8e361dc1f828afacf10bd2eb1f511b02deef7fa234a9c412d0211de126d1cfad54b175c9c3a9731548f9084b437"
+        },
+        {
+          "version": 6,
+          "path": "thread_history_migrations/0006_thread_turn_ends.sql",
+          "sha384": "02ed82d375adb58b5c0c09e0154f3331d507cea7af446d12324e5653cdba9a91f84afd38cf2a29f33030614689deb9de"
+        },
+        {
+          "version": 7,
+          "path": "thread_history_migrations/0007_thread_item_lifecycle_timestamps.sql",
+          "sha384": "9334adb4cda792116a47b69a19e3840ae3806b08773ef1794043fe0aa72891360acb1a0a8431084d53c568482c5fdd20"
+        },
+        {
+          "version": 8,
+          "path": "thread_history_migrations/0008_thread_turn_root.sql",
+          "sha384": "94635cd58535adb1679f4ad07a9d14231b69004405fa88a22db1b6a7e5feac8b6b66ad97ea16fce464b99bff5b3548d3"
+        }
+      ]
+    }
+  ],
+  "all_applied_matched": true
+}

@@ -1,0 +1,58 @@
+{
+  "version": "0.166.0",
+  "revision": "openai-r1",
+  "previous_custom_commit": "9cbc20ac226fbc7c0289cd9d5ae6c19465aa420c",
+  "previous_official_commit": "360319d8dee62d87e2d59fc0c21805d79519cfed",
+  "base_commit": "6ff1e1ca3b30fc8b914720681fcf5fe62e95f856",
+  "sources": [
+    "${LINUX_USER_HOME}/codex-source-0.166.0-linux",
+    "${LINUX_USER_HOME}/codex-source-0.166.0-windows"
+  ],
+  "files": [
+    {
+      "path": "codex-rs/config/src/config_toml.rs",
+      "upstream_changed": true,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [
+        "移除新版 catalog-only openai 特例，完整自定义定义继续接受通用 provider 校验"
+      ],
+      "sha256": "7c8eb936866285cff33712875c528c9497edd009e0d6d37ddf9f9bf86f6458a1"
+    },
+    {
+      "path": "codex-rs/config/src/model_provider_requirements_tests.rs",
+      "upstream_changed": false,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [],
+      "sha256": "407c4ba823352d50ab067a819e532cca48645ae864d2dc4c661cf691eda32bb5"
+    },
+    {
+      "path": "codex-rs/app-server/src/config_manager_service_tests.rs",
+      "upstream_changed": true,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [],
+      "sha256": "b79a8ed4074b01caa6fb6e314b062ea70b977e408524a12fa29ceb5e20a34a40"
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/lib.rs",
+      "upstream_changed": true,
+      "three_way_merge": "manual_conflict_resolved",
+      "semantic_adaptations": [
+        "保留中文 full custom openai 合并说明，GCP 与 Bedrock 沿用新版受限分支",
+        "用完整 openai 定义替换新版 catalog-only 合并分支，并去除旧迁移的重复分支"
+      ],
+      "sha256": "86073ccb87b48351634f30c4ae4555ee1b412ffd1a150f7179d84d9dda2c0e36"
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/model_provider_info_tests.rs",
+      "upstream_changed": true,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [
+        "三条新版 catalog-only 回归改为完整自定义定义的预期，保留通用 URL 与认证层测试"
+      ],
+      "sha256": "4f42e07e3f5280b04aa7703027244077588470e56d817679afe1423373cd3ce1"
+    }
+  ],
+  "manual_conflicts_resolved": 1,
+  "daybreak_compat_removed_in_previous_revision": true,
+  "only_provider_customization_ported": true
+}

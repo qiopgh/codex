@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "method": "codex update",
+  "previous_package": "${CODEX_HOME}\\packages\\standalone\\releases\\0.165.0-x86_64-pc-windows-msvc",
+  "installed_package": "${CODEX_HOME}\\packages\\standalone\\releases\\0.166.0-x86_64-pc-windows-msvc",
+  "version": "0.166.0",
+  "official_main_sha256_before_customization": "9d563ee4e0441ff9d59d612013e0460ddf8e5709735c2d9f6b98b7ef8ca4eb42",
+  "original_standalone_backup": "${CODEX_HOME}\\backups\\runtimes-before-0.166.0-20261101-084630\\standalone-package",
+  "path_structure_preserved": true,
+  "user_path_unchanged": true,
+  "CODEX_CLI_PATH_unchanged": true,
+  "auto_update_version": "0.166.0-x86_64-pc-windows-msvc",
+  "checked_at": "2026-11-01T10:24:09.295434+08:00"
+}
