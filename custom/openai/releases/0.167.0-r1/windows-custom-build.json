@@ -1,0 +1,307 @@
+{
+  "official_package": {
+    "platform": "windows",
+    "name": "codex-package-x86_64-pc-windows-msvc.tar.gz",
+    "url": "https://github.com/openai/codex/releases/download/rust-v0.167.0/codex-package-x86_64-pc-windows-msvc.tar.gz",
+    "sha256": "60567ca940bbaf6c10501805d9909d1328179231e2d47a0deec7a1368bb21641",
+    "size": 201675464
+  },
+  "version": "0.167.0",
+  "patch": "openai-r1",
+  "source_commit": "086ccc833bc9cf01024ad2dd6af7dbd421b6bf9a",
+  "official_source_commit": "086ccc833bc9cf01024ad2dd6af7dbd421b6bf9a",
+  "source_patch_sha256": "3ff4199385c0887e90ead6fbe600c41a43f70353c8062d256d05e1cf934f72b8",
+  "customizations": [
+    "小写 openai 接受完整自定义 provider 定义"
+  ],
+  "daybreak_uses_official_implementation": true,
+  "main_target": "x86_64-pc-windows-gnu",
+  "official_helpers_target": "x86_64-pc-windows-msvc",
+  "rust": "1.95.0",
+  "runtime_dlls": [],
+  "notes": "主程序及列出的沙箱程序为定制构建，其余资源保持同版官方原始字节。",
+  "files": [
+    {
+      "path": "bin/codex-code-mode-host.exe",
+      "size": 80328496,
+      "sha256": "5acd42f62966dd4a498ebfe04c5cae4c4a644a342a65a21bb53f8f36235c3d35",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "bin/codex-exec-server.exe",
+      "size": 79300912,
+      "sha256": "948a1921c1f9e5ae0ddf178a520754c6ab253c871d9f2257560772f96942b5ff",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "bin/codex.exe",
+      "size": 527082095,
+      "sha256": "9c7d08f1e04672d2ee4cf8ad23f7030190a08781fedfa0db6c63cae5c154f692",
+      "origin": "本机编译"
+    },
+    {
+      "path": "codex-package.json",
+      "size": 250,
+      "sha256": "370a61dde362a729ea7cc442122f804559f18fde1dec9613068b8199c7f7ba44",
+      "origin": "按定制主程序架构更新的包布局元数据"
+    },
+    {
+      "path": "codex-path/rg.exe",
+      "size": 4218880,
+      "sha256": "14231169855ec5205cf5a1b6f1db358ff4aed4247c86b69ce8aae647c77f6680",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/codex-command-runner.exe",
+      "size": 82690500,
+      "sha256": "a7b6da306ce33730f0c0c143471d27efaa50cf7603c0b75e993c303bb0b16583",
+      "origin": "本机编译"
+    },
+    {
+      "path": "codex-resources/codex-windows-sandbox-service.exe",
+      "size": 318339131,
+      "sha256": "9e773a071e017739d9bb30c8cfff62198dd850c8d300003930ee7a88798b763a",
+      "origin": "本机编译"
+    },
+    {
+      "path": "codex-resources/codex-windows-sandbox-setup.exe",
+      "size": 82100271,
+      "sha256": "5c48af28a7f915aede06d9b5f9663a52b287b7e2b48d05a75c35d916f29235d7",
+      "origin": "本机编译"
+    },
+    {
+      "path": "codex-resources/voice/NOTICE.md",
+      "size": 2439,
+      "sha256": "473fcf8ccb68ce726111d016d133f0555adba730d057591512f3f71fb46aeb6e",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/codex-voice-host.exe",
+      "size": 9028400,
+      "sha256": "2cbcc2976ed609a939bc6f84b0fc7be9bba43c8b728bb515dbb2283cb29b9613",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gio-2.0-0.dll",
+      "size": 1695536,
+      "sha256": "d9af08fee6324e07dfbf6451dfe918401f3c151a8c2c79802d83ab90027db160",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/glib-2.0-0.dll",
+      "size": 1390896,
+      "sha256": "9ed64991e24be3b3d748419317ad3dd78b52564d80f65d5231d013f6fede0893",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gmodule-2.0-0.dll",
+      "size": 34608,
+      "sha256": "fff1be2624c155a26ed6bff17760755cdc7c4e4094909e7b9f20ae7aa101dbd8",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gobject-2.0-0.dll",
+      "size": 348464,
+      "sha256": "6532e767f62a030284ea27e2c7140cdded46fe15dac8a54cd244bf007653cbcc",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstapp-1.0-0.dll",
+      "size": 100144,
+      "sha256": "a4cdfc311ac5acbb59e1f1e618b73962c1ac83ec60004eebdb6b7ca37c9d23d6",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstapp.dll",
+      "size": 25392,
+      "sha256": "1b9c6ab1d8697e3a6ef032f3d1100a984200da29bc7e7ad681657ecfa2273ba7",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstaudio-1.0-0.dll",
+      "size": 512304,
+      "sha256": "48a9d9fc8a791119ec53a0cc9e931754355f1b7010325410fb9c8ac76c88d3d7",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstaudioconvert.dll",
+      "size": 48432,
+      "sha256": "7729f0ada4951b5f136d81a9c6faaba7813b8d8c0bbf632e5820f03a0094e5dd",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstaudioresample.dll",
+      "size": 45360,
+      "sha256": "9d590b6bcab16c4d74597c3826549e1b9be042963f62822a70249ca4bce54161",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstbase-1.0-0.dll",
+      "size": 484144,
+      "sha256": "b438cfbcd5f4bc98e37481ffc2def2cf074942e90ccd211d6cf5c44621942339",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstcoreelements.dll",
+      "size": 409904,
+      "sha256": "595f233f7301ae31c21082c2f8e61b605efe8c551e4f10802cc5cbdd7980c1ee",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstnet-1.0-0.dll",
+      "size": 116528,
+      "sha256": "741926748c722edbe3b90d065cb7a69518956e4115019e0fa061d13ae0b8942f",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstopus.dll",
+      "size": 69424,
+      "sha256": "4850af98ea6c3de77832abdacff6ae88fa349af6bce9a2946eeeb5d6bd205c82",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstpbutils-1.0-0.dll",
+      "size": 262448,
+      "sha256": "c0c14eb754913727964d5d7b90e028b29ce7ac55742bb30ecd835a35b40f1851",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstreamer-1.0-0.dll",
+      "size": 1257264,
+      "sha256": "783c9ddde5f33af15a6b7a26804e4dec2c3c79a3ff9033787bb364c1451c4761",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstrtp-1.0-0.dll",
+      "size": 167216,
+      "sha256": "9a7028d3fd38d3bee9f205fc43b22a47e193defc57cbf72cdc2c5b3cb4842392",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstrtp.dll",
+      "size": 607536,
+      "sha256": "f96f9d45aa08dd91018c2efc2efef38a7c742818005ad81fd95eb89caa5c7211",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstrtpmanager.dll",
+      "size": 501040,
+      "sha256": "cd98dd1bafa5f26a784635fdf707756393e4b129c0ecaa78d91ea4a1681ecf94",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gsttag-1.0-0.dll",
+      "size": 254256,
+      "sha256": "62d2e1d19382c6b92206afddc19c2141e25ec5655d139f712ed98ccd385cb1a9",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/gstvideo-1.0-0.dll",
+      "size": 769840,
+      "sha256": "198e2ba6353f41129d411b82c44255946bfd43cc52b030930e0a6c985d2015ec",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/intl-8.dll",
+      "size": 25392,
+      "sha256": "041fecb1945389b01d406f05bfcc807304e7a5989acc95212e959b14428f1c76",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/libffi-8.dll",
+      "size": 43312,
+      "sha256": "5d49364ef5b8724367016eceb186360e35074381e510a687f9369fd04e78dfc9",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/opus.dll",
+      "size": 440112,
+      "sha256": "02fe48770b20147667ccc5850797a8dd16a9f1e21800091f807780321faf3966",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/pcre2-8.dll",
+      "size": 398128,
+      "sha256": "5c2956bd3f0b0a74ffe55f4e4af08df51d3aaa1031d32b8e3519c7dbe9097025",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/vcruntime140.dll",
+      "size": 123472,
+      "sha256": "184146852727a9db4eea06178716bec3cdbb1015c911f6b0f915b184ad7775b2",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/bin/z.dll",
+      "size": 105264,
+      "sha256": "f4956d397b9ac23262736781d603f0be5d650a5427aef2c50065de3cc94e39ae",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/LGPL-2.1.txt",
+      "size": 26934,
+      "sha256": "c7ce1276717604c29c5469179a2f368eac42846557be671bb52f4e16e884b2ad",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/Opus.txt",
+      "size": 1989,
+      "sha256": "cbd8bd07329a234413710c02b19d22c0cf78fc451882593e817130779b5455e3",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/PCRE2.md",
+      "size": 4115,
+      "sha256": "4195c519dcfe4a4ffedc4b8ccc5d49e4dd02efd5ece6b69a4fba5d20080902a9",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/libffi.txt",
+      "size": 1153,
+      "sha256": "e2a9b884b1c5d718efd6121457a1fbe7ece431352ca75c901260cef2e7d040e5",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/proxy-libintl.txt",
+      "size": 25774,
+      "sha256": "aa092600e3f475f0a55821fb9c529583d8e23e41bf0461254f02fcf94d3a32c2",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/sljit.txt",
+      "size": 1469,
+      "sha256": "37c7a090fc61388430d63fc97bf8a22ffce92d3ca2249aac572cfaf411d3070f",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/licenses/zlib.txt",
+      "size": 1024,
+      "sha256": "439c75ab12b340c5362b9d4b08ff05ec3a4d0eb7667a6fff49a9b16d8795c78e",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/manifest.json",
+      "size": 4773,
+      "sha256": "4959d21d559ad3adef3423f131dda7d824764973812e619b15c19eabb47e047e",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/runtime.json",
+      "size": 16894,
+      "sha256": "170ec9fb39e9748dace5abf4e8b8d49352b1bfed40f402eeb53138b5fca89f3e",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/sources.json",
+      "size": 4911,
+      "sha256": "e2f6b124f6277e7c3c4f5c7cc8830c66190f671ad65e972bb2cc9507dbfcb937",
+      "origin": "同版官方配套包"
+    },
+    {
+      "path": "codex-resources/voice/windows-crt.json",
+      "size": 1385,
+      "sha256": "d16939bc85da395ded5411724fed84ffd36810b78d47c756cf094b0956bc3892",
+      "origin": "同版官方配套包"
+    }
+  ]
+}

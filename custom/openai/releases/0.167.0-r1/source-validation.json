@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "base_commit": "086ccc833bc9cf01024ad2dd6af7dbd421b6bf9a",
+  "revision": "openai-r1",
+  "changed_files": [
+    "codex-rs/Cargo.lock",
+    "codex-rs/app-server/src/config_manager_service_tests.rs",
+    "codex-rs/config/src/config_toml.rs",
+    "codex-rs/config/src/model_provider_requirements_tests.rs",
+    "codex-rs/core/config.schema.json",
+    "codex-rs/model-provider-info/src/lib.rs",
+    "codex-rs/model-provider-info/src/model_provider_info_tests.rs",
+    "justfile"
+  ],
+  "official_native_paths_byte_identical": {
+    "codex-rs/app-server/src/request_processors/catalog_processor.rs": true,
+    "codex-rs/app-server/src/request_processors/turn_processor.rs": true,
+    "codex-rs/core/src/client.rs": true,
+    "codex-rs/core/src/session/mod.rs": true,
+    "codex-rs/config/src/thread_config.rs": true,
+    "codex-rs/config/src/thread_config/remote.rs": true,
+    "codex-rs/core/src/cyber_access_program.rs": true,
+    "codex-rs/state/src/migrations.rs": true,
+    "codex-rs/install-context/src/lib.rs": true,
+    "codex-rs/model-provider-info/src/capabilities.rs": true,
+    "codex-rs/model-provider-info/src/oauth_session.rs": true,
+    "codex-rs/model-provider-info/src/gateway_oauth.rs": true
+  },
+  "compat_config_and_code_absent": true,
+  "internal_metadata_not_configurable": true,
+  "patch_applies_to_clean_index": true,
+  "patch_sha256": "3ff4199385c0887e90ead6fbe600c41a43f70353c8062d256d05e1cf934f72b8",
+  "source_hashes": {
+    "codex-rs/Cargo.lock": "55a002023bcad0b44fbed4a8cf7632d964ac08640c1ac6c7dbd5e905206f9392",
+    "codex-rs/app-server/src/config_manager_service_tests.rs": "ab73ea73f74874737f76ef2c84f3b83a055f039fef91858e8116a8bd414779c0",
+    "codex-rs/config/src/config_toml.rs": "1b6e862452be8411f97b42abd15729bfdeedb140182e739629764b741cf1f945",
+    "codex-rs/config/src/model_provider_requirements_tests.rs": "407c4ba823352d50ab067a819e532cca48645ae864d2dc4c661cf691eda32bb5",
+    "codex-rs/core/config.schema.json": "32493bc54c44bd5efa9222aae9801f9c06887dda33ae9daa26d08f4a4dc6eb3f",
+    "codex-rs/model-provider-info/src/lib.rs": "77014bcf48b45d8c1414512f90a26f24fd4e148676bb70e40ec62be6202c6e23",
+    "codex-rs/model-provider-info/src/model_provider_info_tests.rs": "216184ec3c508988b0b48c740ffa2e4fa34f9a82fb5d81be97499f820c13e6aa",
+    "justfile": "356f6e5ba71882030a1d6b322db4efce9c603b36ab9b3f2978d233713cd27015"
+  }
+}

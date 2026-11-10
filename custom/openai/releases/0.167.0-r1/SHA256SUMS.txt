@@ -1,0 +1,2 @@
+31c84fdc6b331b1350b895d5fc5ad8c80dcc2480bb1a51c9b0da1baf69c4b608  codex-0.167.0-openai-r1-windows-x86_64.zip
+edeea3960c8334eb2b2ecb25c2425d0ed3883fb7bf22b466e06e8dd2931823f7  codex-0.167.0-openai-r1-linux-x86_64.tar.gz

@@ -1,0 +1,59 @@
+cargo clippy --fix --tests --allow-dirty {args}
+    Checking mio v1.2.4
+    Checking codex-utils-absolute-path v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/utils/absolute-path)
+    Checking unicode-normalization v0.1.25
+    Checking codex-utils-rustls-provider v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/utils/rustls-provider)
+    Checking codex-utils-string v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/utils/string)
+    Checking codex-utils-redacted-string v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/utils/redacted-string)
+    Checking codex-utils-path-uri v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/utils/path-uri)
+    Checking codex-utils-home-dir v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/utils/home-dir)
+    Checking codex-extension-items v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/ext/items)
+    Checking tokio v1.52.3
+    Checking gix-utils v0.5.0
+    Checking caseless v0.2.2
+    Checking gix-url v0.40.0
+    Checking tokio-util v0.7.18
+    Checking tokio-graceful v0.2.2
+    Checking rama-utils v0.3.0-alpha.4
+    Checking tokio-rustls v0.26.4
+    Checking hickory-proto v0.25.2
+    Checking aws-smithy-async v1.2.14
+    Checking tower v0.5.3
+    Checking tokio-native-tls v0.3.1
+    Checking tokio-stream v0.1.18
+    Checking codex-utils-cache v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/utils/cache)
+    Checking aws-smithy-runtime-api v1.12.0
+    Checking codex-utils-image v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/utils/image)
+    Checking codex-execpolicy v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/execpolicy)
+    Checking tokio-test v0.4.5
+    Checking tower-http v0.6.8
+    Checking rama-core v0.3.0-alpha.4
+    Checking h2 v0.4.19
+    Checking codex-async-utils v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/async-utils)
+    Checking aws-smithy-http v0.62.6
+    Checking aws-credential-types v1.2.11
+    Checking aws-sigv4 v1.3.7
+    Checking hickory-resolver v0.25.2
+    Checking rama-http-types v0.3.0-alpha.4
+    Checking hyper v1.11.1
+    Checking hyper-util v0.1.20
+    Checking rama-net v0.3.0-alpha.4
+    Checking hyper-tls v0.6.0
+    Checking hyper-rustls v0.27.7
+    Checking reqwest v0.12.28
+    Checking codex-http-client v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/http-client)
+    Checking codex-client v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/codex-client)
+    Checking rama-dns v0.3.0-alpha.4
+    Checking rama-http-headers v0.3.0-alpha.4
+    Checking rama-unix v0.3.0-alpha.4
+    Checking rama-udp v0.3.0-alpha.4
+    Checking rama-tls-rustls v0.3.0-alpha.4
+    Checking rama-http v0.3.0-alpha.4
+    Checking rama-tcp v0.3.0-alpha.4
+    Checking rama-socks5 v0.3.0-alpha.4
+    Checking rama-http-core v0.3.0-alpha.4
+    Checking rama-http-backend v0.3.0-alpha.4
+    Checking codex-network-proxy v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/network-proxy)
+    Checking codex-protocol v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/protocol)
+    Checking codex-model-provider-info v0.167.0 (${LINUX_USER_HOME}/codex-source-0.167.0-linux/codex-rs/model-provider-info)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1m 19s

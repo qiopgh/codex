@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "started_at_utc": "2026-11-10T04:15:23.032745+00:00",
+  "linux_final_archive_extracted_and_verified": true,
+  "regression_pid": 796850,
+  "linux_validation": [
+    {
+      "transport": "http",
+      "exit_code": 0
+    },
+    {
+      "transport": "websocket",
+      "exit_code": 0
+    }
+  ],
+  "completed_at_utc": "2026-11-10T04:52:53.790113+00:00"
+}
