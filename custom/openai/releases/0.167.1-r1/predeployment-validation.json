@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "version": "0.167.1",
+  "binary_reports": 4,
+  "exec_server_reports": 2,
+  "exec_server_hashes_match_packages": true,
+  "official_latest_rechecked": true,
+  "checked_at": "2026-11-11T19:45:12.361829+08:00"
+}

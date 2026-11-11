@@ -1,0 +1,13 @@
+{
+  "official_repository": "https://github.com/openai/codex",
+  "official_tag": "rust-v0.167.1",
+  "official_source_commit": "0a94398fa60c4fac0e7659e4213a0a36e613dd46",
+  "custom_source_commit": "a308c2ff9342b456e86d10cf4bb56a55bf64ef48",
+  "custom_source_tree": "92e1f6a5214a545c2d8fbdff544000d92764132a",
+  "custom_branch": "custom/openai-0.167.1-r1",
+  "custom_tag": "custom-v0.167.1-openai-r1",
+  "source_matches_validated_files": true,
+  "patch_sha256": "465f4d8d9e3d17e9d775a9ca95fa9dfba301c5df55398cb32cea8042363243a4",
+  "linux_sql": "LF",
+  "windows_sql": "独立准备 CRLF，未写入公共源码分支"
+}

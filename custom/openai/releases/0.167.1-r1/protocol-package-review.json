@@ -1,0 +1,100 @@
+{
+  "version": "0.167.1",
+  "official_commit": "0a94398fa60c4fac0e7659e4213a0a36e613dd46",
+  "previous_official_commit": "086ccc833bc9cf01024ad2dd6af7dbd421b6bf9a",
+  "changed_files": [
+    "codex-rs/Cargo.toml",
+    "codex-rs/core/config.schema.json",
+    "codex-rs/core/src/compact_remote_v2_attempt.rs",
+    "codex-rs/core/src/session/step_context.rs",
+    "codex-rs/core/src/session/turn.rs",
+    "codex-rs/core/src/session/world_state.rs",
+    "codex-rs/core/tests/suite/base_instructions.rs",
+    "codex-rs/core/tests/suite/scenarios_incremental_tools.rs",
+    "codex-rs/core/tests/suite/snapshots/all__suite__scenarios__incremental_tools__incremental_tool_removals_regular_responses.snap",
+    "codex-rs/core/tests/suite/snapshots/all__suite__scenarios__incremental_tools__incremental_tools_regular_responses.snap",
+    "codex-rs/features/src/lib.rs"
+  ],
+  "protocol_paths": [
+    {
+      "path": "codex-rs/state",
+      "changed_files": []
+    },
+    {
+      "path": "codex-rs/app-server-protocol",
+      "changed_files": []
+    },
+    {
+      "path": "codex-rs/exec-server",
+      "changed_files": []
+    },
+    {
+      "path": "codex-rs/install-context",
+      "changed_files": []
+    },
+    {
+      "path": "codex-rs/model-provider-info",
+      "changed_files": []
+    },
+    {
+      "path": "codex-rs/models-manager",
+      "changed_files": []
+    }
+  ],
+  "sql_files": 78,
+  "state_migration_files": 62,
+  "official_changes": "新增默认关闭的 incremental_tools_legacy，修复 Bedrock 普通 Responses 的增量工具与远端压缩行为；Responses-Lite 与普通 Responses 的托管工具布局相应调整。",
+  "protocol_review": "App Server、独立 exec-server、provider、真实模型目录及安装布局源码与前稳定版一致；现有 HTTP/WebSocket 与独立命令服务夹具无需签名变更。",
+  "validation_script_changes": [
+    "共存验证从本轮 CRLF 清单动态得到 state 迁移，并逐条比对版本、SHA-384 与 success；源数据库副本通过 BEGIN 固定快照后使用 SQLite backup。"
+  ],
+  "official_packages": [
+    {
+      "platform": "windows",
+      "layout": {
+        "layoutVersion": 1,
+        "version": "0.167.1",
+        "target": "x86_64-pc-windows-msvc",
+        "variant": "codex",
+        "entrypoint": "bin/codex.exe",
+        "execServer": "bin/codex-exec-server.exe",
+        "resourcesDir": "codex-resources",
+        "pathDir": "codex-path"
+      },
+      "file_count": 46,
+      "required_files": [
+        "bin/codex.exe",
+        "bin/codex-exec-server.exe",
+        "bin/codex-code-mode-host.exe",
+        "codex-path/rg.exe",
+        "codex-resources/codex-command-runner.exe",
+        "codex-resources/codex-windows-sandbox-setup.exe"
+      ],
+      "official_windows_sandbox_service_present": false
+    },
+    {
+      "platform": "linux",
+      "layout": {
+        "layoutVersion": 1,
+        "version": "0.167.1",
+        "target": "x86_64-unknown-linux-musl",
+        "variant": "codex",
+        "entrypoint": "bin/codex",
+        "execServer": "bin/codex-exec-server",
+        "resourcesDir": "codex-resources",
+        "pathDir": "codex-path"
+      },
+      "file_count": 44,
+      "required_files": [
+        "bin/codex",
+        "bin/codex-exec-server",
+        "bin/codex-code-mode-host",
+        "codex-path/rg",
+        "codex-resources/bwrap"
+      ],
+      "official_windows_sandbox_service_present": null
+    }
+  ],
+  "checked_at_utc": "2026-11-11T10:44:55.118600+00:00",
+  "official_archive_layout_checked": true
+}

@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "new_version": "0.167.1",
+  "old_version": "0.167.0",
+  "checks": [
+    "new_engine_migrated_consistent_copies",
+    "old_engine_starts_and_creates_thread_after_new_migrations",
+    "old_engine_reads_thread_index_after_new_migrations",
+    "state_migration_checksums_match_current_crlf_manifest"
+  ],
+  "new_binary": "${WORKSPACE}\\outputs\\codex-0.167.1\\codex-0.167.1-openai-r1-windows-x86_64\\bin\\codex.exe",
+  "old_binary": "${CODEX_HOME}\\backups\\runtimes-before-0.167.1-20261111-184150\\standalone-package\\bin\\codex.exe",
+  "observed_new_version": "codex-cli 0.167.1",
+  "observed_old_version": "codex-cli 0.167.0",
+  "databases": [
+    {
+      "database": "goals_1.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "logs_2.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "memories_1.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "memories_v2_1.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "queue_1.sqlite",
+      "migrations": 2,
+      "integrity": "ok"
+    },
+    {
+      "database": "state_5.sqlite",
+      "migrations": 62,
+      "integrity": "ok"
+    },
+    {
+      "database": "thread_history_1.sqlite",
+      "migrations": 8,
+      "integrity": "ok"
+    }
+  ],
+  "state_migrations_in_manifest": 62,
+  "state_migration_checksums_match_manifest": true,
+  "actual_database_modified": false,
+  "real_inference_requests": 0
+}

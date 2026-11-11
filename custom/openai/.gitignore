@@ -1,0 +1,11 @@
+# 运行状态与二进制安装包不进入源码历史。
+__pycache__/
+*.pyc
+*.sqlite*
+*.db*
+auth.json
+config.toml
+*.exe
+*.dll
+*.zip
+*.tar.gz

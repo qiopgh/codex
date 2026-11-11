@@ -1,0 +1,54 @@
+{
+  "version": "0.167.1",
+  "revision": "openai-r1",
+  "previous_custom_commit": "d0387289927d6fe6fdfa72bdc74759a1457b3c39",
+  "previous_official_commit": "086ccc833bc9cf01024ad2dd6af7dbd421b6bf9a",
+  "base_commit": "0a94398fa60c4fac0e7659e4213a0a36e613dd46",
+  "sources": [
+    "${LINUX_USER_HOME}/codex-source-0.167.1-linux",
+    "${LINUX_USER_HOME}/codex-source-0.167.1-windows"
+  ],
+  "files": [
+    {
+      "path": "codex-rs/config/src/config_toml.rs",
+      "upstream_changed": false,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [],
+      "sha256": "1b6e862452be8411f97b42abd15729bfdeedb140182e739629764b741cf1f945"
+    },
+    {
+      "path": "codex-rs/config/src/model_provider_requirements_tests.rs",
+      "upstream_changed": false,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [],
+      "sha256": "407c4ba823352d50ab067a819e532cca48645ae864d2dc4c661cf691eda32bb5"
+    },
+    {
+      "path": "codex-rs/app-server/src/config_manager_service_tests.rs",
+      "upstream_changed": false,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [],
+      "sha256": "ab73ea73f74874737f76ef2c84f3b83a055f039fef91858e8116a8bd414779c0"
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/lib.rs",
+      "upstream_changed": false,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [],
+      "sha256": "77014bcf48b45d8c1414512f90a26f24fd4e148676bb70e40ec62be6202c6e23"
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/model_provider_info_tests.rs",
+      "upstream_changed": false,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [],
+      "sha256": "216184ec3c508988b0b48c740ffa2e4fa34f9a82fb5d81be97499f820c13e6aa"
+    }
+  ],
+  "manual_conflicts_resolved": 0,
+  "native_cyber_capability_and_oauth_boundaries_preserved": true,
+  "gcp_validation_and_merge_preserved": true,
+  "internal_metadata_not_configurable": true,
+  "daybreak_compat_removed_in_previous_revision": true,
+  "only_provider_customization_ported": true
+}

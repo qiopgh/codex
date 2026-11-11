@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "new_ssh_login_shell": true,
+  "command": "${LINUX_USER_HOME}/.local/bin/codex",
+  "version": "codex-cli 0.167.1",
+  "resolved_target": "${LINUX_USER_HOME}/.codex/overrides/openai-custom-0.167.1-linux-x86_64-r1/bin/codex",
+  "sha256": "09a16164ce0b7528bcc07d6593dd165e962dc6c7fd8a6039d487695942d20998",
+  "checked_at": "2026-11-11T19:48:49.356019+08:00"
+}

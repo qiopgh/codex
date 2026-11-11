@@ -1,0 +1,24 @@
+{
+  "node_id": "TA_kwDOOYsS4doAKDU5NWEzNWU4MzdhMWI2NzUyZTYwYTVkZTg1Yjg5YWRmNDE1YjBjY2I",
+  "sha": "595a35e837a1b6752e60a5de85b89adf415b0ccb",
+  "url": "https://api.github.com/repos/openai/codex/git/tags/595a35e837a1b6752e60a5de85b89adf415b0ccb",
+  "tagger": {
+    "name": "Ian MacLeod",
+    "email": "imac@openai.com",
+    "date": "2026-11-10T18:02:26Z"
+  },
+  "object": {
+    "sha": "0a94398fa60c4fac0e7659e4213a0a36e613dd46",
+    "type": "commit",
+    "url": "https://api.github.com/repos/openai/codex/git/commits/0a94398fa60c4fac0e7659e4213a0a36e613dd46"
+  },
+  "tag": "rust-v0.167.1",
+  "message": "Release 0.167.1",
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}
