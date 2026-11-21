@@ -1,0 +1,72 @@
+{
+  "version": "0.171.0",
+  "official_commit": "ccf9be8cc458bd6b8336fe84d68d8893f2691a5e",
+  "previous_official_commit": "0a94398fa60c4fac0e7659e4213a0a36e613dd46",
+  "sql_files": 81,
+  "state_migration_files": 64,
+  "thread_history_migration_files": 9,
+  "new_sql_paths": [
+    "codex-rs/state/migrations/0063_session_model_ids.sql",
+    "codex-rs/state/migrations/0064_thread_listing_indexes.sql",
+    "codex-rs/state/thread_history_migrations/0009_realtime_observation_indexes.sql"
+  ],
+  "existing_sql_changed": false,
+  "app_server_protocol": "model/list 支持显式指定 modelProvider。原生 modelProvider/list 保留对内置 openai 的分类。会话恢复可只读元数据，再分页读取历史内容。",
+  "exec_server_protocol": "stdio initialize、process/start、process/output 和 process/exited 保持原有调用形状。新版添加可选能力和错误数据，验证仍使用普通的本地进程。",
+  "code_mode_host": "新版默认使用独立代码宿主及 gRPC。隔离验证保留禁用进程内回退的设置，并核对包内程序的实际子进程与执行结果。",
+  "official_bundled_red_model": {
+    "slug": "gpt-daybreak-red-latest",
+    "visibility": "hide",
+    "available_access_programs": null
+  },
+  "official_packages": [
+    {
+      "platform": "windows",
+      "layout": {
+        "layoutVersion": 1,
+        "version": "0.171.0",
+        "target": "x86_64-pc-windows-msvc",
+        "variant": "codex",
+        "entrypoint": "bin/codex.exe",
+        "execServer": "bin/codex-exec-server.exe",
+        "resourcesDir": "codex-resources",
+        "pathDir": "codex-path"
+      },
+      "file_count": 46,
+      "required_files": [
+        "bin/codex-code-mode-host.exe",
+        "bin/codex-exec-server.exe",
+        "bin/codex.exe",
+        "codex-path/rg.exe",
+        "codex-resources/codex-command-runner.exe",
+        "codex-resources/codex-windows-sandbox-setup.exe",
+        "codex-resources/voice/bin/codex-voice-host.exe"
+      ],
+      "official_windows_sandbox_service_present": false
+    },
+    {
+      "platform": "linux",
+      "layout": {
+        "layoutVersion": 1,
+        "version": "0.171.0",
+        "target": "x86_64-unknown-linux-musl",
+        "variant": "codex",
+        "entrypoint": "bin/codex",
+        "execServer": "bin/codex-exec-server",
+        "resourcesDir": "codex-resources",
+        "pathDir": "codex-path"
+      },
+      "file_count": 44,
+      "required_files": [
+        "bin/codex",
+        "bin/codex-code-mode-host",
+        "bin/codex-exec-server",
+        "codex-path/rg",
+        "codex-resources/bwrap",
+        "codex-resources/voice/bin/codex-voice-host"
+      ],
+      "official_windows_sandbox_service_present": null
+    }
+  ],
+  "checked_at_utc": "2026-11-21T08:03:56.667013+00:00"
+}

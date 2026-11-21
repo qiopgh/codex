@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "new_shell_processes": [
+    {
+      "shell_version": "5.1.26100.9818",
+      "command": "${WINDOWS_USER_HOME}\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.exe",
+      "version": "codex-cli 0.171.0",
+      "sha256": "a251fd3933340bf8e1e4e8f3558765a1c837e01741708d47693232c6be80983e"
+    },
+    {
+      "shell_version": "7.6.9",
+      "command": "${WINDOWS_USER_HOME}\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.exe",
+      "version": "codex-cli 0.171.0",
+      "sha256": "a251fd3933340bf8e1e4e8f3558765a1c837e01741708d47693232c6be80983e"
+    }
+  ],
+  "user_path_modified": false,
+  "checked_at": "2026-11-21T17:56:33.318654+08:00"
+}

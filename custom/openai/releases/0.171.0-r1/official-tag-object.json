@@ -1,0 +1,24 @@
+{
+  "node_id": "TA_kwDOOYsS4doAKDI5NWVjYTkzMzk0YmI4M2E2ZWM4ZTA4NDEwMzNmMzk5N2Y5N2ZjYmQ",
+  "sha": "295eca93394bb83a6ec8e0841033f3997f97fcbd",
+  "url": "https://api.github.com/repos/openai/codex/git/tags/295eca93394bb83a6ec8e0841033f3997f97fcbd",
+  "tagger": {
+    "name": "rhan-oai",
+    "email": "rhan@openai.com",
+    "date": "2026-11-19T23:07:37Z"
+  },
+  "object": {
+    "sha": "ccf9be8cc458bd6b8336fe84d68d8893f2691a5e",
+    "type": "commit",
+    "url": "https://api.github.com/repos/openai/codex/git/commits/ccf9be8cc458bd6b8336fe84d68d8893f2691a5e"
+  },
+  "tag": "rust-v0.171.0",
+  "message": "Release 0.171.0",
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}

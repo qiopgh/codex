@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "version": "codex-exec-server 0.171.0",
+  "cli_version": "codex-cli 0.171.0",
+  "binary": "${LINUX_USER_HOME}/codex-build-0.171.0/archive-validation/codex-0.171.0-openai-r1-linux-x86_64/bin/codex-exec-server",
+  "sha256": "da2b3636f0b050e4b97da5cf8ed6b3f85621d7611105f58ee9748d8c7e2266fe",
+  "protocol_initialize": true,
+  "executor_version_matches": true,
+  "process_start": true,
+  "output_marker": "EXEC_SERVER_RELEASE_OK",
+  "process_exit_code": 0,
+  "server_exit_code": 0,
+  "user_services_modified": false,
+  "real_upstream_requests": 0,
+  "checked_at_utc": "2026-11-21T08:52:27.202881+00:00"
+}

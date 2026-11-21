@@ -1,0 +1,12 @@
+
+Updating Codex via `powershell -ExecutionPolicy Bypass -c '$env:CODEX_NON_INTERACTIVE=1; irm https://chatgpt.com/codex/install.ps1 | iex'`...
+==> Updating Codex CLI from 0.167.1 to 0.171.0
+==> Detected platform: Windows (x64)
+==> Resolved version: 0.171.0
+==> Downloading Codex CLI
+==> ${WINDOWS_USER_HOME}\AppData\Local\Programs\OpenAI\Codex\bin is already on PATH.
+==> Current PowerShell session: codex
+==> Future PowerShell windows: open a new PowerShell window and run: codex
+Codex CLI 0.171.0 installed successfully.
+
+🎉 Update ran successfully! Please restart Codex.

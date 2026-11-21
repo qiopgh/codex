@@ -1,0 +1,72 @@
+{
+  "version": "0.171.0",
+  "revision": "openai-r1",
+  "previous_custom_commit": "a308c2ff9342b456e86d10cf4bb56a55bf64ef48",
+  "previous_official_commit": "0a94398fa60c4fac0e7659e4213a0a36e613dd46",
+  "base_commit": "ccf9be8cc458bd6b8336fe84d68d8893f2691a5e",
+  "sources": [
+    "${LINUX_USER_HOME}/codex-source-0.171.0-linux",
+    "${LINUX_USER_HOME}/codex-source-0.171.0-windows"
+  ],
+  "files": [
+    {
+      "path": "codex-rs/config/src/config_toml.rs",
+      "upstream_changed": true,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [],
+      "sha256": "20eb815fa38b6f54024e100e7602559bcc6cc5ea8e48e3e4466a49b25c9aae49"
+    },
+    {
+      "path": "codex-rs/config/src/model_provider_requirements_tests.rs",
+      "upstream_changed": false,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [],
+      "sha256": "407c4ba823352d50ab067a819e532cca48645ae864d2dc4c661cf691eda32bb5"
+    },
+    {
+      "path": "codex-rs/app-server/src/config_manager_service_tests.rs",
+      "upstream_changed": true,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [],
+      "sha256": "526a3cb0d08ee1a436af48d471e1dd6cab6501348fc04a6e45cc23c008a0c94b"
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/lib.rs",
+      "upstream_changed": true,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [],
+      "sha256": "543a7e47bbb163412d4d9ad9377104c2d2b9c893335fc767a7f178cf6244a82e"
+    },
+    {
+      "path": "codex-rs/model-provider-info/src/model_provider_info_tests.rs",
+      "upstream_changed": false,
+      "three_way_merge": "clean",
+      "semantic_adaptations": [],
+      "sha256": "216184ec3c508988b0b48c740ffa2e4fa34f9a82fb5d81be97499f820c13e6aa"
+    },
+    {
+      "path": "codex-rs/cloud-config/src/service_tests.rs",
+      "upstream_changed": false,
+      "three_way_merge": "test_fixture_adaptation",
+      "semantic_adaptations": [
+        "保留非法内置 provider 不得写入云配置缓存的覆盖，非法 ID 改用 Ollama。"
+      ],
+      "sha256": "28eb19ede8f2260fec66ddd7812310d9c0983f360b78145b9307c12ff28f84aa"
+    },
+    {
+      "path": "codex-rs/core/tests/suite/builtin_model_catalog.rs",
+      "upstream_changed": true,
+      "three_way_merge": "test_fixture_adaptation",
+      "semantic_adaptations": [
+        "从实际 TOML 加载完整小写 openai 定义，在本地分别验证目录和推理的地址及认证。"
+      ],
+      "sha256": "925a3b78428ec384038866ccf9313c8ca3f0508aacb0907b6dbdc70783830383"
+    }
+  ],
+  "manual_conflicts_resolved": 0,
+  "native_cyber_capability_and_oauth_boundaries_preserved": true,
+  "gcp_validation_and_merge_preserved": true,
+  "internal_metadata_not_configurable": true,
+  "daybreak_compat_removed_in_previous_revision": true,
+  "only_provider_customization_ported": true
+}

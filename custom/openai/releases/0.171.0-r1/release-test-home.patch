@@ -1,0 +1,20 @@
+diff --git a/codex-rs/test-binary-support/lib.rs b/codex-rs/test-binary-support/lib.rs
+--- a/codex-rs/test-binary-support/lib.rs
++++ b/codex-rs/test-binary-support/lib.rs
+@@ -43,8 +43,15 @@ where
+             None
+         }
+         TestBinaryDispatchMode::Skip => None,
+         TestBinaryDispatchMode::InstallAliases => {
+-            let codex_home = match tempfile::Builder::new().prefix(codex_home_prefix).tempdir() {
++            // 发布模式的测试辅助程序也应遵守运行时对系统临时目录的限制。
++            let mut builder = tempfile::Builder::new();
++            builder.prefix(codex_home_prefix);
++            let directory = match std::env::var_os("TEST_TMPDIR") {
++                Some(path) => builder.tempdir_in(path),
++                None => builder.tempdir(),
++            };
++            let codex_home = match directory {
+                 Ok(codex_home) => codex_home,
+                 Err(error) => panic!("failed to create test CODEX_HOME: {error}"),
+             };

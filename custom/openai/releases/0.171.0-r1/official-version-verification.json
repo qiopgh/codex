@@ -1,0 +1,19 @@
+{
+  "version": "0.171.0",
+  "revision": "openai-r1",
+  "official_tag": "rust-v0.171.0",
+  "official_commit": "ccf9be8cc458bd6b8336fe84d68d8893f2691a5e",
+  "tag_object": "295eca93394bb83a6ec8e0841033f3997f97fcbd",
+  "draft": false,
+  "prerelease": false,
+  "rust": "1.99.1",
+  "release_url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+  "official_documentation": "https://learn.chatgpt.com/docs/changelog",
+  "official_documentation_mentions_version": true,
+  "previous_customization": "0.167.1-openai-r1",
+  "phase": "sources_preparing",
+  "checked_at": "2026-11-21T15:57:16.732453+08:00",
+  "build_root": "${LINUX_USER_HOME}/codex-build-0.171.0",
+  "linux_source": "${LINUX_USER_HOME}/codex-source-0.171.0-linux",
+  "windows_source": "${LINUX_USER_HOME}/codex-source-0.171.0-windows"
+}

@@ -1,0 +1,130 @@
+bazel mod deps --lockfile_mode=update
+Starting local Bazel server (9.2.0) and connecting to it...
+INFO: Invocation ID: 51d2f758-3495-4865-8ee3-a6651f61c7f1
+ no actions running
+ no actions running
+ no actions running
+ no actions running
+ no actions running
+ no actions running
+WARNING: For repository 'bazel_skylib', the root module requires module version bazel_skylib@1.9.0, but got bazel_skylib@1.9.2 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+WARNING: For repository 'apple_support', the root module requires module version apple_support@2.1.0, but got apple_support@2.8.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ no actions running
+ no actions running
+ no actions running
+ no actions running
+ no actions running
+ no actions running
+ no actions running
+ no actions running
+ no actions running
+ no actions running
+DEBUG: ${LINUX_USER_HOME}/.cache/bazel/_bazel_debian/8b2baf6b3421f22cab9c3a15ca7c4bba/external/rules_rs+/rs/extensions.bzl:785:14: WARNING: Root alias targets (@hub//:name) will be removed after March 1, 2027. Use @hub//name and set incompatible_no_root_alias_targets = True in crate.from_cargo for rpyo3c, rrprd, rrra, rrwbd.
+Each @hub//name alias has its own BUILD file, so Bazel can reuse analysis for targets that depend only on unchanged aliases.
+DEBUG: ${LINUX_USER_HOME}/.cache/bazel/_bazel_debian/8b2baf6b3421f22cab9c3a15ca7c4bba/external/rules_rs+/rs/extensions.bzl:792:14: WARNING: Hub-wide @hub//:data.bzl and @hub//:defs.bzl will be removed after March 1, 2027. Load @hub//<cargo-package-name>:data.bzl and set incompatible_no_root_crate_data = True in crate.from_cargo for crates, rpyo3c, rrprd, rrra, rrwbd.
+When one member's metadata changes, Bazel can reuse analysis for targets that load only other members' data.bzl files.
+ no actions running
+ no actions running
+ no actions running
+DEBUG: ${LINUX_USER_HOME}/.cache/bazel/_bazel_debian/8b2baf6b3421f22cab9c3a15ca7c4bba/external/rules_rs+/rs/extensions.bzl:303:18: 
+WARNING: A well-known crate annotation exists to make builds of curl-sys in Cargo hub crates more hermetic! Apply the following to your MODULE.bazel:
+
+```
+bazel_dep(name = "curl", version = "8.21.0.bcr.2")
+
+crate = use_extension("@rules_rs//rs:extensions.bzl", "crate")
+crate.annotation(
+    crate = "curl-sys",
+    gen_build_script = "off",
+    deps = ["@curl"],
+)
+```
+
+If non-hermetic builds of curl-sys are acceptable, then you can disable this warning by configuring your MODULE.bazel like so:
+
+```
+crate.annotation(
+    crate = "curl-sys",
+    gen_build_script = "on",
+)
+```
+DEBUG: ${LINUX_USER_HOME}/.cache/bazel/_bazel_debian/8b2baf6b3421f22cab9c3a15ca7c4bba/external/rules_rs+/rs/extensions.bzl:303:18: 
+WARNING: A well-known crate annotation exists to make builds of openssl-sys in Cargo hub crates more hermetic! Apply the following to your MODULE.bazel:
+
+```
+bazel_dep(name = "openssl", version = "3.5.5.bcr.0")
+
+crate = use_extension("@rules_rs//rs:extensions.bzl", "crate")
+crate.annotation(
+    build_script_data = [
+        "@openssl//:gen_dir",
+    ],
+    build_script_env = {
+        "OPENSSL_DIR": "$(execpath @openssl//:gen_dir)",
+        "OPENSSL_NO_VENDOR": "1",
+        "OPENSSL_STATIC": "1",
+    },
+    crate = "openssl-sys",
+    gen_build_script = "on",
+)
+
+inject_repo(crate, "openssl")
+```
+
+If non-hermetic builds of openssl-sys are acceptable, then you can disable this warning by configuring your MODULE.bazel like so:
+
+```
+crate.annotation(
+    crate = "openssl-sys",
+    gen_build_script = "on",
+)
+```
+DEBUG: ${LINUX_USER_HOME}/.cache/bazel/_bazel_debian/8b2baf6b3421f22cab9c3a15ca7c4bba/external/rules_rs+/rs/extensions.bzl:303:18: 
+WARNING: A well-known crate annotation exists to make builds of tikv-jemalloc-sys in Cargo hub crates more hermetic! Apply the following to your MODULE.bazel:
+
+```
+bazel_dep(name = "jemalloc", version = "5.3.0-bcr.alpha.4")
+
+crate = use_extension("@rules_rs//rs:extensions.bzl", "crate")
+crate.annotation(
+    crate = "tikv-jemalloc-sys",
+    gen_build_script = "off",
+    deps = ["@jemalloc"],
+)
+```
+
+If non-hermetic builds of tikv-jemalloc-sys are acceptable, then you can disable this warning by configuring your MODULE.bazel like so:
+
+```
+crate.annotation(
+    crate = "tikv-jemalloc-sys",
+    gen_build_script = "on",
+)
+```
+ no actions running
+DEBUG: ${LINUX_USER_HOME}/.cache/bazel/_bazel_debian/8b2baf6b3421f22cab9c3a15ca7c4bba/external/rules_rs+/rs/extensions.bzl:303:18: 
+WARNING: A well-known crate annotation exists to make builds of libgit2-sys in Cargo hub argument_comment_lint_crates more hermetic! Apply the following to your MODULE.bazel:
+
+```
+bazel_dep(name = "libgit2", version = "1.9.1")
+
+crate = use_extension("@rules_rs//rs:extensions.bzl", "crate")
+crate.annotation(
+    crate = "libgit2-sys",
+    gen_build_script = "off",
+    deps = ["@libgit2"],
+)
+```
+
+If non-hermetic builds of libgit2-sys are acceptable, then you can disable this warning by configuring your MODULE.bazel like so:
+
+```
+crate.annotation(
+    crate = "libgit2-sys",
+    gen_build_script = "on",
+)
+```
+ no actions running
+ no actions running
+<root> (codex@_)
+

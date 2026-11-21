@@ -1,0 +1,86 @@
+cargo clippy --fix --tests --allow-dirty {args}
+    Checking mio v1.2.4
+   Compiling time-core v0.1.9
+   Compiling num-conv v0.2.2
+    Checking deranged v0.5.9
+   Compiling openssl-sys v0.9.118
+   Compiling zstd-sys v2.1.2+zstd.1.5.7
+    Checking compression-core v0.4.34
+    Checking codex-utils-absolute-path v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/utils/absolute-path)
+    Checking unicode-normalization v0.1.25
+    Checking codex-utils-rustls-provider v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/utils/rustls-provider)
+    Checking moxcms v0.7.11
+    Checking png v0.18.1
+   Compiling time-macros v0.2.32
+    Checking tokio v1.52.3
+   Compiling openssl v0.10.82
+   Compiling native-tls v0.2.14
+    Checking gix-utils v0.5.0
+    Checking codex-utils-home-dir v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/utils/home-dir)
+    Checking codex-utils-path-uri v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/utils/path-uri)
+    Checking caseless v0.2.2
+    Checking codex-utils-string v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/utils/string)
+    Checking gix-url v0.40.0
+    Checking codex-extension-items v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/ext/items)
+    Checking codex-utils-model-facing-id v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/utils/model-facing-id)
+    Checking codex-utils-redacted-string v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/utils/redacted-string)
+    Checking time v0.3.55
+    Checking asn1-rs v0.7.1
+    Checking aws-smithy-types v1.4.7
+    Checking cookie v0.18.1
+    Checking yasna v0.6.0
+    Checking cookie_store v0.22.1
+   Compiling zstd-safe v7.2.4
+    Checking image v0.25.9
+    Checking der-parser v10.0.0
+    Checking oid-registry v0.8.1
+    Checking tokio-util v0.7.18
+    Checking rama-utils v0.3.0-alpha.4
+    Checking tokio-graceful v0.2.2
+    Checking hickory-proto v0.25.2
+    Checking tokio-rustls v0.26.4
+    Checking aws-smithy-async v1.2.14
+    Checking zstd v0.13.3
+    Checking tower v0.5.3
+    Checking compression-codecs v0.4.39
+    Checking tokio-native-tls v0.3.1
+    Checking async-compression v0.4.44
+    Checking tokio-stream v0.1.18
+    Checking aws-smithy-runtime-api v1.12.0
+    Checking h2 v0.4.19
+    Checking codex-utils-cache v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/utils/cache)
+    Checking x509-parser v0.18.1
+    Checking codex-async-utils v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/async-utils)
+    Checking codex-execpolicy v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/execpolicy)
+    Checking tokio-test v0.4.5
+    Checking tower-http v0.6.8
+    Checking rama-core v0.3.0-alpha.4
+    Checking aws-credential-types v1.2.11
+    Checking aws-smithy-http v0.62.6
+    Checking aws-sigv4 v1.3.7
+    Checking rcgen v0.14.9
+    Checking codex-utils-image v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/utils/image)
+    Checking hickory-resolver v0.25.2
+    Checking hyper v1.11.1
+    Checking rama-http-types v0.3.0-alpha.4
+    Checking hyper-util v0.1.20
+    Checking rama-net v0.3.0-alpha.4
+    Checking hyper-rustls v0.27.7
+    Checking hyper-tls v0.6.0
+    Checking reqwest v0.12.28
+    Checking codex-http-client v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/http-client)
+    Checking codex-client v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/codex-client)
+    Checking rama-dns v0.3.0-alpha.4
+    Checking rama-http-headers v0.3.0-alpha.4
+    Checking rama-unix v0.3.0-alpha.4
+    Checking rama-udp v0.3.0-alpha.4
+    Checking rama-tls-rustls v0.3.0-alpha.4
+    Checking rama-http v0.3.0-alpha.4
+    Checking rama-tcp v0.3.0-alpha.4
+    Checking rama-socks5 v0.3.0-alpha.4
+    Checking rama-http-core v0.3.0-alpha.4
+    Checking rama-http-backend v0.3.0-alpha.4
+    Checking codex-network-proxy v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/network-proxy)
+    Checking codex-protocol v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/protocol)
+    Checking codex-model-provider-info v0.171.0 (${LINUX_USER_HOME}/codex-source-0.171.0-linux/codex-rs/model-provider-info)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1m 28s

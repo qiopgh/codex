@@ -1,0 +1,2046 @@
+diff --git a/codex-rs/Cargo.lock b/codex-rs/Cargo.lock
+index 8b8bad583a..8ffa836c2c 100644
+--- a/codex-rs/Cargo.lock
++++ b/codex-rs/Cargo.lock
+@@ -287,7 +287,7 @@ checksum = "2a4385e2e34eb35d6b3efe798b9eb88096925d87726c0798709bf56d9ed84af3"
+ 
+ [[package]]
+ name = "app_test_support"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -1900,7 +1900,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-agent-extension"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-core",
+@@ -1912,7 +1912,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-agent-graph-store"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-protocol",
+  "codex-state",
+@@ -1927,7 +1927,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-agent-identity"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -1947,7 +1947,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-agent-message-board-client"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -1970,7 +1970,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-agent-message-board-extension"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-agent-message-board-client",
+  "codex-config",
+@@ -1989,7 +1989,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-agent-message-board-host"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "chrono",
+  "codex-agent-message-board-client",
+@@ -2006,7 +2006,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-agent-roles"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-config",
+  "codex-file-system",
+@@ -2019,7 +2019,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-analytics"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-app-server-protocol",
+  "codex-features",
+@@ -2047,7 +2047,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-ansi-escape"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "ansi-to-tui",
+  "pretty_assertions",
+@@ -2058,7 +2058,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-api"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "assert_matches",
+@@ -2097,7 +2097,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-app-server"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "app_test_support",
+@@ -2219,7 +2219,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-app-server-client"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-api",
+  "codex-app-server",
+@@ -2256,7 +2256,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-app-server-daemon"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "blake3",
+@@ -2286,7 +2286,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-app-server-protocol"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-app-server-protocol-noop-macros",
+@@ -2321,11 +2321,11 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-app-server-protocol-noop-macros"
+-version = "0.0.0"
++version = "0.171.0"
+ 
+ [[package]]
+ name = "codex-app-server-test-client"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "clap",
+@@ -2348,7 +2348,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-app-server-transport"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "axum",
+@@ -2396,7 +2396,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-apply-patch"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "assert_cmd",
+@@ -2416,7 +2416,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-arg0"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-apply-patch",
+@@ -2439,7 +2439,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-async-utils"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "pretty_assertions",
+  "rand 0.9.3",
+@@ -2449,7 +2449,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-attachment-store"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "pretty_assertions",
+  "serde",
+@@ -2459,7 +2459,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-aws-auth"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "aws-config",
+  "aws-credential-types",
+@@ -2485,7 +2485,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-backend-client"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -2512,7 +2512,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-backend-openapi-models"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "serde",
+  "serde_json",
+@@ -2521,7 +2521,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-build-info"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-install-context",
+  "pretty_assertions",
+@@ -2534,7 +2534,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-bwrap"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "cc",
+  "libc",
+@@ -2543,7 +2543,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-chatgpt"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -2571,7 +2571,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-cli"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "app_test_support",
+@@ -2675,7 +2675,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-client"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-http-client",
+  "eventsource-stream",
+@@ -2689,7 +2689,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-cloud-client"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "async-stream",
+@@ -2715,7 +2715,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-cloud-config"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "base64 0.22.1",
+  "chrono",
+@@ -2743,7 +2743,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-cloud-tasks"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -2785,7 +2785,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-cloud-tasks-client"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -2800,7 +2800,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-cloud-tasks-mock-client"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "chrono",
+  "codex-cloud-tasks-client",
+@@ -2809,7 +2809,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-code-mode"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-code-mode-protocol",
+  "codex-http-client",
+@@ -2833,7 +2833,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-code-mode-host"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "axum",
+@@ -2864,7 +2864,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-code-mode-protocol"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-protocol",
+  "glob",
+@@ -2882,7 +2882,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-code-mode-runtime"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-code-mode-protocol",
+@@ -2904,11 +2904,11 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-collaboration-mode-templates"
+-version = "0.0.0"
++version = "0.171.0"
+ 
+ [[package]]
+ name = "codex-config"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -2962,7 +2962,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-config-schema"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "clap",
+@@ -2971,7 +2971,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-connectors"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "arc-swap",
+@@ -2993,7 +2993,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-connectors-extension"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-connectors",
+  "codex-core-plugins",
+@@ -3007,7 +3007,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-context-fragments"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-protocol",
+  "codex-protocol-test-support",
+@@ -3018,7 +3018,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-core"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "arc-swap",
+@@ -3173,7 +3173,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-core-api"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-analytics",
+  "codex-app-server-protocol",
+@@ -3197,7 +3197,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-core-plugin-common"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-utils-absolute-path",
+  "semver",
+@@ -3208,7 +3208,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-core-plugins"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -3269,7 +3269,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-diagnostics"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "libc",
+  "pretty_assertions",
+@@ -3277,7 +3277,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-direct-tool-timing"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-utils-critical-path",
+  "pretty_assertions",
+@@ -3288,7 +3288,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-exec"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "assert_cmd",
+@@ -3342,7 +3342,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-exec-server"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "arc-swap",
+@@ -3414,7 +3414,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-exec-server-cli"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "assert_matches",
+@@ -3458,7 +3458,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-exec-server-protocol"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-file-system",
+@@ -3476,7 +3476,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-exec-server-test-support"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-exec-server",
+@@ -3491,7 +3491,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-execpolicy"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "caseless",
+@@ -3511,7 +3511,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-experimental-api-macros"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "proc-macro2",
+  "quote",
+@@ -3520,7 +3520,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-extension-api"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-api",
+  "codex-config",
+@@ -3543,7 +3543,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-extension-items"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-utils-absolute-path",
+  "pretty_assertions",
+@@ -3555,7 +3555,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-external-agent-migration"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "chrono",
+  "codex-analytics",
+@@ -3586,7 +3586,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-features"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-network-proxy",
+  "codex-protocol",
+@@ -3600,7 +3600,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-feedback"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "bytes",
+@@ -3628,7 +3628,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-file-search"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "clap",
+@@ -3644,7 +3644,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-file-system"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "bytes",
+  "codex-protocol",
+@@ -3658,7 +3658,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-file-watcher"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "notify",
+  "pretty_assertions",
+@@ -3669,7 +3669,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-git-attribution"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-backend-client",
+  "codex-extension-api",
+@@ -3685,7 +3685,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-git-utils"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -3713,7 +3713,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-goal-extension"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -3738,7 +3738,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-guardian-context"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-context-fragments",
+  "codex-history",
+@@ -3752,7 +3752,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-guardian-reviewer"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-analytics",
+@@ -3789,7 +3789,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-guardian-v2"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -3832,7 +3832,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-guardian-v3"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -3873,7 +3873,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-history"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-protocol",
+@@ -3888,7 +3888,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-history-notes-extension"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-analytics",
+  "codex-client",
+@@ -3916,7 +3916,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-home"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-extension-api",
+  "codex-utils-absolute-path",
+@@ -3928,7 +3928,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-hooks"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "async-channel",
+@@ -3958,7 +3958,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-http-client"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "bytes",
+  "codex-utils-cargo-bin",
+@@ -3998,7 +3998,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-http-headers-helper"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-utils-process",
+@@ -4011,7 +4011,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-image-generation-extension"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-api",
+@@ -4043,7 +4043,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-install-context"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-utils-absolute-path",
+  "codex-utils-home-dir",
+@@ -4056,7 +4056,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-keyring-store"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "keyring",
+  "pretty_assertions",
+@@ -4067,7 +4067,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-linux-sandbox"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "async-lock",
+  "clap",
+@@ -4103,7 +4103,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-lmstudio"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-core",
+  "codex-http-client",
+@@ -4117,7 +4117,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-login"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -4166,7 +4166,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-mcp"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "arc-swap",
+@@ -4217,7 +4217,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-mcp-extension"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "axum",
+@@ -4250,7 +4250,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-memories-extension"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-core",
+  "codex-extension-api",
+@@ -4272,7 +4272,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-memories-read"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-protocol",
+  "codex-shell-command",
+@@ -4282,7 +4282,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-memories-write"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -4321,7 +4321,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-mermaid"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "insta",
+  "pretty_assertions",
+@@ -4330,7 +4330,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-message-board"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "base64 0.22.1",
+  "caseless",
+@@ -4355,7 +4355,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-message-board-mcp"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "axum",
+@@ -4383,7 +4383,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-message-history"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-config",
+  "memchr",
+@@ -4397,7 +4397,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-model-provider"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -4437,7 +4437,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-model-provider-info"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-client",
+  "codex-http-client",
+@@ -4455,7 +4455,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-models-manager"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "chrono",
+  "codex-http-client",
+@@ -4474,7 +4474,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-multi-env-copy-file"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-config",
+@@ -4500,7 +4500,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-mxc-sandbox"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-network-proxy",
+@@ -4521,7 +4521,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-network-proxy"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "aws-credential-types",
+@@ -4572,7 +4572,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-ollama"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "assert_matches",
+  "async-stream",
+@@ -4592,7 +4592,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-otel"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "bytes",
+  "chrono",
+@@ -4632,7 +4632,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-otel-trace-websocket"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "axum",
+@@ -4643,7 +4643,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-plugin"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-config",
+  "codex-core-plugin-common",
+@@ -4658,7 +4658,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-plugin-host"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-utils-cargo-bin",
+  "codex-utils-process",
+@@ -4675,7 +4675,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-process-hardening"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "libc",
+  "pretty_assertions",
+@@ -4683,7 +4683,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-prompts"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-collaboration-mode-templates",
+@@ -4702,7 +4702,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-protocol"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "chardetng",
+@@ -4749,7 +4749,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-protocol-test-support"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-protocol",
+  "uuid",
+@@ -4757,7 +4757,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-queue-extension"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-core",
+@@ -4779,7 +4779,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-realtime-webrtc"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-build-info",
+@@ -4798,7 +4798,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-response-debug-context"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-api",
+@@ -4809,7 +4809,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-responses-api-proxy"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "bytes",
+@@ -4833,7 +4833,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-rmcp-client"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "axum",
+@@ -4886,7 +4886,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-rollout"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -4920,7 +4920,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-rollout-trace"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-code-mode",
+@@ -4938,7 +4938,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-runtime-agent-instance"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "base64 0.22.1",
+  "bytes",
+@@ -4967,7 +4967,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-sandboxing"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-mxc-sandbox",
+@@ -4995,7 +4995,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-secrets"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "age",
+  "anyhow",
+@@ -5016,7 +5016,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-shell-command"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -5039,7 +5039,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-skills"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-protocol",
+  "codex-shell-command",
+@@ -5056,7 +5056,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-skills-extension"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "assert_matches",
+  "blake3",
+@@ -5096,7 +5096,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-state"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "chrono",
+@@ -5127,7 +5127,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-tcp-tunnel"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "bytes",
+@@ -5151,7 +5151,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-terminal-detection"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "pretty_assertions",
+  "tracing",
+@@ -5159,7 +5159,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-test-binary-support"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-arg0",
+  "tempfile",
+@@ -5167,7 +5167,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-thread-manager-sample"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "clap",
+@@ -5178,7 +5178,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-thread-store"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "caseless",
+  "chrono",
+@@ -5211,7 +5211,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-tools"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "bitflags 2.13.1",
+  "codex-attachment-store",
+@@ -5237,7 +5237,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-tui"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "app_test_support",
+@@ -5375,7 +5375,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-uds"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "async-io",
+  "libc",
+@@ -5389,7 +5389,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-user-input"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-protocol",
+@@ -5403,7 +5403,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-user-verification"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "base64 0.22.1",
+  "block2",
+@@ -5424,7 +5424,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-absolute-path"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "dirs",
+  "dunce",
+@@ -5438,14 +5438,14 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-approval-presets"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-protocol",
+ ]
+ 
+ [[package]]
+ name = "codex-utils-audio"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-protocol",
+@@ -5459,7 +5459,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-cache"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "lru",
+  "sha1 0.10.6",
+@@ -5468,7 +5468,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-cargo-bin"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "assert_cmd",
+  "runfiles",
+@@ -5477,7 +5477,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-cli"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "clap",
+  "codex-protocol",
+@@ -5489,22 +5489,22 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-critical-path"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "pretty_assertions",
+ ]
+ 
+ [[package]]
+ name = "codex-utils-elapsed"
+-version = "0.0.0"
++version = "0.171.0"
+ 
+ [[package]]
+ name = "codex-utils-fuzzy-match"
+-version = "0.0.0"
++version = "0.171.0"
+ 
+ [[package]]
+ name = "codex-utils-git-discovery"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-git-utils",
+  "codex-utils-absolute-path",
+@@ -5517,14 +5517,14 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-head-tail-buffer"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "pretty_assertions",
+ ]
+ 
+ [[package]]
+ name = "codex-utils-home-dir"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-utils-absolute-path",
+  "dirs",
+@@ -5534,7 +5534,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-image"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-utils-cache",
+@@ -5549,7 +5549,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-json-to-toml"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "pretty_assertions",
+  "serde_json",
+@@ -5558,7 +5558,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-model-facing-id"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "blake3",
+  "pretty_assertions",
+@@ -5571,7 +5571,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-oss"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-core",
+  "codex-lmstudio",
+@@ -5581,7 +5581,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-output-truncation"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-protocol",
+  "codex-utils-string",
+@@ -5591,7 +5591,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-path"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-utils-absolute-path",
+  "dunce",
+@@ -5602,7 +5602,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-path-uri"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-utils-absolute-path",
+@@ -5618,7 +5618,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-plugins"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-exec-server",
+  "codex-exec-server-protocol",
+@@ -5632,7 +5632,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-process"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "pretty_assertions",
+  "tokio",
+@@ -5640,7 +5640,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-pty"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-utils-cargo-bin",
+@@ -5660,7 +5660,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-readiness"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "assert_matches",
+  "thiserror 2.0.18",
+@@ -5670,7 +5670,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-redacted-string"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "schemars 0.8.22",
+  "serde",
+@@ -5678,14 +5678,14 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-rustls-provider"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "rustls",
+ ]
+ 
+ [[package]]
+ name = "codex-utils-sandbox-summary"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-protocol",
+  "codex-utils-absolute-path",
+@@ -5695,7 +5695,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-sleep-inhibitor"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "core-foundation 0.9.4",
+  "libc",
+@@ -5705,14 +5705,14 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-stream-parser"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "pretty_assertions",
+ ]
+ 
+ [[package]]
+ name = "codex-utils-string"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "pretty_assertions",
+  "regex-lite",
+@@ -5722,14 +5722,14 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-utils-template"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "pretty_assertions",
+ ]
+ 
+ [[package]]
+ name = "codex-v8-poc"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "pretty_assertions",
+  "v8",
+@@ -5737,7 +5737,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-voice-host"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-install-context",
+@@ -5764,7 +5764,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-web-search-extension"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-api",
+  "codex-core",
+@@ -5788,7 +5788,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-websocket-auth"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -5807,7 +5807,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-websocket-client"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "codex-http-client",
+  "codex-utils-rustls-provider",
+@@ -5823,7 +5823,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-windows-sandbox"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "base64 0.22.1",
+@@ -5854,7 +5854,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-windows-sandbox-service"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-cloud-config",
+@@ -5872,14 +5872,14 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-windows-sandbox-test-support"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "dirs",
+ ]
+ 
+ [[package]]
+ name = "codex-workload-identity"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "base64 0.22.1",
+  "codex-http-client",
+@@ -5901,7 +5901,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "codex-worktree"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "codex-git-utils",
+@@ -6176,7 +6176,7 @@ dependencies = [
+ 
+ [[package]]
+ name = "core_test_support"
+-version = "0.0.0"
++version = "0.171.0"
+ dependencies = [
+  "anyhow",
+  "assert_cmd",
+diff --git a/codex-rs/app-server/src/config_manager_service_tests.rs b/codex-rs/app-server/src/config_manager_service_tests.rs
+index b0bcb63699..b4660ed342 100644
+--- a/codex-rs/app-server/src/config_manager_service_tests.rs
++++ b/codex-rs/app-server/src/config_manager_service_tests.rs
+@@ -1749,12 +1749,12 @@ async fn invalid_user_value_rejected_even_if_overridden_by_managed() {
+ }
+ 
+ #[tokio::test]
+-async fn reserved_builtin_provider_override_rejected() {
++async fn openai_provider_override_is_writable() {
+     let tmp = tempdir().expect("tempdir");
+     std::fs::write(tmp.path().join(CONFIG_TOML_FILE), "model = \"user\"\n").unwrap();
+ 
+     let service = ConfigManager::without_managed_config_for_tests(tmp.path().to_path_buf());
+-    let error = service
++    service
+         .write_value(ConfigValueWriteParams {
+             file_path: Some(tmp.path().join(CONFIG_TOML_FILE).display().to_string()),
+             key_path: "model_providers.openai.name".to_string(),
+@@ -1763,17 +1763,11 @@ async fn reserved_builtin_provider_override_rejected() {
+             expected_version: None,
+         })
+         .await
+-        .expect_err("should reject reserved provider override");
+-
+-    assert_eq!(
+-        error.write_error_code(),
+-        Some(ConfigWriteErrorCode::ConfigValidationError)
+-    );
+-    assert!(error.to_string().contains("reserved built-in provider IDs"));
+-    assert!(error.to_string().contains("`openai`"));
++        .expect("小写 openai 应可写入自定义定义");
+ 
+     let contents = std::fs::read_to_string(tmp.path().join(CONFIG_TOML_FILE)).expect("read config");
+-    assert_eq!(contents, "model = \"user\"\n");
++    assert!(contents.contains("[model_providers.openai]"));
++    assert!(contents.contains("name = \"OpenAI Override\""));
+ }
+ 
+ #[tokio::test]
+diff --git a/codex-rs/cloud-config/src/service_tests.rs b/codex-rs/cloud-config/src/service_tests.rs
+index 70fd0a02ea..0d86d3af93 100644
+--- a/codex-rs/cloud-config/src/service_tests.rs
++++ b/codex-rs/cloud-config/src/service_tests.rs
+@@ -704,7 +704,7 @@ async fn invalid_requirements_do_not_replace_cached_bundle() {
+ 
+     for contents in [
+         "allowed_approval_policies = ['secret-policy']",
+-        "[model_providers.openai]\nname = 'Reserved'",
++        "[model_providers.ollama]\nname = 'Reserved'",
+         "[model_providers.secret-provider]\nname = '   '",
+         "[model_providers.gateway]\nbase_url = 'https://gateway.example/v1'",
+         "[model_providers.amazon-bedrock]\nname = 'Managed Bedrock'",
+diff --git a/codex-rs/config/src/config_toml.rs b/codex-rs/config/src/config_toml.rs
+index c485a2e614..62c0070a4a 100644
+--- a/codex-rs/config/src/config_toml.rs
++++ b/codex-rs/config/src/config_toml.rs
+@@ -41,7 +41,6 @@ use codex_model_provider_info::LMSTUDIO_OSS_PROVIDER_ID;
+ use codex_model_provider_info::ModelProviderInfo;
+ use codex_model_provider_info::OLLAMA_CHAT_PROVIDER_REMOVED_ERROR;
+ use codex_model_provider_info::OLLAMA_OSS_PROVIDER_ID;
+-use codex_model_provider_info::OPENAI_PROVIDER_ID;
+ use codex_protocol::config_types::AutoCompactTokenLimitScope;
+ use codex_protocol::config_types::ForcedLoginMethod;
+ use codex_protocol::config_types::Personality;
+@@ -64,11 +63,10 @@ use serde::Serialize;
+ use serde::de::Error as SerdeError;
+ use serde_json::Value as JsonValue;
+ 
+-const RESERVED_MODEL_PROVIDER_IDS: [&str; 6] = [
++const RESERVED_MODEL_PROVIDER_IDS: [&str; 5] = [
+     AMAZON_BEDROCK_PROVIDER_ID,
+     AMAZON_BEDROCK_RUNTIME_PROVIDER_ID,
+     GCP_PROVIDER_ID,
+-    OPENAI_PROVIDER_ID,
+     OLLAMA_OSS_PROVIDER_ID,
+     LMSTUDIO_OSS_PROVIDER_ID,
+ ];
+@@ -966,14 +964,6 @@ pub fn validate_reserved_model_provider_ids(
+     let mut conflicts = model_providers
+         .keys()
+         .filter(|key| {
+-            if key.as_str() == "openai" {
+-                let provider = &model_providers[*key];
+-                return provider
+-                    != &ModelProviderInfo {
+-                        model_catalog_url: provider.model_catalog_url.clone(),
+-                        ..Default::default()
+-                    };
+-            }
+             !matches!(
+                 key.as_str(),
+                 AMAZON_BEDROCK_PROVIDER_ID | AMAZON_BEDROCK_RUNTIME_PROVIDER_ID | GCP_PROVIDER_ID
+@@ -1014,8 +1004,7 @@ pub fn validate_model_providers(
+         if !matches!(
+             key.as_str(),
+             AMAZON_BEDROCK_PROVIDER_ID | AMAZON_BEDROCK_RUNTIME_PROVIDER_ID | GCP_PROVIDER_ID
+-        ) && key != "openai"
+-            && provider.name.trim().is_empty()
++        ) && provider.name.trim().is_empty()
+         {
+             return Err(format!(
+                 "model_providers.{key}: provider name must not be empty"
+diff --git a/codex-rs/config/src/model_provider_requirements_tests.rs b/codex-rs/config/src/model_provider_requirements_tests.rs
+index 0862dcfdee..0a454dba48 100644
+--- a/codex-rs/config/src/model_provider_requirements_tests.rs
++++ b/codex-rs/config/src/model_provider_requirements_tests.rs
+@@ -85,7 +85,7 @@ name = "Other provider"
+ fn required_provider_definitions_are_validated_without_local_defaults() -> anyhow::Result<()> {
+     for invalid in [
+         "[model_providers.gateway]\nbase_url = 'https://example.test'",
+-        "[model_providers.openai]\nname = 'Reserved'",
++        "[model_providers.ollama]\nname = 'Reserved'",
+         "[model_providers.gateway]\nname = 'Gateway'\n[model_providers.gateway.aws]\nregion = 'us-east-1'",
+     ] {
+         let requirements = toml::from_str(invalid)?;
+@@ -97,3 +97,16 @@ fn required_provider_definitions_are_validated_without_local_defaults() -> anyho
+     }
+     Ok(())
+ }
++
++#[test]
++fn required_openai_provider_definition_is_valid() -> anyhow::Result<()> {
++    let requirements = toml::from_str(
++        "[model_providers.openai]\nname = 'OpenAI'\nbase_url = 'https://proxy.example.test/v1'\nrequires_openai_auth = true\nsupports_websockets = false",
++    )?;
++    let local = ConfigLayerEntry::new(
++        ConfigLayerSource::SessionFlags,
++        toml::from_str("model_provider = 'openai'")?,
++    );
++    ConfigLayerStack::new(vec![local], ConfigRequirements::default(), requirements)?;
++    Ok(())
++}
+diff --git a/codex-rs/core/config.schema.json b/codex-rs/core/config.schema.json
+index b99d4360b0..f2994ca119 100644
+--- a/codex-rs/core/config.schema.json
++++ b/codex-rs/core/config.schema.json
+@@ -3329,7 +3329,7 @@
+           "type": "string"
+         },
+         "model_catalog_url": {
+-          "description": "Optional full URL for a Codex-native model catalog. When unset, OpenAI discovery uses the Codex backend unless `base_url` overrides the inference endpoint. The endpoint must serve the Codex catalog format, not the public `/v1/models` API.\n\nFor built-in OpenAI, set this under `[model_providers.openai]`; other non-default provider overrides are rejected. The URL must use HTTPS and an allowed ChatGPT host. Other hosts require a custom provider. Inference still uses `openai_base_url`.\n\nCatalog requests use the provider's credentials, including an API key or ChatGPT access token. Only configure an endpoint you trust with those credentials. Setting this URL does not grant catalog access or guarantee that the endpoint accepts a regional API key. Existing discovery gates and entitlement checks apply.",
++          "description": "可选的 Codex 原生模型目录完整地址；端点必须返回 Codex 目录格式。 小写 `openai` 与其他自定义 provider 一样保留用户指定的目录地址、推理地址和认证。 目录请求使用该 provider 的凭据，只应配置用户信任的端点。 请求构造、URL 处理和认证仍由原生运行路径校验；配置地址不代表获得目录或模型权限。",
+           "type": "string"
+         },
+         "name": {
+diff --git a/codex-rs/core/tests/suite/builtin_model_catalog.rs b/codex-rs/core/tests/suite/builtin_model_catalog.rs
+index e09610192c..b0c1d160b1 100644
+--- a/codex-rs/core/tests/suite/builtin_model_catalog.rs
++++ b/codex-rs/core/tests/suite/builtin_model_catalog.rs
+@@ -1,4 +1,4 @@
+-//! Built-in OpenAI catalog routing uses configured metadata without redirecting inference.
++//! 小写 `openai` 的自定义目录和推理分别使用各自配置的地址。
+ #![cfg(test)]
+ 
+ use anyhow::Result;
+@@ -21,14 +21,14 @@ use wiremock::matchers::path;
+ #[test_case(CodexAuth::from_api_key("catalog-routing-test-key"), "Bearer catalog-routing-test-key"; "api_key")]
+ #[test_case(CodexAuth::create_dummy_chatgpt_auth_for_testing(), "Bearer Access Token"; "chatgpt")]
+ #[tokio::test(flavor = "multi_thread", worker_threads = 2)]
+-async fn builtin_openai_catalog_override_preserves_inference(
++async fn custom_openai_catalog_preserves_inference_routing(
+     auth: CodexAuth,
+     authorization: &str,
+ ) -> Result<()> {
+     let inference = responses::start_mock_server().await;
+     let catalog_server = MockServer::start().await;
+     let mut catalog = bundled_models_response()?;
+-    catalog.models[0].display_name = "Explicit built-in catalog".into();
++    catalog.models[0].display_name = "显式自定义目录".into();
+     Mock::given(method("GET"))
+         .and(path("/catalog"))
+         .and(header("authorization", authorization))
+@@ -40,28 +40,28 @@ async fn builtin_openai_catalog_override_preserves_inference(
+         home.path().join("config.toml"),
+         format!(
+             r#"model_provider = "openai"
+-openai_base_url = "{}/v1"
+ [features]
+ api_key_model_discovery = true
+ [model_providers.openai]
+-model_catalog_url = "https://chatgpt.com/backend-api/codex/models"
++name = "OpenAI"
++base_url = "{}/v1"
++model_catalog_url = "{}/catalog"
++requires_openai_auth = true
++supports_websockets = false
+ "#,
+             inference.uri(),
++            catalog_server.uri(),
+         ),
+     )?;
+-    let mut loaded = load_default_config_for_test(&home).await;
++    let loaded = load_default_config_for_test(&home).await;
+     assert_eq!(
+         loaded
+             .model_provider
+             .model_catalog_url
+             .as_deref()
+             .map(String::as_str),
+-        Some("https://chatgpt.com/backend-api/codex/models"),
++        Some(format!("{}/catalog", catalog_server.uri()).as_str()),
+     );
+-    // Config validation uses the production allowlist. Redirect only this test's
+-    // runtime catalog client to a local server to capture credential routing.
+-    loaded.model_provider.model_catalog_url =
+-        Some(format!("{}/catalog", catalog_server.uri()).into());
+     assert_eq!(loaded.model_provider_id, "openai");
+     assert_eq!(loaded.model_provider.name, "OpenAI");
+     let test = test_codex()
+@@ -69,7 +69,6 @@ model_catalog_url = "https://chatgpt.com/backend-api/codex/models"
+         .with_auth(auth)
+         .with_config(move |config| {
+             config.model_provider = loaded.model_provider.clone();
+-            config.model_provider.supports_websockets = false;
+             config.features = loaded.features;
+         })
+         .build_with_auto_env(&inference)
+diff --git a/codex-rs/model-provider-info/src/lib.rs b/codex-rs/model-provider-info/src/lib.rs
+index feeea5fea4..dca2b98994 100644
+--- a/codex-rs/model-provider-info/src/lib.rs
++++ b/codex-rs/model-provider-info/src/lib.rs
+@@ -154,18 +154,10 @@ pub struct ModelProviderInfo {
+     pub name: String,
+     /// Base URL for the provider's OpenAI-compatible API.
+     pub base_url: Option<String>,
+-    /// Optional full URL for a Codex-native model catalog. When unset, OpenAI discovery
+-    /// uses the Codex backend unless `base_url` overrides the inference endpoint.
+-    /// The endpoint must serve the Codex catalog format, not the public `/v1/models` API.
+-    ///
+-    /// For built-in OpenAI, set this under `[model_providers.openai]`; other non-default
+-    /// provider overrides are rejected. The URL must use HTTPS and an allowed ChatGPT
+-    /// host. Other hosts require a custom provider. Inference still uses `openai_base_url`.
+-    ///
+-    /// Catalog requests use the provider's credentials, including an API key or ChatGPT
+-    /// access token. Only configure an endpoint you trust with those credentials.
+-    /// Setting this URL does not grant catalog access or guarantee that the endpoint
+-    /// accepts a regional API key. Existing discovery gates and entitlement checks apply.
++    /// 可选的 Codex 原生模型目录完整地址；端点必须返回 Codex 目录格式。
++    /// 小写 `openai` 与其他自定义 provider 一样保留用户指定的目录地址、推理地址和认证。
++    /// 目录请求使用该 provider 的凭据，只应配置用户信任的端点。
++    /// 请求构造、URL 处理和认证仍由原生运行路径校验；配置地址不代表获得目录或模型权限。
+     pub model_catalog_url: Option<RedactedString>,
+     /// Environment variable that stores the user's API key for this provider.
+     pub env_key: Option<String>,
+@@ -790,37 +782,17 @@ pub fn built_in_model_providers(
+     .collect()
+ }
+ 
+-/// Merge configured providers into the built-in provider catalog.
++/// 将用户配置的 provider 合并到内置目录。
+ ///
+-/// Configured providers extend the built-in set. Built-in providers are not
+-/// generally overridable. OpenAI allows a catalog URL override, while the
+-/// cloud-hosted OpenAI providers allow a limited
+-/// set of endpoint, authentication, header, and cloud-specific overrides.
++/// 小写 `openai` 使用完整的自定义定义；Amazon Bedrock 与 GCP 保留官方字段级覆盖规则。
++/// 其他内置 provider 不接受覆盖。
+ pub fn merge_configured_model_providers(
+     mut model_providers: HashMap<String, ModelProviderInfo>,
+     configured_model_providers: HashMap<String, ModelProviderInfo>,
+ ) -> Result<HashMap<String, ModelProviderInfo>, String> {
+     for (key, mut provider) in configured_model_providers {
+-        if key == "openai" {
+-            // Keep the built-in identity, inference routing, and authentication.
+-            // Only catalog routing is configurable through this provider entry.
+-            if let Some(catalog_url) = provider.model_catalog_url.take()
+-                && let Some(built_in_provider) = model_providers.get_mut(&key)
+-            {
+-                let allowed = catalog_url.parse::<http::Uri>().ok().is_some_and(|uri| {
+-                    uri.scheme_str() == Some("https")
+-                        && uri.host().is_some_and(|host| {
+-                            codex_http_client::is_allowed_chatgpt_host(&host.to_ascii_lowercase())
+-                        })
+-                        && uri
+-                            .authority()
+-                            .is_some_and(|authority| !authority.as_str().contains('@'))
+-                });
+-                if !allowed {
+-                    return Err("model_providers.openai.model_catalog_url must use an allowed ChatGPT host. If you need to use a 3rd party host, configure a custom model_provider".to_string());
+-                }
+-                built_in_provider.model_catalog_url = Some(catalog_url);
+-            }
++        if key == OPENAI_PROVIDER_ID {
++            model_providers.insert(key, provider);
+         } else if matches!(
+             key.as_str(),
+             AMAZON_BEDROCK_PROVIDER_ID | AMAZON_BEDROCK_RUNTIME_PROVIDER_ID
+diff --git a/codex-rs/model-provider-info/src/model_provider_info_tests.rs b/codex-rs/model-provider-info/src/model_provider_info_tests.rs
+index 68b48aadc5..0aa3c2a013 100644
+--- a/codex-rs/model-provider-info/src/model_provider_info_tests.rs
++++ b/codex-rs/model-provider-info/src/model_provider_info_tests.rs
+@@ -527,6 +527,35 @@ fn test_merge_configured_model_providers_adds_custom_provider() {
+     );
+ }
+ 
++#[test]
++fn test_merge_configured_model_providers_replaces_openai_definition() {
++    let custom_openai = ModelProviderInfo {
++        name: "OpenAI".to_string(),
++        base_url: Some("https://proxy.example.com/v1".to_string()),
++        env_http_headers: Some(maplit::hashmap! {
++            "X-Api-Key".to_string() => "CLIPROXY_API_KEY".to_string(),
++        }),
++        requires_openai_auth: true,
++        supports_websockets: false,
++        capabilities: Some(crate::ModelProviderCapabilities {
++            cyber_access_programs: None,
++            external_web_access: Some(false),
++            remote_compaction: Some(crate::RemoteCompactionSupport::Unsupported),
++        }),
++        ..ModelProviderInfo::default()
++    };
++    let mut expected = built_in_model_providers(/*openai_base_url*/ None);
++    expected.insert(OPENAI_PROVIDER_ID.to_string(), custom_openai.clone());
++
++    assert_eq!(
++        merge_configured_model_providers(
++            built_in_model_providers(/*openai_base_url*/ None),
++            std::collections::HashMap::from([(OPENAI_PROVIDER_ID.to_string(), custom_openai)]),
++        ),
++        Ok(expected)
++    );
++}
++
+ #[test]
+ fn test_merge_configured_model_providers_applies_amazon_bedrock_aws_override() {
+     let credential_export = AwsCredentialExportConfig {
+@@ -995,20 +1024,20 @@ model_catalog_url = "https://gateway.example/codex/catalog?token=catalog-secret"
+ }
+ 
+ #[test]
+-fn builtin_openai_catalog_override_preserves_inference_and_identity() {
++fn custom_openai_catalog_override_preserves_full_definition() {
+     for inference_url in [None, Some("https://us.api.openai.com/v1")] {
+         for catalog_url in [None, Some("https://chatgpt.com/backend-api/codex/models")] {
+             let configured: ModelProviderInfo = toml::from_str(&format!(
+-                "name = \"Ignored name\"\nbase_url = \"https://ignored.example/v1\"\nrequires_openai_auth = false\n{}",
++                "name = \"自定义 OpenAI\"\nbase_url = \"https://proxy.example/v1\"\nrequires_openai_auth = false\n{}",
+                 catalog_url.map(|url| format!("model_catalog_url = {url:?}")).unwrap_or_default()
+             )).unwrap();
+             let builtins = built_in_model_providers(inference_url.map(str::to_owned));
+             let mut expected = builtins.clone();
+-            expected.get_mut("openai").unwrap().model_catalog_url = catalog_url.map(Into::into);
++            expected.insert(OPENAI_PROVIDER_ID.to_string(), configured.clone());
+             assert_eq!(
+                 merge_configured_model_providers(
+                     builtins,
+-                    HashMap::from([("openai".to_string(), configured)]),
++                    HashMap::from([(OPENAI_PROVIDER_ID.to_string(), configured)]),
+                 )
+                 .unwrap(),
+                 expected,
+@@ -1018,7 +1047,8 @@ fn builtin_openai_catalog_override_preserves_inference_and_identity() {
+ }
+ 
+ #[test]
+-fn builtin_openai_catalog_rejects_untrusted_destinations() {
++fn custom_openai_catalog_uses_custom_provider_merge_semantics() {
++    // 合并层保留原始配置；端点的实际连接与认证继续由原生请求路径处理。
+     for url in [
+         "http://chatgpt.com/backend-api/codex/models",
+         "https://chatgpt.com.evil.example/models",
+@@ -1030,32 +1060,27 @@ fn builtin_openai_catalog_rejects_untrusted_destinations() {
+         "not a URL",
+     ] {
+         let provider = ModelProviderInfo {
++            name: "自定义目录".into(),
+             model_catalog_url: Some(url.into()),
+             ..Default::default()
+         };
+-        assert_eq!(
+-            merge_configured_model_providers(
+-                built_in_model_providers(/*openai_base_url*/ None),
+-                HashMap::from([("openai".to_string(), provider.clone())]),
+-            )
+-            .unwrap_err(),
+-            "model_providers.openai.model_catalog_url must use an allowed ChatGPT host. If you need to use a 3rd party host, configure a custom model_provider",
+-        );
+-        let mut expected = built_in_model_providers(/*openai_base_url*/ None);
+-        expected.insert("custom".into(), provider.clone());
+-        assert_eq!(
+-            merge_configured_model_providers(
+-                built_in_model_providers(/*openai_base_url*/ None),
+-                HashMap::from([("custom".into(), provider)]),
+-            )
+-            .unwrap(),
+-            expected,
+-        );
++        for key in [OPENAI_PROVIDER_ID, "custom"] {
++            let mut expected = built_in_model_providers(/*openai_base_url*/ None);
++            expected.insert(key.into(), provider.clone());
++            assert_eq!(
++                merge_configured_model_providers(
++                    built_in_model_providers(/*openai_base_url*/ None),
++                    HashMap::from([(key.into(), provider.clone())]),
++                )
++                .unwrap(),
++                expected,
++            );
++        }
+     }
+ }
+ 
+ #[test]
+-fn builtin_openai_catalog_accepts_existing_chatgpt_hosts() {
++fn custom_openai_catalog_keeps_definition_on_chatgpt_hosts() {
+     for host in [
+         "chatgpt.com",
+         "gov.chatgpt.com",
+@@ -1064,20 +1089,21 @@ fn builtin_openai_catalog_accepts_existing_chatgpt_hosts() {
+         "api.chatgpt-staging.com",
+         "CHATGPT.COM",
+     ] {
+-        let url = format!("https://{host}/backend-api/codex/models");
+         let provider = ModelProviderInfo {
+-            model_catalog_url: Some(url.clone().into()),
++            name: "自定义目录".into(),
++            base_url: Some("https://proxy.example/v1".into()),
++            model_catalog_url: Some(format!("https://{host}/backend-api/codex/models").into()),
+             ..Default::default()
+         };
+         let mut expected = built_in_model_providers(/*openai_base_url*/ None);
+-        expected.get_mut("openai").unwrap().model_catalog_url = Some(url.into());
++        expected.insert(OPENAI_PROVIDER_ID.to_string(), provider.clone());
+         assert_eq!(
+             merge_configured_model_providers(
+                 built_in_model_providers(/*openai_base_url*/ None),
+-                HashMap::from([("openai".into(), provider)]),
++                HashMap::from([(OPENAI_PROVIDER_ID.to_string(), provider)]),
+             )
+             .unwrap(),
+-            expected
++            expected,
+         );
+     }
+ }
+diff --git a/justfile b/justfile
+index 3614939c72..39fb5c4194 100644
+--- a/justfile
++++ b/justfile
+@@ -1,11 +1,13 @@
+ set working-directory := "codex-rs"
+-set positional-arguments
++set positional-arguments := true
++
+ export CODEX_REPO_ROOT := justfile_directory()
+ export JUST_SHELL := justfile_directory() / "scripts/just-shell.py"
++
+ set shell := ["python3", "-c", 'import os, runpy; runpy.run_path(os.environ["JUST_SHELL"], run_name="__main__")']
+ set windows-shell := ["python", "-c", 'import os, runpy; runpy.run_path(os.environ["JUST_SHELL"], run_name="__main__")']
+ 
+-rust_min_stack := "8388608" # 8 MiB
++rust_min_stack := "8388608"
+ python := if os_family() == "windows" { "python" } else { "python3" }
+ 
+ # Display help
+@@ -13,7 +15,9 @@ help:
+     just -l
+ 
+ # `codex`
++
+ alias c := codex
++
+ codex *args:
+     cargo run --bin codex -- {args}
+ 
+@@ -82,6 +86,7 @@ install:
+ #
+ # Run `cargo install --locked cargo-nextest` if you don't have it installed.
+ # Prefer this for routine local runs. Workspace crate features are banned, so
++
+ # there should be no need to add `--all-features`.
+ [unix]
+ test *args:
+@@ -92,6 +97,7 @@ test *args:
+     $env:RUST_MIN_STACK = "{{ rust_min_stack }}"; $env:NEXTEST_PROFILE = "local"; cargo nextest run --no-fail-fast @($args | Select-Object -Skip 1)
+ 
+ # Run from the repository root so scripts that resolve paths from `cwd` see
++
+ # the same layout they use in GitHub Actions.
+ [no-cd]
+ test-github-scripts:
+@@ -111,6 +117,7 @@ bench-e2e:
+     bazel test --compilation_mode=opt --cache_test_results=no --test_output=streamed //codex-rs:e2e-benchmarks
+ 
+ # Run Bazel-backed end-to-end macrobenchmarks once per case with release-like
++
+ # Rust cfg paths but fastbuild codegen.
+ bench-e2e-smoke:
+     # Avoid optimizer cost because smoke runs only check that benchmarks work.
+@@ -120,6 +127,7 @@ bench-e2e-smoke:
+ 
+ # Build and run Codex from source using Bazel.
+ # On Unix, use `[no-cd]` and `--run_under="cd $PWD &&"` to ensure Bazel runs
++
+ # the command in the current working directory.
+ [no-cd]
+ [unix]

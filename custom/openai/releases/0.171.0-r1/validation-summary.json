@@ -1,0 +1,840 @@
+{
+  "version": "0.171.0",
+  "revision": "openai-r1",
+  "official_tag": "rust-v0.171.0",
+  "official_commit": "ccf9be8cc458bd6b8336fe84d68d8893f2691a5e",
+  "source": {
+    "passed": true,
+    "base_commit": "ccf9be8cc458bd6b8336fe84d68d8893f2691a5e",
+    "revision": "openai-r1",
+    "changed_files": [
+      "codex-rs/Cargo.lock",
+      "codex-rs/app-server/src/config_manager_service_tests.rs",
+      "codex-rs/cloud-config/src/service_tests.rs",
+      "codex-rs/config/src/config_toml.rs",
+      "codex-rs/config/src/model_provider_requirements_tests.rs",
+      "codex-rs/core/config.schema.json",
+      "codex-rs/core/tests/suite/builtin_model_catalog.rs",
+      "codex-rs/model-provider-info/src/lib.rs",
+      "codex-rs/model-provider-info/src/model_provider_info_tests.rs",
+      "justfile"
+    ],
+    "official_native_paths_byte_identical": {
+      "codex-rs/app-server/src/request_processors/catalog_processor.rs": true,
+      "codex-rs/app-server/src/request_processors/turn_processor.rs": true,
+      "codex-rs/core/src/client.rs": true,
+      "codex-rs/app-server/src/request_processors/account_processor/gateway_oauth.rs": true,
+      "codex-rs/app-server/src/config_manager_service_model_providers.rs": true,
+      "codex-rs/app-server/src/config_manager_service_provider_write.rs": true,
+      "codex-rs/app-server-protocol/src/protocol/v2/model_provider.rs": true,
+      "codex-rs/core/src/session/mod.rs": true,
+      "codex-rs/config/src/thread_config.rs": true,
+      "codex-rs/config/src/thread_config/remote.rs": true,
+      "codex-rs/core/src/cyber_access_program.rs": true,
+      "codex-rs/state/src/migrations.rs": true,
+      "codex-rs/install-context/src/lib.rs": true,
+      "codex-rs/model-provider-info/src/capabilities.rs": true,
+      "codex-rs/model-provider-info/src/oauth_session.rs": true,
+      "codex-rs/model-provider-info/src/gateway_oauth.rs": true,
+      "codex-rs/model-provider/src/amazon_bedrock/mod.rs": true,
+      "codex-rs/model-provider/src/gcp/mod.rs": true,
+      "codex-rs/model-provider/src/catalog_factory.rs": true,
+      "codex-rs/model-provider/src/models_endpoint.rs": true,
+      "codex-rs/model-provider/src/request_setup.rs": true,
+      "codex-rs/model-provider/src/gateway_auth.rs": true,
+      "codex-rs/model-provider/src/gateway_export.rs": true,
+      "codex-rs/models-manager/src/catalog.rs": true,
+      "codex-rs/models-manager/models.json": true,
+      "codex-rs/core/src/compact_remote_v2_attempt.rs": true,
+      "codex-rs/core/src/session/step_context.rs": true,
+      "codex-rs/core/src/session/turn.rs": true,
+      "codex-rs/core/src/session/world_state.rs": true,
+      "codex-rs/features/src/lib.rs": true
+    },
+    "compat_config_and_code_absent": true,
+    "internal_metadata_not_configurable": true,
+    "patch_applies_to_clean_index": true,
+    "patch_sha256": "9efd20befba3d6232ecf8242a762e61464225f23dfdaa1560ca20fed03df9a63",
+    "source_hashes": {
+      "codex-rs/Cargo.lock": "05c5b672b121ec8aac65a2a5d642a6a0a3cb37bfe08d491f62a1808a7c08ad1f",
+      "codex-rs/app-server/src/config_manager_service_tests.rs": "526a3cb0d08ee1a436af48d471e1dd6cab6501348fc04a6e45cc23c008a0c94b",
+      "codex-rs/cloud-config/src/service_tests.rs": "28eb19ede8f2260fec66ddd7812310d9c0983f360b78145b9307c12ff28f84aa",
+      "codex-rs/config/src/config_toml.rs": "20eb815fa38b6f54024e100e7602559bcc6cc5ea8e48e3e4466a49b25c9aae49",
+      "codex-rs/config/src/model_provider_requirements_tests.rs": "407c4ba823352d50ab067a819e532cca48645ae864d2dc4c661cf691eda32bb5",
+      "codex-rs/core/config.schema.json": "b24f608250386d1846a2077d26dd0d1d33a772024f71e421fd7567fd48ae7a1e",
+      "codex-rs/core/tests/suite/builtin_model_catalog.rs": "925a3b78428ec384038866ccf9313c8ca3f0508aacb0907b6dbdc70783830383",
+      "codex-rs/model-provider-info/src/lib.rs": "543a7e47bbb163412d4d9ad9377104c2d2b9c893335fc767a7f178cf6244a82e",
+      "codex-rs/model-provider-info/src/model_provider_info_tests.rs": "216184ec3c508988b0b48c740ffa2e4fa34f9a82fb5d81be97499f820c13e6aa",
+      "justfile": "356f6e5ba71882030a1d6b322db4efce9c603b36ab9b3f2978d233713cd27015"
+    }
+  },
+  "source_preparation": {
+    "version": "0.171.0",
+    "revision": "openai-r1",
+    "previous_custom_commit": "a308c2ff9342b456e86d10cf4bb56a55bf64ef48",
+    "previous_official_commit": "0a94398fa60c4fac0e7659e4213a0a36e613dd46",
+    "base_commit": "ccf9be8cc458bd6b8336fe84d68d8893f2691a5e",
+    "sources": [
+      "${LINUX_USER_HOME}/codex-source-0.171.0-linux",
+      "${LINUX_USER_HOME}/codex-source-0.171.0-windows"
+    ],
+    "files": [
+      {
+        "path": "codex-rs/config/src/config_toml.rs",
+        "upstream_changed": true,
+        "three_way_merge": "clean",
+        "semantic_adaptations": [],
+        "sha256": "20eb815fa38b6f54024e100e7602559bcc6cc5ea8e48e3e4466a49b25c9aae49"
+      },
+      {
+        "path": "codex-rs/config/src/model_provider_requirements_tests.rs",
+        "upstream_changed": false,
+        "three_way_merge": "clean",
+        "semantic_adaptations": [],
+        "sha256": "407c4ba823352d50ab067a819e532cca48645ae864d2dc4c661cf691eda32bb5"
+      },
+      {
+        "path": "codex-rs/app-server/src/config_manager_service_tests.rs",
+        "upstream_changed": true,
+        "three_way_merge": "clean",
+        "semantic_adaptations": [],
+        "sha256": "526a3cb0d08ee1a436af48d471e1dd6cab6501348fc04a6e45cc23c008a0c94b"
+      },
+      {
+        "path": "codex-rs/model-provider-info/src/lib.rs",
+        "upstream_changed": true,
+        "three_way_merge": "clean",
+        "semantic_adaptations": [],
+        "sha256": "543a7e47bbb163412d4d9ad9377104c2d2b9c893335fc767a7f178cf6244a82e"
+      },
+      {
+        "path": "codex-rs/model-provider-info/src/model_provider_info_tests.rs",
+        "upstream_changed": false,
+        "three_way_merge": "clean",
+        "semantic_adaptations": [],
+        "sha256": "216184ec3c508988b0b48c740ffa2e4fa34f9a82fb5d81be97499f820c13e6aa"
+      },
+      {
+        "path": "codex-rs/cloud-config/src/service_tests.rs",
+        "upstream_changed": false,
+        "three_way_merge": "test_fixture_adaptation",
+        "semantic_adaptations": [
+          "保留非法内置 provider 不得写入云配置缓存的覆盖，非法 ID 改用 Ollama。"
+        ],
+        "sha256": "28eb19ede8f2260fec66ddd7812310d9c0983f360b78145b9307c12ff28f84aa"
+      },
+      {
+        "path": "codex-rs/core/tests/suite/builtin_model_catalog.rs",
+        "upstream_changed": true,
+        "three_way_merge": "test_fixture_adaptation",
+        "semantic_adaptations": [
+          "从实际 TOML 加载完整小写 openai 定义，在本地分别验证目录和推理的地址及认证。"
+        ],
+        "sha256": "925a3b78428ec384038866ccf9313c8ca3f0508aacb0907b6dbdc70783830383"
+      }
+    ],
+    "manual_conflicts_resolved": 0,
+    "native_cyber_capability_and_oauth_boundaries_preserved": true,
+    "gcp_validation_and_merge_preserved": true,
+    "internal_metadata_not_configurable": true,
+    "daybreak_compat_removed_in_previous_revision": true,
+    "only_provider_customization_ported": true
+  },
+  "selected_rust_checks": {
+    "status": "passed",
+    "command": [
+      "just",
+      "test",
+      "--release",
+      "--locked",
+      "-p",
+      "codex-model-provider-info",
+      "-p",
+      "codex-config",
+      "-p",
+      "codex-model-provider",
+      "-p",
+      "codex-app-server",
+      "-p",
+      "codex-state",
+      "-p",
+      "codex-cloud-config",
+      "-p",
+      "codex-core",
+      "--lib",
+      "--test",
+      "all",
+      "-E",
+      "package(codex-model-provider-info) | (package(codex-config) & test(model_provider)) | test(gcp_provider_) | test(capability_overrides_preserve_unspecified_provider_defaults) | test(openai_provider_override_is_writable) | test(model_provider_list_checks_builtin_configuration_fields) | (package(codex-state) & (test(sqlite) | test(attached_thread_discovery) | test(migrations::tests::))) | test(invalid_requirements_do_not_replace_cached_bundle) | test(custom_openai_catalog_preserves_inference_routing)"
+    ],
+    "started_at_utc": "2026-11-21T09:36:28.081587+00:00",
+    "test_home_root": "${LINUX_USER_HOME}/codex-build-0.171.0/release-test-homes",
+    "test_only_patch": "release-test-home.patch",
+    "test_only_patch_sha256": "0867ff0960dcf9c9be9d030ac93847c0011c5e3c2dc28ad669af490d3f6110fc",
+    "exit_code": 0,
+    "source_unchanged": true,
+    "test_only_patch_restored": true,
+    "completed_at_utc": "2026-11-21T09:51:03.840300+00:00",
+    "test_summary": {
+      "run": 105,
+      "passed": 105,
+      "skipped": 9320
+    }
+  },
+  "historical_app_ssh_ab": {
+    "passed": true,
+    "date": "2026-10-22",
+    "timezone": "Asia/Shanghai",
+    "app_version": "26.1016.6573.0",
+    "cli_version_during_test": "0.163.0",
+    "connection": "实际 Codex App 的 SSH 连接",
+    "model": "gpt-6-sol",
+    "synthetic_marker_present": false,
+    "enabled_request": {
+      "access_programs": {
+        "cyber": "daybreak_blue"
+      },
+      "http_status": 200
+    },
+    "disabled_request": {
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "http_status": 200
+    },
+    "scope": "用户手动操作 App 开关并发送消息，捕获实际 HTTP 请求；不据此推断上游最终执行档位或额外授权范围",
+    "historical_evidence": true,
+    "retested_on_current_version": false
+  },
+  "real_upstream_inference_this_version": false,
+  "binary_validation": {
+    "windows-validation": {
+      "passed": true,
+      "sha256": "a251fd3933340bf8e1e4e8f3558765a1c837e01741708d47693232c6be80983e",
+      "checks": [
+        "custom_provider_capability_overrides",
+        "initialize_and_custom_openai_config",
+        "paginated_real_model_list_without_synthetic_marker",
+        "native_model_provider_list_preserves_openai_classification",
+        "runtime_internal_fields_and_legacy_compat_absent",
+        "custom_openai_definition_is_writable",
+        "configured_models_blue_standard_and_custom_transport",
+        "real_code_mode_host_execution_without_fallback",
+        "code_mode_exec_command",
+        "restarted_model_list_has_no_synthetic_marker",
+        "persisted_thread_resume",
+        "catalog_unchanged",
+        "real_red_catalog_metadata_preserved",
+        "upstream_api_key_program_gate_preserved",
+        "api_key_default_program_forwarding",
+        "provider_explicit_cyber_disabled_omits_program"
+      ],
+      "inference_requests": 27,
+      "database_copies": [
+        {
+          "database": "goals_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "logs_2.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "memories_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "memories_v2_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "queue_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "state_5.sqlite",
+          "old_migrations": 62,
+          "new_migrations": 64,
+          "added_versions": [
+            63,
+            64
+          ],
+          "integrity": "ok"
+        },
+        {
+          "database": "thread_history_1.sqlite",
+          "old_migrations": 8,
+          "new_migrations": 9,
+          "added_versions": [
+            9
+          ],
+          "integrity": "ok"
+        }
+      ],
+      "validation_boundaries": {
+        "managed_policy": {
+          "disable_env": "CODEX_APP_SERVER_DISABLE_MANAGED_CONFIG",
+          "disable_env_effective_for_release": false,
+          "note": "该环境变量仅在 debug 构建生效；本次 release 验证仍受实际系统 managed policy 约束。"
+        },
+        "explicit_cyber_programs": {
+          "native_behavior": "0.171.0 原生实现先检查 provider 是否支持 Cyber 程序，再转发显式程序选择，由上游裁决模型支持与账号授权；不会仅按本地模型目录拒绝 Blue。",
+          "provider_capability": "未配置 capabilities.cyber_access_programs 时，小写 openai 默认支持；显式 false 会省略程序字段，其他 provider 默认不支持。API-key 会话另受 api_key_cyber_access_programs 功能门槛约束。",
+          "upstream_authorization_tested": false
+        }
+      },
+      "code_mode_host": {
+        "path": "${WORKSPACE}\\outputs\\codex-0.171.0\\codex-0.171.0-openai-r1-windows-x86_64\\bin\\codex-code-mode-host.exe",
+        "sha256": "aa02c6460ec6e2cd67d0d402d4fb5a4dc55d1a9b726596fae3534d4dfb023a16",
+        "fallback_disabled": true
+      }
+    },
+    "windows-websocket-validation": {
+      "passed": true,
+      "sha256": "a251fd3933340bf8e1e4e8f3558765a1c837e01741708d47693232c6be80983e",
+      "checks": [
+        "custom_provider_capability_overrides",
+        "initialize_and_custom_openai_config",
+        "paginated_real_model_list_without_synthetic_marker",
+        "native_model_provider_list_preserves_openai_classification",
+        "runtime_internal_fields_and_legacy_compat_absent",
+        "custom_openai_definition_is_writable",
+        "configured_models_blue_standard_and_custom_transport",
+        "real_code_mode_host_execution_without_fallback",
+        "code_mode_exec_command",
+        "restarted_model_list_has_no_synthetic_marker",
+        "persisted_thread_resume",
+        "catalog_unchanged",
+        "real_red_catalog_metadata_preserved",
+        "upstream_api_key_program_gate_preserved",
+        "api_key_default_program_forwarding",
+        "provider_explicit_cyber_disabled_omits_program"
+      ],
+      "inference_requests": 27,
+      "database_copies": [
+        {
+          "database": "goals_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "logs_2.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "memories_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "memories_v2_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "queue_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "state_5.sqlite",
+          "old_migrations": 62,
+          "new_migrations": 64,
+          "added_versions": [
+            63,
+            64
+          ],
+          "integrity": "ok"
+        },
+        {
+          "database": "thread_history_1.sqlite",
+          "old_migrations": 8,
+          "new_migrations": 9,
+          "added_versions": [
+            9
+          ],
+          "integrity": "ok"
+        }
+      ],
+      "validation_boundaries": {
+        "managed_policy": {
+          "disable_env": "CODEX_APP_SERVER_DISABLE_MANAGED_CONFIG",
+          "disable_env_effective_for_release": false,
+          "note": "该环境变量仅在 debug 构建生效；本次 release 验证仍受实际系统 managed policy 约束。"
+        },
+        "explicit_cyber_programs": {
+          "native_behavior": "0.171.0 原生实现先检查 provider 是否支持 Cyber 程序，再转发显式程序选择，由上游裁决模型支持与账号授权；不会仅按本地模型目录拒绝 Blue。",
+          "provider_capability": "未配置 capabilities.cyber_access_programs 时，小写 openai 默认支持；显式 false 会省略程序字段，其他 provider 默认不支持。API-key 会话另受 api_key_cyber_access_programs 功能门槛约束。",
+          "upstream_authorization_tested": false
+        }
+      },
+      "code_mode_host": {
+        "path": "${WORKSPACE}\\outputs\\codex-0.171.0\\codex-0.171.0-openai-r1-windows-x86_64\\bin\\codex-code-mode-host.exe",
+        "sha256": "aa02c6460ec6e2cd67d0d402d4fb5a4dc55d1a9b726596fae3534d4dfb023a16",
+        "fallback_disabled": true
+      }
+    },
+    "linux-validation": {
+      "passed": true,
+      "sha256": "53554526c9aee3acf9000a6e2015537178f39652d0297764e4133a288d299a1f",
+      "checks": [
+        "custom_provider_capability_overrides",
+        "initialize_and_custom_openai_config",
+        "paginated_real_model_list_without_synthetic_marker",
+        "native_model_provider_list_preserves_openai_classification",
+        "runtime_internal_fields_and_legacy_compat_absent",
+        "custom_openai_definition_is_writable",
+        "configured_models_blue_standard_and_custom_transport",
+        "real_code_mode_host_execution_without_fallback",
+        "code_mode_exec_command",
+        "restarted_model_list_has_no_synthetic_marker",
+        "persisted_thread_resume",
+        "catalog_unchanged",
+        "real_red_catalog_metadata_preserved",
+        "upstream_api_key_program_gate_preserved",
+        "api_key_default_program_forwarding",
+        "provider_explicit_cyber_disabled_omits_program"
+      ],
+      "inference_requests": 27,
+      "database_copies": [
+        {
+          "database": "goals_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "logs_2.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "memories_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "queue_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "state_5.sqlite",
+          "old_migrations": 62,
+          "new_migrations": 64,
+          "added_versions": [
+            63,
+            64
+          ],
+          "integrity": "ok"
+        },
+        {
+          "database": "thread_history_1.sqlite",
+          "old_migrations": 8,
+          "new_migrations": 9,
+          "added_versions": [
+            9
+          ],
+          "integrity": "ok"
+        }
+      ],
+      "validation_boundaries": {
+        "managed_policy": {
+          "disable_env": "CODEX_APP_SERVER_DISABLE_MANAGED_CONFIG",
+          "disable_env_effective_for_release": false,
+          "note": "该环境变量仅在 debug 构建生效；本次 release 验证仍受实际系统 managed policy 约束。"
+        },
+        "explicit_cyber_programs": {
+          "native_behavior": "0.171.0 原生实现先检查 provider 是否支持 Cyber 程序，再转发显式程序选择，由上游裁决模型支持与账号授权；不会仅按本地模型目录拒绝 Blue。",
+          "provider_capability": "未配置 capabilities.cyber_access_programs 时，小写 openai 默认支持；显式 false 会省略程序字段，其他 provider 默认不支持。API-key 会话另受 api_key_cyber_access_programs 功能门槛约束。",
+          "upstream_authorization_tested": false
+        }
+      },
+      "code_mode_host": {
+        "path": "${LINUX_USER_HOME}/codex-build-0.171.0/archive-validation/codex-0.171.0-openai-r1-linux-x86_64/bin/codex-code-mode-host",
+        "sha256": "f49bd4f0c0cc73cf1ec3a719009e07ce5b6e100520d023c760cc203fb37e5c6f",
+        "fallback_disabled": true
+      }
+    },
+    "linux-websocket-validation": {
+      "passed": true,
+      "sha256": "53554526c9aee3acf9000a6e2015537178f39652d0297764e4133a288d299a1f",
+      "checks": [
+        "custom_provider_capability_overrides",
+        "initialize_and_custom_openai_config",
+        "paginated_real_model_list_without_synthetic_marker",
+        "native_model_provider_list_preserves_openai_classification",
+        "runtime_internal_fields_and_legacy_compat_absent",
+        "custom_openai_definition_is_writable",
+        "configured_models_blue_standard_and_custom_transport",
+        "real_code_mode_host_execution_without_fallback",
+        "code_mode_exec_command",
+        "restarted_model_list_has_no_synthetic_marker",
+        "persisted_thread_resume",
+        "catalog_unchanged",
+        "real_red_catalog_metadata_preserved",
+        "upstream_api_key_program_gate_preserved",
+        "api_key_default_program_forwarding",
+        "provider_explicit_cyber_disabled_omits_program"
+      ],
+      "inference_requests": 27,
+      "database_copies": [
+        {
+          "database": "goals_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "logs_2.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "memories_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "queue_1.sqlite",
+          "old_migrations": 2,
+          "new_migrations": 2,
+          "added_versions": [],
+          "integrity": "ok"
+        },
+        {
+          "database": "state_5.sqlite",
+          "old_migrations": 62,
+          "new_migrations": 64,
+          "added_versions": [
+            63,
+            64
+          ],
+          "integrity": "ok"
+        },
+        {
+          "database": "thread_history_1.sqlite",
+          "old_migrations": 8,
+          "new_migrations": 9,
+          "added_versions": [
+            9
+          ],
+          "integrity": "ok"
+        }
+      ],
+      "validation_boundaries": {
+        "managed_policy": {
+          "disable_env": "CODEX_APP_SERVER_DISABLE_MANAGED_CONFIG",
+          "disable_env_effective_for_release": false,
+          "note": "该环境变量仅在 debug 构建生效；本次 release 验证仍受实际系统 managed policy 约束。"
+        },
+        "explicit_cyber_programs": {
+          "native_behavior": "0.171.0 原生实现先检查 provider 是否支持 Cyber 程序，再转发显式程序选择，由上游裁决模型支持与账号授权；不会仅按本地模型目录拒绝 Blue。",
+          "provider_capability": "未配置 capabilities.cyber_access_programs 时，小写 openai 默认支持；显式 false 会省略程序字段，其他 provider 默认不支持。API-key 会话另受 api_key_cyber_access_programs 功能门槛约束。",
+          "upstream_authorization_tested": false
+        }
+      },
+      "code_mode_host": {
+        "path": "${LINUX_USER_HOME}/codex-build-0.171.0/archive-validation/codex-0.171.0-openai-r1-linux-x86_64/bin/codex-code-mode-host",
+        "sha256": "f49bd4f0c0cc73cf1ec3a719009e07ce5b6e100520d023c760cc203fb37e5c6f",
+        "fallback_disabled": true
+      }
+    }
+  },
+  "migration_validation": {
+    "windows": {
+      "sql_files": 81,
+      "databases": 7,
+      "applied_matched": 80,
+      "all_applied_matched": true
+    },
+    "linux": {
+      "sql_files": 81,
+      "databases": 6,
+      "applied_matched": 78,
+      "all_applied_matched": true
+    }
+  },
+  "windows_database_coexistence": {
+    "passed": true,
+    "new_version": "0.171.0",
+    "old_version": "0.167.1",
+    "checks": [
+      "new_engine_migrated_consistent_copies",
+      "old_engine_starts_and_creates_thread_after_new_migrations",
+      "old_engine_reads_thread_index_after_new_migrations",
+      "state_migration_checksums_match_current_crlf_manifest",
+      "thread_history_migration_checksums_match_current_crlf_manifest"
+    ],
+    "new_binary": "${WORKSPACE}\\outputs\\codex-0.171.0\\codex-0.171.0-openai-r1-windows-x86_64\\bin\\codex.exe",
+    "old_binary": "${CODEX_HOME}\\backups\\runtimes-before-0.171.0-20261121-155757\\standalone-package\\bin\\codex.exe",
+    "observed_new_version": "codex-cli 0.171.0",
+    "observed_old_version": "codex-cli 0.167.1",
+    "databases": [
+      {
+        "database": "goals_1.sqlite",
+        "migrations": 2,
+        "integrity": "ok"
+      },
+      {
+        "database": "logs_2.sqlite",
+        "migrations": 2,
+        "integrity": "ok"
+      },
+      {
+        "database": "memories_1.sqlite",
+        "migrations": 2,
+        "integrity": "ok"
+      },
+      {
+        "database": "memories_v2_1.sqlite",
+        "migrations": 2,
+        "integrity": "ok"
+      },
+      {
+        "database": "queue_1.sqlite",
+        "migrations": 2,
+        "integrity": "ok"
+      },
+      {
+        "database": "state_5.sqlite",
+        "migrations": 64,
+        "integrity": "ok"
+      },
+      {
+        "database": "thread_history_1.sqlite",
+        "migrations": 9,
+        "integrity": "ok"
+      }
+    ],
+    "state_migrations_in_manifest": 64,
+    "thread_history_migrations_in_manifest": 9,
+    "state_migration_checksums_match_manifest": true,
+    "thread_history_migration_checksums_match_manifest": true,
+    "actual_database_modified": false,
+    "real_inference_requests": 0
+  },
+  "windows_app_pending_renames": [
+    {
+      "from": "${CODEX_HOME}\\bin\\codex-code-mode-host.new.exe",
+      "to": "${CODEX_HOME}\\bin\\codex-code-mode-host.exe"
+    },
+    {
+      "from": "${CODEX_HOME}\\bin\\codex.new.exe",
+      "to": "${CODEX_HOME}\\bin\\codex.exe"
+    }
+  ],
+  "windows_app_root_validation": {
+    "passed": true,
+    "version": "codex-cli 0.171.0",
+    "layout": {
+      "layoutVersion": 1,
+      "version": "0.171.0",
+      "target": "x86_64-pc-windows-gnu",
+      "variant": "codex",
+      "entrypoint": "codex.exe",
+      "execServer": "bin/codex-exec-server.exe",
+      "resourcesDir": "codex-resources",
+      "pathDir": "codex-path"
+    },
+    "files_staged": 51,
+    "executable_sha256": {
+      "codex.exe": "a251fd3933340bf8e1e4e8f3558765a1c837e01741708d47693232c6be80983e",
+      "codex-exec-server.exe": "b7084b9a1630bda8e372a7c6f22766d0bd864f7f9067562320ecfd4f27d490e5",
+      "codex-code-mode-host.exe": "aa02c6460ec6e2cd67d0d402d4fb5a4dc55d1a9b726596fae3534d4dfb023a16"
+    },
+    "checks": [
+      "--version",
+      "initialize",
+      "config/read",
+      "account/read",
+      "thread/start",
+      "database_backup_and_quick_check",
+      "exec_server_metadata_and_process_start"
+    ],
+    "database_input": "从升级前备份目录通过 SQLite 只读连接和 backup 制作的独立副本",
+    "database_copies": [
+      {
+        "database": "goals_1.sqlite",
+        "before_migrations": 2,
+        "after_migrations": 2,
+        "integrity": "ok"
+      },
+      {
+        "database": "logs_2.sqlite",
+        "before_migrations": 2,
+        "after_migrations": 2,
+        "integrity": "ok"
+      },
+      {
+        "database": "memories_1.sqlite",
+        "before_migrations": 2,
+        "after_migrations": 2,
+        "integrity": "ok"
+      },
+      {
+        "database": "memories_v2_1.sqlite",
+        "before_migrations": 2,
+        "after_migrations": 2,
+        "integrity": "ok"
+      },
+      {
+        "database": "queue_1.sqlite",
+        "before_migrations": 2,
+        "after_migrations": 2,
+        "integrity": "ok"
+      },
+      {
+        "database": "state_5.sqlite",
+        "before_migrations": 62,
+        "after_migrations": 64,
+        "integrity": "ok"
+      },
+      {
+        "database": "thread_history_1.sqlite",
+        "before_migrations": 8,
+        "after_migrations": 9,
+        "integrity": "ok"
+      }
+    ],
+    "exec_server": {
+      "version": "codex-exec-server 0.171.0",
+      "executor_version_matches": true,
+      "process_start": true,
+      "process_exit_code": 0,
+      "server_exit_code": 0,
+      "sha256": "b7084b9a1630bda8e372a7c6f22766d0bd864f7f9067562320ecfd4f27d490e5"
+    },
+    "app_server_exit_code": 0,
+    "real_inference_requests": 0,
+    "desktop_app_launched": false,
+    "checked_at_utc": "2026-11-21T08:54:52.368411+00:00"
+  },
+  "windows_default_tui": {
+    "started": true,
+    "status_has_session": true,
+    "version": "0.171.0",
+    "server": "Local background server",
+    "provider": "openai",
+    "model": "GPT-6.2-Astra",
+    "reasoning_effort": "max",
+    "exit_code": 0,
+    "real_inference_requests": 0,
+    "account_read_bootstrap_error": false,
+    "no_active_thread_notice": false,
+    "raw_log_private": true,
+    "command": "codex --dangerously-bypass-approvals-and-sandbox",
+    "terminal": "PowerShell PTY, TERM=dumb",
+    "commands_submitted": [
+      "/status",
+      "/quit"
+    ],
+    "existing_app_not_closed": true,
+    "reasoning_matches_existing_configuration": true,
+    "probe_terminal_warning_acknowledged": true
+  },
+  "windows_new_shells": {
+    "passed": true,
+    "new_shell_processes": [
+      {
+        "shell_version": "5.1.26100.9818",
+        "command": "${WINDOWS_USER_HOME}\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.exe",
+        "version": "codex-cli 0.171.0",
+        "sha256": "a251fd3933340bf8e1e4e8f3558765a1c837e01741708d47693232c6be80983e"
+      },
+      {
+        "shell_version": "7.6.9",
+        "command": "${WINDOWS_USER_HOME}\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.exe",
+        "version": "codex-cli 0.171.0",
+        "sha256": "a251fd3933340bf8e1e4e8f3558765a1c837e01741708d47693232c6be80983e"
+      }
+    ],
+    "user_path_modified": false,
+    "checked_at": "2026-11-21T17:56:33.318654+08:00"
+  },
+  "linux_deployed": true,
+  "linux_new_login_shell": {
+    "passed": true,
+    "new_ssh_login_shell": true,
+    "command": "${LINUX_USER_HOME}/.local/bin/codex",
+    "version": "codex-cli 0.171.0",
+    "resolved_target": "${LINUX_USER_HOME}/.codex/overrides/openai-custom-0.171.0-linux-x86_64-r1/bin/codex",
+    "sha256": "53554526c9aee3acf9000a6e2015537178f39652d0297764e4133a288d299a1f",
+    "checked_at": "2026-11-21T17:52:46.860362+08:00"
+  },
+  "standalone_and_daemon_verified": true,
+  "full_workspace_suite_run": false,
+  "completed_at": "2026-11-21T18:01:16.324436+08:00",
+  "exec_server_validation": {
+    "windows": {
+      "passed": true,
+      "version": "codex-exec-server 0.171.0",
+      "cli_version": "codex-cli 0.171.0",
+      "binary": "${WORKSPACE}\\outputs\\codex-0.171.0\\codex-0.171.0-openai-r1-windows-x86_64\\bin\\codex-exec-server.exe",
+      "sha256": "b7084b9a1630bda8e372a7c6f22766d0bd864f7f9067562320ecfd4f27d490e5",
+      "protocol_initialize": true,
+      "executor_version_matches": true,
+      "process_start": true,
+      "output_marker": "EXEC_SERVER_RELEASE_OK",
+      "process_exit_code": 0,
+      "server_exit_code": 0,
+      "user_services_modified": false,
+      "real_upstream_requests": 0,
+      "checked_at_utc": "2026-11-21T08:54:07.022822+00:00"
+    },
+    "linux": {
+      "passed": true,
+      "version": "codex-exec-server 0.171.0",
+      "cli_version": "codex-cli 0.171.0",
+      "binary": "${LINUX_USER_HOME}/codex-build-0.171.0/archive-validation/codex-0.171.0-openai-r1-linux-x86_64/bin/codex-exec-server",
+      "sha256": "da2b3636f0b050e4b97da5cf8ed6b3f85621d7611105f58ee9748d8c7e2266fe",
+      "protocol_initialize": true,
+      "executor_version_matches": true,
+      "process_start": true,
+      "output_marker": "EXEC_SERVER_RELEASE_OK",
+      "process_exit_code": 0,
+      "server_exit_code": 0,
+      "user_services_modified": false,
+      "real_upstream_requests": 0,
+      "checked_at_utc": "2026-11-21T08:52:27.202881+00:00"
+    }
+  }
+}

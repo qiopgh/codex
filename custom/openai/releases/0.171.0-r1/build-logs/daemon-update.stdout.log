@@ -1,0 +1,1 @@
+{"status":"updated","managedCodexPath":"${CODEX_HOME}\\packages/app-server-daemon\\current\\bin\\codex.exe","installedVersion":"0.171.0","runningVersion":"0.171.0","message":"The CLI package is selected and pinned. Run `codex app-server daemon update` to return to production updates."}

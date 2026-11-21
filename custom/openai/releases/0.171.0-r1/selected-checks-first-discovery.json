@@ -1,0 +1,32 @@
+{
+  "status": "failed",
+  "command": [
+    "just",
+    "test",
+    "--release",
+    "--locked",
+    "-p",
+    "codex-model-provider-info",
+    "-p",
+    "codex-config",
+    "-p",
+    "codex-model-provider",
+    "-p",
+    "codex-app-server",
+    "-p",
+    "codex-state",
+    "-p",
+    "codex-cloud-config",
+    "-p",
+    "codex-core",
+    "--lib",
+    "--test",
+    "all",
+    "-E",
+    "package(codex-model-provider-info) | (package(codex-config) & test(model_provider)) | test(gcp_provider_) | test(capability_overrides_preserve_unspecified_provider_defaults) | test(openai_provider_override_is_writable) | test(model_provider_list_checks_builtin_configuration_fields) | (package(codex-state) & (test(sqlite) | test(attached_thread_discovery) | test(migrations::tests::))) | test(invalid_requirements_do_not_replace_cached_bundle) | test(custom_openai_catalog_preserves_inference_routing)"
+  ],
+  "started_at_utc": "2026-11-21T08:52:27.392049+00:00",
+  "exit_code": 104,
+  "source_unchanged": true,
+  "completed_at_utc": "2026-11-21T09:33:23.671740+00:00"
+}

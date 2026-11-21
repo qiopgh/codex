@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "version": "0.171.0",
+  "binary_reports": 4,
+  "exec_server_reports": 2,
+  "exec_server_hashes_match_packages": true,
+  "windows_app_root_validated": true,
+  "official_latest_rechecked": true,
+  "checked_at": "2026-11-21T17:51:47.875730+08:00"
+}

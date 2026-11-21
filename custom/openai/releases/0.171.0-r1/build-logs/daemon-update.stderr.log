@@ -1,0 +1,10 @@
+Replace installed daemon version 0.167.1 with CLI version 0.171.0 from ${CODEX_HOME}\packages\standalone\releases\0.171.0-x86_64-pc-windows-msvc.
+The daemon package will be installed in ${CODEX_HOME}\packages/app-server-daemon.
+The selected package will be pinned. Run `codex app-server daemon update` to return to production updates.
+The running daemon will restart; active or queued work may be interrupted.
+{"timestampMs":1795255024240,"processPid":17864,"event":"shutdown_requested","details":{"pid":15744}}
+{"timestampMs":1795255026841,"processPid":17864,"stage":"process_spawn","outcome":"succeeded","elapsedMs":53,"failure":null}
+{"timestampMs":1795255026841,"processPid":17864,"event":"process_spawned","details":{"pid":15536}}
+{"timestampMs":1795255026841,"processPid":17864,"stage":"process_identity","outcome":"succeeded","elapsedMs":0,"failure":null}
+{"timestampMs":1795255026843,"processPid":17864,"stage":"pid_write","outcome":"succeeded","elapsedMs":1,"failure":null}
+{"timestampMs":1795255026846,"processPid":17864,"stage":"pid_publish","outcome":"succeeded","elapsedMs":2,"failure":null}
