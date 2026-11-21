@@ -704,7 +704,7 @@ async fn invalid_requirements_do_not_replace_cached_bundle() {
 
     for contents in [
         "allowed_approval_policies = ['secret-policy']",
-        "[model_providers.openai]\nname = 'Reserved'",
+        "[model_providers.ollama]\nname = 'Reserved'",
         "[model_providers.secret-provider]\nname = '   '",
         "[model_providers.gateway]\nbase_url = 'https://gateway.example/v1'",
         "[model_providers.amazon-bedrock]\nname = 'Managed Bedrock'",

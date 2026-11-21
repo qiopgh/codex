@@ -1,4 +1,4 @@
-//! Built-in OpenAI catalog routing uses configured metadata without redirecting inference.
+//! 小写 `openai` 的自定义目录和推理分别使用各自配置的地址。
 #![cfg(test)]
 
 use anyhow::Result;
@@ -21,14 +21,14 @@ use wiremock::matchers::path;
 #[test_case(CodexAuth::from_api_key("catalog-routing-test-key"), "Bearer catalog-routing-test-key"; "api_key")]
 #[test_case(CodexAuth::create_dummy_chatgpt_auth_for_testing(), "Bearer Access Token"; "chatgpt")]
 #[tokio::test(flavor = "multi_thread", worker_threads = 2)]
-async fn builtin_openai_catalog_override_preserves_inference(
+async fn custom_openai_catalog_preserves_inference_routing(
     auth: CodexAuth,
     authorization: &str,
 ) -> Result<()> {
     let inference = responses::start_mock_server().await;
     let catalog_server = MockServer::start().await;
     let mut catalog = bundled_models_response()?;
-    catalog.models[0].display_name = "Explicit built-in catalog".into();
+    catalog.models[0].display_name = "显式自定义目录".into();
     Mock::given(method("GET"))
         .and(path("/catalog"))
         .and(header("authorization", authorization))
@@ -40,28 +40,28 @@ async fn builtin_openai_catalog_override_preserves_inference(
         home.path().join("config.toml"),
         format!(
             r#"model_provider = "openai"
-openai_base_url = "{}/v1"
 [features]
 api_key_model_discovery = true
 [model_providers.openai]
-model_catalog_url = "https://chatgpt.com/backend-api/codex/models"
+name = "OpenAI"
+base_url = "{}/v1"
+model_catalog_url = "{}/catalog"
+requires_openai_auth = true
+supports_websockets = false
 "#,
             inference.uri(),
+            catalog_server.uri(),
         ),
     )?;
-    let mut loaded = load_default_config_for_test(&home).await;
+    let loaded = load_default_config_for_test(&home).await;
     assert_eq!(
         loaded
             .model_provider
             .model_catalog_url
             .as_deref()
             .map(String::as_str),
-        Some("https://chatgpt.com/backend-api/codex/models"),
+        Some(format!("{}/catalog", catalog_server.uri()).as_str()),
     );
-    // Config validation uses the production allowlist. Redirect only this test's
-    // runtime catalog client to a local server to capture credential routing.
-    loaded.model_provider.model_catalog_url =
-        Some(format!("{}/catalog", catalog_server.uri()).into());
     assert_eq!(loaded.model_provider_id, "openai");
     assert_eq!(loaded.model_provider.name, "OpenAI");
     let test = test_codex()
@@ -69,7 +69,6 @@ model_catalog_url = "https://chatgpt.com/backend-api/codex/models"
         .with_auth(auth)
         .with_config(move |config| {
             config.model_provider = loaded.model_provider.clone();
-            config.model_provider.supports_websockets = false;
             config.features = loaded.features;
         })
         .build_with_auto_env(&inference)
